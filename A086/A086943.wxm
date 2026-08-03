@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A086943
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A086943(n):=3*10^n-7$
+makelist(A086943(n),n,1,17); /* _Martin Ettl_, Nov 08 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

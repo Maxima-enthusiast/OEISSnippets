@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A173591
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+T(n, k) := k^n*chebyshev_u(n, (1/k - k)/2) + (n + 1)^(k - 1)*chebyshev_u(k - 1, (1/(n + 1) - n - 1)/2)$
+create_list(T(n - k + 1, k), n, 0, 12, k, 1, n + 1);
+/* _Franck Maminirina Ramaharo_, Jan 24 2019 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

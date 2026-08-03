@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A079340
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A079340(n):=if n=1 then 1 else (2*n^2-3*n+3)*(2*n-2)!/(2*(n-1)!)$
+makelist(A079340(n),n,1,30); /* _Martin Ettl_, Nov 05 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

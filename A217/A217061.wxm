@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A217061
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=(sum((m*sum((n+k-1)!*sum(1/(k-j)!*sum((2^(j-l)*(-1)^(l+j)*stirling1(n-m-l+j,j-l))/(l!*(n-m-l+j)!),l,0,j),j,0,k),k,0,n-m))/m!,m,1,n));
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

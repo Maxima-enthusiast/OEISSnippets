@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A217778
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+makelist(expand(((3+sqrt(5))*(5+sqrt(5))^n-(3-sqrt(5))*(5-sqrt(5))^n+(1+sqrt(5))*(3+sqrt(5))^n-(1-sqrt(5))*(3-sqrt(5))^n)/(4*2^n*sqrt(5))), n, 0, 25); /* _Bruno Berselli_, Mar 28 2013 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

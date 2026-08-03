@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A199043
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=if n=0 then 1 else n!*sum(m!*sum((sum((2^(i) *stirling1(i+m,m) *binomial(2*k+m-1,i+m-1))/(i+m)!,i,0,2*k))*(-1)^(n+m+k)*binomial(n-1,2*k+m-1), k,0,(n-m)/2),m,1,n); makelist(a(n),n,1,20);
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

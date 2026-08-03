@@ -1,0 +1,19 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A065734
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A000203(n) := divsum(n) ;
+A048760(n) := (floor(sqrt(n)))^2 ;
+A065734(n) := A048760(A000203(n)) ;
+for n from 1 thru 10 do print(A065734(n)) ; /* _R. J. Mathar_, Feb 13 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

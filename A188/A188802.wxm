@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A188802
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):= (n+1)*sum(sum(binomial(i,n-k-i+1)*binomial(k+i-1,k-1), i,ceiling((n-k+1)/2), n-k+1)*(1-(-1)^k)/(2*k)*(-1)^((k-1)/2),k,1,n+1);
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

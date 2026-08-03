@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A075152
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A075152(n) := block( if n = 1 then return (1), [a:1,b:1,c:1,d:1,e:1,f:1,g:1], if mod(n, 2) = 1 then (  a : (n-1)/2,  f : 0,  b : 1,  c : 1,  d : 0,  e : (n+1)*(n-3)/4,  g : (n-1)*(n-3)/4 ) else (  a : n/2,  f : 1,   b : 1,   c : 0,   d : 0,   e : n*(n-2)/4, g : (n-2)^2/4  ), return ( (2^a * ((factorial(8)/2)*3^7)^b * ((factorial(12)/2)*2^11)^c * ((4^6)/2)^d * (factorial(24)/2)^e) / (24^f * ((24^6)/2)^g) ) )$ for i:1 thru 27 step 1 do ( sprint(i, A075152(i)), newline() )$ /* _Robert Munafo_, Nov 12 2014 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

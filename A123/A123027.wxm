@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A123027
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A053122(n, k) := if n < k then 0 else ((-1)^(n - k))*binomial(n + k + 1,  2*k + 1)$
+P(x, n) := expand(sum(A053122(n, j)*x^j*(1 - x)^(n - j), j, 0, n))$
+T(n, k) := ratcoef(P(x, n), x, k)$
+tabl(nn) := for n:0 thru nn do print(makelist(T(n, k), k, 0, hipow(P(x, n), x)))$ /* _Franck Maminirina Ramaharo_, Oct 10 2018 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

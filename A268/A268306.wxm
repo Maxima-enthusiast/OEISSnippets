@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A268306
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+t1:0$ t2:0$ t3:1$  for i:1 thru 100 do (a:1/2+sin((2*i+1)*%pi/4)/sqrt(2),
+t:t1+t2+t3, t1:t2, t2:t3, t3:t, e:(t+a)/2, print(e));
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

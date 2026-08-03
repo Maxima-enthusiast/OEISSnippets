@@ -1,0 +1,20 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A360799
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+block(kmax: 100, a:[],
+ even_ones(x):= block(su:0,
+  while x>0 do(p: mod(x,2), x:(x-p)/2, su:su+p),
+   return(mod(su,2))),
+for k from 0 thru kmax do(r:mod(k,3),
+ if r<2 and r=even_ones(k) then a:append(a,[k])),a);
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

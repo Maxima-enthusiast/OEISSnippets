@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A261186
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+taylor((3^(5/2)*cos(asin((3^(3/2)*sqrt(x))/2)/3)*x^(3/2))/(32*sin(asin((3^(3/2)*sqrt(x))/2)/3)^5*sqrt(1-(27*x)/4))-1/x+2,x,0,10);
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

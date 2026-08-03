@@ -1,0 +1,23 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A350541
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+block(twin:[], n:0, p1:11, j2:1, nmax: 3,
+/*returns nmax terms*/
+m:3, d:18, w: makelist(-d,i,1,m),
+while n<nmax  do(
+p2: next_prime(p1), if p2-p1=2 then(
+  k:p1+1, j1:j2, j2:1+ mod(j2,m), w[j1]:k,
+  if w[j1]-w[j2]=d then(n:n+1, twin: append(twin,[k-d]))),
+p1:p2), twin);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

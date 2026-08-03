@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A182013
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+M(n):=coeff(expand((1+x+x^2)^(n+1)),x^n)/(n+1);
+create_list(sum(M(i),i,k,n),n,0,6,k,0,n);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

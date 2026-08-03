@@ -1,0 +1,42 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A190015
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+/* array of triangle */
+M:[1,1,2,1,6,8,1,24,42,16,22,1,120,264,180,192,136,52,1,720,1920,1248,540,1824,2304,272,732,720,114,1,5040,15840,10080,8064,18720,22752,9612,7056,10224,17928,3968,2538,3072,240,1,40320,146160,92160,70560,32256,207360,249120,193536,73728,61560,144720,246816,101844,142704,7936,51048,110448,34304,8334,11616,494,1];
+/* function of triangle */
+T(n,k):=M[sum(num_partitions(i),i,0,n-1)+k+1];
+/* count number of partitions of n into m parts */
+b(n,m):=if n<m then 0 else if m=1 then 1 else b(n-1,m-1)+b(n-m,m);
+/* unranking partitions(n,m) , num - numbers partitions of lexicographic order */
+array(pa,10);
+gen_partitions(n,m,num,pos):= if n<m then return else
+               if m=1 then pa[pos]:n else
+               if num<b(n-1,m-1) then (pa[pos]:1, gen_partitions(n-1,m-1,num,pos+1)) else
+               if num<b(n-m,m)+b(n-1,m-1) then
+                (gen_partitions(n-m,m,num-b(n-1,m-1),pos),
+                  for i:0 thru m-1 do pa[i+pos]:pa[i+pos]+1);
+/* solve differential equation A'(x)=G(A(x)), G(x)=g(0)+g(1)*x+g(2)^x^2+...*/
+/* gcoeff(n)=g(n) */
+Solve(n,gcoeff):=block([s,h,num],s:0,for num:0 thru b(2*n-1,n)-1 do (
+gen_partitions(2*n-1,n,num,0), s:s+T(n-1,num+1)*prod(gcoeff(pa[i]-1),i,0,n-1)),s/n!);
+/*Test */
+one(n):=1;
+makelist(n!*Solve(n,one),n,1,9);
+g(n):=2^n;
+makelist(Solve(n,g),n,1,9);
+/* Find triangle */
+Co(n,k):=if k=1  then a(n) else sum(a(i+1)*Co(n-i-1,k-1),i,0,n-k);
+a(n):=if n=1 then 1 else 1/n*sum(Co(n-1,k)*x(k),k,1,n-1);
+makelist(ratsimp(n!*a(n)),n,1,5);
+/* _Vladimir Kruchinin_, Jun 15 2012 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

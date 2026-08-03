@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A226974
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=if n<0 then 0 else if n=0 then 1 else sum(sum(sum(a(l)*a(i)*a(j)*a(n-i-j-l-3),l,0,n-3-i-j),j,0,n-3-i),i,0,n-3)+1; /* _Vladimir Kruchinin_, May 17 2020 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

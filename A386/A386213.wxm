@@ -1,0 +1,19 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A386213
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+(n:1, for t:1 thru 300 do (x:1, s:divsum(t), A:delete(t, divisors(t)), B:args(powerset(A)),
+              for i:2 thru 2^(length(args(A))) do (r:apply("+", args(B[i])),
+                      if mod(s+r, t)=0 then (x:x+1)),
+                                       if x>1 then (print(n, "", t), n:n+1)));
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

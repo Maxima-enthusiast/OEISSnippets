@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A171883
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+n:3 $ l:10^100 $ print(n) $ while (n<l) do ( n:n^3, n:next_prime(n), print(n) );
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

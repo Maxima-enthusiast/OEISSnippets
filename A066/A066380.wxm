@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A066380
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a[0]:1$ a[n]:=8*a[n-1]-(5*n^2+n-2)*(3*n-3)!/((2*n-1)!*n!)$ makelist(a[n],n,0,200); /* _Tani Akinari_, Sep 02 2014 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

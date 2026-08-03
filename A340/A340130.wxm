@@ -1,0 +1,29 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A340130
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+block(nmax: 36,  a: [], su:0,
+   /*returns the first nmax terms*/
+    for n from 1 thru nmax do
+      (for di from 1 thru n do
+          for k from 0 thru n-di do
+            for dk from 1 thru n-k do
+               (if dk<=di then
+                 (ad: (dk+1) * (1+min(dk, n-di-k)),
+                 if dk=di then ad: ad-1)
+              else
+                ad: (di+1) * (1+min(di, n-dk-k)),
+            su: su + ad),
+             a: append(a,[su])),
+             return(a));
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

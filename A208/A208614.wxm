@@ -1,0 +1,21 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A208614
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+countRestrictedIntegerPartitions(n, L) := if ( n = 0 ) then 1 else if ( ( n < 0 ) or ( lsum(k, k, L) < n ) or ( n < lmin( L ) ) ) then 0 else block( [ m, R ], m : first(L), R : rest(L), countRestrictedIntegerPartitions(n, R) + countRestrictedIntegerPartitions(n - m, R));
+distinctPrimeFactors(n) := map(first,ifactors(n));
+oeisA076694(n) := n - lsum(k,k,distinctPrimeFactors(n));
+listOfPrimesLessThanOrEqualTo (n) := block( [ list : [] , i], for i : 2 step 0 while i <= n do ( list : cons(i, list) , i : next_prime(i) ) , list );
+oeisA208614(n) := block([ m, list ], m : oeisA076694(n), list : sort(listify(setdifference(setify(listOfPrimesLessThanOrEqualTo(m)), setify(distinctPrimeFactors(n)))), ordergreatp), countRestrictedIntegerPartitions(m, list));
+makelist(oeisA208614(j), j, 1, 100);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A000035
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A000035(n):=mod(n,2)$
+makelist(A000035(n),n,0,30); /* _Martin Ettl_, Nov 12 2012 */
+(Scheme) (define (A000035 n) (mod n 2)) ;; For R6RS. Use modulo in older Schemes like MIT/GNU Scheme. - _Antti Karttunen_, Mar 21 2017
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

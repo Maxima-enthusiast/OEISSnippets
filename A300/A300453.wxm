@@ -1,0 +1,19 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A300453
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+P(n, x) := (x + 1)^n + x^2 - 1$
+T : []$
+for i:0 thru 20 do
+  T : append(T, makelist(ratcoef(P(i, x), x, n), n, 0, max(2, i)))$
+T;
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A003707
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=sum((-1)^(k+1)*if evenp(n+k) then (-1)^((n+k)/2)/k*sum(j!*stirling2(n,j)*2^(n-j)*(-1)^(n+j-k)*binomial(j-1,k-1),j,k,n) else 0,k,1,n);  /* _Vladimir Kruchinin_, Aug 18 2010 */ /* Corrected by _Petros Hadjicostas_, Jun 05 2020 */
+a(n):=sum(sum(binomial(j+n-2*m-1,n-2*m-1)*(j+n-2*m)!*2^(2*m-j)*(-1)^(n-m+j-1)*stirling2(n,j+n-2*m),j,0,2*m)/(n-2*m),m,0,(n-1)/2); /* _Vladimir Kruchinin_, Jan 21 2012 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A200319
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=sum(stirling2(k+n/2-(1-(-1)^n)/4,2*k+(1+(-1)^n)/2)*(2*k+n-(1-(-1)^n)/2)!/((k+n/2-(1-(-1)^n)/4)!),k,0,floor((n-1)/2)); makelist(a(n),n,1,30); /* _Tani Akinari_, Jan 07 2026 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

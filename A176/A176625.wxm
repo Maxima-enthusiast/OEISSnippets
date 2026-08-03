@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A176625
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+create_list(1 + 3*k*(k - n), n, 0, 20, k, 0, n); /* _Franck Maminirina Ramaharo_, Nov 25 2018 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

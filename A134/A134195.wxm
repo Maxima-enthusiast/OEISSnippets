@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A134195
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+T(n, k) := if k = 1 then 1 else n*T(n, k - 1) + k$ /* A126885 */
+a(n) := sum(T(n - k + 1, k), k, 1, n + 1)$
+makelist(a(n), n, 0, 50); /* _Franck Maminirina Ramaharo_, Jan 26 2019 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

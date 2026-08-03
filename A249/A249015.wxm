@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A249015
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+b(n) := sum((n!/k!)*sum(binomial(k,i)*binomial(k-i+2,n-2*i-k)/3^i,i,0,k),k,0,n);
+c(n) := sum((n!/k!)*(-1)^k*sum(binomial(k,i)*binomial(k-i,n-2*i-k)/3^i,i,0,k),k,0,n);
+makelist((if n=0 then 1 else 0)+sum(binomial(n,k)*b(k)*c(n-k-1),k,0,n-1),n,0,20);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

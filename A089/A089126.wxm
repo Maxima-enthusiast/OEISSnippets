@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A089126
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+F(i,j) := if i=j+1 then -1 elseif i=j then fib(i-2) elseif i=j-1 then fib(i-2) else 0; M(n):=genmatrix(lambda([i,j], F(i,j)), n+1, n+1);
+  makelist(determinant(M(n)),n,0,12); /* _Emanuele Munarini_, Apr 17 2013 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

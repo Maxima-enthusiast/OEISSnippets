@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A221874
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+makelist(expand(((-5*(-1)^n+2*sqrt(10))*(3+sqrt(10))^(2*floor(n/2))-(5*(-1)^n+2*sqrt(10))*(3-sqrt(10))^(2*floor(n/2)))/10), n, 1, 22);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

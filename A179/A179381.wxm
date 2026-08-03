@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A179381
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+C(n):=  1/(n+1)*binomial(2*n,n);
+s(m,n):=if m>n then 0 else if n=m then C(n-1) else sum(C(k-1)*s(k,n-k),k,m,ceiling(n/2))+C(n-1);
+makelist(s(1,n),n,1,27);  /* _Vladimir Kruchinin_, Sep 06 2014 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

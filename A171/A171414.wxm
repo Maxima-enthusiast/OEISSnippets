@@ -1,0 +1,19 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A171414
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+p(x, n) := if mod(n, 2) = 0 then ((x^n - 1)/(x - 1))*p(x, n - 1) else ((x^n - 1)/(x - 1))^floor(n/2)$
+T(n, k) := ratcoef(p(x, n), x, k)$
+create_list(T(n, k), n, 1, 10, k, 0, hipow(fullratsimp(p(x, n)), x));
+/* _Franck Maminirina Ramaharo_, Jan 13 2019 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

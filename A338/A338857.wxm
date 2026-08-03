@@ -1,0 +1,23 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A338857
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+block(su: 0, k: 0, n: 1, nmax: 80,
+    /*program returns the first nmax terms*/
+    v: makelist(0, i, 0, nmax), v[1]: 1,
+    while n<=nmax do
+    (k: k+1, su: su+1/(2*k+1),
+    if su>1 then
+     (v[n+1]: k+1, su: su-1/(2*n+1), n: n+1)),
+  return(v));
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A174792
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+(a[0] : 0, a[1] : 1, a[2] : 1, a[3] : -7, a[n] := a[n-1] - 7*a[n-2] - a[n-3], makelist(a[n], n, 0, 50)); /* _Franck Maminirina Ramaharo_, Jan 06 2019 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

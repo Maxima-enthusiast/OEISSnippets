@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A036280
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=num(sum(sum((2^(1-j)*(-1)^(n+j-1)*binomial(k,j)*sum((j-2*i)^(2*n+j-2)*binomial(j,i)*(-1)^(i),i,0,floor(j/2)))/(2*n+j-2)!,j,1,k),k,1,2*n-2)); /* n>1. a(1)=1. */ /* _Vladimir Kruchinin_, Apr 12 2011 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

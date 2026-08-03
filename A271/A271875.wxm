@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A271875
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+T(n,m):=if n=m then 1 else sum(k*(-1)^k*binomial(m+k-1,k)*binomial(2*(n-m),n-m-k),k,1,n-m)/(n-m);
+T(n,m):=if n=m then 1 else sum((k*(-1)^k*binomial(m+k-1,k)*binomial(n,n-m-k)*binomial(2*n-2*m+k-1,n-m))/(n-m+k),k,1,n-m);
+taylor(-(2*x^2*y)/(2*x^2*y+sqrt(1-4*x)-1),x,0,7,y,0,7);
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

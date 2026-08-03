@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A000302
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A000302(n):=4^n$ makelist(A000302(n),n,0,30); /* _Martin Ettl_, Oct 24 2012 */
+(Scala) (List.fill(20)(4: BigInt)).scanLeft(1: BigInt)(_ * _) // _Alonso del Arte_, Jun 22 2019
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

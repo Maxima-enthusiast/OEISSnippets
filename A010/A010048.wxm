@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A010048
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+ffib(n):=prod(fib(k),k,1,n);
+fibonomial(n,k):=ffib(n)/(ffib(k)*ffib(n-k));
+create_list(fibonomial(n,k),n,0,20,k,0,n); /* _Emanuele Munarini_, Apr 02 2012 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

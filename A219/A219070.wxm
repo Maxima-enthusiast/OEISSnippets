@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A219070
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A219070(n):=(46*n^5 + 30*n^4 + 15*n^3-n)/30$
+makelist(A219070(n),n,0,30); /* _Martin Ettl_, Nov 12 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

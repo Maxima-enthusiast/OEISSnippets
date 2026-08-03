@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A218383
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A218383[n]:=sum(((-1)^(n-i-1))*(2^(2^i)-1)*prod((2^(n-j+1)-1)/(2^j-1),j,1,i)* prod(2^j-1,j,1,n-i),i,0,n-1)$ makelist(A218383[n],n,1,9); /* _Martin Ettl_, Oct 30 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

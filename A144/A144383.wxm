@@ -1,0 +1,20 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A144383
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+(nn : 12, kk : 50)$
+gf(n) := taylor(1/(x^n + x + 1), x, 0, kk)$
+T(n, k) := ratcoef(gf(n), x, k)$
+create_list(T(n - k, k), n, 1, nn, k, 0, n - 1);
+/* _Franck Maminirina Ramaharo_, Jan 18 2019 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

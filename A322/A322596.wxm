@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A322596
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+b(n, k) := (n + k)!/((n + 1)!*k!)$
+T(n, k) := if integerp(b(n, k)) then b(n, k) else floor(b(n, k)) + 1$
+create_list(T(k, n - k), n, 0, 15, k, 0, n);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

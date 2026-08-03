@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A022493
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+F(x,n) := remainder(sum(product(1-(1-x)^i,i,1,k),k,0,n),x^(n+1));
+makelist(coeff(F(x,n),x^n),n,0,20); /* _Emanuele Munarini_, Oct 16 2012 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

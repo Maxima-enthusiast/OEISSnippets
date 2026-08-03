@@ -1,0 +1,26 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A208950
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A208950(n) := block(
+        [a,npr] ,
+        if equal(mod(n,4), 0) then (
+                a : n/12*(n^2-1)
+        ) else if equal(mod(n,2),0) then (
+                a : (n-1)*n*(n+1)/6
+        ) else (
+                npr : (n-1)/2,
+                a : npr*(npr+1)*n/6
+        ) ,
+        return(a)
+)$ /* _R. J. Mathar_, Mar 10 2012 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

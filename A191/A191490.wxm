@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A191490
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+P[0]:1$
+P[n]:=(1+(n-1)*q)*P[n-1]+q^n$
+create_list(coeff(expand(P[n]),q^k),n,0,12,k,0,n);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

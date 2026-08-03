@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A349093
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+f(p,k):=(z:2, for m:2 while -1+sum(floor((p*m)/(p^t)),t,1,m)<k do (z:z+1), z*p);
+a(n):=(for d:1 thru length(ifactors(n)) do (A[d]:f(ifactors(n)[d][1],ifactors(n)[d][2])), lmax(makelist(A[d],d,1,length(ifactors(n)))));
+makelist(a(n),n,2,200);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A045949
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A045949(n):=floor(n*(14*n^2+9*n+2)/4)$
+makelist(A045949(n),n,0,30); /* _Martin Ettl_, Nov 03 2012 */
+(R) floor(1:25*(14*(1:25)^2+9*(1:25)+2)/4) # _Christian N. K. Anderson_, Apr 27 2013
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

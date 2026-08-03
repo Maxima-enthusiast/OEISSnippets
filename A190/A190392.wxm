@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A190392
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+g(n):=(-1)^floor(n/2)*1/n!;
+a(n):=T190015_Solve(n,g);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

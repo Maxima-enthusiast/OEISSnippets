@@ -1,0 +1,29 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A331960
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+block([an: 2,  n: 0,  nmax: 100],
+/*transfers the first nmax terms to a file in the current directory*/
+   fl: openw(concat("terms-A331960-",nmax, ".txt")),
+    while n<nmax do
+    (an: an+1, w: sqrt(an), m: floor(w),
+     if w > m and mod(2*m,an-m^2)>0 then
+       (a: m, i: 0, x: w, ok: true,
+        while a<2*m and ok do
+         (i: i+1, x: 1/(x-floor(x)),
+          a: floor(x),
+          if i=1 then c: a
+          elseif a # c and a<2*m then ok: false),
+     if ok then(n: n+1, printf( fl, "~d, ", an)))),
+   close(fl));
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A140986
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A140986(n):=n^8-12*n^7+66*n^6-214*n^5+441*n^4-572*n^3 +423*n^2-133*n$
+makelist(A140986(n),n,0,30); /* _Martin Ettl_, Nov 03 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

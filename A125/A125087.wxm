@@ -1,0 +1,24 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A125087
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+/* program from _Katarzyna Matylla_, Feb 19 2008: Variable max = how much terms we need. Generating 1000 terms took a few hours: */
+"|"(a,b):= if b=0 then true else if a=0 then false else if (floor(b/a))=(b/a) then true else false;
+max:1000;
+infix("|");
+deg(n,p):=if p<2 then 0 else block(d:0, loop, if ((p^(d+1))|n) then d:d+1 else go(end), go(loop), end, d);
+f:makelist(0,i,1,max);
+dg:makelist(0, i, 1, max);
+f[1]:1;
+for n:2 thru max do block(for i:2 thru n do dg[i]:deg(n,i),k:0, loop1, k:k+1, p:2, loop, if (f[k]=dg[p]) then block(f[n]:f[n]+1, p:n+1), if (p<=n) then p:next_prime(p), if (p<=n) then go(loop), if k<(n-1) then go(loop1));
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A378275
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+(f(i, j):=mod((i-floor((i-j)/j)), j),
+(n:3, for t:7 thru 100000 step 4 do
+(for k:3 while f(t, k)#1 and k<ceiling(t/2) do
+(if k=ceiling(t/2)-1 then (print(n, "", t), n:n+1)))));
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A213369
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a[0]:0$ a[1]:1$ a[n]:=-a[floor(n/2)]-(1-(-1)^n)*a[floor((n-1)/2)+1]/2$ makelist(a[n],n,0,77); /* _Bruno Berselli_, Jun 15 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

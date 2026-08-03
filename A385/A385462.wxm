@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A385462
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+(n:1, for t:1 thru 10000 do (s:divsum(t), (A:args(divisors(t)),
+              for i:1 thru length(A)-1 do (y:s+A[i],
+                      if mod(y,t)=0 then (print(n,"",t), n:n+1)))));
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

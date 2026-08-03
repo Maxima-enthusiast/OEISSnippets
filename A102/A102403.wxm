@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A102403
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a102403(n):=1/n*sum(binomial(n,j)*binomial(3*j-n-2,j-1)*(-1)^(n-j),j,ceiling((n+2)/3),n); /* _Vladimir Kruchinin_, Mar 07 2011 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A262910
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+B(x):=sum(sum(binomial(i+n-1,i)*binomial(i+n,2*i+1),i,0,n-1)/n*x^n,n,1,30);
+taylor(x*diff(B(x),x)/B(x),x,0,20);
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

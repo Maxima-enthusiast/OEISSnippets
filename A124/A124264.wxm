@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A124264
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+/* [wxMaxima: input start ] */ load("eigen"); order : 4; X : columnvector(makelist(concat(x,i), i, 1, order)); h[i,j] := (i + j)/(i + j - 1); Unity[i,j] := 1; A : genmatrix(h, order, order); A . X; B : genmatrix(Unity, 1, order); A . X = B; Ap : triangularize(A); Ap . X = B; App : invert(Ap); App . B; /* [wxMaxima: input end ] */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

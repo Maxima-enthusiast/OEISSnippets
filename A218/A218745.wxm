@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A218745
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A218745(n):=(42^n-1)/41$
+makelist(A218745(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

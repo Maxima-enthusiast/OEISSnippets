@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A000037
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A000037(n):=n + floor(1/2 + sqrt(n))$ makelist(A000037(n),n,1,50); /* _Martin Ettl_, Nov 15 2012 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

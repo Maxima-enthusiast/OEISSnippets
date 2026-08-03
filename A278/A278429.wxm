@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A278429
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+C(x):=(1-sqrt(1-4*x))/(2*x);
+taylor(x/sqrt(1-8*x)/(x*C(2*x))/(1-x*C(2*x))^3*(1-2*x*C(2*x)),x,0,10);
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

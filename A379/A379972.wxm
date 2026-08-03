@@ -1,0 +1,20 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A379972
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+block(u:[],
+for m from 0 thru 11 do
+  for k from floor((m+1)/2) thru 0 step -1 do
+    if m=0 or k<m then
+      (x : 2 ^ m - 2 ^ k + 1, u:append(u,[x])), u);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

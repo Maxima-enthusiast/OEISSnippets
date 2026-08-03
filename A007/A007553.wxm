@@ -1,0 +1,20 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A007553
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+b(n):=if n=0 then 1 else b(n-1)-sum(b(i)*b(n-1-i)*binomial(n-1,i),i,1,n-2);
+a(n):=if n=0 then 0 else abs(b(n-1)); # _Vladimir Kruchinin_, Nov 03 2011
+
+b(n):=if n=1 then 1 else sum((n+k-1)!*sum(((-1)^(j)/(k-j)!*sum(((sqrt(5)+1)^(n+j-i-1)*5^((i-j)/2)*stirling1(i,j)*2^(-n-j+i+1)*binomial(n+j-2,i-1))/i!,i,j,n+j-1)),j,1,k),k,1,n-1);
+a(n):=if n=1 then 1 else abs(b(n-1));
+makelist(ratsimp(a(n)),n,1,10); # _Vladimir Kruchinin_, Nov 17 2012
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

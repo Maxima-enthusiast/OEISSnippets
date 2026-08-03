@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A217523
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+(b[0] : 0, b[1] : 1, b[2] : 5/2, b[n] := (2*(6*n^2 - 12*n + 5)/n^2)*b[n - 1] - ((4*n^3 - 20*n^2 + 29*n - 10)/(n^3 - n^2))*b[n - 2])$
+a(n) := n!*n!*b[n]$ /* _Franck Maminirina Ramaharo_, Jan 28 2019 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

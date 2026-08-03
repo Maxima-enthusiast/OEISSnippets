@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A270709
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+makelist(coeff(taylor(((3*x+2)*(1-sqrt(1-4*(x^3+x^2))))/(2*(x^2+x)),x,0,15),x,n),n,0,15);
+a(n):=(n+1)*sum((binomial(k+1,n-2*k-1)*binomial(2*k,k))/(k+1)^2,k,0,(n-1)/2);
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

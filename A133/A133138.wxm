@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A133138
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+Q(n, x) := (1 + x)*((1 + x)^(n - 1) + x^(n - 1))$
+t(n,k) := ratcoef(expand(Q(n, x)), x, k)$
+for n:0 thru 20 do print(makelist(t(n, k), k, 0, n)); /* _Franck Maminirina Ramaharo_, May 18 2018 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

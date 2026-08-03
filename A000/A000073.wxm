@@ -1,0 +1,19 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A000073
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A000073[0]:0$
+A000073[1]:0$
+A000073[2]:1$
+A000073[n]:=A000073[n-1]+A000073[n-2]+A000073[n-3]$
+  makelist(A000073[n], n, 0, 40);  /* _Emanuele Munarini_, Mar 01 2011 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

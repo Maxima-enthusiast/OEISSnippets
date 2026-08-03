@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A075554
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+atan(n):=(sum((sum((2^(i-n-1)*(-1)^(i+n+(k-1)/2)/i*binomial(k-1,k-i)),i,1,k))*binomial(n-1,n-k),k,1,n));
+makelist(denom(atan(n),n,1,10); /* _Vladimir Kruchinin_, Apr 17 2014 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A316989
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+T(n, k) := binomial(2*n + 3, k + 1) + (binomial(2*n + 1, k)*(2*k - 2*n) + binomial(4, k)*(2*k - 3))/(k + 1) - kron_delta(1, k)$
+for n:0 thru 12 do print(makelist(T(n, k), k, 0, max(4, 2*(n + 1))));
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

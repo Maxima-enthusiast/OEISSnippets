@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A202039
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+T(n,m):=(m*sum((-1)^(n-m-k)*binomial(n+k-1,n-1)*sum(binomial(j,n-m+(-3)*k+2*j)*binomial(k,j)*2^(2*n-2*m+(-5)*k+3*j)*3^(-n+m+3*k-j),j,0,k),k,0,n-m))/n;
+T(n,m):=(m*sum(binomial(-m+2*k-1,k-1)*2^(n-k)*binomial(2*n-k-1,n-1),k,m,n))/n;
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

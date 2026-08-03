@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A060997
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+set_display('none)$fpprec:100$bfloat(cfdisrep(makelist(x,x,1,1000))); /* _Dimitri Papadopoulos_, Oct 25 2022 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

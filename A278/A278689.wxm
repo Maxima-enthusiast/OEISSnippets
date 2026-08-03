@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A278689
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+taylor((sqrt(1-8*x)*(2*x-1)+10*x+1)/(16*sqrt(1-8*x)),x,0,10);
+a(n):=sum(binomial(n+k,n)*binomial(2*n-3,n-k-1),k,0,n);
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,22 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A283615
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+g(x,y):=2*(x*y+1)/sqrt((1-y)*(1-(2*x+1)^2*y))-1;
+A283614(n,k):=coeff(limit(diff(g(x,y),y,n)/n!,y,0),x,k);
+A283615(n,k):=block([s,d],
+  s:0,
+  for d in divisors(gcd(n,k)) do
+    s:s+totient(d)*A283614(n/d,k/d),
+  return(s/(2*n+k)));
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

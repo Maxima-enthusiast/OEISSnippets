@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A055834
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+b(n):= sum(binomial(n+k, k)*binomial(k, n-k), k,ceiling(n/2),n)/(n+1);
+B(x):= sum(b(i)*x^(i),i,0,30);
+makelist(coeff(taylor(x*diff(B(x),x)-x*diff(B(x),x)/B(x)+B(x), x,0,20), x,n), n,0,20); /* _Vladimir Kruchinin_, Sep 21 2015 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

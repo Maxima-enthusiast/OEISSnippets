@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A135592
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+max:1000; f:makelist(0,i,1,max); apr:makelist(0, i, 1, max); f[1]:1; apr[2]:1; print(1,1); for n:2 thru max do block(f[n]:apr[length(ifactors(n))+1], apr[f[n]+1]:apr[f[n]+1]+1);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

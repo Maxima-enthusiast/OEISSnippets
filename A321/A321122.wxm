@@ -1,0 +1,21 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A321122
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+s : -2 + sqrt(3)$
+e(n) := s*(2 + s)*(-1 + s^n)/(2*(1 - s)*(-s + s^n))$
+f(n, k) := 6*s^(1 - k)*(s^(2*k) + s^n)/((1 - s)*(-s + s^n))$
+w(n, k) := if k = 0 or k = n then 1/4 + e(n)/6 else if k = 1 or k = n - 1 then 2 - (1 + 1/6)*e(n) else 1 + f(n, k)/4$
+a(n) := lcm(makelist(denom(fullratsimp(w(n, k))), k, 0, n))$
+append([4, 2, 3], makelist(a(n), n, 3, 50));
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

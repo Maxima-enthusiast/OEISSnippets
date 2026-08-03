@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A000008
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=floor(((n+17)*(2*n^2+20*n+81)+15*(n+1)*(-1)^n+120*((floor(n/5)+1)*((1+(-1)^mod(n,5))/2-floor(((mod(n,5))^2)/8))))/1200); /* _Tani Akinari_, Jun 21 2013 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

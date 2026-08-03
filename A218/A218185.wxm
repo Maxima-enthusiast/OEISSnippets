@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A218185
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+c(n):=binomial(2*n,n)/(n+1);
+a(n):=sum(c(i-1)*2^i*c(n-i-1),i,1,n-1)-c(n-1);
+makelist(a(n),n,2,20); /* _Vladimir Kruchinin_, Mar 20 2013 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

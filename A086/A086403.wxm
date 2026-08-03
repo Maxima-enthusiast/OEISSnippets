@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A086403
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=(sum((2*n-2*k+1)!/((2*k-1)!*(n-2*k+1)!),k,1,(n+1)/2));
+taylor(sinh((1-sqrt(1-4*x))/2)/sqrt(1-4*x),x,0,10); /* _Vladimir Kruchinin_, Apr 26 2016 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

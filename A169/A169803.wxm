@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A169803
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+create_list(binomial(n-k+1,k),n,0,20,k,0,n); /* _Emanuele Munarini_, May 24 2011 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

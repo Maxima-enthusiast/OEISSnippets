@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A229733
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=if n=1 then 1 else sum(sum((binomial(i,k)*binomial(k+i,i)*(sum(binomial(k+1,j)*binomial(k-j+1,n-2*k+j-i-1),j,0,(-n+3*k+i+2)/2))*(-1)^(-n+k+i))/(k+1),k,0,n-i),i,0,n+1); /* _Vladimir Kruchinin_, May 07 2018 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A097229
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+N(n,k):=(binomial(n,k-1)*binomial(n,k))/n;
+T(n,k):=if k=0 then 1 else sum(binomial(n, 2*i)*N(i,k),i,1,n); /* _Vladimir Kruchinin_, Jan 08 2022 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

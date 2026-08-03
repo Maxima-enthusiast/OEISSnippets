@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A008379
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A008379(x):=676/4725*x^10-676/945*x^9+1168/315*x^8-664/63*x^7+1796/75*x^6-1708/45*x^5+41176/945*x^4-6568/189*x^3+29342/1575*x^2-634/105*x+1$
+makelist(A008379(x),x,1,30); /* _Martin Ettl_, Oct 26 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

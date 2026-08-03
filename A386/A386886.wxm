@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A386886
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+T(n, k) := if mod(n, 2) = 1 then binomial(n, k) - n*binomial((n - 1)/2, k - 1) else binomial(n, k) - (n/2)*(binomial(n/2, k - 1) + binomial((n - 2)/2, k - 1))$
+create_list(T(n, k), n, 3, 20, k, 3, n);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A185170
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A185170(n):=floor((2*n^2-6*n+9)/5)$ makelist(A185170(n),n,0,30); /* _Martin Ettl_, Dec 28 2012 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A000290
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A000290(n):=n^2$ makelist(A000290(n),n,0,30); /* _Martin Ettl_, Oct 25 2012 */
+(Scheme) (define (A000290 n) (* n n)) ;; _Antti Karttunen_, Oct 06 2017
+(Scala) (0 to 59).map(n => n * n) // _Alonso del Arte_, Oct 07 2019
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

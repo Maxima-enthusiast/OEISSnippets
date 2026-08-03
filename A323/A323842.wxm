@@ -1,0 +1,20 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A323842
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+P(n, k, x):=if k<0 or n<0 then 0 else if k=0 then 1 else x*P(n, k-1, x)+
+2^k*P(n-1, k, (x+1)/2);
+a(n):=sum(P(n-k, k, -1), k, 0, n);
+makelist(a(n), n, 0, 10);
+/* _Vladimir Kruchinin_, Mar 08 2020 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

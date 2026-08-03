@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A212265
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+T(n,k):= if ( n<k or k<0 ) then 0 else
+if ( k<=1 or k=n ) then 1 else sum(T(n-k,j)*T(k,k-j),j,0, k);
+makelist(sum(T(n,k)^2,k,0,n),n,0,20);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

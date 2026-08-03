@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A217066
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=if n=1 then 1 else
+sum((-1)^k*binomial(n+k-1,n-1)*sum(binomial(n-2*i-2,k-1)*sum((-1)^(j+i)*2^(-n+k-j+2*i+1)*stirling2(n-1,n+j+(-2)*i-1)*binomial(n+j+(-2)*i-2,n-2*i-2)*(n+j+(-2)*i-1)!,j,0,2*i),i,0,(n-k-1)/2),k,1,n-1);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

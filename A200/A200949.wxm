@@ -1,0 +1,20 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A200949
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+Composita(n,k,F):=block([],if k=1  then F(n) else if n=k then (F(1))^n else sum(F(i+1)*Composita(n-i-1,k-1,F),i,0,n-k));
+SolveDiff21(G,key):=block([b],array(b,100), b[1]:1, b[2]:1/2,bfun(n):=b[n],            makelist(b[n]:-b[n-1]/n+1/(n*(n-1))*sum(Composita(n-2,k,bfun)*G(k) ,k,1,n-2),n,3,20),
+if key=1 then makelist(n!*b[n],n,1,20) else makelist(b[n],n,1,20));
+f(n):=1/n!;
+SolveDiff21(f,1);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

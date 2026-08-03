@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A132742
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+sjoin(v, j) := apply(sconcat, rest(join(makelist(j, length(v)), v))); display_triangle(n) := for i from 0 thru n do disp(sjoin(makelist(1 + mod(2*i*3^j, 12), j, 0, i), " ")); display_triangle(20); /* _Stefano Spezia_, Dec 26 2018 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

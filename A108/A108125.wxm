@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A108125
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a[n]:=if n<2 then n else n!*sum(a[n-k]*(-1)^(k+1)/(k*(n-k)!),k,1,n-1); makelist(a[n],n,0,100); /* _Tani Akinari_, Nov 25 2017 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

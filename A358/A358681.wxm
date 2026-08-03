@@ -1,0 +1,32 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A358681
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+block(nmax: 50, a: makelist(0,i,1,nmax),
+for n from 1 thru nmax do
+  (p: floor(n/sqrt(2)), if 2*p*(p+1) > n^2-1 then d:0 else d:1,
+   k0:n+1-d-p, z:2*k0-2+d,
+   v: makelist([0,0],i,1,4*z), ma:0,
+        /*Find close points with y>=0, x<=y:*/
+   for k from 1 thru k0 do (j:k-1, v[k][2]:n-j, v[k][1]: floor(sqrt(j*(2*n-j)))),
+          /*mirror x=y:*/
+   for k from k0+d thru z+1 do(j:z+2-k, v[k][1]: v[j][2], v[k][2]: v[j][1]),
+          /*rotation 90°:*/
+   for k from z+2 thru 4*z do(j:k-z, v[k][1]: v[j][2], v[k][2]: -v[j][1]),
+          /*All 4*z close points found, generate triangles:*/
+   for k from 1 thru k0 do
+    for j from k+2*z+1 thru k+3*z do
+     for m from k+z thru k+2*z-1 do
+      (ar:(v[j][1]-v[k][1])*(v[m][2]-v[k][2])-(v[j][2]-v[k][2])*(v[m][1]-v[k][1]),
+       if ar>ma then ma:ar),  a[n]:ma), a);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

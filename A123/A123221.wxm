@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A123221
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A008302(n, k) := ratcoef(ratsimp(product((1 - x^j)/(1 - x), j, 1, n)), x, k)$
+P(x, n) := sum(A008302(n + 1, j)*x^j*(1 - x)^(n - min(n, j)), j, 0, n*(n + 1)/2)$
+create_list(ratcoef(expand(P(x, n)), x, k), n, 0, 10, k, 0, hipow(P(x, n), x)); /* _Franck Maminirina Ramaharo_, Oct 14 2018 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

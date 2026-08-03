@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A032820
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a[1]:1$ a[2]:4$ a[n]:= if oddp(n) then 8*a[floor(n/2)]+1 else 8*a[floor((n-1)/2)]+4$ makelist(a[n],n,1,43); /* _Bruno Berselli_, May 28 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

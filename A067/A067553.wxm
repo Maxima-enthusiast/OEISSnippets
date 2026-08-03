@@ -1,0 +1,19 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A067553
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+g(n):= if n=0 then 1 else if oddp(n)=true  then n else 0;
+P(m,n):=if n=m then g(n) else sum(g(k)*P(k,n-k),k,m,n/2)+g(n);
+a(n):=P(1,n);
+makelist(a(n),n,0,27); /* _Vladimir Kruchinin_, Sep 06 2014 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,22 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A369611
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+ N : 7$ Len : 50$  /* tropical version of Somos-N, 2 <= N <= 7, Len = length of the calculated list */
+NofRT : floor (N / 2)$  /* number of terms in a Somos-N recurrence */
+A : makelist (0, Len)$  A[1] : -1$ for i: 2 thru N do ( A[i] : 0 )$
+for i: N + 1 thru Len do (
+   M : minf, for j : 1 thru NofRT do ( M : max ( M, A[i - j] + A[i - N + j] ) ),
+   A[i] : M - A[i - N]
+)$ A;
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

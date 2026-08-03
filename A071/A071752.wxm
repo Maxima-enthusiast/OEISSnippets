@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A071752
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=if n<2 then 3^n else 3*binomial(2*n,n)*(17*n^3+14*n^2-13*n+14)/(2*(n+1)*(n+2)*(n+3)*(2*n-1));
+makelist(a(n),n,0,50); /* _Tani Akinari_, Aug 06 2025 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

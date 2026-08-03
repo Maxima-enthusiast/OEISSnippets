@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A185320
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=if n=0 then 1 else sum((2*n+k)!*sum(sum(((-1)^(n+l+j)*sum((2^i*stirling1(i,j-l)*binomial(2*n-l+j-1,i-1))/i!,i,j-l,2*n-l+j))/l!,l,0,j-1)/(k-j)!,j,1,k),k,1,2*n);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

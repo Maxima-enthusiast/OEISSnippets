@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A270489
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+taylor((sqrt(2)*sin(asin((3^(3/2)*sqrt(1-sqrt(1-4*x)))/2^(3/2))/3)*
+sqrt(1-sqrt(1-4*x)))/(sqrt(3)*(1-x/(1-(1-sqrt(1-4*x))/2)^2))/x,x,0,20);
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A199569
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n) := if n=0 then 1 else n!^2 * sum(m!*sum((2^i*m^(n-m-i)* sum((stirling2(i,k)*k!*stirling1(m+k,m))/(m+k)!,k,0,i))/(i!*(n-m-i)!),i,0,n-m),m,1,n);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

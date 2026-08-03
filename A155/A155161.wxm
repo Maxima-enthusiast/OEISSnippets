@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A155161
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+M(n,k):=pochhammer(n,k)/k!;
+create_list(sum(M(k,i)*binomial(i,n-i-k),i,0,n-k),n,0,8,k,0,n); /* _Emanuele Munarini_, Mar 15 2011 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

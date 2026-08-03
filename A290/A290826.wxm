@@ -1,0 +1,28 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A290826
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+reset();
+kill(all);
+load(orthopoly);
+n:2;
+Bnx:(1/n!)*(1/2^n)*sum((-1)^k*binomial(n+1,k)
+    *sum((-1)^m*binomial(n+1,m)*(2*x-m-k)^n*unit_step(2*x-m-k),m,0,n+1),k,0,n+1);
+assume(x<=0);    print(n!*2^n,"B(x)= ",expand(n!*2^n*Bnx)," for x<=0");  forget(x<=0);
+for i:0 thru (n+0.5) step 0.5 do(
+  assume(x>i,x<(i+0.5)),
+  print(n!*2^n,"B(x)= ",expand(n!*2^n*Bnx)," for ",i,"<x<",i+0.5),
+  forget(x>i,x<(i+0.5))
+  );
+assume(x>(n+1)); print(n!*2^n,"B(x)= ",expand(n!*2^n*Bnx)," for x>",n+1); forget(x>(n+1));
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

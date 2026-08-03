@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A218456
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A218456(n):=2*n^3-313*n^2+6823*n-13633$
+makelist(A218456(n),n,0,30); /* _Martin Ettl_, Nov 08 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

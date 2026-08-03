@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A140925
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+makelist(coeff(taylor((1+x)*(1+44*x+496*x^2+2024*x^3+3268*x^4+2024*x^5+496*x^6+44*x^7+x^8)/(1-x)^21, x, 0, n), x, n), n, 0, 21); /* _Bruno Berselli_, May 07 2012 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

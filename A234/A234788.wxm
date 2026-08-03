@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A234788
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+k:-2$ for n:1 thru 300 step 0 do (k:k+2, b:bern(k), f:mod(num(b), 30), a:mod(denom(b)/6, 30), if f=a then (print(n, ", ", a), if 20*(n-1)+2#k then (print("Exception at k=", k, " n=", n), n:4000), n:n+1))$
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

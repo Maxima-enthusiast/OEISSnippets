@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A217487
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+t(n):=sum(stirling2(n,k)*k!,k,0,n);
+c(n):=sum(binomial(n,k)*2^k*t(k),k,0,n);
+makelist(sum(c(k)^2,k,0,n),n,0,40);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

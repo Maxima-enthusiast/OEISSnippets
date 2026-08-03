@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A212425
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+T(n,k):= if n<3*k then 0 else if n/3=k then 1 else sum(binomial(3*k,j)*sum(T(i,3*k-j)*T(n-j,i), i,3*k-j+1,n-j-1), j,0,3*k-1);
+makelist(T(n,1),n,1,20); /* _Vladimir Kruchinin_, May 17 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,21 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A123192
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+K(n, A, B, d) := if n = 0 then d else A*K(n - 1, A, B, d) + B*(A + B*d)^(n - 1)$
+p(n, x) := x^abs(3*n - 2)*K(n, x, 1/x, -x^(-2) - x^2)$
+t(n, k) := ratcoef(p(n, x), x, k)$
+T:[]$
+for n:0 thru 10 do T:append(T, makelist(t(n,k), k, 0, max(4, 4*n)))$
+T; /* _Franck Maminirina Ramaharo_, Aug 11 2018 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A100140
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+egypt(x) := block([i,n,d,p,e, on, od], ( n : num(x), d : n/x, on : n, od : d, p : 0, e : [], for i:1 while x>0 do ( n : num(x), d : n/x, p : fix((d+n-1)/n), x : x - 1/p, e : append(e, [p]) ), return(p) ) ); for b:2 step 1 thru 100 do ( max:2, for a:2 step 1 thru b-1 do ( if gcd(a,b)=1 then ( m : egypt(a/b), if m>max then max : m ) ), print("a[", b, "]=", max) ), t$
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

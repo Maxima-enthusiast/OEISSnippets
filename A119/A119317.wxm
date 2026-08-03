@@ -1,0 +1,26 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A119317
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A119317(n) := block(
+   if equal(n,1) then
+      return(1),
+   for i : 1 do (
+      idv : listify(divisors(i)),
+      if length(idv) >= n then (
+         if primep(idv[n]) then
+            return(idv[n])
+        )
+     )
+)$ /* _R. J. Mathar_, Mar 13 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

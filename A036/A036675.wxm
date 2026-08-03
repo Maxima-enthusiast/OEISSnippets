@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A036675
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+T(n,m):=if m=n then 1 else sum((m*binomial(m+2*i-1,i))/(m+i)*((1+(-1)^(n-m))/2)*T((n-m)/2,i),i,1,n-m);
+makelist(T(2*n+1,1),n,0,30); /* _Vladimir Kruchinin_, Mar 18 2015 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

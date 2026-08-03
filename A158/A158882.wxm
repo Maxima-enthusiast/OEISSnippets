@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A158882
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+G(n,k):=(if n=k then 1 else if k=1 then (-sum(binomial(n-1,k-1)*G(n,k),k,2,n)) else sum(G(i+1,1)*G(n-i-1,k-1),i,0,n-k));
+makelist(G(n,1),n,1,10); /* _Vladimir Kruchinin_, Mar 07 2014 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

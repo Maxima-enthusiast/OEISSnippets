@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A219159
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+T(n,k) := if  k >= n then ((1 + (-1)^floor((k - 1)/2))*(k^2 - n + 1) - (-1 + (-1)^floor((k - 1)/2))*((k - 1)^2 + n))/2 else ((1 + (-1)^(floor((n - 1)/2) + 1))*(n^2 - k + 1) - (-1 + (-1)^(floor((n - 1)/2) + 1))*((n - 1)^2 +k))/2$
+create_list(T(k, n - k), n, 1, 12, k, 1, n - 1); /* _Franck Maminirina Ramaharo_, Dec 11 2018 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

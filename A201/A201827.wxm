@@ -1,0 +1,18 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A201827
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+array(B,25,25);
+fillarray (B, makelist (-1, i, 1, 1000));
+T(n,m):=if B[n,m]=-1 then B[n,m]:(if n=m then 1 else sum(T(n-m,k)*m^k/k!-stirling1(n,k+m-1)*(k+m-1)!/n!*T(k+m-1,m),k,1,n-m)) else B[n,m];
+makelist(n!*T(n,1),n,1,21);
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A254351
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+x:bfloat(log(3)/log(2)),fpprec:100, errold:2,for denominator:1 thru 10000 do (numerator:round(x*denominator), errnew:abs(x-numerator/denominator), if errnew < errold then (errold:errnew, print(numerator)));
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A035343
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+pentanomial(n,k):=coeff(expand((1+x+x^2+x^3+x^4)^n),x,k);
+create_list(pentanomial(n,k),n,0,6,k,0,4*n); /* _Emanuele Munarini_, Mar 15 2011 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

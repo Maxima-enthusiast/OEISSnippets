@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A262607
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A(x):=x*(3-x-sqrt(1-6*x+x^2))/2;
+taylor(-diff(A(x),x)/A(x)+diff(A(x),x,1)/x,x,0,27);
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

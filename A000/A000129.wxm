@@ -1,0 +1,20 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A000129
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a[0]:0$
+a[1]:1$
+a[n]:=2*a[n-1]+a[n-2]$
+A000129(n):=a[n]$
+makelist(A000129(n),n,0,30); /* _Martin Ettl_, Nov 03 2012 */
+makelist((%i)^(n-1)*ultraspherical(n-1,1,-%i),n,0,24),expand; /* _Emanuele Munarini_, Mar 07 2018 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

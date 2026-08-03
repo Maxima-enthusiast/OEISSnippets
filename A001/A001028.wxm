@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A001028
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+Co(n,k,a):= if k=1 then a(n) else sum(a(i+1)*Co(n-i-1,k-1,a), i,0,n-k); a(n):= if n=1 then 1 else (1/n)*sum(Co(n-1,k,a)*a(k),k,1,n-1); makelist(n!*a(n),n,1,7); /* _Vladimir Kruchinin_, Jun 30 2011 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A115335
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+append([3, 5, 1], makelist((2^(1 + n) - 11*(-1)^n)/3, n, 3, 40)); /* _Franck Maminirina Ramaharo_, Nov 23 2018 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

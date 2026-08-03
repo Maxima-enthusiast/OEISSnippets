@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A005651
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(m,n):=if n=m then 1 else sum(binomial(n,k)*a(k,n-k),k,m,(n/2))+1;
+makelist(a(1,n),n,0,17); /* _Vladimir Kruchinin_, Sep 06 2014 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

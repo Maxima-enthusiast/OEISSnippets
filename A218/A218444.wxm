@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A218444
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A218444[n]:=sum(floor(n/(5*k+1)),k,0,n)$
+makelist(A218444[n],n,0,80); /* _Martin Ettl_, Oct 29 2012 */
+
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

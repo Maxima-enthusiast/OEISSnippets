@@ -7,7 +7,6 @@ https://oeis.org/A109398
 
 /* [wxMaxima: input   start ] */
 makelist(sum(binomial(n+k,k)*k!,k,0,n),n,0,12); /* _Emanuele Munarini_, Sep 20 2016 */
-
 /* [wxMaxima: input   end   ] */
 
 

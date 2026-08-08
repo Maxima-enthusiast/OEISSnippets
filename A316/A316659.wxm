@@ -9,7 +9,6 @@ https://oeis.org/A316659
 v : 3 + 2*x$ w : sqrt(5 + 4*x)$
 p(n, x) := expand(x*(x^2 - 2) + x*(((v - w)/2)^n + ((v + w)/2)^n))$
 for n:0 thru 15 do print(makelist(ratcoef(p(n, x), x, k), k, 0, max(3, n + 1)));
-
 /* [wxMaxima: input   end   ] */
 
 

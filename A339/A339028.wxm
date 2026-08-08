@@ -7,7 +7,6 @@ https://oeis.org/A339028
 
 /* [wxMaxima: input   start ] */
 T(n,m):=if n<m then 0 else (3*(m+1)*(binomial(n+m+3,m))*(binomial(2*n+2,n-m)))/((n+m+3)*(binomial(n+1,m)));
-
 /* [wxMaxima: input   end   ] */
 
 

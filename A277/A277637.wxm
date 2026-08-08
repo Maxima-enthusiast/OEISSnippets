@@ -7,7 +7,6 @@ https://oeis.org/A277637
 
 /* [wxMaxima: input   start ] */
 makelist(sum(multinomial_coeff(k,k,k)/(k+1),k,0,n),n,0,12);
-
 /* [wxMaxima: input   end   ] */
 
 

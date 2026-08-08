@@ -7,7 +7,6 @@ https://oeis.org/A217652
 
 /* [wxMaxima: input   start ] */
 A217652(n):=2^(n^2-3*n+2)*n$ makelist(A217652(n),n,0,10); /* _Martin Ettl_, Nov 13 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

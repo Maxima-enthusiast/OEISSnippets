@@ -7,11 +7,11 @@ https://oeis.org/A360799
 
 /* [wxMaxima: input   start ] */
 block(kmax: 100, a:[],
- even_ones(x):= block(su:0,
-  while x>0 do(p: mod(x,2), x:(x-p)/2, su:su+p),
-   return(mod(su,2))),
+even_ones(x):= block(su:0,
+while x>0 do(p: mod(x,2), x:(x-p)/2, su:su+p),
+return(mod(su,2))),
 for k from 0 thru kmax do(r:mod(k,3),
- if r<2 and r=even_ones(k) then a:append(a,[k])),a);
+if r<2 and r=even_ones(k) then a:append(a,[k])),a);
 /* [wxMaxima: input   end   ] */
 
 

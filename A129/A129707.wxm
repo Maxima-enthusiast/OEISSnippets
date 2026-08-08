@@ -7,7 +7,6 @@ https://oeis.org/A129707
 
 /* [wxMaxima: input   start ] */
 a(n) = sum(k*(k+1)*binomial(k,n-k-1),k,floor((n-1)/2),n-1)/2; /* _Vladimir Kruchinin_, Sep 17 2020 */
-
 /* [wxMaxima: input   end   ] */
 
 

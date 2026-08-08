@@ -8,7 +8,6 @@ https://oeis.org/A190392
 /* [wxMaxima: input   start ] */
 g(n):=(-1)^floor(n/2)*1/n!;
 a(n):=T190015_Solve(n,g);
-
 /* [wxMaxima: input   end   ] */
 
 

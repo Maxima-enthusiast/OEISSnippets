@@ -10,7 +10,7 @@ g(x, y) := taylor(x/(1 - y*(x^2 + 4*x + 3)), y, 0, 10)$
 a : makelist(ratcoef(g(x, y), y, n), n, 0, 10)$
 T : []$
 for i:1 thru 11 do
-  T : append(T, makelist(ratcoef(a[i], x, n), n, 0, 2*i - 1))$
+T : append(T, makelist(ratcoef(a[i], x, n), n, 0, 2*i - 1))$
 T;
 /* [wxMaxima: input   end   ] */
 

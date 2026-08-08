@@ -8,7 +8,6 @@ https://oeis.org/A218728
 /* [wxMaxima: input   start ] */
 A218728(n):=(25^n-1)/24$
 makelist(A218728(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

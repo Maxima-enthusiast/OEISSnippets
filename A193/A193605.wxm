@@ -8,7 +8,6 @@ https://oeis.org/A193605
 /* [wxMaxima: input   start ] */
 T(n,k):=sum(((i+3)*2^(i-2))*binomial(n-i,k-i),i,1,min(n,k))+binomial(n,k);
 /* _Vladimir Kruchinin_, Aug 20 2019 */
-
 /* [wxMaxima: input   end   ] */
 
 

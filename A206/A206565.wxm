@@ -6,8 +6,7 @@ https://oeis.org/A206565
 
 
 /* [wxMaxima: input   start ] */
- makelist(sum((-1)^k*binomial(n-k, k)*37^(n-2*k), k, 0, floor(n/2)), n, 0, 14);
-
+makelist(sum((-1)^k*binomial(n-k, k)*37^(n-2*k), k, 0, floor(n/2)), n, 0, 14);
 /* [wxMaxima: input   end   ] */
 
 

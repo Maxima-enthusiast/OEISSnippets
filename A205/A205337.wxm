@@ -7,7 +7,6 @@ https://oeis.org/A205337
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else sum(sum(binomial(i,l)*sum((-1)^j*binomial(i-l,j)*binomial(-l+4*(-l-2*j+i)-j+i-1,4*(-l-2*j+i)-j),j,0,(4*(i-l))/9)*(-1)^l,l,0,i)*a(n-i),i,1,n)/n; /* _Vladimir Kruchinin_, Apr 07 2017 */
-
 /* [wxMaxima: input   end   ] */
 
 

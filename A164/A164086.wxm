@@ -9,7 +9,6 @@ https://oeis.org/A164086
 fprec:100$
 A164086:4*%pi/3$
 ev(bfloat(A164086)); /* _Martin Ettl_, Nov 03 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

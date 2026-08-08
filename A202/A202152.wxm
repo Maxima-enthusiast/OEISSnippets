@@ -7,7 +7,6 @@ https://oeis.org/A202152
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else n!*sum(sum((m^k*stirling1(n-m-k,k))/(n-m-k)!,k,0,n-m)/m!,m,1,n);
-
 /* [wxMaxima: input   end   ] */
 
 

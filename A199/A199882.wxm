@@ -8,7 +8,6 @@ https://oeis.org/A199882
 /* [wxMaxima: input   start ] */
 a(n):=if n<4 then 1/n! else 1/(n*(n-1)*(n-2))*(a(n-3)+sum(a(i)*a(n-3-i),i,1,n-4));
 makelist(n!*a3(n),n,1,25);
-
 /* [wxMaxima: input   end   ] */
 
 

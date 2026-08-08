@@ -7,7 +7,6 @@ https://oeis.org/A190734
 
 /* [wxMaxima: input   start ] */
 makelist(sum(binomial(2*n,i)*binomial(3*n-i,2*n)*(4-9*i+3*i^2-12*(i-1)*n+8*n^2)/((2*n-i+2)*(2*n-i+1))*2^i,i,0,n)/2,n,0,12);
-
 /* [wxMaxima: input   end   ] */
 
 

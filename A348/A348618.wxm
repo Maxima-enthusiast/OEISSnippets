@@ -7,8 +7,7 @@ https://oeis.org/A348618
 
 /* [wxMaxima: input   start ] */
 a(n):=if evenp(n) then 4^n*binomial(3*n/2-1,n) else ((binomial((3*n-1)/2,n))*
-    (binomial(3*n-1,(3*n-1)/2)))/binomial(n-1,(n-1)/2);
-
+(binomial(3*n-1,(3*n-1)/2)))/binomial(n-1,(n-1)/2);
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A191500
 
 /* [wxMaxima: input   start ] */
 a(n):=2*n!*sum(((-1)^(n+k+1)*binomial(2*n-4*k-2,n-2*k-1)*(n-2*k-1)!*(sum((2^(i+4*k-n)*stirling1(i+n-2*k,n-2*k)*binomial(n-1,i+n-2*k-1))/(i+n-2*k)!,i,0,2*k))),k,0,(n-1)/2);
-
 /* [wxMaxima: input   end   ] */
 
 

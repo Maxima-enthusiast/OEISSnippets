@@ -9,7 +9,6 @@ https://oeis.org/A322596
 b(n, k) := (n + k)!/((n + 1)!*k!)$
 T(n, k) := if integerp(b(n, k)) then b(n, k) else floor(b(n, k)) + 1$
 create_list(T(k, n - k), n, 0, 15, k, 0, n);
-
 /* [wxMaxima: input   end   ] */
 
 

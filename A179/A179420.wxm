@@ -8,7 +8,6 @@ https://oeis.org/A179420
 /* [wxMaxima: input   start ] */
 Co(n, k, F):=if k=1  then F(n) else sum(F(i+1)*Co(n-i-1, k-1, F), i, 0, n-k);
 a(n):=if n=0 then 0 else if n<3 then 1 else sum(Co(n,k,a)*a(k),k,2,n-1)/(n-2); /* _Vladimir Kruchinin_, Jun 29 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

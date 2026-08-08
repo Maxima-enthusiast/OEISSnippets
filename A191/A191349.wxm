@@ -7,7 +7,6 @@ https://oeis.org/A191349
 
 /* [wxMaxima: input   start ] */
 makelist(sum(binomial(n-k,2*k)^2,k,0,floor(n/3)),n,0,26);
-
 /* [wxMaxima: input   end   ] */
 
 

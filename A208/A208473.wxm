@@ -7,7 +7,6 @@ https://oeis.org/A208473
 
 /* [wxMaxima: input   start ] */
 makelist(binomial(2*n,n)*fib(3*n+1),n,0,17);
-
 /* [wxMaxima: input   end   ] */
 
 

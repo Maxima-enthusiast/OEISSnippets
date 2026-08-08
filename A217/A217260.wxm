@@ -7,7 +7,6 @@ https://oeis.org/A217260
 
 /* [wxMaxima: input   start ] */
 a(n):=n!*sum(((-1)^(n+i)*binomial(n-1,2*i-2))/(2*i-1),i,1,(n+1)/2)/2^(n-1);
-
 /* [wxMaxima: input   end   ] */
 
 

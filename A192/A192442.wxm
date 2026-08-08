@@ -9,7 +9,6 @@ https://oeis.org/A192442
 makelist((coeff(expand((1+x^3+x^4)^n), x, n)), n, 0, 40); /* _Vincenzo Librandi_, Sep 10 2011 */
 
 a(n):=sum(binomial(j,n-3*j)*binomial(n,j),j,floor(n/4),floor(n/3)); /* _Vladimir Kruchinin_, Jun 14 2014 */
-
 /* [wxMaxima: input   end   ] */
 
 

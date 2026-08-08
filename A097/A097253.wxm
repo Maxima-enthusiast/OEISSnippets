@@ -7,7 +7,6 @@ https://oeis.org/A097253
 
 /* [wxMaxima: input   start ] */
 a[0]:0$ a[n]:=7*a[floor(n/2)]+3*(1-(-1)^n)$ makelist(a[n], n, 0, 36); /* _Bruno Berselli_, May 25 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -8,11 +8,10 @@ https://oeis.org/A382225
 /* [wxMaxima: input   start ] */
 h[i,j]:=binomial(i+j-3,i-1);
 for n:1 thru 7 do
-    if n=1 then print([1])
-    else (M:genmatrix(h,n,n),
-          print(makelist(determinant(minor(M,k,k)),k,1,n))
-         );
-
+if n=1 then print([1])
+else (M:genmatrix(h,n,n),
+print(makelist(determinant(minor(M,k,k)),k,1,n))
+);
 /* [wxMaxima: input   end   ] */
 
 

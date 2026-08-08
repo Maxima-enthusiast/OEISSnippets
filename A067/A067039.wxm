@@ -7,7 +7,6 @@ https://oeis.org/A067039
 
 /* [wxMaxima: input   start ] */
 makelist((n+1)^(n!),n,0,6); /* _Martin Ettl_, Jan 17 2013 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A195339
 
 /* [wxMaxima: input   start ] */
 makelist(coeff(taylor(1/(1-4*x+2*x^3+x^4), x, 0, n), x, n), n, 0, 24);
-
 /* [wxMaxima: input   end   ] */
 
 

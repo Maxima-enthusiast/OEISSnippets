@@ -8,7 +8,6 @@ https://oeis.org/A342204
 /* [wxMaxima: input   start ] */
 fpprec :100;
 bf_find_root(cos(x*%pi/2)-x,x,0,1) ;
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A200441
 
 /* [wxMaxima: input   start ] */
 makelist(sum((-1)^k*binomial(n-k,k)*33^(n-2*k),k,0,floor(n/2)),n,0,16);
-
 /* [wxMaxima: input   end   ] */
 
 

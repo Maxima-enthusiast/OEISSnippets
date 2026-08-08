@@ -7,7 +7,6 @@ https://oeis.org/A351118
 
 /* [wxMaxima: input   start ] */
 a(n) := n^(n+1) * beta_incomplete_regularized(n - floor((n-1)/2),floor((n-1)/2) + 1,1/n);
-
 /* [wxMaxima: input   end   ] */
 
 

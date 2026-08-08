@@ -11,7 +11,6 @@ SolveDiff21(G,key):=block([b],array(b,100), b[1]:1, b[2]:1/2,bfun(n):=b[n],     
 if key=1 then makelist(n!*b[n],n,1,20) else makelist(b[n],n,1,20));
 f(n):=1/n!;
 SolveDiff21(f,1);
-
 /* [wxMaxima: input   end   ] */
 
 

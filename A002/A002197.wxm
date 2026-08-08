@@ -8,7 +8,6 @@ https://oeis.org/A002197
 /* [wxMaxima: input   start ] */
 a(n):=(sum(binomial(2*n+k-1,2*n-2)*sum((binomial(k+1,j)*sum((2*i-j)^(2*n+j)*binomial(j,i)*(-1)^(n-i),i,0,j/2))/(2^(j-1)*(2*n+j)!),j,1,k+1),k,0,2*n-1))/(2*n-1);
 makelist(num(a(n)),n,0,10); /* _Vladimir Kruchinin_, May 16 2013 */
-
 /* [wxMaxima: input   end   ] */
 
 

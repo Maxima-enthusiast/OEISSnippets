@@ -7,7 +7,6 @@ https://oeis.org/A212567
 
 /* [wxMaxima: input   start ] */
 makelist(coeff(taylor(x^2*(2+5*x+7*x^2+13*x^3+12*x^4+5*x^5+x^6+x^7)/((1+x)^2*(1-x)^4*(1+x+x^2)^2), x, 0, n), x, n), n, 0, 43); /* _Bruno Berselli_, May 06 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -9,7 +9,7 @@ https://oeis.org/A300453
 P(n, x) := (x + 1)^n + x^2 - 1$
 T : []$
 for i:0 thru 20 do
-  T : append(T, makelist(ratcoef(P(i, x), x, n), n, 0, max(2, i)))$
+T : append(T, makelist(ratcoef(P(i, x), x, n), n, 0, max(2, i)))$
 T;
 /* [wxMaxima: input   end   ] */
 

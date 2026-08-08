@@ -7,7 +7,6 @@ https://oeis.org/A220607
 
 /* [wxMaxima: input   start ] */
 fpprec:90; ev(bfloat(gamma(6/7)));
-
 /* [wxMaxima: input   end   ] */
 
 

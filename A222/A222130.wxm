@@ -7,7 +7,6 @@ https://oeis.org/A222130
 
 /* [wxMaxima: input   start ] */
 fpprec:90; ev(bfloat(realpart(%pi^%i)));
-
 /* [wxMaxima: input   end   ] */
 
 

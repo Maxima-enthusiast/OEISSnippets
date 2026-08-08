@@ -7,7 +7,6 @@ https://oeis.org/A197419
 
 /* [wxMaxima: input   start ] */
 T(n,m):=num(if n=m then 1 else 2*binomial(n,m)* sum(stirling2(n-m,k) *stirling1(2+k,2)/ ((k+1)*(2+k)),k,1,n-m)); /* _Vladimir Kruchinin_, Oct 23 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

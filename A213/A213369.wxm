@@ -7,7 +7,6 @@ https://oeis.org/A213369
 
 /* [wxMaxima: input   start ] */
 a[0]:0$ a[1]:1$ a[n]:=-a[floor(n/2)]-(1-(-1)^n)*a[floor((n-1)/2)+1]/2$ makelist(a[n],n,0,77); /* _Bruno Berselli_, Jun 15 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

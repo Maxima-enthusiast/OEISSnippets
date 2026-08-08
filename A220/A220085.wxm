@@ -7,7 +7,6 @@ https://oeis.org/A220085
 
 /* [wxMaxima: input   start ] */
 fpprec:90; ev(bfloat(sin(log(2))));
-
 /* [wxMaxima: input   end   ] */
 
 

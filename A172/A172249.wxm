@@ -7,7 +7,6 @@ https://oeis.org/A172249
 
 /* [wxMaxima: input   start ] */
 T(n,k):=2*sum((j*binomial(n+j,2*n-2*k+2*j)*binomial(n-k+j,j))/(n+j),j,1,n+k); /* _Vladimir Kruchinin_, Oct 28 2020 */
-
 /* [wxMaxima: input   end   ] */
 
 

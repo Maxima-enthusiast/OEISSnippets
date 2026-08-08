@@ -7,7 +7,6 @@ https://oeis.org/A187536
 
 /* [wxMaxima: input   start ] */
 makelist(1+sum(binomial(2*k-1,k-1)*(2*k)!/k!,k,1,n),n,0,12);
-
 /* [wxMaxima: input   end   ] */
 
 

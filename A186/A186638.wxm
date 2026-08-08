@@ -7,7 +7,6 @@ https://oeis.org/A186638
 
 /* [wxMaxima: input   start ] */
 a[0]:0$ a[1]:0$ a[2]:0$ a[n]:=n*a[n-1]+n*a[n-2]/(n-2)+4*(-1)^(n-1)/(n-2)$ makelist(a[n], n, 0, 25); /* _Bruno Berselli_, May 23 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

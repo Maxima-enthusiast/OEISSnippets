@@ -8,7 +8,6 @@ https://oeis.org/A102785
 /* [wxMaxima: input   start ] */
 a(n):=sum(sum((sum(binomial(j,-3*k+2*j+i)*(-2)^(-3*k+2*j+i)*3^(k-j)*binomial(k,j),j,0,k))*binomial(n+k-i-1,k-1),i,k,n),k,1,n); /* _Vladimir Kruchinin_, May 05 2011 */
 makelist(coeff(taylor((x-1)/(-2*x^2+3*x^3+2*x-1), x, 0, n), x, n), n, 0, 32); /* _Bruno Berselli_, May 30 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

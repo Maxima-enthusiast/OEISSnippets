@@ -8,7 +8,6 @@ https://oeis.org/A060761
 /* [wxMaxima: input   start ] */
 A060761(n):=9^(n^2)$
 makelist(A060761(n),n,0,10); /* _Martin Ettl_, Nov 08 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

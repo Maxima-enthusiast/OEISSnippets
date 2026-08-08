@@ -6,7 +6,7 @@ https://oeis.org/A185142
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 1 else 2*sum(binomial(2*n+k,2*n)*sum(((sum((j-2*i)^(2*n)*binomial(j,i),i,0,(j-1)/2))*binomial(k,j)*(-1)^(n-j))/2^j,j,1,k),k,1,2*n)/(2*n+1)!;
+a(n):=if n=0 then 1 else (sum((binomial(2*n+k,2*n)*sum((i-k)^(2*n)*binomial(2*k,i)*(-1)^(n+k-i),i,0,k-1))/2^(k-1),k,1,2*n));
 /* [wxMaxima: input   end   ] */
 
 

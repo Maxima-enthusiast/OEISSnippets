@@ -7,12 +7,11 @@ https://oeis.org/A349519
 
 /* [wxMaxima: input   start ] */
 block(w:[2],  su:0, sum:0, n:1, p:2, nmax: 25,
-  /* returns nmax terms */
+/* returns nmax terms */
 while n<nmax do(
-  p: next_prime(p), su:su+mod(p,4)-2,
-  if su<sum then(n:n+1, sum:su, w: append(w,[p]) ) ) ,
+p: next_prime(p), su:su+mod(p,4)-2,
+if su<sum then(n:n+1, sum:su, w: append(w,[p]) ) ) ,
 w);
-
 /* [wxMaxima: input   end   ] */
 
 

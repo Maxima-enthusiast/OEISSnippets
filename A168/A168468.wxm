@@ -7,7 +7,6 @@ https://oeis.org/A168468
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else 2*sum((sum(binomial(2*j,j)*4^(m-2*j)*sum((i-j)^(2*m)*binomial(2*j,i)*(-1)^(m+j-i),i,0,j),j,0,m))*sum((stirling1(r,2*m)*sum(binomial(k-1,r-1)*k!*2^(n-k)*stirling2(n,k)*(-1)^(r+k),k,r,n))/r!,r,2*m,n),m,1,n/2);
-
 /* [wxMaxima: input   end   ] */
 
 

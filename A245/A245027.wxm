@@ -7,7 +7,6 @@ https://oeis.org/A245027
 
 /* [wxMaxima: input   start ] */
 divisors(7^12-1);
-
 /* [wxMaxima: input   end   ] */
 
 

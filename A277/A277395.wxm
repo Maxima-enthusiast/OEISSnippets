@@ -8,7 +8,6 @@ https://oeis.org/A277395
 /* [wxMaxima: input   start ] */
 g(k):=1/(k+1)*sum((-1)^j*2^(k-j)*binomial(k+1,j)*binomial(2*k-j,k),j,0,k);
 makelist(sum(binomial(n+1,k+1)*g(k),k,0,n),n,0,23);
-
 /* [wxMaxima: input   end   ] */
 
 

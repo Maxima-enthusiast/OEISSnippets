@@ -7,7 +7,6 @@ https://oeis.org/A202184
 
 /* [wxMaxima: input   start ] */
 T(n,m):=n!/m!*sum((m^k*stirling1(n-m-2*k,k))/(n-m-2*k)!,k,0,(n-m)/2);
-
 /* [wxMaxima: input   end   ] */
 
 

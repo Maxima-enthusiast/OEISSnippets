@@ -8,7 +8,7 @@ https://oeis.org/A300401
 /* [wxMaxima: input   start ] */
 T(n, k) := n*(binomial(k, 2) + 1) + k*(binomial(n, 2) + 1)$
 for n:0 thru 20 do
-  print(makelist(T(n, k), k, 0, 20));
+print(makelist(T(n, k), k, 0, 20));
 /* [wxMaxima: input   end   ] */
 
 

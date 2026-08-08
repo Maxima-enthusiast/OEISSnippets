@@ -8,7 +8,6 @@ https://oeis.org/A014566
 /* [wxMaxima: input   start ] */
 A014566[n]:=if n=0 then 2 else n^n+1$
 makelist(A014566[n],n,0,30); /* _Martin Ettl_, Oct 29 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

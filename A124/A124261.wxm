@@ -7,7 +7,6 @@ https://oeis.org/A124261
 
 /* [wxMaxima: input   start ] */
 load("eigen"); order : 4; X : columnvector(makelist(concat(x,i), i, 1, order)); h[i,j] := 1/(i + j -1); Unity[i,j] := 1; A : genmatrix(h, order, order); A . X; B : genmatrix(Unity, 1, order); A . X = B; Ap : triangularize(A); Ap . X = B; App : invert(Ap); App . B;
-
 /* [wxMaxima: input   end   ] */
 
 

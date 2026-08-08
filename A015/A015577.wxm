@@ -10,7 +10,6 @@ a[0]:0$
 a[n]:=9^(n-1)-a[n-1]$
 A015577(n):=a[n]$
 makelist(A015577(n),n,0,30); /* _Martin Ettl_, Nov 05 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

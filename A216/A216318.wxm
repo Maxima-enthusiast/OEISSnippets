@@ -7,7 +7,6 @@ https://oeis.org/A216318
 
 /* [wxMaxima: input   start ] */
 a(n):=if n<2 then n else binomial(2*n-2,n-1)*(5*(n-1)^2+5*(n-1)+2)/(2*n*(n+1)); /* _Vladimir Kruchinin_, Oct 30 2020 */
-
 /* [wxMaxima: input   end   ] */
 
 

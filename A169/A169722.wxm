@@ -7,7 +7,6 @@ https://oeis.org/A169722
 
 /* [wxMaxima: input   start ] */
 makelist(coeff(taylor((1+15*x+5*x^2)/(1-7*x+14*x^2-8*x^3), x, 0, n), x, n), n, 0, 23); /* _Bruno Berselli_, Dec 04 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

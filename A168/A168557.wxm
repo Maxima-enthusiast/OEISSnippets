@@ -7,7 +7,6 @@ https://oeis.org/A168557
 
 /* [wxMaxima: input   start ] */
 create_list((-1)^n*binomial(n, k) + (-1)^n*kron_delta(0, k) - kron_delta(0, n), n, 0, 12, k, 0, max(0, n - 1)); /* _Franck Maminirina Ramaharo_, Nov 21 2018 */
-
 /* [wxMaxima: input   end   ] */
 
 

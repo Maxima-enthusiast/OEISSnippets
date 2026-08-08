@@ -7,7 +7,6 @@ https://oeis.org/A200904
 
 /* [wxMaxima: input   start ] */
 a(n):=(sum(2^j*(2*n-j)^(n-1)*(-1)^(n-j)*binomial(n,j),j,0,n));
-
 /* [wxMaxima: input   end   ] */
 
 

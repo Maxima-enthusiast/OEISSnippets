@@ -7,7 +7,6 @@ https://oeis.org/A027941
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(binomial(n+1,k+1)*fib(k),k,0,n); /* _Vladimir Kruchinin_, Oct 14 2016 */
-
 /* [wxMaxima: input   end   ] */
 
 

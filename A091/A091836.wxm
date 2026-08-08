@@ -7,7 +7,6 @@ https://oeis.org/A091836
 
 /* [wxMaxima: input   start ] */
 T(n,m):=if n=m then 1 else (-1)^m*(m*sum(k*(-1)^(n+k)*binomial(n+k-1,n-1)*sum(binomial(j,-n+m-k+2*j)*binomial(n-m,j),j,0,n-m),k,1,n-m))/(n*(n-m)); /* _Vladimir Kruchinin_, Aug 20 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

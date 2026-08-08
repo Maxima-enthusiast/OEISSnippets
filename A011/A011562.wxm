@@ -7,7 +7,6 @@ https://oeis.org/A011562
 
 /* [wxMaxima: input   start ] */
 A011562(n):=stirling2(13,n)$ makelist(A011562(n),n,1,13); /* _Martin Ettl_, Nov 05 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

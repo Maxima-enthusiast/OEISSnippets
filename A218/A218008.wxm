@@ -8,7 +8,6 @@ https://oeis.org/A218008
 /* [wxMaxima: input   start ] */
 A218008(n):=2*(binomial(n,floor((n+1)/2))-1)$
 makelist(A218008(n),n,0,30); /* _Martin Ettl_, Nov 01 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A198953
 
 /* [wxMaxima: input   start ] */
 a(n):=sum((sum((binomial(2*n+2*k+2,j-k)*binomial(n+2*k,k))/(k+n+1),k,0,j))*(-1)^(n-j)*binomial(2*n-j,n-j),j,0,n); /* _Vladimir Kruchinin_, Mar 13 2016 */
-
 /* [wxMaxima: input   end   ] */
 
 

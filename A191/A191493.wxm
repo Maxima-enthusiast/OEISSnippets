@@ -9,7 +9,6 @@ https://oeis.org/A191493
 P[0]:1$
 P[n]:=(1+(n-1)*q)*P[n-1]+q^n$
 makelist(sum(binomial(n,k)*coeff(expand(P[n]),q^k),k,0,n),n,0,24);
-
 /* [wxMaxima: input   end   ] */
 
 

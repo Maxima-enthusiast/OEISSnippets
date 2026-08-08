@@ -7,7 +7,6 @@ https://oeis.org/A187751
 
 /* [wxMaxima: input   start ] */
 A187751(n):=mod(n^(n!),(n!)^n)$ makelist(A187751(n),n,0,9); /* _Martin Ettl_, Jan 13 2013 */
-
 /* [wxMaxima: input   end   ] */
 
 

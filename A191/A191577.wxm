@@ -7,7 +7,6 @@ https://oeis.org/A191577
 
 /* [wxMaxima: input   start ] */
 a(n):=6*(-1)^n*sum((stirling1(k+3,3)*stirling2(n,k))/((k+1)*(k+2)*(k+3)),k,1,n);
-
 /* [wxMaxima: input   end   ] */
 
 

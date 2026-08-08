@@ -7,7 +7,6 @@ https://oeis.org/A131300
 
 /* [wxMaxima: input   start ] */
 makelist(expand(3*((1+sqrt(5))^(n+2)-(1-sqrt(5))^(n+2))/(2^(n+2)*sqrt(5))-2*(n+1)), n, 0, 37); /* _Bruno Berselli_, May 03 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

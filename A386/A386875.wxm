@@ -8,7 +8,6 @@ https://oeis.org/A386875
 /* [wxMaxima: input   start ] */
 a(n) := if mod(n, 2) = 1 then 2^n - n*2^((n - 1)/2) - 1 else 2^n - 3*n*2^((n - 4)/2) - 1$
 makelist(a(n), n, 1, 20);
-
 /* [wxMaxima: input   end   ] */
 
 

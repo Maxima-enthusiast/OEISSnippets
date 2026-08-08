@@ -8,7 +8,6 @@ https://oeis.org/A187764
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else sum((binomial(2*k-2,k-1) * sum(i*binomial(i-1,k-1) * binomial(2*n-i-1,n-1),i,k,n)) / k, k, 1, n) / n; /* _Vladimir Kruchinin_, Jan 23 2013 */
 a(n):=if n=0 then 1 else sum(binomial(2*k-2,k-1)*binomial(2*n,n-k),k,1,n)/n; /*  _Vladimir Kruchinin_, Apr 28 2016 */
-
 /* [wxMaxima: input   end   ] */
 
 

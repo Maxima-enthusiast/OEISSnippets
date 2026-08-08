@@ -9,7 +9,6 @@ https://oeis.org/A181927
 ffib(n):=prod(fib(k),k,1,n);
 fibonomial(n,k):=ffib(n)/(ffib(k)*ffib(n-k));
 makelist(sum(fibonomial(n,k)^2,k,0,n),n,0,30);
-
 /* [wxMaxima: input   end   ] */
 
 

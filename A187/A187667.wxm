@@ -7,7 +7,6 @@ https://oeis.org/A187667
 
 /* [wxMaxima: input   start ] */
 makelist(coeff(expand((1+n*x+n*x^2+n*x^3)^n),x,n),n,0,12);
-
 /* [wxMaxima: input   end   ] */
 
 

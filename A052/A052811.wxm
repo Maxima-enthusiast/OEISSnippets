@@ -7,7 +7,6 @@ https://oeis.org/A052811
 
 /* [wxMaxima: input   start ] */
 makelist((-1)^n*sum(stirling1(n, 2*k)*(2*k)!,k,0,floor(n/2)), n, 0, 18); /* _Bruno Berselli_, May 25 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

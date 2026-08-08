@@ -7,7 +7,6 @@ https://oeis.org/A066165
 
 /* [wxMaxima: input   start ] */
 a(n):=n!*sum(sum(binomial(k,j)*j!/(n-2*k+j)!*stirling1(n-2*k+j,j)*(-1)^(n-k-j),j,0,k)/k!,k,1,floor(n/2)); /* _Vladimir Kruchinin_, Sep 07 2010 */
-
 /* [wxMaxima: input   end   ] */
 
 

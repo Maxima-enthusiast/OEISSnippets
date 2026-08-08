@@ -10,7 +10,6 @@ A(x,y) := ((x*(27*y^4-108*y^3+162*y^2+(-108)*y+27)-2*y^3+66*y^2+66*y-2)/(54*y^6-
 taylor(A(x,y),x,0,7,y,0,7);
 
 T(n,m):=(binomial(n+m+1,n)*binomial(2*n-m,n)*binomial(3*n+1,n)* binomial(4*n+2,2*m+1))/((2*n+2)*binomial(2*n,n)*binomial(2*n+2*m+2,2*n));
-
 /* [wxMaxima: input   end   ] */
 
 

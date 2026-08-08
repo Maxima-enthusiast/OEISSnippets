@@ -7,7 +7,6 @@ https://oeis.org/A208481
 
 /* [wxMaxima: input   start ] */
 makelist(sum(binomial(n-k,k)*fib(2*n-3*k+1),k,0,floor(n/2)),n,0,27);
-
 /* [wxMaxima: input   end   ] */
 
 

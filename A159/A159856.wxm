@@ -7,7 +7,6 @@ https://oeis.org/A159856
 
 /* [wxMaxima: input   start ] */
 T(n,k):=coeff(taylor(1/(1-x)^2*(-x/(1-x))^k,x,0,15),x,n); /* _Vladimir Kruchinin_, Nov 22 2016 */
-
 /* [wxMaxima: input   end   ] */
 
 

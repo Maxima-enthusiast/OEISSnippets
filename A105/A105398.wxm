@@ -7,7 +7,6 @@ https://oeis.org/A105398
 
 /* [wxMaxima: input   start ] */
 makelist(if evenp(n) then 4 else 8, n, 0, 30); /* _Martin Ettl_, Nov 12 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

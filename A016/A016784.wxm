@@ -8,7 +8,6 @@ https://oeis.org/A016784
 /* [wxMaxima: input   start ] */
 A016784(n):=(3*n+1)^8$
 makelist(A016784(n),n,0,20); /* _Martin Ettl_, Nov 12 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

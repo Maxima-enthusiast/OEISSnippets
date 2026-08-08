@@ -7,7 +7,6 @@ https://oeis.org/A144389
 
 /* [wxMaxima: input   start ] */
 create_list(n*binomial(n - 1, k) - (-1)^(n - k)*binomial(n, k), n , 0, 15, k, 0, n); /* _Franck Maminirina Ramaharo_, Jan 25 2019 */
-
 /* [wxMaxima: input   end   ] */
 
 

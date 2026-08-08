@@ -8,8 +8,6 @@ https://oeis.org/A213167
 /* [wxMaxima: input   start ] */
 A213167(n):=n!-(n-2)!$
 makelist(A213167(n),n,2,30); /* _Martin Ettl_, Nov 03 2012 */
-(Scheme) (define (A213167 n) (- (A000142 n) (A000142 (- n 2)))) ;; _Antti Karttunen_, May 07 2015
-
 /* [wxMaxima: input   end   ] */
 
 

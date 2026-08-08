@@ -7,6 +7,22 @@ https://oeis.org/A000178
 
 /* [wxMaxima: input   start ] */
 A000178(n):=prod(k!,k,0,n)$ makelist(A000178(n),n,0,30); /* _Martin Ettl_, Oct 23 2012 */
+(Ruby)
+def mono_choices(a,b,n)
+n - [a,b].max
+end
+def comm_mono_choices(n)
+accum =1
+0.upto(n-1) do |i|
+i.upto(n-1) do |j|
+accum = accum * mono_choices(i,j,n)
+end
+end
+accum
+end
+1.upto(12) do |k|
+puts comm_mono_choices(k)
+end # _Chad Brewbaker_, Nov 03 2013
 /* [wxMaxima: input   end   ] */
 
 

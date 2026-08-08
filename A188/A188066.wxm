@@ -7,7 +7,6 @@ https://oeis.org/A188066
 
 /* [wxMaxima: input   start ] */
 B(n,k):=n!/k!*x^(7*k-n)*sum(binomial(k,j)*binomial(7*j,n)*(-1)^(k-j),j,0,k);
-
 /* [wxMaxima: input   end   ] */
 
 

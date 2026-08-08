@@ -7,7 +7,6 @@ https://oeis.org/A078481
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 0 else sum(((sum(binomial(k+1,n-k-i)*binomial(k+i,k),i,0,n-k))*binomial(n-k-2,k))/(k+1),k,0,n); /* _Vladimir Kruchinin_, Nov 22 2014 */
-
 /* [wxMaxima: input   end   ] */
 
 

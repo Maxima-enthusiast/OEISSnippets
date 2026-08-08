@@ -7,7 +7,6 @@ https://oeis.org/A365061
 
 /* [wxMaxima: input   start ] */
 a(n):=n*sum(binomial(n,b)*(n-b)!*coeff(taylor((exp(z)* gamma_incomplete_regularized(b,z))^(n-1),z,0,n),z,n-b),b,1,n);
-
 /* [wxMaxima: input   end   ] */
 
 

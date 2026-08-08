@@ -12,7 +12,6 @@ a[1]:1;
 af(n):=a[n];
 for n:2 thru 10 do a[n]:n*sum(Composita(n-1, k, af)*(-1)^k , k, 1, n-1);
 makelist(af(n),n,1,10); /* _Vladimir Kruchinin_, Dec 01 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

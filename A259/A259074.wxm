@@ -7,7 +7,6 @@ https://oeis.org/A259074
 
 /* [wxMaxima: input   start ] */
 T(n,k):=sum(binomial(n-3*j-1,k-1)*binomial(n-k-3*j,j),j,0,(n-k)/3);
-
 /* [wxMaxima: input   end   ] */
 
 

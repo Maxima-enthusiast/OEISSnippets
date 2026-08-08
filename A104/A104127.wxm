@@ -7,10 +7,9 @@ https://oeis.org/A104127
 
 /* [wxMaxima: input   start ] */
 A104127(n) := block(
-        return((1+A000040(n))^A000040(n))
-  )$
-  for n : 1 thru 20 do printf(true,"~d,",A104127(n)) ; /* _R. J. Mathar_, Feb 27 2012 */
-
+return((1+A000040(n))^A000040(n))
+)$
+for n : 1 thru 20 do printf(true,"~d,",A104127(n)) ; /* _R. J. Mathar_, Feb 27 2012 */
 /* [wxMaxima: input   end   ] */
 
 

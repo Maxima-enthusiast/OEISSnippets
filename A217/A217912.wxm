@@ -7,7 +7,6 @@ https://oeis.org/A217912
 
 /* [wxMaxima: input   start ] */
 makelist( if n=0 then 1 else 1/n! * sum(2*(-1)^(n-k)*binomial(n,k) * k^n * (3*k+2)^(n-1),k,0,n), n, 0, 30); /* _Martin Ettl_, Oct 15 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

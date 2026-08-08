@@ -8,7 +8,6 @@ https://oeis.org/A189175
 /* [wxMaxima: input   start ] */
 T(n,k):=if n=k then 1 else binomial(2*n-k,n-k)*(n^2+n*k-k^2-k)/((2*n-k)*(2*n-k-1));
 create_list(T(n,k),n,0,20,k,0,n);
-
 /* [wxMaxima: input   end   ] */
 
 

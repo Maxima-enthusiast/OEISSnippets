@@ -10,7 +10,6 @@ t(n, k) := k^n + k^(n - 2)*binomial(n, 2)*(2*binomial(k, 2) + 1)$
 u(n) := if n = 0 or n = 1 then 1 else 0$
 T(n, k) := if k = 0 then u(n) else t(n,k)$
 tabl(nn) := for n:0 thru 10 do print(makelist(T(n, k), k, 0, nn))$
-
 /* [wxMaxima: input   end   ] */
 
 

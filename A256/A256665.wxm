@@ -7,7 +7,6 @@ https://oeis.org/A256665
 
 /* [wxMaxima: input   start ] */
 T(n,m):=abs(sum(binomial(m,2*k+m-n-1)*sum(4^i*euler(2*i)*binomial(2*k-1,2*i),i,0,k),k,floor((n-m+1)/2),(n+1)/2));
-
 /* [wxMaxima: input   end   ] */
 
 

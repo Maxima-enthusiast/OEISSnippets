@@ -7,7 +7,6 @@ https://oeis.org/A110122
 
 /* [wxMaxima: input   start ] */
 a(n):=sum((k+1)/(n+1)*sum(binomial(n+1,i)*binomial(2*n-k-i,n),i,0,n-k) *fib(k+1),k,0,n); /* _Vladimir Kruchinin_, Apr 18 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

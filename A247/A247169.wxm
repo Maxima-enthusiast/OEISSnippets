@@ -7,7 +7,6 @@ https://oeis.org/A247169
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 3 else (n*sum((binomial(n-2*m,m)*binomial(2*m-1,n-2*m-1))/(n-2*m),m,0,(n-1)/2));
-
 /* [wxMaxima: input   end   ] */
 
 

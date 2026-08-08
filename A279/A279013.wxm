@@ -7,7 +7,6 @@ https://oeis.org/A279013
 
 /* [wxMaxima: input   start ] */
 taylor((2*(1-sqrt(1-((1-sqrt(1-4*x))^2)/x))*(1/sqrt(1-4*x)+1)/2*x)/((1-sqrt(1-4*x))^2),x,0,27);
-
 /* [wxMaxima: input   end   ] */
 
 

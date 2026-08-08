@@ -11,7 +11,6 @@ a[1]: 1$
 a[n] := a[n - 1] + fib(n - 1)*a[n - 2]$
 makelist(a[n],n,0,25);
 /* _Emanuele Munarini_, Feb 17 2016 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A007118
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(sum(binomial(n,2*r+k)*(stirling1(n-2*r-k,k)*sum((2*i-k)^(2*r+k)*binomial(k,i)*(-1)^(r+k-i),i,0,k/2)),r,0,n/2-k)/2^(k-1),k,1,n); /* _Vladimir Kruchinin_, Jun 01 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

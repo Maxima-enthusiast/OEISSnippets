@@ -9,7 +9,6 @@ https://oeis.org/A216604
 a(n):=sum(sum(binomial(n-2*q-2,n-r-q)*binomial(q+1,r-1)*binomial(q+1,r) ,r,0,q+1)/(q+1), q,0,n); /* _Vladimir Kruchinin_, Jan 22 2019 */
 a(n):=sum((binomial(2*m,m)*binomial(n-2*m+1,n-3*m))/(n-2*m+1),m,0,n/3);
 /*_Vladimir Kruchinin_, Jan 27 2022 */
-
 /* [wxMaxima: input   end   ] */
 
 

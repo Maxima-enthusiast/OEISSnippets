@@ -8,7 +8,6 @@ https://oeis.org/A128227
 /* [wxMaxima: input   start ] */
 T(n, k) := if n = k then 1 else k + 1$
 for n:0 thru 10 do print(makelist(T(n, k), k, 0, n)); /* _Franck Maminirina Ramaharo_, Aug 25 2018 */
-
 /* [wxMaxima: input   end   ] */
 
 

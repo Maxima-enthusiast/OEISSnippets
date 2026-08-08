@@ -7,7 +7,6 @@ https://oeis.org/A202482
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(i*sum(binomial(k,n-k-i)*3^(k)*(-1)^(n-k+1)*binomial(n+k-1,n-1),k,0,n-i),i,1,n)/n;
-
 /* [wxMaxima: input   end   ] */
 
 

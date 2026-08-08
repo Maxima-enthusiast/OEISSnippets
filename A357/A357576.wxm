@@ -8,15 +8,15 @@ https://oeis.org/A357576
 /* [wxMaxima: input   start ] */
 block(nmax: 40, a: makelist(0,i,1,nmax), a[1]:0,
 for n from 2 thru nmax do
-  (x0:0, y0:n, xa:0, ya:n, m1:0, m0:2, ar:0,
-    while xa<ya do (y:y0,
-     while m1<=m0 and xa<ya do
-      (y:y-1, x1: sqrt(n^2-y^2-1), m1: (y0-y)/(x1-x0),
-       if m1<=m0 then (x:floor(x1), m: (y0-y)/(x-x0),
-         if m<m0 then (m0:m, xa:x, ya:y))),
-      dar:xa*y0-ya*x0, if y0=n then dar:dar-xa,
-      if xa<=ya then (x0:xa, y0:ya, m0:2, ar:ar+2*dar) else ar:ar+dar),
-       a[n]: ar), a);
+(x0:0, y0:n, xa:0, ya:n, m1:0, m0:2, ar:0,
+while xa<ya do (y:y0,
+while m1<=m0 and xa<ya do
+(y:y-1, x1: sqrt(n^2-y^2-1), m1: (y0-y)/(x1-x0),
+if m1<=m0 then (x:floor(x1), m: (y0-y)/(x-x0),
+if m<m0 then (m0:m, xa:x, ya:y))),
+dar:xa*y0-ya*x0, if y0=n then dar:dar-xa,
+if xa<=ya then (x0:xa, y0:ya, m0:2, ar:ar+2*dar) else ar:ar+dar),
+a[n]: ar), a);
 /* [wxMaxima: input   end   ] */
 
 

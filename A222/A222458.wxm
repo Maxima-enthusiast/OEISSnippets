@@ -7,7 +7,6 @@ https://oeis.org/A222458
 
 /* [wxMaxima: input   start ] */
 fpprec:90; ev(bfloat(-psi[0](5/6)));
-
 /* [wxMaxima: input   end   ] */
 
 

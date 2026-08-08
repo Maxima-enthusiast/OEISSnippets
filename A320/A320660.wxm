@@ -7,7 +7,6 @@ https://oeis.org/A320660
 
 /* [wxMaxima: input   start ] */
 makelist((3/14)*(7*(2 - 2*sqrt(2))^n + 7*(2 + 2*sqrt(2))^n + (21 - 5*sqrt(7))*(4 - 2*sqrt(7))^n + (21 + 5*sqrt(7))*(4 + 2*sqrt(7))^n), n, 0, 20), ratsimp;
-
 /* [wxMaxima: input   end   ] */
 
 

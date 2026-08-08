@@ -7,7 +7,6 @@ https://oeis.org/A017532
 
 /* [wxMaxima: input   start ] */
 makelist((12*n)^12,n,0,30); /* _Martin Ettl_, Oct 21 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

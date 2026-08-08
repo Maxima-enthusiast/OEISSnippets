@@ -12,7 +12,6 @@ t(n, k) := ratcoef(p(n, x), x, k)$
 T:[]$
 for n:0 thru 10 do T:append(T, makelist(t(n,k), k, 0, max(4, 4*n)))$
 T; /* _Franck Maminirina Ramaharo_, Aug 11 2018 */
-
 /* [wxMaxima: input   end   ] */
 
 

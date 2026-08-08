@@ -7,7 +7,6 @@ https://oeis.org/A194786
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else (n!*sum((sum((stirling1(i,k)*binomial(k,n-i-1))/i!,i,k,n-1))*n^(k-1),k,0,n-1)); /* _Vladimir Kruchinin_, Jan 24 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

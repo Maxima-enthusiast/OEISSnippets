@@ -7,7 +7,6 @@ https://oeis.org/A052801
 
 /* [wxMaxima: input   start ] */
 makelist(sum((-1)^(n-k)*stirling1(n, k)*(k+1)!, k, 0, n), n, 0, 17); /* _Bruno Berselli_, May 25 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

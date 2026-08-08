@@ -8,7 +8,6 @@ https://oeis.org/A173735
 /* [wxMaxima: input   start ] */
 A173735(n):=(10^n+26)/9$
 makelist(A173735(n),n,0,20); /* _Ivan Panchenko_, Nov 03 2013 */
-
 /* [wxMaxima: input   end   ] */
 
 

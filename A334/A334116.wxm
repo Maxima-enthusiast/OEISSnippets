@@ -11,23 +11,23 @@ block([nmax: 100],
 algebraic: true, local(coeff), showtime: true,
 fl: openw(sconcat("terms",nmax, ".txt")),
 coeff(w,m):=
-  block(a: m, p: 0, s: w, vv:[],
-   while a<2*m do
-    (p: p+1, s: ratsimp(1/(s-floor(s))), a: floor(s),
-     if a<2*m then vv: append(vv, [a])),
-   j: floor((p-1)/2),
-   if mod(p,2)=0 then v: [1,0,vv[j+1]] else v: [0,1,1],
-   for i from j thru 1 step(-1) do
-    (h: vv[i], u: [v[1]+h*v[3], v[3], 2*h*v[1]+v[2]+h^2*v[3]], v: u),
-   return(v)),
-   for n from 1 thru nmax do
-    (w: sqrt(n), m: floor(w),
-     if w=m then  b: n else
-      (v: coeff(w,m),  x: v[1], y: v[2], z: v[3], q: mod(z,2),
-       if q=0 then (z: z/2, y: y/2) else x: 2*x,
-       fr: (x*m+y)/z, m: m+z, fr: fr+x, b: m^2+fr),
-      printf( fl, "~d, ", b)),
-      close(fl));
+block(a: m, p: 0, s: w, vv:[],
+while a<2*m do
+(p: p+1, s: ratsimp(1/(s-floor(s))), a: floor(s),
+if a<2*m then vv: append(vv, [a])),
+j: floor((p-1)/2),
+if mod(p,2)=0 then v: [1,0,vv[j+1]] else v: [0,1,1],
+for i from j thru 1 step(-1) do
+(h: vv[i], u: [v[1]+h*v[3], v[3], 2*h*v[1]+v[2]+h^2*v[3]], v: u),
+return(v)),
+for n from 1 thru nmax do
+(w: sqrt(n), m: floor(w),
+if w=m then  b: n else
+(v: coeff(w,m),  x: v[1], y: v[2], z: v[3], q: mod(z,2),
+if q=0 then (z: z/2, y: y/2) else x: 2*x,
+fr: (x*m+y)/z, m: m+z, fr: fr+x, b: m^2+fr),
+printf( fl, "~d, ", b)),
+close(fl));
 /* [wxMaxima: input   end   ] */
 
 

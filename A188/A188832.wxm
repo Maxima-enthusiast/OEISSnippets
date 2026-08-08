@@ -7,7 +7,6 @@ https://oeis.org/A188832
 
 /* [wxMaxima: input   start ] */
 T(n,k):=if n=k then 1 else binomial(n,k)*(1+(-1)^(n-k))*sum((-1)^m*binomial(m+k-1,k-1)*sum(2^(-j)*(sum((j-2*i)^(n-k)*binomial(j,i),i,0,floor((j-1)/2)))*binomial(m,j)*(-1)^((n-k)/2-m+j),j,1,m),m,1,n-k);
-
 /* [wxMaxima: input   end   ] */
 
 

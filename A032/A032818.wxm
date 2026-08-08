@@ -7,7 +7,6 @@ https://oeis.org/A032818
 
 /* [wxMaxima: input   start ] */
 a[1]:1$ a[2]:4$ a[n]:= if oddp(n) then 6*a[floor(n/2)]+1 else 6*a[floor((n-1)/2)]+4$ makelist(a[n],n,1,45); /* _Bruno Berselli_, May 28 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A189425
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(sum(k!*binomial(m, k-m)*(-1)^(k-m)*stirling1(n, k), k, m, n)/m!, m, 1, n);
-
 /* [wxMaxima: input   end   ] */
 
 

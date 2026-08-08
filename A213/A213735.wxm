@@ -8,7 +8,6 @@ https://oeis.org/A213735
 /* [wxMaxima: input   start ] */
 f1(p, n) := if n = 0 then [p] else [coeff(p, x ^ n), f1(p - expand(product(x + i, i, 1, n) * coeff(p, x^ n)), n - 1)]$
 f(n) := flatten(f1(x ^ n, n))$
-
 /* [wxMaxima: input   end   ] */
 
 

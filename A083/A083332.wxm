@@ -7,7 +7,6 @@ https://oeis.org/A083332
 
 /* [wxMaxima: input   start ] */
 (a[0] : 1, a[1] : 5, a[2] : 14, a[3] : 34, a[n] := 10*a[n - 2] - 16*a[n - 4], makelist(a[n], n, 0, 50));/* _Franck Maminirina Ramaharo_, Nov 12 2018 */
-
 /* [wxMaxima: input   end   ] */
 
 

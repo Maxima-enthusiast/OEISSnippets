@@ -8,7 +8,6 @@ https://oeis.org/A091138
 /* [wxMaxima: input   start ] */
 T(n,m):=if n=m then 1 else 1/2*(binomial(n+m-1,2*m-1)-sum(T(n,i)*T(i,m),i,m+1,n-1));
 makelist(2^(n-1)*T(n,1),n,1,10); /* _Vladimir Kruchinin_, Mar 14 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A201128
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else sum(binomial(n+1,2*k+1)*sum(binomial(j+n-2*k-1,n-2*k-1)*(j+n-2*k)!*2^(-j+2*k)*(-1)^(k+j)*stirling2(n,j+n-2*k),j,0,2*k),k,0,(n)/2)/(n+1); /* _Vladimir Kruchinin_, Feb 03 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

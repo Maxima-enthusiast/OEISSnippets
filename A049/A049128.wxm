@@ -7,7 +7,6 @@ https://oeis.org/A049128
 
 /* [wxMaxima: input   start ] */
 a(n):=1/n*(sum(binomial(n,l)*sum(binomial(i-1,i-2*l)*binomial(n-l,n-i-1),i,1,n-1),l,1,n))+1; /* _Vladimir Kruchinin_, Jun 26 2015 */
-
 /* [wxMaxima: input   end   ] */
 
 

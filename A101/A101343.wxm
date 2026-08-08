@@ -8,7 +8,6 @@ https://oeis.org/A101343
 /* [wxMaxima: input   start ] */
 T(n,k):=if k=0 then Tr(n,k) else if 2*k-1=n then Tr(n,k-1) else Tr(n,k)+Tr(n,k-1);
 Tr(n,i):=((sum(binomial(j+n-2*i-1,n-2*i-1)*(j+n-2*i)!*2^(2*i-j)*(-1)^(j-i)*stirling2(n,j+n-2*i),j,0,2*i))); /* _Vladimir Kruchinin_, May 27 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

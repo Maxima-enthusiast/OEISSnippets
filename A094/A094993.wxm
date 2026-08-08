@@ -7,7 +7,6 @@ https://oeis.org/A094993
 
 /* [wxMaxima: input   start ] */
 A094993(n):=floor(11^n/7^n)$ makelist(A094993(n),n,0,60); /* _Martin Ettl_, Oct 25 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A253190
 
 /* [wxMaxima: input   start ] */
 T(n, m):=if n=m then 1 else sum(binomial(m+k-1, k)*T((n-m)/2, k), k, 1, (n-m)/2);
-
 /* [wxMaxima: input   end   ] */
 
 

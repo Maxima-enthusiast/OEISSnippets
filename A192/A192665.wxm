@@ -7,7 +7,6 @@ https://oeis.org/A192665
 
 /* [wxMaxima: input   start ] */
 makelist(floor(sqrt(binomial(3*n,n)/(2*n+1))),n,0,12);
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A187638
 
 /* [wxMaxima: input   start ] */
 makelist((-1/8)*sum(binomial(2*k,k)^2/(2*k-1)*binomial(2*(n-k),n-k)^2/(2*(n-k)-1),k,0,n),n,1,12);
-
 /* [wxMaxima: input   end   ] */
 
 

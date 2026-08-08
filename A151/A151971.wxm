@@ -7,7 +7,6 @@ https://oeis.org/A151971
 
 /* [wxMaxima: input   start ] */
 makelist((42*n+14*%i^((n-1)*n)-3*(-1)^n-3)/8-7, n, 1, 60); /* _Bruno Berselli_, Aug 06 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A187556
 
 /* [wxMaxima: input   start ] */
 create_list(abs(stirling1(n,k)*stirling2(n,k)),n,0,10,k,0,n);
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A227094
 
 /* [wxMaxima: input   start ] */
 f(n):=sum(binomial(n-k+1,k)*(-1)^k*(n-k+1)!, k, 0, floor((n+1)/2)); a(n):=sum(binomial(n,k)*f(k), k, 0, n); makelist(a(n), n,0,20);
-
 /* [wxMaxima: input   end   ] */
 
 

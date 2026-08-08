@@ -8,7 +8,7 @@ https://oeis.org/A303273
 /* [wxMaxima: input   start ] */
 T(n, k) := binomial(n, 2)+ k*n + 1$
 for n:0 thru 20 do
-    print(makelist(T(n, k), k, 0, 20));
+print(makelist(T(n, k), k, 0, 20));
 /* [wxMaxima: input   end   ] */
 
 

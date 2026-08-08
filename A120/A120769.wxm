@@ -7,15 +7,14 @@ https://oeis.org/A120769
 
 /* [wxMaxima: input   start ] */
 A120769(n) := block(
-        [nbase,nres],
-        if n <=1 then
-                return(1) ,
-        nbas : 2^floor(log(n)/log(2)) ,
-        nres : n-nbas ,
-        (nbas-nres)*A120769(nbas-1-nres)
+[nbase,nres],
+if n <=1 then
+return(1) ,
+nbas : 2^floor(log(n)/log(2)) ,
+nres : n-nbas ,
+(nbas-nres)*A120769(nbas-1-nres)
 )$
 for n : 0 thru 80 do printf(true,"~d,",A120769(n)) ; /* _R. J. Mathar_, Feb 23 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

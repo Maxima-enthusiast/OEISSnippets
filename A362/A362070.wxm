@@ -9,7 +9,6 @@ https://oeis.org/A362070
 K(u):=(b:1, for i:1 while mod(b,u)#0 do (c:i, b:b*(i+1)), c+1);
 a(n):=(s:0, for r:2 thru K(n)-1 do (z:product(j,j,1,r), for q:1 while mod(z,n)#0 do (z:z*product(y,y,q+1,q+r),m:q+1),s:s+m),s+K(n)+1);
 makelist(a(n),n,2,100);
-
 /* [wxMaxima: input   end   ] */
 
 

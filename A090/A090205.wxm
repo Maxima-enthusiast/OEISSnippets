@@ -7,7 +7,6 @@ https://oeis.org/A090205
 
 /* [wxMaxima: input   start ] */
 A090205[n]:=n^n*(n+1)^(n+1)$ makelist(A090205[n],n,1,30); /* _Martin Ettl_, Oct 29 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

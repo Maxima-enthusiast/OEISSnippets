@@ -7,7 +7,6 @@ https://oeis.org/A199749
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else sum((-1)^m*sum((stirling1(k,m)*sum(((-1)^(j-k)*stirling2(n-m+j,j))/((k-j)!*(n-m+j)!),j,1,k)),k,m,n-m),m,1,n);
-
 /* [wxMaxima: input   end   ] */
 
 

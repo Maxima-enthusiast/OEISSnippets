@@ -12,7 +12,6 @@ https://oeis.org/A380153
 (if f(m, k)=0 then
 (s:s+k)), if s=m then
 (n:n+1, print(n , "" , m)))));
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -8,7 +8,6 @@ https://oeis.org/A270367
 /* [wxMaxima: input   start ] */
 makelist((n)!*coeff(taylor(-(((x+1)*%e^x-1)*log(-x*%e^x+x+1))/(x*%e^x-x),x,0,15),x,n),n,0,15);
 a(n):=(n+1)!*sum((k)!*stirling2(n-k,k+1)/(n-k)!/(k+1),k,0,(n-1)/2);
-
 /* [wxMaxima: input   end   ] */
 
 

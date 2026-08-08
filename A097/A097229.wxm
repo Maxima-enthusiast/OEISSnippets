@@ -8,7 +8,6 @@ https://oeis.org/A097229
 /* [wxMaxima: input   start ] */
 N(n,k):=(binomial(n,k-1)*binomial(n,k))/n;
 T(n,k):=if k=0 then 1 else sum(binomial(n, 2*i)*N(i,k),i,1,n); /* _Vladimir Kruchinin_, Jan 08 2022 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -8,7 +8,6 @@ https://oeis.org/A218890
 /* [wxMaxima: input   start ] */
 T(n,k) = ((n + k - 1)*(n + k - 2) - (-1 + (-1)^floor((n + k)/2))*n + (1 +(-1)^floor((n + k)/2))*k)/2$
 create_list(T(k, n - k), n, 1, 12, k, 1, n - 1); /* _Franck Maminirina Ramaharo_, Dec 13 2018 */
-
 /* [wxMaxima: input   end   ] */
 
 

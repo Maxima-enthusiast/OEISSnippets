@@ -7,7 +7,6 @@ https://oeis.org/A188805
 
 /* [wxMaxima: input   start ] */
 a(n):=n!*sum((-1)^(k+1)*binomial(k,n-k)*3^(2*k-n),k,1,n);
-
 /* [wxMaxima: input   end   ] */
 
 

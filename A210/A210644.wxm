@@ -7,7 +7,6 @@ https://oeis.org/A210644
 
 /* [wxMaxima: input   start ] */
 fpprec:90; ev(bfloat(cos(2*%pi/17)));
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A189488
 
 /* [wxMaxima: input   start ] */
 a(n):=n!*sum(sum((k^(n-k)*sum(binomial(j,-3*m+k+2*j)*binomial(m,j),j,0,m))/(n-k)!,k,m,n)/m!,m,1,n);
-
 /* [wxMaxima: input   end   ] */
 
 

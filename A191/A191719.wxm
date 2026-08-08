@@ -7,7 +7,6 @@ https://oeis.org/A191719
 
 /* [wxMaxima: input   start ] */
 a(n):=n!*sum(((2*m-1)^(n-2*m)*(-1)^(m-1))/(n-2*m+1)!,m,1,(n+1)/2);
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,11 +7,11 @@ https://oeis.org/A386317
 
 /* [wxMaxima: input   start ] */
 (n:1, abundancy(x):=divsum(x)/x,
-     for t:1 thru 500 do
-        (if abundancy(t)>=3/2 and abundancy(t)<2 then
-        (A:append(args(powerset(delete(t,divisors(t)))),[{0}]), b:length(A),
-            for i:1 unless (divsum(t)+apply("+" , args(A[i])))/t=2 or i>=b do j:i,
-               if j>=b-1 then (print(n , "" , t), n:n+1))));
+for t:1 thru 500 do
+(if abundancy(t)>=3/2 and abundancy(t)<2 then
+(A:append(args(powerset(delete(t,divisors(t)))),[{0}]), b:length(A),
+for i:1 unless (divsum(t)+apply("+" , args(A[i])))/t=2 or i>=b do j:i,
+if j>=b-1 then (print(n , "" , t), n:n+1))));
 /* [wxMaxima: input   end   ] */
 
 

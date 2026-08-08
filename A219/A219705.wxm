@@ -7,7 +7,6 @@ https://oeis.org/A219705
 
 /* [wxMaxima: input   start ] */
 fpprec:110; ev(bfloat(cos(log(2)))); /* _Bruno Berselli_, Dec 31 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

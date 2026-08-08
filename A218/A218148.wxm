@@ -7,7 +7,6 @@ https://oeis.org/A218148
 
 /* [wxMaxima: input   start ] */
 A218148(n):= if n=0 then 2 else 2^((6+5*n+n^3)/6)$ makelist(A218148(n),n,0,30); /* _Martin Ettl_, Oct 24 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

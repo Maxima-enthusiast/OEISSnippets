@@ -7,7 +7,6 @@ https://oeis.org/A003017
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(sum(k^(n-k)/(n-k)!*sum(binomial(j,k-3*m+2*j)*(-1)^(k-3*m+2*j)*binomial(m,j),j,0,m),k,m,n),m,1,n); /* _Vladimir Kruchinin_, Aug 20 2010 */
-
 /* [wxMaxima: input   end   ] */
 
 

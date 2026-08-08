@@ -7,7 +7,6 @@ https://oeis.org/A037698
 
 /* [wxMaxima: input   start ] */
 makelist((11*7^(n+1)+(7-(-1)^n)*(25+8*%i^(n*(n+1)))-275)/400, n, 1, 19); /* _Bruno Berselli_, Dec 19 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

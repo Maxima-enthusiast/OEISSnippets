@@ -8,7 +8,6 @@ https://oeis.org/A140986
 /* [wxMaxima: input   start ] */
 A140986(n):=n^8-12*n^7+66*n^6-214*n^5+441*n^4-572*n^3 +423*n^2-133*n$
 makelist(A140986(n),n,0,30); /* _Martin Ettl_, Nov 03 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

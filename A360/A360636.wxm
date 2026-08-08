@@ -7,7 +7,6 @@ https://oeis.org/A360636
 
 /* [wxMaxima: input   start ] */
 T(n,m):=if n<m then 0 else 1/(n+1)*binomial(n+1,m)*if evenp(n-m+1) then 4^(n)*binomial((3*n-m+1)/2-1,n) else binomial((3*n-m)/2,n)*binomial(3*n-m,(3*n-m)/2)/binomial(n-m,(n-m)/2);
-
 /* [wxMaxima: input   end   ] */
 
 

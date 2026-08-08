@@ -7,7 +7,6 @@ https://oeis.org/A191011
 
 /* [wxMaxima: input   start ] */
 a(n):=n!*sum(binomial((n-2)/2,m)*(-1)^(n-m-1)/(n-2*m),m,0,(n-1)/2);
-
 /* [wxMaxima: input   end   ] */
 
 

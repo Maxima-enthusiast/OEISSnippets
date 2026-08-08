@@ -7,7 +7,6 @@ https://oeis.org/A009468
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(((-1)^k*(4*k+2)!*stirling1(n,4*k+2))/(2*k+1)!,k,0,((n-1)/2)); /* _Vladimir Kruchinin_, Jun 28 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -10,11 +10,10 @@ n:2;
 Nnx:(1/n!)*sum((-1)^k*binomial(n+1,k)*(x-k)^n*unit_step(x-k),k,0,n+1);
 assume(x<=0);    print(n!,"N(x)= ",expand(n!*Nnx)," for x<=0");  forget(x<=0);
 for i:0 thru n step 1 do(
-  assume(x>i,x<(i+1)),
-  print(n!,"N(x)= ",expand(n!*Nnx)," for ",i,"<x<",i+1),   forget(x>i,x<(i+1))
-  );
+assume(x>i,x<(i+1)),
+print(n!,"N(x)= ",expand(n!*Nnx)," for ",i,"<x<",i+1),   forget(x>i,x<(i+1))
+);
 assume(x>(n+1)); print(n!,"N(x)= ",expand(n!*Nnx)," for x>",n+1); forget(x>(n+1));
-
 /* [wxMaxima: input   end   ] */
 
 

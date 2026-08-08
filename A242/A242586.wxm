@@ -7,7 +7,6 @@ https://oeis.org/A242586
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(binomial(2*j-1,j)*binomial(n,j),j,0,n);
-
 /* [wxMaxima: input   end   ] */
 
 

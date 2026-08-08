@@ -7,7 +7,6 @@ https://oeis.org/A143689
 
 /* [wxMaxima: input   start ] */
 makelist(binomial(n, 2) + n^2 + 1, n, 0, 100); /* _Franck Maminirina Ramaharo_, Mar 01 2018 */
-
 /* [wxMaxima: input   end   ] */
 
 

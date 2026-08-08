@@ -7,7 +7,6 @@ https://oeis.org/A012024
 
 /* [wxMaxima: input   start ] */
 a(n):=((2*n+1)!*sum(binomial(n-1/2,n-m)*(-1)^(n-m)/(2*m+1)!,m,0,n)); /* _Vladimir Kruchinin_, Jun 16 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -8,7 +8,6 @@ https://oeis.org/A152041
 /* [wxMaxima: input   start ] */
 A152041(n):=n*(n+1)*(7*n^2+7*n+2)/8$
 makelist(A152041(n),n,0,30); /* _Martin Ettl_, Nov 03 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

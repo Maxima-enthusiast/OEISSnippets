@@ -6,8 +6,7 @@ https://oeis.org/A200724
 
 
 /* [wxMaxima: input   start ] */
- makelist(sum((-1)^k*binomial(n-k,k)*35^(n-2*k),k,0,floor(n/2)),n,0,16);
-
+makelist(sum((-1)^k*binomial(n-k,k)*35^(n-2*k),k,0,floor(n/2)),n,0,16);
 /* [wxMaxima: input   end   ] */
 
 

@@ -8,7 +8,6 @@ https://oeis.org/A321119
 /* [wxMaxima: input   start ] */
 a(n) := ((1 - sqrt(3))^n + (1 + sqrt(3))^n)/2^floor((n - 1)/2)$
 makelist(ratsimp(a(n)), n, 0, 50);
-
 /* [wxMaxima: input   end   ] */
 
 

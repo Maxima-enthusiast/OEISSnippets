@@ -13,7 +13,6 @@ u(n):=sum(sum(binomial(j,n-k-j)*7^(2*k-n+j)*binomial(k,j)*(-2)^(-n+k+2*j)*3^(2*(
 b(n):=sum(h(i)*u(n-i),i,1,n);
 a(n):=if n<2 then 0 else b(n-2);
 makelist(a(n),n,0,40); /* _Vladimir Kruchinin_, Sep 20 2014 */
-
 /* [wxMaxima: input   end   ] */
 
 

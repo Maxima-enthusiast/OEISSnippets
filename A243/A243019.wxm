@@ -7,7 +7,6 @@ https://oeis.org/A243019
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(2^(i)*binomial(n,i),i,0,floor((n)/2));
-
 /* [wxMaxima: input   end   ] */
 
 

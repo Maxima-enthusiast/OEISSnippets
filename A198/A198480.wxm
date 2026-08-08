@@ -7,7 +7,6 @@ https://oeis.org/A198480
 
 /* [wxMaxima: input   start ] */
 A198480(n):=2*7^n-1$ makelist(A198480(n),n,0,20); /* _Martin Ettl_, Nov 09 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

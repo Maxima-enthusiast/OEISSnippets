@@ -8,7 +8,6 @@ https://oeis.org/A218742
 /* [wxMaxima: input   start ] */
 A218742(n):=(39^n-1)/38$
 makelist(A218742(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

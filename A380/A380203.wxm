@@ -8,12 +8,11 @@ https://oeis.org/A380203
 /* [wxMaxima: input   start ] */
 block(m:7, aa:makelist(i-1,i,1,m+2), freq:makelist(0,i,1,2^m),
 recursion(t):=  (freq[aa[t]] : freq[aa[t]] + 1,
- if t< m+2 then
-   for k from t-1 thru 1 step -1 do
-     (p:2*aa[t] - aa[k] ,
-     if p> 2^(t-2) then (aa[t+1]:p, recursion(t+1) ) ) ) ,
- recursion(2), freq );
-
+if t< m+2 then
+for k from t-1 thru 1 step -1 do
+(p:2*aa[t] - aa[k] ,
+if p> 2^(t-2) then (aa[t+1]:p, recursion(t+1) ) ) ) ,
+recursion(2), freq );
 /* [wxMaxima: input   end   ] */
 
 

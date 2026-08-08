@@ -7,7 +7,6 @@ https://oeis.org/A071359
 
 /* [wxMaxima: input   start ] */
 makelist(sum(binomial(2*k,k)/(k+1)*sum(binomial(k,i)*binomial(n-i,2*k),i,0,k),k,0,n/2),n,-1,29); /* for a(n+1). _Emanuele Munarini_, May 06 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

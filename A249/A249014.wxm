@@ -7,7 +7,6 @@ https://oeis.org/A249014
 
 /* [wxMaxima: input   start ] */
 makelist(sum(n!/k!*sum(binomial(k,i)*binomial(n+k-i+1,2*k+i+1)/3^i,i,0,k),k,0,n),n,0,12);
-
 /* [wxMaxima: input   end   ] */
 
 

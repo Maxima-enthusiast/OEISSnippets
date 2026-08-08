@@ -10,7 +10,6 @@ A000203(n) := divsum(n) ;
 A048760(n) := (floor(sqrt(n)))^2 ;
 A065734(n) := A048760(A000203(n)) ;
 for n from 1 thru 10 do print(A065734(n)) ; /* _R. J. Mathar_, Feb 13 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

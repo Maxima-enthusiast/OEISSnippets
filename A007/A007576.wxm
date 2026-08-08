@@ -8,7 +8,6 @@ https://oeis.org/A007576
 /* [wxMaxima: input   start ] */
 a(n):=coeff(expand(product(1+x^k+x^(2*k),k,1,n)),x,binomial(n+1,2));
 makelist(a(n),n,0,24);
-
 /* [wxMaxima: input   end   ] */
 
 

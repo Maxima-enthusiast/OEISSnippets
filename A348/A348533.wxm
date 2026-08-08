@@ -9,12 +9,11 @@ https://oeis.org/A348533
 block(k:10, mmax:30, t:1, s:1, T:[1],
 /*Terms T(m,k), m=1 thru mmax */
 for m from 1 thru mmax-1 do(
-    p:  mod(t, k-1),
-    if s>p then e:-p else e:k-1-p,
-    t: (k*t+e)/(k-1), s: 1+mod(s+e-1, t),
-    T:append(T,[t])),
+p:  mod(t, k-1),
+if s>p then e:-p else e:k-1-p,
+t: (k*t+e)/(k-1), s: 1+mod(s+e-1, t),
+T:append(T,[t])),
 return (T));
-
 /* [wxMaxima: input   end   ] */
 
 

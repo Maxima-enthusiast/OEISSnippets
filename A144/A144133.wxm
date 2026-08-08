@@ -7,7 +7,6 @@ https://oeis.org/A144133
 
 /* [wxMaxima: input   start ] */
 makelist(ultraspherical(n,2,3),n,0,24); /* _Emanuele Munarini_, Mar 07 2018 */
-
 /* [wxMaxima: input   end   ] */
 
 

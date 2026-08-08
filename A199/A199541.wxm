@@ -7,7 +7,6 @@ https://oeis.org/A199541
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else (n+1)!^2*sum(2^(n-2*m)*(-1)^((n-m)/2) *sum(2^l*l!*binomial(m,l)*sum((k!*stirling1(l+k,l)*stirling2(n-2*m+l, k))/((l+k)!*(n-2*m+l)!), k,0,n-2*m+l),l,0,m)*bern(m)/(m)!,m,1,n);
-
 /* [wxMaxima: input   end   ] */
 
 

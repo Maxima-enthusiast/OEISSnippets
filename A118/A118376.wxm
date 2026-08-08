@@ -7,7 +7,6 @@ https://oeis.org/A118376
 
 /* [wxMaxima: input   start ] */
 a(n):=sum((-1)^j*2^(n-j-1)*binomial(n,j)*binomial(2*n-2*j-2,n-2*j-1),j,0,(n-1)/2)/n; /* _Vladimir Kruchinin_, Sep 29 2020 */
-
 /* [wxMaxima: input   end   ] */
 
 

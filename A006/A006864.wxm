@@ -7,7 +7,6 @@ https://oeis.org/A006864
 
 /* [wxMaxima: input   start ] */
 a(n):=sum ( sum ( binomial(k,j) *sum (binomial(j, i-j)*2^j *binomial(k-j,n-i-3*(k-j))*(-2)^(4*(k-j)-(n-i)), i,j,n-k+j) , j,0,k) , k,1,n ); /* _Vladimir Kruchinin_, Aug 04 2010 */
-
 /* [wxMaxima: input   end   ] */
 
 

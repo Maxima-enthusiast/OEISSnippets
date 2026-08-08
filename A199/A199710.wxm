@@ -6,8 +6,7 @@ https://oeis.org/A199710
 
 
 /* [wxMaxima: input   start ] */
- makelist(expand(((1+3*sqrt(3))^n+(1-3*sqrt(3))^n)/(2*2^floor(n/2))),n,0,24);
-
+makelist(expand(((1+3*sqrt(3))^n+(1-3*sqrt(3))^n)/(2*2^floor(n/2))),n,0,24);
 /* [wxMaxima: input   end   ] */
 
 

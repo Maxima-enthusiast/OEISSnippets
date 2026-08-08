@@ -7,7 +7,6 @@ https://oeis.org/A188676
 
 /* [wxMaxima: input   start ] */
 makelist(sum(binomial(3*k,k)*(-1)^(n-k),k,0,n),n,0,20);
-
 /* [wxMaxima: input   end   ] */
 
 

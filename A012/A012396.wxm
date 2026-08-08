@@ -7,7 +7,6 @@ https://oeis.org/A012396
 
 /* [wxMaxima: input   start ] */
 a(n):=n!*sum(2^(-k)*k!*sum(((sum((2^(i+k)*stirling1(i+k,k)*binomial(2*j+k-1,i+k-1))/(i+k)!,i,0,2*j))*(-1)^j*stirling1(n-2*j-k,k))/(n-2*j-k)!,j,0,n/2-k),k,1,n); /* _Vladimir Kruchinin_, Jun 01 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

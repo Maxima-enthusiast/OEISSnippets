@@ -7,17 +7,16 @@ https://oeis.org/A119317
 
 /* [wxMaxima: input   start ] */
 A119317(n) := block(
-   if equal(n,1) then
-      return(1),
-   for i : 1 do (
-      idv : listify(divisors(i)),
-      if length(idv) >= n then (
-         if primep(idv[n]) then
-            return(idv[n])
-        )
-     )
+if equal(n,1) then
+return(1),
+for i : 1 do (
+idv : listify(divisors(i)),
+if length(idv) >= n then (
+if primep(idv[n]) then
+return(idv[n])
+)
+)
 )$ /* _R. J. Mathar_, Mar 13 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

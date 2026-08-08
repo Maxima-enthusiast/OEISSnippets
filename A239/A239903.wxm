@@ -24,33 +24,6 @@ a[1,k]:s-1,k:k+1,
 z:z-p
 );
 print(a);
-(MATLAB)
-function [ c ] = catrep(z)
-i=0; x=0; y=0; s=0;
-while z>=(factorial(2*i+1)*(2))/(factorial(i)*factorial(i+2))
-i=i+1;
-end
-y=(factorial(2*i-1)*(2))/(factorial(i-1)*factorial(i+1));
-a=zeros(1,i); a(1,1)=1; k=2; x=z-y; m=1;
-while x>0
-w=0; s=0; p=0;
-while w<=x
-p=w;
-w=w+(factorial(2*i-2*m+s-1)*(s+2))/(factorial(i-1-m)*factorial(i-m+s+1));
-s=s+1;
-end
-m=m+1; a(1,k)=s-1; k=k+1; x=x-p;
-end
-a
-end
-(Scheme)
-(define (A239903_only_upto_16794 n) (if (zero? n) n (A235049 (A071159 (A081291 n))))) ;; Gives correct results only up to 16794.
-;; The following gives correct results all the way up to n=58784.
-(define (A239903 n) (baselist-as-decimal (A239903raw n)))
-(definec (A239903raw n) (if (zero? n) (list) (let loop ((n n) (row (A244160 n)) (col (- (A244160 n) 1)) (srow (- (A244160 n) 1)) (catstring (list 0))) (cond ((or (zero? row) (negative? col)) (reverse! (cdr catstring))) ((> (A009766tr row col) n) (loop n srow (- col 1) (- srow 1) (cons 0 catstring))) (else (loop (- n (A009766tr row col)) (+ row 1) col srow (cons (+ 1 (car catstring)) (cdr catstring))))))))
-(define (baselist-as-decimal lista) (baselist->n 10 lista))
-(define (baselist->n base bex) (let loop ((bex bex) (n 0)) (cond ((null? bex) n) (else (loop (cdr bex) (+ (* n base) (car bex)))))))
-;; From _Antti Karttunen_, Apr 14-19 2014
 /* [wxMaxima: input   end   ] */
 
 

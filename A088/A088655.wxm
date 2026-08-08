@@ -7,10 +7,9 @@ https://oeis.org/A088655
 
 /* [wxMaxima: input   start ] */
 A088655(n) := block(
-        abs(floor((%e/(2-%e))^n))
+abs(floor((%e/(2-%e))^n))
 )$
 for n : 1 thru 25 do print(A088655(n)) ; /* _R. J. Mathar_, Feb 23 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

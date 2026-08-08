@@ -7,7 +7,6 @@ https://oeis.org/A187651
 
 /* [wxMaxima: input   start ] */
 makelist(sum((-1)^(n-k) *binomial(n,k) *stirling2(2*k,k), k,0,n), n,0,12);
-
 /* [wxMaxima: input   end   ] */
 
 

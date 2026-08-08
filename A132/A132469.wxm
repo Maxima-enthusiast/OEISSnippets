@@ -8,7 +8,6 @@ https://oeis.org/A132469
 /* [wxMaxima: input   start ] */
 A132469(n):=(32^n-1)/31$
 makelist(A132469(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

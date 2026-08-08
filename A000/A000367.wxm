@@ -8,7 +8,6 @@ https://oeis.org/A000367
 /* [wxMaxima: input   start ] */
 B(n):=if n=0 then 1 else 2*n*sum((2*n+k-2)!*sum(((-1)^(j+1)*stirling1(2*n+j,j))/ ((k-j)!*(2*n+j)!),j,1,k),k,0,2*n);
 makelist(num(B(n)),n,0,10); /* _Vladimir Kruchinin_, Mar 15 2013, fixed by _Vaclav Kotesovec_, Oct 22 2014 */
-
 /* [wxMaxima: input   end   ] */
 
 

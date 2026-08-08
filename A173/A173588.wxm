@@ -9,7 +9,6 @@ https://oeis.org/A173588
 T(n, k) := k^n*chebyshev_u(n, (1/k + k)/2)$
 create_list(T(n - k + 1, k), n, 0, 12, k, 1, n + 1);
 /* _Franck Maminirina Ramaharo_, Jan 18 2019 */
-
 /* [wxMaxima: input   end   ] */
 
 

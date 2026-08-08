@@ -7,7 +7,6 @@ https://oeis.org/A195241
 
 /* [wxMaxima: input   start ] */
 makelist(coeff(taylor((1-x+19*x^3-3*x^4)/(1-x)^3, x, 0, n), x, n), n, 0, 43);
-
 /* [wxMaxima: input   end   ] */
 
 

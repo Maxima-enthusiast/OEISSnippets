@@ -7,7 +7,7 @@ https://oeis.org/A056594
 
 /* [wxMaxima: input   start ] */
 A056594(n) := block(
-        [1,0,-1,0][1+mod(n,4)]
+[1,0,-1,0][1+mod(n,4)]
 )$ /* _R. J. Mathar_, Mar 19 2012 */
 /* [wxMaxima: input   end   ] */
 

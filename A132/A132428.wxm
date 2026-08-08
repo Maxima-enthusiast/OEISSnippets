@@ -7,7 +7,6 @@ https://oeis.org/A132428
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1  else sum(sum(binomial(i-1,k-1)*binomial(i,n-i),i,k,n)*a(k-1),k,1,n); /* _Vladimir Kruchinin_, May 02 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

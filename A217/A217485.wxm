@@ -9,7 +9,6 @@ https://oeis.org/A217485
 t(n):=sum(stirling2(n,k)*k!,k,0,n);
 c(n):=sum(binomial(n,k)*2^k*t(k),k,0,n);
 makelist(sum(c(k)*c(n-k),k,0,n),n,0,40);
-
 /* [wxMaxima: input   end   ] */
 
 

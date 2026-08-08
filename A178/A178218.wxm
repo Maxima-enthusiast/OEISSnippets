@@ -9,7 +9,6 @@ https://oeis.org/A178218
 A178218[1]:1$
 A178218[n]:=n*(n+1)-A178218[n-1]$
 makelist(A178218[n],n,1,30); /* _Martin Ettl_, Nov 01 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

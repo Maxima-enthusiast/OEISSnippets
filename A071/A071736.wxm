@@ -7,7 +7,6 @@ https://oeis.org/A071736
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else 3*binomial(2*n,n)*(5*n^2+3*n+4)/((n+1)*(n+2)*(n+3)); /* _Tani Akinari_, Aug 03 2025 */
-
 /* [wxMaxima: input   end   ] */
 
 

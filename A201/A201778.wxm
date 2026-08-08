@@ -10,7 +10,6 @@ array(BB,100,100);
 fillarray (BB, makelist (-1, i, 1, 1000));
 T(n,m):=if BB[n,m]=-1 then BB[n,m]:(if n=m then 1 else sum(T(n-m,k)*m*binomial(2*k+m-1,k+m-1)/(k+m)-binomial(n-1,k+m-2)*T(k+m-1,m),k,1,n-m)) else BB[n,m];
 makelist(T(n,1),n,1,27);
-
 /* [wxMaxima: input   end   ] */
 
 

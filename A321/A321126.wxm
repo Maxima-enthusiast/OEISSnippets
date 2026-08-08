@@ -7,7 +7,6 @@ https://oeis.org/A321126
 
 /* [wxMaxima: input   start ] */
 create_list(max(k + 1, n - 1, n - k + 1), n, 0, 10, k, 0, n);
-
 /* [wxMaxima: input   end   ] */
 
 

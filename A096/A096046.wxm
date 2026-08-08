@@ -7,7 +7,6 @@ https://oeis.org/A096046
 
 /* [wxMaxima: input   start ] */
 A096046(n):=(1/4)*(7*9^n-3)$ makelist(A096046(n),n,0,30); /* _Martin Ettl_, Nov 13 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

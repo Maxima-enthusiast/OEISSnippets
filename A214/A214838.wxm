@@ -8,7 +8,6 @@ https://oeis.org/A214838
 /* [wxMaxima: input   start ] */
 t[n]:=((5-2*sqrt(2))*(1+(-1)^n*sqrt(2))^(2*floor(n/2))+(5+2*sqrt(2))*(1-(-1)^n*sqrt(2))^(2*floor(n/2))-2)/4$
 makelist(expand(t[n]*(t[n]+1)/2), n, 1, 25); /* _Bruno Berselli_, Mar 08 2013 */
-
 /* [wxMaxima: input   end   ] */
 
 

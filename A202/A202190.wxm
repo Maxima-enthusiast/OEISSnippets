@@ -7,7 +7,6 @@ https://oeis.org/A202190
 
 /* [wxMaxima: input   start ] */
 T(n,m):=(n)!/(m)!*sum(k!*sum((stirling1(i,k)*binomial(k,n-i-m))/i!,i,k,n-m)*m^k/k!,k,0,n-m);
-
 /* [wxMaxima: input   end   ] */
 
 

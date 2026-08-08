@@ -7,7 +7,6 @@ https://oeis.org/A245029
 
 /* [wxMaxima: input   start ] */
 divisors(3^36-1);
-
 /* [wxMaxima: input   end   ] */
 
 

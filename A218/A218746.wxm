@@ -8,7 +8,6 @@ https://oeis.org/A218746
 /* [wxMaxima: input   start ] */
 A218746(n):=(43^n-1)/42$
 makelist(A218746(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

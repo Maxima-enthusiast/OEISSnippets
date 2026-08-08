@@ -7,7 +7,6 @@ https://oeis.org/A009458
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(((-1)^(k-1)*2*k*stirling1(n,2*k)),k,1,n/2); /* _Vladimir Kruchinin_, Jun 28 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

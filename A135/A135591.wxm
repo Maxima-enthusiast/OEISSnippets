@@ -7,7 +7,6 @@ https://oeis.org/A135591
 
 /* [wxMaxima: input   start ] */
 max:1000; f:makelist(0,i,1,max); apr:makelist(0, i, 0, max); f[1]:1; apr[2]:1; for n:2 thru max do block(f[n]:apr[divsum(n,0)], apr[f[n]+1]:apr[f[n]+1]+1);
-
 /* [wxMaxima: input   end   ] */
 
 

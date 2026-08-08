@@ -7,7 +7,6 @@ https://oeis.org/A182969
 
 /* [wxMaxima: input   start ] */
 T(n,m):=if n=m then 1 else m/n*sum(sum(T(n-m,i)*k/i*binomial(2*i-k-1,i-1),i,k,n-m)*binomial(n+k-1,n-1),k,1,n-m); makelist(T(n,1),n,1,10); /* _Vladimir Kruchinin_, May 07 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

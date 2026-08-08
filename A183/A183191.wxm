@@ -7,7 +7,6 @@ https://oeis.org/A183191
 
 /* [wxMaxima: input   start ] */
 T(n,i):=sum(binomial(k+i-1,i-1)*sum(binomial(k,r)*sum(binomial(r,m)*sum(binomial(j,-r+n-m-k-j-i)*binomial(m,j)*2^(-r+n-m-k-j-i),j,0,m),m,0,r),r,0,k),k,0,n-i);
-
 /* [wxMaxima: input   end   ] */
 
 

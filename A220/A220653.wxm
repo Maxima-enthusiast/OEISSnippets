@@ -7,7 +7,6 @@ https://oeis.org/A220653
 
 /* [wxMaxima: input   start ] */
 A220653(n):=n^11+11*n+11^n$ makelist(A220653(n),n,0,20); /* _Martin Ettl_, Dec 17 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

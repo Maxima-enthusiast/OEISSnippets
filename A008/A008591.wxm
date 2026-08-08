@@ -7,7 +7,6 @@ https://oeis.org/A008591
 
 /* [wxMaxima: input   start ] */
 makelist(9*n,n,0,20); /* _Martin Ettl_, Dec 17 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

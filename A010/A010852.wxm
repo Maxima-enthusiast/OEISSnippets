@@ -8,7 +8,6 @@ https://oeis.org/A010852
 /* [wxMaxima: input   start ] */
 A010852:13$
 makelist(A010852,n,0,30); /* _Martin Ettl_, Nov 08 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

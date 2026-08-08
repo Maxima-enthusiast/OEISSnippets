@@ -7,7 +7,6 @@ https://oeis.org/A202155
 
 /* [wxMaxima: input   start ] */
 makelist(expand(((18+5*sqrt(13))^(2*n-1)+(18-5*sqrt(13))^(2*n-1))/2), n, 1, 12);
-
 /* [wxMaxima: input   end   ] */
 
 

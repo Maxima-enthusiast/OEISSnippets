@@ -7,7 +7,6 @@ https://oeis.org/A171883
 
 /* [wxMaxima: input   start ] */
 n:3 $ l:10^100 $ print(n) $ while (n<l) do ( n:n^3, n:next_prime(n), print(n) );
-
 /* [wxMaxima: input   end   ] */
 
 

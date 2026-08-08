@@ -8,7 +8,6 @@ https://oeis.org/A187666
 /* [wxMaxima: input   start ] */
 L(n):= if n=0 then 1 else binomial(2*n-1,n-1)*(2*n)!/n!;
 makelist(sum(binomial(n,k)*L(k)*abs(stirling1(2*n-2*k,n-k)),k,0,n),n,0,12);
-
 /* [wxMaxima: input   end   ] */
 
 

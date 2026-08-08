@@ -8,7 +8,6 @@ https://oeis.org/A306210
 /* [wxMaxima: input   start ] */
 T(n, k) := binomial(n + k, n) - binomial(n + floor(k/2), n) + 1$
 create_list(T(k, n - k), n, 0, 20, k, 0, n);
-
 /* [wxMaxima: input   end   ] */
 
 

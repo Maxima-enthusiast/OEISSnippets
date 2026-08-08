@@ -15,11 +15,11 @@ b(n,m):=if n<m then 0 else if m=1 then 1 else b(n-1,m-1)+b(n-m,m);
 /* unranking partitions(n,m) , num - numbers partitions of lexicographic order */
 array(pa,10);
 gen_partitions(n,m,num,pos):= if n<m then return else
-               if m=1 then pa[pos]:n else
-               if num<b(n-1,m-1) then (pa[pos]:1, gen_partitions(n-1,m-1,num,pos+1)) else
-               if num<b(n-m,m)+b(n-1,m-1) then
-                (gen_partitions(n-m,m,num-b(n-1,m-1),pos),
-                  for i:0 thru m-1 do pa[i+pos]:pa[i+pos]+1);
+if m=1 then pa[pos]:n else
+if num<b(n-1,m-1) then (pa[pos]:1, gen_partitions(n-1,m-1,num,pos+1)) else
+if num<b(n-m,m)+b(n-1,m-1) then
+(gen_partitions(n-m,m,num-b(n-1,m-1),pos),
+for i:0 thru m-1 do pa[i+pos]:pa[i+pos]+1);
 /* solve differential equation A'(x)=G(A(x)), G(x)=g(0)+g(1)*x+g(2)^x^2+...*/
 /* gcoeff(n)=g(n) */
 Solve(n,gcoeff):=block([s,h,num],s:0,for num:0 thru b(2*n-1,n)-1 do (

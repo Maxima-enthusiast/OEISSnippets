@@ -8,7 +8,6 @@ https://oeis.org/A182015
 /* [wxMaxima: input   start ] */
 M(n):=coeff(expand((1+x+x^2)^(n+1)),x^n)/(n+1);
 makelist(sum((n-i+1)*M(i),i,0,n)-sum((n-2*i)*M(i),i,0,floor(n/2)),n,0,30);
-
 /* [wxMaxima: input   end   ] */
 
 

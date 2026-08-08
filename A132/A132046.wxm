@@ -8,7 +8,6 @@ https://oeis.org/A132046
 /* [wxMaxima: input   start ] */
 T(n, k) := if k = 0 or k = n then 1 else 2*binomial(n, k)$
 create_list(T(n, k), n, 0, 20, k, 0, n); /* _Franck Maminirina Ramaharo_, Jan 03 2019 */
-
 /* [wxMaxima: input   end   ] */
 
 

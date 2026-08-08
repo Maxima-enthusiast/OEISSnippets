@@ -8,7 +8,6 @@ https://oeis.org/A187888
 /* [wxMaxima: input   start ] */
 M(n,k):=pochhammer(n,k)/k!;
 create_list(sum(M(k,n-k-i)*binomial(2*i,i),i,0,n-k),n,0,8,k,0,n);
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A187648
 
 /* [wxMaxima: input   start ] */
 makelist(sum(abs(stirling1(2*k,k)), k,0,n), n,0,12);
-
 /* [wxMaxima: input   end   ] */
 
 

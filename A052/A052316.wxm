@@ -7,7 +7,6 @@ https://oeis.org/A052316
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=1 then 1 else sum(j^(n-1)*2^j*(-1)^(n-j)*binomial(n,j),j,1,n); /* _Vladimir Kruchinin_, Jan 24 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

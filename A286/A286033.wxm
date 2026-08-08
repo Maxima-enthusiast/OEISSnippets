@@ -7,7 +7,6 @@ https://oeis.org/A286033
 
 /* [wxMaxima: input   start ] */
 a(n):=-sum((-1)^k*binomial(2*n,n-k)*(fib(2*k+1)+fib(2*k-1)),k,1,n); /* _Vladimir Kruchinin_, Jan 18 2025 */
-
 /* [wxMaxima: input   end   ] */
 
 

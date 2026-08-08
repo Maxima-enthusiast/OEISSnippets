@@ -8,7 +8,7 @@ https://oeis.org/A059385
 /* [wxMaxima: input   start ] */
 a(n):=b(2*n);
 b(n):=((-1)^n+1)/4*sum(((sum(((sum((j-2*i)^n*binomial(j,i),i,0,j))*(-1)^(k-j)*binomial(k,j))/2^(j),j,1,k))*(1-(-1)^k)/(k!)),k,1,n/2);
-  /* _Vladimir Kruchinin_, Apr 23 2011 */
+/* _Vladimir Kruchinin_, Apr 23 2011 */
 /* [wxMaxima: input   end   ] */
 
 

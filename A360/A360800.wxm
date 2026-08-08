@@ -7,12 +7,11 @@ https://oeis.org/A360800
 
 /* [wxMaxima: input   start ] */
 block(kmax: 100, a:[],
- oddsum(y):= block(su1:0, su2:0, pold:0, ok: true,
-  while y>0 and ok do(p:mod(y,2), y:(y-p)/2,
-   if p=1 then(if pold=0 and su2=1 then ok:false, su1:1-su1, su2:0)
-   elseif p=0 then su2:1-su2, pold:p), return(is(ok and su1=1))),
+oddsum(y):= block(su1:0, su2:0, pold:0, ok: true,
+while y>0 and ok do(p:mod(y,2), y:(y-p)/2,
+if p=1 then(if pold=0 and su2=1 then ok:false, su1:1-su1, su2:0)
+elseif p=0 then su2:1-su2, pold:p), return(is(ok and su1=1))),
 for k from 1 thru kmax do if oddsum(k) then a:append(a,[k]),a);
-
 /* [wxMaxima: input   end   ] */
 
 

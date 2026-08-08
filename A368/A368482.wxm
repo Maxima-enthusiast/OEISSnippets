@@ -6,22 +6,21 @@ https://oeis.org/A368482
 
 
 /* [wxMaxima: input   start ] */
- (Maxima) N : 6$ Len : 12$     /* Somos-N, N >= 2, Len = length of the calculated lists */
+(Maxima) N : 6$ Len : 12$     /* Somos-N, N >= 2, Len = length of the calculated lists */
 NofRT : floor (N / 2)$  /* number of terms in a Somos-N recurrence */
 S : makelist (0, Len)$
 G : makelist (0, Len)$ DegG : makelist (0, Len)$   /* G, the numerator of s() */
 for i: 1 thru N do ( S[i] : s[i - 1], G[i] : 1, DegG[i] : 0 )$
 for i: N + 1 thru Len do (
-   SS : 0,
-   for j : 1 thru NofRT do (
-      SS : SS + S[i - j] * S[i - N + j]
-   ),
-   S[i] : factor (SS / S[i - N]), G[i] : num (S[i]),
-   /* for N > 3 G is a homogenous polynomial, take the first monomial to determine the degree */
-   Mon : G[i], if N > 3 then ( Mon : args (Mon)[1] ),
-   DegG[i] : 0, for j : 0 thru N - 1 do ( DegG[i] : DegG[i] + hipow (Mon, s[j]) )
+SS : 0,
+for j : 1 thru NofRT do (
+SS : SS + S[i - j] * S[i - N + j]
+),
+S[i] : factor (SS / S[i - N]), G[i] : num (S[i]),
+/* for N > 3 G is a homogenous polynomial, take the first monomial to determine the degree */
+Mon : G[i], if N > 3 then ( Mon : args (Mon)[1] ),
+DegG[i] : 0, for j : 0 thru N - 1 do ( DegG[i] : DegG[i] + hipow (Mon, s[j]) )
 )$ DegG;
-
 /* [wxMaxima: input   end   ] */
 
 

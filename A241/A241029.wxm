@@ -7,7 +7,6 @@ https://oeis.org/A241029
 
 /* [wxMaxima: input   start ] */
 makelist((1+2^n)*(1+11^n), n, 0, 20); /* _Bruno Berselli_, Apr 17 2014 */
-
 /* [wxMaxima: input   end   ] */
 
 

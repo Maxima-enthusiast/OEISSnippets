@@ -7,7 +7,6 @@ https://oeis.org/A060905
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(sum(k^(n-k)/(n-k)!*binomial(m,k-m)*(1/2)^(k-m),k,m,n)/m!,m,1,n); /* _Vladimir Kruchinin_, Aug 20 2010 */
-
 /* [wxMaxima: input   end   ] */
 
 

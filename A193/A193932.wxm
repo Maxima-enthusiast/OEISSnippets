@@ -7,7 +7,6 @@ https://oeis.org/A193932
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else n!*sum(sum((-1)^i*binomial(k, k-i)*binomial(n-6*i-1, k-1), i, 0, (n-k)/6)/k!, k, 1, n);
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A025277
 
 /* [wxMaxima: input   start ] */
 a(n):=sum((binomial(n-2*m-3,m)*binomial(2*m+1,n-2*m-3))/(2*m+1),m,0,(n-3)/2); /* _Vladimir Kruchinin_, Nov 21 2014 */
-
 /* [wxMaxima: input   end   ] */
 
 

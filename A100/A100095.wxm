@@ -7,7 +7,6 @@ https://oeis.org/A100095
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(4^(j)*binomial((n-1)/2,j),j,0,(n-1)/2); /* _Vladimir Kruchinin_, May 31 2014 */
-
 /* [wxMaxima: input   end   ] */
 
 

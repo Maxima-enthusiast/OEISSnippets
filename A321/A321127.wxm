@@ -8,7 +8,6 @@ https://oeis.org/A321127
 /* [wxMaxima: input   start ] */
 T(n, k) := if k = 1 then n^2 + 1 else  ((4*k - 2*n)/(k + 1))*binomial(n + 1, k) + binomial(2*n, k + 1)$
 create_list(T(n, k), n, 0, 12, k, 0, max(2*n - 1, n + 1));
-
 /* [wxMaxima: input   end   ] */
 
 

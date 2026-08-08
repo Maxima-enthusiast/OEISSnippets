@@ -7,7 +7,6 @@ https://oeis.org/A192664
 
 /* [wxMaxima: input   start ] */
 makelist(floor(sqrt(binomial(2*n+1,n))),n,0,24);
-
 /* [wxMaxima: input   end   ] */
 
 

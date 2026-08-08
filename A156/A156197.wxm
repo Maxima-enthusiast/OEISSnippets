@@ -8,7 +8,6 @@ https://oeis.org/A156197
 /* [wxMaxima: input   start ] */
 A009766(n, k) := binomial(n + k, n)*(n - k + 1)/(n + 1)$
 create_list(A009766(n, k) + A009766(n, n - k), n, 0, 10, k, 0, n); /* _Franck Maminirina Ramaharo_, Dec 11 2018 */
-
 /* [wxMaxima: input   end   ] */
 
 

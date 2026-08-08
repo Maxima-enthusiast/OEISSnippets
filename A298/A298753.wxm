@@ -7,7 +7,6 @@ https://oeis.org/A298753
 
 /* [wxMaxima: input   start ] */
 T(n,m):=if n<m then 0 else if n=m then 1 else sum(k*k!*(-1)^(m+k)*stirling2(m,k)* binomial(2*n+k-2*m-1,n-m)/(n+k-m),k,1,m);
-
 /* [wxMaxima: input   end   ] */
 
 

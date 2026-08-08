@@ -6,8 +6,8 @@ https://oeis.org/A008459
 
 
 /* [wxMaxima: input   start ] */
-create_list(binomial(n,k)^2,n,0,12,k,0,n); /* _Emanuele Munarini_, Mar 11 2011 */
-T(n,k):=if n=k then 1 else if k=0 then 1 else T(n-1,k)*(n+k)/(n-k)+T(n-1,k-1); /* _Vladimir Kruchinin_, Oct 18 2014 */
+A(x,y):=1/sqrt(1-2*x-2*x*y+x^2-2*x^2*y+x^2*y^2);
+taylor(x*A(x,y)+x*y*A(x,y)+sqrt(1+4*x^2*y*A(x,y)^2),x,0,7,y,0,7); /* _Vladimir Kruchinin_, Oct 23 2020 */
 /* [wxMaxima: input   end   ] */
 
 

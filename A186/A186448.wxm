@@ -7,7 +7,6 @@ https://oeis.org/A186448
 
 /* [wxMaxima: input   start ] */
 a(n):=n!/(2*n+2)*sum(binomial(n+1,m)*sum(m^(i)/i!*binomial(n-m+1,n-i),i,0,n),m,1,n)+(n+1)^(n-1)/2+(n)!/2;
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A321124
 
 /* [wxMaxima: input   start ] */
 makelist((4*n^3 - 6*n^2 + 14*n + 3)/3, n, 0, 50);
-
 /* [wxMaxima: input   end   ] */
 
 

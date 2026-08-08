@@ -8,7 +8,6 @@ https://oeis.org/A220113
 /* [wxMaxima: input   start ] */
 T(n,m):=if n=m then 1 else 1/2*(2^(n-2*m)*(((-1)^(n-m)+1)*sum((2*i-m)^n*binomial(m,i)*(-1)^((n+m)/2-i),i,0,m/2))/m!-sum(T(n,i)*T(i,m),i,m+1,n-1));
 makelist(((T3(2*n-1,1))),n,1,7);
-
 /* [wxMaxima: input   end   ] */
 
 

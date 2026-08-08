@@ -7,7 +7,6 @@ https://oeis.org/A049118
 
 /* [wxMaxima: input   start ] */
 a(n,k):=2^(n+k)*n!/(4^n*n*k!)*sum((j+k)*2^(j)*binomial(j+k-1, k-1)*binomial(2*n-j-k-1, n-1), j, 0, n-k); makelist(sum(a(n,k),k,0,n),n,1,12); /* _Emanuele Munarini_, Jun 01 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

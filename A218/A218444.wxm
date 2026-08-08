@@ -8,7 +8,6 @@ https://oeis.org/A218444
 /* [wxMaxima: input   start ] */
 A218444[n]:=sum(floor(n/(5*k+1)),k,0,n)$
 makelist(A218444[n],n,0,80); /* _Martin Ettl_, Oct 29 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

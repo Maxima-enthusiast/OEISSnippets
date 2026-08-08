@@ -8,7 +8,6 @@ https://oeis.org/A218730
 /* [wxMaxima: input   start ] */
 A218730(n):=(27^n-1)/26$
 makelist(A218730(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

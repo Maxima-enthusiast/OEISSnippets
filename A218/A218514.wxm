@@ -8,7 +8,6 @@ https://oeis.org/A218514
 /* [wxMaxima: input   start ] */
 A218514(n):=n*(n-1)*(n-2)*(n-3)*(n^8 -24*n^7 +260*n^6 -1670*n^5 +6999*n^4 -19698*n^3 +36408*n^2 -40240*n +20170)$
 makelist(A218514(n), n, 0, 30); /* _Martin Ettl_, Nov 03 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

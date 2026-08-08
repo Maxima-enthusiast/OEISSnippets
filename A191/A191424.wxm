@@ -7,7 +7,6 @@ https://oeis.org/A191424
 
 /* [wxMaxima: input   start ] */
 a(n):=n!*sum(sum((stirling2(k,m)*binomial(k,n-2*k)*3^(2*k-n)*2^(-k))/k!,k,m,n),m,1,n);
-
 /* [wxMaxima: input   end   ] */
 
 

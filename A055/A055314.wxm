@@ -7,11 +7,11 @@ https://oeis.org/A055314
 
 /* [wxMaxima: input   start ] */
 A055314(n,k) := block(
-        n!/k!*stirling2(n-2,n-k)
+n!/k!*stirling2(n-2,n-k)
 )$
 for n : 2 thru 10 do
-        for k : 2 thru n do
-                print(A055314(n,k)," ") ; /* _R. J. Mathar_, Mar 06 2012 */
+for k : 2 thru n do
+print(A055314(n,k)," ") ; /* _R. J. Mathar_, Mar 06 2012 */
 /* [wxMaxima: input   end   ] */
 
 

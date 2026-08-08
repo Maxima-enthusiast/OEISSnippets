@@ -8,7 +8,6 @@ https://oeis.org/A076782
 /* [wxMaxima: input   start ] */
 A076782(n):=10^(n^2)$
 makelist(A076782(n),n,0,10); /* _Martin Ettl_, Nov 08 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

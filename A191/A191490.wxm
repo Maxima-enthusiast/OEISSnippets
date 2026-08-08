@@ -9,7 +9,6 @@ https://oeis.org/A191490
 P[0]:1$
 P[n]:=(1+(n-1)*q)*P[n-1]+q^n$
 create_list(coeff(expand(P[n]),q^k),n,0,12,k,0,n);
-
 /* [wxMaxima: input   end   ] */
 
 

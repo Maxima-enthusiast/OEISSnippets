@@ -8,7 +8,6 @@ https://oeis.org/A213169
 /* [wxMaxima: input   start ] */
 A213169(n):=n!+n+1$
 makelist(A213169(n),n,0,30); /* _Martin Ettl_, Nov 03 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,6 @@ https://oeis.org/A186420
 
 /* [wxMaxima: input   start ] */
 makelist(binomial(2*n,n)^4,n,0,40);
-
 /* [wxMaxima: input   end   ] */
 
 

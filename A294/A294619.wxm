@@ -7,7 +7,6 @@ https://oeis.org/A294619
 
 /* [wxMaxima: input   start ] */
 makelist((1 + (-1)^((n + 1)!))/2 + kron_delta(n, 2), n, 0, 100);
-
 /* [wxMaxima: input   end   ] */
 
 

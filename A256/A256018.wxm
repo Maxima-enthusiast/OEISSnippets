@@ -6,7 +6,7 @@ https://oeis.org/A256018
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(k^2*bern(k-1)*binomial(2*n-1,k)*stirling2(2*n-k,n),k,1,n),n,1,30);
+makelist(if n=1 then 1 else -sum(k^2*bern(k-1)*binomial(2*n-1, k-1)*stirling2(2*n-k, n), k, 1, n), n, 1, 30); /* _Vladimir Kruchinin_, Jun 02 2015 */
 /* [wxMaxima: input   end   ] */
 
 

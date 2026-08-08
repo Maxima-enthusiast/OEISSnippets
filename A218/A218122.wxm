@@ -11,7 +11,6 @@ a[1]:1$
 a[2]:1$
 a[n]:=a[n-2]^a[n-1]+a[n-3]$
 makelist(a[n],n,0,7); /* _Martin Ettl_, Oct 29 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

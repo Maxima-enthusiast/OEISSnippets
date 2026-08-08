@@ -7,7 +7,6 @@ https://oeis.org/A013999
 
 /* [wxMaxima: input   start ] */
 makelist(sum(binomial(n-k+1,k)*(-1)^k*(n-k+1)!,k,0,floor((n+1)/2)),n,0,20); /* _Emanuele Munarini_, Jul 01 2013 */
-
 /* [wxMaxima: input   end   ] */
 
 

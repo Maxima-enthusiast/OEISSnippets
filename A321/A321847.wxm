@@ -7,7 +7,6 @@ https://oeis.org/A321847
 
 /* [wxMaxima: input   start ] */
 (a[0] : 1, a[1] : 1, a[n] := (8*n - 7)*a[n-1] - 16*(n-2)*(n-1)*a[n-2], makelist(a[n], n, 0, 20)); /* _Franck Maminirina Ramaharo_, Nov 27 2018 */
-
 /* [wxMaxima: input   end   ] */
 
 

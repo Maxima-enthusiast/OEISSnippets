@@ -7,8 +7,7 @@ https://oeis.org/A039621
 
 /* [wxMaxima: input   start ] */
 T(n,k,m):=if k<0 or n<0 then 0 else if k=0 then 1 else m*T(n,k-1,m)+T(n-1,k,m+1);
-a(n,k):=if n<k then 0 else  (-1)^(n-k)*T(k,n-k,n-k); /* _Vladimir Kruchinin_, Mar 07 2020
-
+a(n,k):=if n<k then 0 else  (-1)^(n-k)*T(k,n-k,n-k); /* _Vladimir Kruchinin_, Mar 07 2020 */
 /* [wxMaxima: input   end   ] */
 
 

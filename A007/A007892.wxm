@@ -7,7 +7,6 @@ https://oeis.org/A007892
 
 /* [wxMaxima: input   start ] */
 makelist(((2*n-6*(-1)^((n-1)*n/2)-3*(-1)^n+9)/8)^2,n,1,60); /* _Bruno Berselli_, Sep 28 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

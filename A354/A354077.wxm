@@ -7,7 +7,6 @@ https://oeis.org/A354077
 
 /* [wxMaxima: input   start ] */
 fpprec: 100$ ev(bfloat((%pi/2)+sqrt(3)-1));
-
 /* [wxMaxima: input   end   ] */
 
 

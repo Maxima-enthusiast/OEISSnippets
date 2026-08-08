@@ -9,7 +9,6 @@ https://oeis.org/A159982
 T(n, k) := num(2*%pi*sum(((-1)^j*n*(k + j + 2)*(n + k + j)!*(k + j)!^2)/((n - k - j - 1)!*(2*k + j + 1)!*j!*gamma(k + j + 3/2)*gamma(k + j + 5/2)), j, 0, n - k - 1))$
 create_list(T(n, k), n, 1, 20, k, 0, n - 1);
 /* _Franck Maminirina Ramaharo_, Jan 16 2019 */
-
 /* [wxMaxima: input   end   ] */
 
 

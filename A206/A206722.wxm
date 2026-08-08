@@ -7,25 +7,24 @@ https://oeis.org/A206722
 
 /* [wxMaxima: input   start ] */
 prime(n) := block(
-    if n = 1 then
-       return(2)
-    else
-    return(next_prime(prime(n-1)))
+if n = 1 then
+return(2)
+else
+return(next_prime(prime(n-1)))
 )$ /* very slow recursive definition of A000040 */
 A206722(x,n) := block(
-    local(p),
-    p : prime ( n ),
-    for k : 0 do (
-       if p^(k+1) > x and p^k <= x then
-          return(k)
-       )
+local(p),
+p : prime ( n ),
+for k : 0 do (
+if p^(k+1) > x and p^k <= x then
+return(k)
+)
 )$
 for x : 2 thru 20 do (
-    for n : 1 thru 17 do
-      sprint(A206722(x,n)),
-    newline()
+for n : 1 thru 17 do
+sprint(A206722(x,n)),
+newline()
 )$ /* _R. J. Mathar_, Feb 14 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

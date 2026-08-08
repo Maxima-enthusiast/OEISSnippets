@@ -7,7 +7,6 @@ https://oeis.org/A192661
 
 /* [wxMaxima: input   start ] */
 makelist(floor(sqrt(stirling2(2*n,n))),n,0,24);
-
 /* [wxMaxima: input   end   ] */
 
 

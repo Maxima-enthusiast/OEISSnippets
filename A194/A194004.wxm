@@ -7,7 +7,6 @@ https://oeis.org/A194004
 
 /* [wxMaxima: input   start ] */
 a(n):=n!*sum((k-1)!*sum(sum((stirling2(n-2*m,j)*stirling2(m,k-j))/((n-2*m)!*(m!)),m,floor((k-j)/2),(n-j)/2),j,0,k),k,1,n);
-
 /* [wxMaxima: input   end   ] */
 
 

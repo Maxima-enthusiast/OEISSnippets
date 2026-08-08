@@ -7,7 +7,6 @@ https://oeis.org/A071735
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else (2*binomial(2*n+1,n)+5*binomial(2*n-2,n+1))/(n+2); makelist(a(n),n,0,20);  /* _Tani Akinari_, Jul 24 2025 */
-
 /* [wxMaxima: input   end   ] */
 
 

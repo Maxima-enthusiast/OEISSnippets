@@ -7,7 +7,6 @@ https://oeis.org/A272914
 
 /* [wxMaxima: input   start ] */
 makelist((10*n-3*(-1)^n-5)^6/64, n, 1, 30);
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -8,7 +8,6 @@ https://oeis.org/A279136
 /* [wxMaxima: input   start ] */
 (3*x^3+sqrt(-3*x^2-2*x+1)*(x^2+4*x-3)-3*x^2-7*x+3)/(sqrt(-3*x^2-2*x+1)*(2*x^3-x^2-2*x+1)-3*x^3+x^2+3*x-1);
 taylor(%,x,0,27);
-
 /* [wxMaxima: input   end   ] */
 
 

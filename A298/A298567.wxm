@@ -7,7 +7,6 @@ https://oeis.org/A298567
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(binomial(n-k,2*k-n)^2,k,0,2*n/3);
-
 /* [wxMaxima: input   end   ] */
 
 

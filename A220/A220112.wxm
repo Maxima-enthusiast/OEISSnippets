@@ -8,7 +8,6 @@ https://oeis.org/A220112
 /* [wxMaxima: input   start ] */
 T(n,m):=if n=m then 1 else 1/2*(4^(n-m)*(-1)^(n-m)*stirling1(n,m)-sum(T(n,i)*T(i,m),i,m+1,n-1));
 makelist((T(n,1)),n,1,10);
-
 /* [wxMaxima: input   end   ] */
 
 

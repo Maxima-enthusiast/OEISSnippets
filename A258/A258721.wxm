@@ -7,7 +7,6 @@ https://oeis.org/A258721
 
 /* [wxMaxima: input   start ] */
 makelist(24*n^2+52*n+29, n, 0, 50); /* _Bruno Berselli_, Jun 08 2015 */
-
 /* [wxMaxima: input   end   ] */
 
 

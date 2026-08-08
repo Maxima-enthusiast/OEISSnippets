@@ -10,7 +10,6 @@ gf : taylor((exp(z*(x - 1)*(x + 1)) + x)/(x + 1)*sqrt((1 - x^2)/(exp(2*z*(x - 1)
 row(x, n) := n!*ratcoef(gf, z, n)$
 create_list(ratcoef(row(x, n), x, k), n, 1, 20, k, 1, hipow(row(x, n), x));
 /* _Franck Maminirina Ramaharo_, Feb 05 2019 */
-
 /* [wxMaxima: input   end   ] */
 
 

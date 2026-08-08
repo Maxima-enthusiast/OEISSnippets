@@ -7,7 +7,6 @@ https://oeis.org/A030276
 
 /* [wxMaxima: input   start ] */
 T(n,m):=if m=n then 2^m else m/n*sum(T(n-m,k)*2^(n-k)*binomial(n,k),k,1,n); makelist(T(n,1),n,1,15); /* _Vladimir Kruchinin_, Aug 08 2013 */
-
 /* [wxMaxima: input   end   ] */
 
 

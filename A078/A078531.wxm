@@ -7,7 +7,6 @@ https://oeis.org/A078531
 
 /* [wxMaxima: input   start ] */
 taylor(sqrt(3)/2*(sech(acosh(-sqrt(108)*x)/3)),x,0,10); /* _Vladimir Kruchinin_, Oct 12 2022 */
-
 /* [wxMaxima: input   end   ] */
 
 

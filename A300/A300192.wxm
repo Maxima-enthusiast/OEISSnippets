@@ -9,7 +9,7 @@ https://oeis.org/A300192
 T(n, k) := binomial(2*n, k) + binomial(n, k - 2) - binomial(n, k)$
 a : []$
 for n:0 thru 10 do
-  a : append(a, makelist(T(n, k), k, 0, max(2*n, n + 2)))$
+a : append(a, makelist(T(n, k), k, 0, max(2*n, n + 2)))$
 a;
 /* [wxMaxima: input   end   ] */
 

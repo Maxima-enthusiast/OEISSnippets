@@ -8,7 +8,6 @@ https://oeis.org/A007660
 /* [wxMaxima: input   start ] */
 a(n) := if (n=0 or n=1) then 0 else a(n-1)*a(n-2)+1 $
 makelist(a(n),n,0,18); /* _Emanuele Munarini_, Mar 24 2017 */
-
 /* [wxMaxima: input   end   ] */
 
 

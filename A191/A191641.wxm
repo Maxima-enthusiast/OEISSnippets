@@ -7,7 +7,6 @@ https://oeis.org/A191641
 
 /* [wxMaxima: input   start ] */
 A191641(n):=floor((1+4^n)/(1+4*n))$ makelist(A191641(n),n,1,30); /* _Martin Ettl_, Oct 25 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -10,7 +10,6 @@ t(n, k) := ratcoef((x - 1)^n + (-1)^n*(x - 1), x, k)$
 T:[0]$
 for n:2 thru 11 do T:append(T, makelist(t(n, k), k, 0, n))$
 T; /* _Franck Maminirina Ramaharo_, Aug 11 2018 */
-
 /* [wxMaxima: input   end   ] */
 
 

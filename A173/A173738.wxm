@@ -10,7 +10,6 @@ b(n, k) := ((1 + sqrt(k))^n + (1 - sqrt(k))^n)/2$
 T(n, k) := b(n, k) + b(k - 2, n + 2)$
 create_list(fullratsimp(T(k - 2, n - k + 4)), n, 0, 20, k, 2, n + 2);
 /* _Franck Maminirina Ramaharo_, Jan 27 2019 */
-
 /* [wxMaxima: input   end   ] */
 
 

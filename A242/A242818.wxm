@@ -7,7 +7,6 @@ https://oeis.org/A242818
 
 /* [wxMaxima: input   start ] */
 makelist(sum(stirling1(n,k)*belln(k)/2^(ceiling(n/2)-k),k,0,n),n,0,41);
-
 /* [wxMaxima: input   end   ] */
 
 

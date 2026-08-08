@@ -7,7 +7,6 @@ https://oeis.org/A009198
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else sum(sum(binomial(n,i)*(stirling1(i,k)*k^(n-i)*(-1)^(n-i)),i,k,n),k,1,n); /* _Vladimir Kruchinin_, Jun 29 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

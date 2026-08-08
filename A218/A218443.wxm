@@ -8,7 +8,6 @@ https://oeis.org/A218443
 /* [wxMaxima: input   start ] */
 A218443[n]:=sum(floor(n/(3*k+2)),k,0,n)$
 makelist(A218443[n],n,0,80); /* _Martin Ettl_, Oct 29 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

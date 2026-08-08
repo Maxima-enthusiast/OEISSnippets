@@ -11,7 +11,6 @@ P(n, k, x):=if k<0 or n<0 then 0 else if k=0 then 1 else x*P(n, k-1, x)+
 a(n):=sum(P(n-k, k, -1), k, 0, n);
 makelist(a(n), n, 0, 10);
 /* _Vladimir Kruchinin_, Mar 08 2020 */
-
 /* [wxMaxima: input   end   ] */
 
 

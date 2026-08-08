@@ -7,7 +7,6 @@ https://oeis.org/A173737
 
 /* [wxMaxima: input   start ] */
 A173737(n):=(10^n+44)/9$ makelist(A173737(n),n,1,20); /* _Martin Ettl_, Nov 08 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

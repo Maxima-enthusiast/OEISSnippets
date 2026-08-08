@@ -7,7 +7,6 @@ https://oeis.org/A060338
 
 /* [wxMaxima: input   start ] */
 M(n,x):=n!*sum(binomial(2*m,m)*sum(((sum((2^(i-2*m)*stirling1(i+n-2*j,n-2*j)*binomial(n-2*m-1,2*j-2*m-i))/(i+n-2*j)!,i,0,2*j-2*m))*(-1)^(j)*x^(n-2*j)),j,m,n/2),m,0,n/2); /* _Vladimir Kruchinin_, Sep 25 2013 */
-
 /* [wxMaxima: input   end   ] */
 
 

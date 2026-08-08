@@ -7,7 +7,6 @@ https://oeis.org/A152297
 
 /* [wxMaxima: input   start ] */
 makelist(sum((-1)^(n-k)*binomial(n,k)*binomial(2*k,k)*binomial(3*k,k),k,0,n),n,0,16);
-
 /* [wxMaxima: input   end   ] */
 
 

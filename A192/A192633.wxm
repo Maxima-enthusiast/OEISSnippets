@@ -7,7 +7,6 @@ https://oeis.org/A192633
 
 /* [wxMaxima: input   start ] */
 makelist(sum(floor(sqrt(binomial(2*k,k)/(k+1))),k,0,n),n,0,24);
-
 /* [wxMaxima: input   end   ] */
 
 

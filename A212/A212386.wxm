@@ -7,7 +7,6 @@ https://oeis.org/A212386
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(binomial(5*k-4*n-1, n-k)*binomial(n+1, 6*k-5*n), k, 0, n)/(n+1); /* _Vladimir Kruchinin_, Mar 05 2016 */
-
 /* [wxMaxima: input   end   ] */
 
 

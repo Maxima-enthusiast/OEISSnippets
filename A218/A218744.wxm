@@ -8,7 +8,6 @@ https://oeis.org/A218744
 /* [wxMaxima: input   start ] */
 A218744(n):=(41^n-1)/40$
 makelist(A218744(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

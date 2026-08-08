@@ -7,7 +7,6 @@ https://oeis.org/A233579
 
 /* [wxMaxima: input   start ] */
 float(true)$ load(basic)$ i:[1]$ n:2$ for r:1 thru 10000 step 0 do (for p:3 while p-1<=n step 0 do (p:next_prime(p), if mod(n, p-1)=0 then push(p,i)), d:(product(i[k],k,1,length(i))), x:mod(d,30), if (x=11 or x=17 or x=23 or x=25 or x=29) then (print(r, ", ",n), r:r+1), i:[1], n:n+2)$
-
 /* [wxMaxima: input   end   ] */
 
 

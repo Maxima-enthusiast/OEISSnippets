@@ -8,7 +8,6 @@ https://oeis.org/A206739
 /* [wxMaxima: input   start ] */
 T(n, m):=if n=m then 1 else  sum(binomial(m, i)*T((n-m)/3, i), i, 1, (n-m)/3);
 makelist(sum(T(n,k),k,0,n),n,0,20); /* _Vladimir Kruchinin_, Mar 21 2015 */
-
 /* [wxMaxima: input   end   ] */
 
 

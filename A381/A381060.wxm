@@ -7,19 +7,18 @@ https://oeis.org/A381060
 
 /* [wxMaxima: input   start ] */
 (kill(all), s(y):=(f(i,j):=mod(i-floor((i-j)/j),j),s:0,x:1,
-      for k:1 thru floor(y/2) do
-              (if f(y,k)=0 then
-              (s:s+k, B[x]:k, x:x+1)),
+for k:1 thru floor(y/2) do
+(if f(y,k)=0 then
+(s:s+k, B[x]:k, x:x+1)),
 B:setify(makelist(B[r],r,1,x-1)), s),
 n:1, for t:2 thru 1000 do
-              (if s(t)>=t  then
-                     (for b:2 while b<=x-1 and e#t do
-                     (C:args(powerset(B,b)),
-                            for h:1 while h<=length(C) and e#t do
-                            (e:apply("+" , args(C[h])),
-                                    if e=t then
-                                    (print(n , " " , t), n:n+1))))));
-
+(if s(t)>=t  then
+(for b:2 while b<=x-1 and e#t do
+(C:args(powerset(B,b)),
+for h:1 while h<=length(C) and e#t do
+(e:apply("+" , args(C[h])),
+if e=t then
+(print(n , " " , t), n:n+1))))));
 /* [wxMaxima: input   end   ] */
 
 

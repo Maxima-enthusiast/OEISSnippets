@@ -7,7 +7,6 @@ https://oeis.org/A190865
 
 /* [wxMaxima: input   start ] */
 a(n):=n!*sum(1/((k)!*(n-3*k)!*6^(k)),k,0,n/3);
-
 /* [wxMaxima: input   end   ] */
 
 

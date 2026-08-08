@@ -8,7 +8,6 @@ https://oeis.org/A011577
 /* [wxMaxima: input   start ] */
 A011577(n):=stirling2(28,n)$
 makelist(A011577(n),n,1,30); /* _Martin Ettl_, Nov 05 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

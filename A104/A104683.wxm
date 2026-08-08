@@ -7,7 +7,6 @@ https://oeis.org/A104683
 
 /* [wxMaxima: input   start ] */
 makelist(expand(((1+2*sqrt(2)+(-1)^n)*(1+sqrt(2))^n-(1-2*sqrt(2)+(-1)^n)*(1-sqrt(2))^n)/(4*sqrt(2))), n, 0, 29); /* _Bruno Berselli_, Apr 04 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

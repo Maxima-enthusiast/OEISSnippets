@@ -7,7 +7,6 @@ https://oeis.org/A120406
 
 /* [wxMaxima: input   start ] */
 solve(A=x*(A^2*y^2-2*A^2*y-2*A*y+A^2-2*A+1),A); /* _Vladimir Kruchinin_, Oct 24 2020 */
-
 /* [wxMaxima: input   end   ] */
 
 

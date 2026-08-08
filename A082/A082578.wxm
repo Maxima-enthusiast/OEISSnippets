@@ -7,7 +7,6 @@ https://oeis.org/A082578
 
 /* [wxMaxima: input   start ] */
 makelist(sum(binomial(2*k,k)*binomial(2*k+1,k),k,0,n),n,0,12);
-
 /* [wxMaxima: input   end   ] */
 
 

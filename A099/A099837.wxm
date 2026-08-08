@@ -7,7 +7,7 @@ https://oeis.org/A099837
 
 /* [wxMaxima: input   start ] */
 A099837(n) := block(
-        if n = 0 then 1 else [2,-1,-1][1+mod(n,3)]
+if n = 0 then 1 else [2,-1,-1][1+mod(n,3)]
 )$ /* _R. J. Mathar_, Mar 19 2012 */
 /* [wxMaxima: input   end   ] */
 

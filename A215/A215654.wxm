@@ -7,7 +7,6 @@ https://oeis.org/A215654
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(binomial(2*n+i,i)*binomial(2*n+i+1,n-i),i,0,n)/(2*n+1); /* _Vladimir Kruchinin_, Apr 04 2019 */
-
 /* [wxMaxima: input   end   ] */
 
 

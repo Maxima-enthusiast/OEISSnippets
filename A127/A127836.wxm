@@ -7,7 +7,6 @@ https://oeis.org/A127836
 
 /* [wxMaxima: input   start ] */
 P(n, x) := if n = 0 or n = 1 then 1 else P(n - 1, x) + x^(n  - 1)*P(n - 2, x)$ create_list(ratcoef(expand(P(n, x)), x, k), n, 0, 10, k, 0, floor(n^2/4)); /* _Franck Maminirina Ramaharo_, Nov 30 2018 */
-
 /* [wxMaxima: input   end   ] */
 
 

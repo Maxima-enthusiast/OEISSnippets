@@ -7,7 +7,6 @@ https://oeis.org/A024012
 
 /* [wxMaxima: input   start ] */
 A024012(n):=2^n-n^2$ makelist(A024012(n),n,0,20); /* _Martin Ettl_, Dec 18 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -12,7 +12,6 @@ f(n, k) := 6*s^(1 - k)*(s^(2*k) + s^n)/((1 - s)*(-s + s^n))$
 w(n, k) := if k = 0 or k = n then 1/4 + e(n)/6 else if k = 1 or k = n - 1 then 2 - (1 + 1/6)*e(n) else 1 + f(n, k)/4$
 a(n) := lcm(makelist(denom(fullratsimp(w(n, k))), k, 0, n))$
 append([4, 2, 3], makelist(a(n), n, 3, 50));
-
 /* [wxMaxima: input   end   ] */
 
 

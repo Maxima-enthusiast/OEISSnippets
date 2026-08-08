@@ -9,7 +9,6 @@ https://oeis.org/A096815
 T(n,k):= if ( n<k or k<0 ) then 0 else
 if ( k<=1 or k=n ) then 1 else sum(T(n-k,j)*T(k,k-j),j,0, k);
 create_list(T(n,k),n,0,12,k,0,n); /* _Emanuele Munarini_, May 12 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

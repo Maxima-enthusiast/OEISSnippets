@@ -15,7 +15,6 @@ f:makelist(0,i,1,max);
 dg:makelist(0, i, 1, max);
 f[1]:1;
 for n:2 thru max do block(for i:2 thru n do dg[i]:deg(n,i),k:0, loop1, k:k+1, p:2, loop, if (f[k]=dg[p]) then block(f[n]:f[n]+1, p:n+1), if (p<=n) then p:next_prime(p), if (p<=n) then go(loop), if k<(n-1) then go(loop1));
-
 /* [wxMaxima: input   end   ] */
 
 

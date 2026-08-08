@@ -12,7 +12,6 @@ oeisA076694(n) := n - lsum(k,k,distinctPrimeFactors(n));
 listOfPrimesLessThanOrEqualTo (n) := block( [ list : [] , i], for i : 2 step 0 while i <= n do ( list : cons(i, list) , i : next_prime(i) ) , list );
 oeisA208614(n) := block([ m, list ], m : oeisA076694(n), list : sort(listify(setdifference(setify(listOfPrimesLessThanOrEqualTo(m)), setify(distinctPrimeFactors(n)))), ordergreatp), countRestrictedIntegerPartitions(m, list));
 makelist(oeisA208614(j), j, 1, 100);
-
 /* [wxMaxima: input   end   ] */
 
 

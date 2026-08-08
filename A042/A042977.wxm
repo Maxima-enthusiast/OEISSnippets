@@ -15,7 +15,6 @@ T(n, k):=coeff(ratsimp(a(n)), x, k);
 for n: 1 thru 12 do print(makelist(T(n, k), k, 0, n-1));
 /* _Vladimir Kruchinin_, Oct 09 2012 */
 T(n,m):=sum(binomial(2*n+1,m-j)*sum(((n+k+1)^(n+j)*(-1)^(n+k))/((j-k)!*k!),k,0,j),j,0,m); /* _Vladimir Kruchinin_, Feb 20 2018 */
-
 /* [wxMaxima: input   end   ] */
 
 

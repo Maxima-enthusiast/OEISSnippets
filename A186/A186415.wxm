@@ -7,7 +7,6 @@ https://oeis.org/A186415
 
 /* [wxMaxima: input   start ] */
 makelist(binomial(2*n,n)^3/(n+1),n,0,40);
-
 /* [wxMaxima: input   end   ] */
 
 

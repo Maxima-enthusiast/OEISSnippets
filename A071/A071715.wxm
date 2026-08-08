@@ -8,7 +8,6 @@ https://oeis.org/A071715
 /* [wxMaxima: input   start ] */
 a(n):=4*binomial(2*n+3,n)/(n+4)+8*binomial(2*n+5,n+6)/(n+7);
 makelist(a(n),n,0,50); /* _Tani Akinari_, Aug 06 2025 */
-
 /* [wxMaxima: input   end   ] */
 
 

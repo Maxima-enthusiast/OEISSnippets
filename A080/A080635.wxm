@@ -7,7 +7,6 @@ https://oeis.org/A080635
 
 /* [wxMaxima: input   start ] */
 a(n):=if n=0 then 1 else sum((-3)^((n-k)/2)*((-1)^(n-k)+1)*sum(binomial(j+k-1,j)*(j+k)!*2^(-j-k)*(-1)^(j)*stirling2(n,j+k),j,0,n-k),k,1,n); /* _Vladimir Kruchinin_, Feb 13 2019 */
-
 /* [wxMaxima: input   end   ] */
 
 

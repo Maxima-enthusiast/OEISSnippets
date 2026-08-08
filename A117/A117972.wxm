@@ -7,7 +7,6 @@ https://oeis.org/A117972
 
 /* [wxMaxima: input   start ] */
 L:taylor(1/x*sin(sqrt(x))^2,x,0,15); makelist(denom(coeff(L,x,n))*(-1)^(n+1),n,0,15); /* _Vladimir Kruchinin_, May 30 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

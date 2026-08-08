@@ -7,7 +7,6 @@ https://oeis.org/A110616
 
 /* [wxMaxima: input   start ] */
 T(n,k):=((k+1)*binomial(3*n-2*k,2*n-k))/(2*n-k+1); /* _Vladimir Kruchinin_, Nov 01 2011 */
-
 /* [wxMaxima: input   end   ] */
 
 

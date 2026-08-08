@@ -13,22 +13,21 @@ fpprec:p, load(newton1),
 fl: openw("harm-bfile.txt"),
 c(m):= block(x:0, delta: 1, r:0,
 if m=1 then return(gam) else
-  (for k from 1 thru km-1 do x: x+bfloat(1/(m*k*(m*k+1))),
-   while delta=0 or delta >eps do
-      (r: r+1, su:0,
-      for j from 1 thru r-1 do su: su+a[r-j]*(-1)^j*binomial(r,j+1),
-      ar: bfloat(-((-1)^r/m^(r+1)+su)/r),  ad: ar/km^r, a: append(a,[ar]),
-      x: x+bfloat(ad), delta: abs(ad)), return(gam+m*(1-x)))),
+(for k from 1 thru km-1 do x: x+bfloat(1/(m*k*(m*k+1))),
+while delta=0 or delta >eps do
+(r: r+1, su:0,
+for j from 1 thru r-1 do su: su+a[r-j]*(-1)^j*binomial(r,j+1),
+ar: bfloat(-((-1)^r/m^(r+1)+su)/r),  ad: ar/km^r, a: append(a,[ar]),
+x: x+bfloat(ad), delta: abs(ad)), return(gam+m*(1-x)))),
 mn:0, ok: true,  nr:0,
 while ok do (mn: mn+1, a:[], cc: append(cc, [c(mn)]), m:mn+1,
-   while m>1 and ok do  (m: m-1, n: mn+1-m,
-   k1: exp(m*n-cc[m])-(m+2)/(2*m), k2: k1-1/(24*k1),
-   ka: floor(k1+1), kb: floor(k2+1),
-   if ka>1 then
-     (d: kb-k2, if d>1-d then d: 1-d, if ka#kb or kb> d*lim then  ok: false),
-  if ok then (nr: nr+1,  printf(fl, concat(nr, " ", ka)), newline(fl) ) ) ),
+while m>1 and ok do  (m: m-1, n: mn+1-m,
+k1: exp(m*n-cc[m])-(m+2)/(2*m), k2: k1-1/(24*k1),
+ka: floor(k1+1), kb: floor(k2+1),
+if ka>1 then
+(d: kb-k2, if d>1-d then d: 1-d, if ka#kb or kb> d*lim then  ok: false),
+if ok then (nr: nr+1,  printf(fl, concat(nr, " ", ka)), newline(fl) ) ) ),
 close(fl));
-
 /* [wxMaxima: input   end   ] */
 
 

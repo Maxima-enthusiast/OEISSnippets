@@ -7,7 +7,6 @@ https://oeis.org/A191585
 
 /* [wxMaxima: input   start ] */
 makelist(sum(binomial(2*n-2*i-1,n-2*i)*3^i,i,0,n/2),n,0,25);
-
 /* [wxMaxima: input   end   ] */
 
 

@@ -16,12 +16,11 @@ for n from 2 thru nmax do
 x0: bfloat(OH(k,0)), x01: bfloat(OH(k,1)), x1: bfloat(OH(k-1,0)),
 n0: floor(x0), n01: floor(x01), n1: floor(x1),  m: n,
 if n0=n and n01=n and n1=n-1 then
-         (h: concat(n, " ", k), printf(fl, h),  newline(fl)) else n: nmax),
+(h: concat(n, " ", k), printf(fl, h),  newline(fl)) else n: nmax),
 if m<nmax then print(concat("Precision too low: Stop at n= ",m)),
 close(fl));
 /* _Gerhard Kirchner_, Jul 23 2020 */
 /* The first nmax terms are saved as a b-file */
-
 /* [wxMaxima: input   end   ] */
 
 

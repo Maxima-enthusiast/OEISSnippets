@@ -7,7 +7,6 @@ https://oeis.org/A254407
 
 /* [wxMaxima: input   start ] */
 makelist(n*(n+1)*(11*n+10)/6, n, 0, 40);
-
 /* [wxMaxima: input   end   ] */
 
 

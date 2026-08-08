@@ -8,7 +8,6 @@ https://oeis.org/A060758
 /* [wxMaxima: input   start ] */
 A060758(n):=5^(n^2)$
 makelist(A060758(n),n,0,10); /* _Martin Ettl_, Nov 08 2012 */
-
 /* [wxMaxima: input   end   ] */
 
 

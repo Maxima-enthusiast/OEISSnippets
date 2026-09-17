@@ -7,7 +7,7 @@ https://oeis.org/A081007
 
 /* [wxMaxima: input   start ] */
 A081007(n):=fib(4*n+1)-1$
-makelist(A081007(n),n,0,30); /* _Martin Ettl_, Nov 12 2012 */
+makelist(A081007(n),n,0,30); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

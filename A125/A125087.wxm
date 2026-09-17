@@ -6,7 +6,7 @@ https://oeis.org/A125087
 
 
 /* [wxMaxima: input   start ] */
-/* program from _Katarzyna Matylla_, Feb 19 2008: Variable max = how much terms we need. Generating 1000 terms took a few hours: */
+/* program from Katarzyna Matylla, Feb 19 2008: Variable max = how much terms we need. Generating 1000 terms took a few hours: */
 "|"(a,b):= if b=0 then true else if a=0 then false else if (floor(b/a))=(b/a) then true else false;
 max:1000;
 infix("|");

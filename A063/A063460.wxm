@@ -6,7 +6,7 @@ https://oeis.org/A063460
 
 
 /* [wxMaxima: input   start ] */
-makelist(floor(n*(%pi - 1)/(%pi - 2)), n, 1, 65); /* _Martin Ettl_, Oct 17 2012 */
+makelist(floor(n*(%pi - 1)/(%pi - 2)), n, 1, 65); /* Martin Ettl, Oct 17 2012 */
 /* [wxMaxima: input   end   ] */
 
 

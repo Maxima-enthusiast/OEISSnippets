@@ -6,7 +6,7 @@ https://oeis.org/A192106
 
 
 /* [wxMaxima: input   start ] */
-fpprec:90; ev(bfloat(sqrt(102))); /* _Bruno Berselli_, Jan 03 2013 */
+fpprec:90; ev(bfloat(sqrt(102))); /* Bruno Berselli, Jan 03 2013 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A088453
 
 
 /* [wxMaxima: input   start ] */
-fpprec : 200$ bfloat( 1/zeta(3))$ bfloat(%); /* _Martin Ettl_, Oct 15 2012 */
+fpprec : 200$ bfloat( 1/zeta(3))$ bfloat(%); /* Martin Ettl, Oct 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

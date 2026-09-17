@@ -6,7 +6,7 @@ https://oeis.org/A204922
 
 
 /* [wxMaxima: input   start ] */
-create_list(fib(n+3)-fib(k+2),n,0,20,k,0,n); /* _Emanuele Munarini_, Mar 29 2012 */
+create_list(fib(n+3)-fib(k+2),n,0,20,k,0,n); /* Emanuele Munarini, Mar 29 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A155069
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n<1 then 1 else  sum(binomial(n+i-1,i)* binomial(2*n, n-2*i-1),i,0,(n)/2)/(n); /* _Vladimir Kruchinin_, Nov 13 2014 */
+a(n):=if n<1 then 1 else  sum(binomial(n+i-1,i)* binomial(2*n, n-2*i-1),i,0,(n)/2)/(n); /* Vladimir Kruchinin, Nov 13 2014 */
 /* [wxMaxima: input   end   ] */
 
 

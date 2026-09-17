@@ -6,7 +6,7 @@ https://oeis.org/A114507
 
 
 /* [wxMaxima: input   start ] */
-a114507(n):= 1/n*sum(binomial(n,j)*binomial(4*j-2*n-2, j-1) *(-1)^(n-j),j,ceiling((n+1)/2),n); /* Works for n > 0. Returns a(n-1). _Vladimir Kruchinin_, Mar 07 2011 */
+a114507(n):= 1/n*sum(binomial(n,j)*binomial(4*j-2*n-2, j-1) *(-1)^(n-j),j,ceiling((n+1)/2),n); /* Works for n > 0. Returns a(n-1). Vladimir Kruchinin, Mar 07 2011 */
 /* [wxMaxima: input   end   ] */
 
 

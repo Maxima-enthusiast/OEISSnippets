@@ -7,7 +7,7 @@ https://oeis.org/A346985
 
 /* [wxMaxima: input   start ] */
 a[n]:=if n=0 then 1 else (1/n)*sum(binomial(n,k)*(n+5*k)*a[k],k,0,n-1);
-makelist(a[n],n,0,50); /* _Tani Akinari_, Aug 22 2023 */
+makelist(a[n],n,0,50); /* Tani Akinari, Aug 22 2023 */
 /* [wxMaxima: input   end   ] */
 
 

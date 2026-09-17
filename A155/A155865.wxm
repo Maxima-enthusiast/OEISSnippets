@@ -6,7 +6,7 @@ https://oeis.org/A155865
 
 
 /* [wxMaxima: input   start ] */
-T(n, k) := if k = 0 or k = n then 1 else (n-1)*binomial(n-2, k-1)$ create_list(T(n, k), n, 0, 12, k, 0, n); /* _Franck Maminirina Ramaharo_, Dec 05 2018 */
+T(n, k) := if k = 0 or k = n then 1 else (n-1)*binomial(n-2, k-1)$ create_list(T(n, k), n, 0, 12, k, 0, n); /* Franck Maminirina Ramaharo, Dec 05 2018 */
 /* [wxMaxima: input   end   ] */
 
 

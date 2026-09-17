@@ -7,7 +7,7 @@ https://oeis.org/A218150
 
 /* [wxMaxima: input   start ] */
 A218150(n):=5^((6+5*n+n^3)/6)$
-makelist(A218150(n),n,-1,9); /* _Martin Ettl_, Oct 31 2012 */
+makelist(A218150(n),n,-1,9); /* Martin Ettl, Oct 31 2012 */
 /* [wxMaxima: input   end   ] */
 
 

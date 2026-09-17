@@ -6,7 +6,7 @@ https://oeis.org/A007582
 
 
 /* [wxMaxima: input   start ] */
-A007582(n):=2^(n-1)*(1+2^n)$ makelist(A007582(n),n,0,30); /* _Martin Ettl_, Nov 15 2012 */
+A007582(n):=2^(n-1)*(1+2^n)$ makelist(A007582(n),n,0,30); /* Martin Ettl, Nov 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

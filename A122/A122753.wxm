@@ -8,7 +8,7 @@ https://oeis.org/A122753
 /* [wxMaxima: input   start ] */
 P(x, n) := expand(sum(stirling2(n, j)*x^j*(1 - x)^(n - j), j, 0, n))$
 T(n, k) := ratcoef(P(x, n), x, k)$
-tabf(nn) := for n:0 thru nn do print(makelist(T(n, k), k, 0, hipow(P(x, n), x)))$ /* _Franck Maminirina Ramaharo_, Oct 10 2018 */
+tabf(nn) := for n:0 thru nn do print(makelist(T(n, k), k, 0, hipow(P(x, n), x)))$ /* Franck Maminirina Ramaharo, Oct 10 2018 */
 /* [wxMaxima: input   end   ] */
 
 

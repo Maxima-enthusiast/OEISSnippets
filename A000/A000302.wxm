@@ -6,7 +6,7 @@ https://oeis.org/A000302
 
 
 /* [wxMaxima: input   start ] */
-A000302(n):=4^n$ makelist(A000302(n),n,0,30); /* _Martin Ettl_, Oct 24 2012 */
+A000302(n):=4^n$ makelist(A000302(n),n,0,30); /* Martin Ettl, Oct 24 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A048174
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=1 then 1 else (sum((n+k-1)!*sum((-1)^(j)/(k-j)!*((sum(sum((binomial(-l+i-1,l-1)*(-1)^(n-i-1)*stirling1(n+j-i-1,j-l))/(l!*(n+j-i-1)!),i,2*l,n+l-1),l,1,j))+((-1)^(n-1)*stirling1(n+j-1,j))/(n+j-1)!),j,1,k),k,1,n-1)); /* _Vladimir Kruchinin_, Feb 19 2012 */
+a(n):=if n=1 then 1 else (sum((n+k-1)!*sum((-1)^(j)/(k-j)!*((sum(sum((binomial(-l+i-1,l-1)*(-1)^(n-i-1)*stirling1(n+j-i-1,j-l))/(l!*(n+j-i-1)!),i,2*l,n+l-1),l,1,j))+((-1)^(n-1)*stirling1(n+j-1,j))/(n+j-1)!),j,1,k),k,1,n-1)); /* Vladimir Kruchinin, Feb 19 2012 */
 /* [wxMaxima: input   end   ] */
 
 

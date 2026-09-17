@@ -6,7 +6,7 @@ https://oeis.org/A336524
 
 
 /* [wxMaxima: input   start ] */
-T(n,m):=(binomial(n+m,n)*binomial(2*n+1,n+m))/(2*n+1); /* _Vladimir Kruchinin_, Oct 16 2020 */
+T(n,m):=(binomial(n+m,n)*binomial(2*n+1,n+m))/(2*n+1); /* Vladimir Kruchinin, Oct 16 2020 */
 /* [wxMaxima: input   end   ] */
 
 

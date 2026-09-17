@@ -6,7 +6,7 @@ https://oeis.org/A121740
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(((33+8*sqrt(17))^n - (33-8*sqrt(17))^n) /(4*sqrt(17)/2)), n, 0, 16); /* _Vincenzo Librandi_, Dec 18 2011 */
+makelist(expand(((33+8*sqrt(17))^n - (33-8*sqrt(17))^n) /(4*sqrt(17)/2)), n, 0, 16); /* Vincenzo Librandi, Dec 18 2011 */
 /* [wxMaxima: input   end   ] */
 
 

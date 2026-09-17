@@ -6,7 +6,7 @@ https://oeis.org/A003727
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum(if n=k then n! else 1/2^k*sum(binomial(n,k)*binomial(k,i)*(k-2*i)^(n-k),i,0,k),k,1,n); /* _Vladimir Kruchinin_, Aug 22 2010 */
+a(n):=sum(if n=k then n! else 1/2^k*sum(binomial(n,k)*binomial(k,i)*(k-2*i)^(n-k),i,0,k),k,1,n); /* Vladimir Kruchinin, Aug 22 2010 */
 /* [wxMaxima: input   end   ] */
 
 

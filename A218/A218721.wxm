@@ -6,7 +6,7 @@ https://oeis.org/A218721
 
 
 /* [wxMaxima: input   start ] */
-A218721(n):=(18^n-1)/17$ makelist(A218721(n),n,0,30); /* _Martin Ettl_, Nov 05 2012 */
+A218721(n):=(18^n-1)/17$ makelist(A218721(n),n,0,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

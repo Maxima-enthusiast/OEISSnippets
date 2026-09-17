@@ -6,7 +6,7 @@ https://oeis.org/A200319
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum(stirling2(k+n/2-(1-(-1)^n)/4,2*k+(1+(-1)^n)/2)*(2*k+n-(1-(-1)^n)/2)!/((k+n/2-(1-(-1)^n)/4)!),k,0,floor((n-1)/2)); makelist(a(n),n,1,30); /* _Tani Akinari_, Jan 07 2026 */
+a(n):=sum(stirling2(k+n/2-(1-(-1)^n)/4,2*k+(1+(-1)^n)/2)*(2*k+n-(1-(-1)^n)/2)!/((k+n/2-(1-(-1)^n)/4)!),k,0,floor((n-1)/2)); makelist(a(n),n,1,30); /* Tani Akinari, Jan 07 2026 */
 /* [wxMaxima: input   end   ] */
 
 

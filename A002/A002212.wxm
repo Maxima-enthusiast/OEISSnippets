@@ -6,7 +6,7 @@ https://oeis.org/A002212
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(binomial(n,k)*binomial(n-k,k)*3^(n-2*k)/(k+1),k,0,n/2),n,0,24); /* for a(n+1) */ /* _Emanuele Munarini_, May 18 2011 */
+makelist(sum(binomial(n,k)*binomial(n-k,k)*3^(n-2*k)/(k+1),k,0,n/2),n,0,24); /* for a(n+1) */ /* Emanuele Munarini, May 18 2011 */
 /* [wxMaxima: input   end   ] */
 
 

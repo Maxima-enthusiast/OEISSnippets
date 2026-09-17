@@ -11,7 +11,7 @@ while k<kmax do
 (m: floor(sqrt(n)), r: n-m^2,
 if mod(2*m,r)=0 then (k: k+1, print(n)),
 if r= m then n: n+m else (if r= 2*m then n: n+2 else n: n+1)));
-/* _Gerhard Kirchner_, Jan 17 2020 */
+/* Gerhard Kirchner, Jan 17 2020 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A037152
 
 
 /* [wxMaxima: input   start ] */
-makelist(next_prime(n!+1), n,  1, 20); /* _Bruno Berselli_, May 20 2011 */
+makelist(next_prime(n!+1), n,  1, 20); /* Bruno Berselli, May 20 2011 */
 /* [wxMaxima: input   end   ] */
 
 

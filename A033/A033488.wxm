@@ -6,7 +6,7 @@ https://oeis.org/A033488
 
 
 /* [wxMaxima: input   start ] */
-A033488(n):=n*(n+1)*(n+2)*(n+3)/6$ makelist(A033488(n),n,0,20); /* _Martin Ettl_, Jan 22 2013 */
+A033488(n):=n*(n+1)*(n+2)*(n+3)/6$ makelist(A033488(n),n,0,20); /* Martin Ettl, Jan 22 2013 */
 /* [wxMaxima: input   end   ] */
 
 

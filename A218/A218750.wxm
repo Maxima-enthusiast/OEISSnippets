@@ -6,7 +6,7 @@ https://oeis.org/A218750
 
 
 /* [wxMaxima: input   start ] */
-A218750(n):=(47^n-1)/46$ makelist(A218750(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
+A218750(n):=(47^n-1)/46$ makelist(A218750(n),n,0,30); /* Martin Ettl, Nov 07 2012 */
 /* [wxMaxima: input   end   ] */
 
 

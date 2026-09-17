@@ -6,7 +6,7 @@ https://oeis.org/A143454
 
 
 /* [wxMaxima: input   start ] */
-a(n):= sum(3^j*binomial(n-3*j+3,j), j,0,(n+3)/3); /* _Vladimir Kruchinin_, May 24 2011 */
+a(n):= sum(3^j*binomial(n-3*j+3,j), j,0,(n+3)/3); /* Vladimir Kruchinin, May 24 2011 */
 /* [wxMaxima: input   end   ] */
 
 

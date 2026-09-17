@@ -6,7 +6,7 @@ https://oeis.org/A000037
 
 
 /* [wxMaxima: input   start ] */
-A000037(n):=n + floor(1/2 + sqrt(n))$ makelist(A000037(n),n,1,50); /* _Martin Ettl_, Nov 15 2012 */
+A000037(n):=n + floor(1/2 + sqrt(n))$ makelist(A000037(n),n,1,50); /* Martin Ettl, Nov 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

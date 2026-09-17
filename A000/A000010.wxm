@@ -6,7 +6,7 @@ https://oeis.org/A000010
 
 
 /* [wxMaxima: input   start ] */
-makelist(totient(n),n,0,1000); /* _Emanuele Munarini_, Mar 26 2011 */
+makelist(totient(n),n,0,1000); /* Emanuele Munarini, Mar 26 2011 */
 /* [wxMaxima: input   end   ] */
 
 

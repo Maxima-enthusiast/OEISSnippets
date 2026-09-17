@@ -6,7 +6,7 @@ https://oeis.org/A164278
 
 
 /* [wxMaxima: input   start ] */
-makelist((6*n + 1)^(2*n) - 1, n, 0, 20); /* _Franck Maminirina Ramaharo_, Jan 15 2019 */
+makelist((6*n + 1)^(2*n) - 1, n, 0, 20); /* Franck Maminirina Ramaharo, Jan 15 2019 */
 /* [wxMaxima: input   end   ] */
 
 

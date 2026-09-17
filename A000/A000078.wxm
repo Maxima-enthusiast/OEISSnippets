@@ -6,7 +6,7 @@ https://oeis.org/A000078
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum(sum(if mod(5*k-i,4)>0 then 0 else binomial(k,(5*k-i)/4)*(-1)^((i-k)/4)*binomial(n-i+k-1,k-1),i,k,n),k,1,n); /* _Vladimir Kruchinin_, Aug 18 2010 */
+a(n):=sum(sum(if mod(5*k-i,4)>0 then 0 else binomial(k,(5*k-i)/4)*(-1)^((i-k)/4)*binomial(n-i+k-1,k-1),i,k,n),k,1,n); /* Vladimir Kruchinin, Aug 18 2010 */
 /* [wxMaxima: input   end   ] */
 
 

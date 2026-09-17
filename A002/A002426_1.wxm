@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A002426
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+trinomial(n,k):=coeff(expand((1+x+x^2)^n),x,k);
+makelist(trinomial(n,n),n,0,12); /* Emanuele Munarini, Mar 15 2011 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

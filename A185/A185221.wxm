@@ -6,7 +6,7 @@ https://oeis.org/A185221
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 1 else sum(binomial(n+k+1,n) * sum((-1)^(j) * binomial(k+1,j) * sum((-1)^i * i! * binomial(j+i-1,j-1) * stirling1(n,i), i,1,n), j,1,k+1), k,0,n) / (n+1); /* _Vladimir Kruchinin_, Mar 29 2013 */
+a(n):=if n=0 then 1 else sum(binomial(n+k+1,n) * sum((-1)^(j) * binomial(k+1,j) * sum((-1)^i * i! * binomial(j+i-1,j-1) * stirling1(n,i), i,1,n), j,1,k+1), k,0,n) / (n+1); /* Vladimir Kruchinin, Mar 29 2013 */
 /* [wxMaxima: input   end   ] */
 
 

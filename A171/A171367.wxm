@@ -6,7 +6,7 @@ https://oeis.org/A171367
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(stirling2(n-k,k),k,0,n),n,0,60); /* _Emanuele Munarini_, Jun 01 2012 */
+makelist(sum(stirling2(n-k,k),k,0,n),n,0,60); /* Emanuele Munarini, Jun 01 2012 */
 /* [wxMaxima: input   end   ] */
 
 

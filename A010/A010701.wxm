@@ -6,7 +6,7 @@ https://oeis.org/A010701
 
 
 /* [wxMaxima: input   start ] */
-makelist(3, n, 0, 30); /* _Martin Ettl_, Nov 09 2012 */
+makelist(3, n, 0, 30); /* Martin Ettl, Nov 09 2012 */
 /* [wxMaxima: input   end   ] */
 
 

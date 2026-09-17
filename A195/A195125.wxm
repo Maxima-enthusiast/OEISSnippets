@@ -6,7 +6,7 @@ https://oeis.org/A195125
 
 
 /* [wxMaxima: input   start ] */
-makelist(2*n - floor(n*(%pi - 3)),n,0,64); /* _Ivan Panchenko_, Nov 10 2013 */
+makelist(2*n - floor(n*(%pi - 3)),n,0,64); /* Ivan Panchenko, Nov 10 2013 */
 /* [wxMaxima: input   end   ] */
 
 

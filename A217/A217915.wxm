@@ -6,7 +6,7 @@ https://oeis.org/A217915
 
 
 /* [wxMaxima: input   start ] */
-makelist(stirling2(5*n, n), n, 0, 10); /* _Martin Ettl_, Oct 15 2012 */
+makelist(stirling2(5*n, n), n, 0, 10); /* Martin Ettl, Oct 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

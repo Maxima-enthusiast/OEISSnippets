@@ -7,7 +7,7 @@ https://oeis.org/A017036
 
 /* [wxMaxima: input   start ] */
 A017036(n):=(7*n+4)^8$
-makelist(A017036(n),n,0,10); /* _Martin Ettl_, Nov 12 2012 */
+makelist(A017036(n),n,0,10); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

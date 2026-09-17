@@ -7,7 +7,7 @@ https://oeis.org/A116588
 
 /* [wxMaxima: input   start ] */
 T(n, k) := max(2^(n - k), 2^(k - n))$
-for n:0 thru 10 do (print(makelist(T(n,k), k, 0, 10))); /* _Franck Maminirina Ramaharo_, Sep 08 2018 */
+for n:0 thru 10 do (print(makelist(T(n,k), k, 0, 10))); /* Franck Maminirina Ramaharo, Sep 08 2018 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A156653
 
 
 /* [wxMaxima: input   start ] */
-T(n,m):=sum(k!*stirling2(n,k)*(-1)^(n+m+k)*binomial(n-k,m)*binomial(n+k,k),k,0,n) /(n+1); /* _Vladimir Kruchinin_, May 11 2020 */
+T(n,m):=sum(k!*stirling2(n,k)*(-1)^(n+m+k)*binomial(n-k,m)*binomial(n+k,k),k,0,n) /(n+1); /* Vladimir Kruchinin, May 11 2020 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -8,7 +8,7 @@ https://oeis.org/A071213
 /* [wxMaxima: input   start ] */
 C(x):=(1-sqrt(1-4*x))/(2);
 F(x):=1+log(1-x)/x-log(1-x);
-makelist(n!*coeff(taylor(F(C(x))+x*diff(F(C(x)),x),x,0,15),x,n),n,1,15); /*_Vladimir Kruchinin_, Mar 23 2016 */
+makelist(n!*coeff(taylor(F(C(x))+x*diff(F(C(x)),x),x,0,15),x,n),n,1,15); /*Vladimir Kruchinin, Mar 23 2016 */
 /* [wxMaxima: input   end   ] */
 
 

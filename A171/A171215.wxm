@@ -6,7 +6,7 @@ https://oeis.org/A171215
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum((binomial(n-k,k)+binomial(n-k-1, k-1))^3, k, 0, floor(n/2)), n, 1, 24); /* _Bruno Berselli_, May 19 2011 */
+makelist(sum((binomial(n-k,k)+binomial(n-k-1, k-1))^3, k, 0, floor(n/2)), n, 1, 24); /* Bruno Berselli, May 19 2011 */
 /* [wxMaxima: input   end   ] */
 
 

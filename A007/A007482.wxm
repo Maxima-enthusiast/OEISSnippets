@@ -7,7 +7,7 @@ https://oeis.org/A007482
 
 /* [wxMaxima: input   start ] */
 a(n) := if n=0 then 1 elseif n=1 then 3 else 3*a(n-1)+2*a(n-2);
-makelist(a(n),n,0,12); /* _Emanuele Munarini_, Jun 28 2017 */
+makelist(a(n),n,0,12); /* Emanuele Munarini, Jun 28 2017 */
 /* [wxMaxima: input   end   ] */
 
 

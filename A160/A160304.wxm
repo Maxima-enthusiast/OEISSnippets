@@ -6,7 +6,7 @@ https://oeis.org/A160304
 
 
 /* [wxMaxima: input   start ] */
-makelist(num(hermite(n, 6/31)), n, 0, 20); /* _Bruno Berselli_, Mar 28 2018 */
+makelist(num(hermite(n, 6/31)), n, 0, 20); /* Bruno Berselli, Mar 28 2018 */
 /* [wxMaxima: input   end   ] */
 
 

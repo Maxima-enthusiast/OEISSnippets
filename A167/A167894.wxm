@@ -6,7 +6,7 @@ https://oeis.org/A167894
 
 
 /* [wxMaxima: input   start ] */
-a(n) := if n=0 then 1 else -sum( a(i)*(n-i)!,i,0,n-1); /* _Vladimir Kruchinin_, Oct 10 2024 */
+a(n) := if n=0 then 1 else -sum( a(i)*(n-i)!,i,0,n-1); /* Vladimir Kruchinin, Oct 10 2024 */
 /* [wxMaxima: input   end   ] */
 
 

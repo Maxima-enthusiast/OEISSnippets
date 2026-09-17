@@ -8,7 +8,7 @@ https://oeis.org/A185324
 /* [wxMaxima: input   start ] */
 a[0]:0$a[1]:1$
 a[n]:=sum((-1)^floor(p/2)*(mod(p+1,2)-(-1)^p*4^floor(p/2))*binomial(n-1,p)*a[n-p],p,1,n-1)-mod(n-1,2)*(%i)^n;
-makelist(a[n],n,0,100); /* _Tani Akinari_, Oct 30 2017 */
+makelist(a[n],n,0,100); /* Tani Akinari, Oct 30 2017 */
 /* [wxMaxima: input   end   ] */
 
 

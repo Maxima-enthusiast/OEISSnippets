@@ -6,7 +6,7 @@ https://oeis.org/A105838
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(-1/2+((11+2*sqrt(11)*(-1)^n)*(10-3*sqrt(11))^(2*floor(n/2))+(11-2*sqrt(11)*(-1)^n)*(10+3*sqrt(11))^(2*floor(n/2)))/44), n, 1, 18); /* _Bruno Berselli_, Feb 20 2013 */
+makelist(expand(-1/2+((11+2*sqrt(11)*(-1)^n)*(10-3*sqrt(11))^(2*floor(n/2))+(11-2*sqrt(11)*(-1)^n)*(10+3*sqrt(11))^(2*floor(n/2)))/44), n, 1, 18); /* Bruno Berselli, Feb 20 2013 */
 /* [wxMaxima: input   end   ] */
 
 

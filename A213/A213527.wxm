@@ -6,7 +6,7 @@ https://oeis.org/A213527
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 1 else (n-1)!*sum((fib(i+1)*a(n-i))/(n-i)!,i,1,n); /* _Vladimir Kruchinin_, Sep 29 2016 */
+a(n):=if n=0 then 1 else (n-1)!*sum((fib(i+1)*a(n-i))/(n-i)!,i,1,n); /* Vladimir Kruchinin, Sep 29 2016 */
 /* [wxMaxima: input   end   ] */
 
 

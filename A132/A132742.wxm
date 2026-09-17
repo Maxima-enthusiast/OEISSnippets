@@ -6,7 +6,7 @@ https://oeis.org/A132742
 
 
 /* [wxMaxima: input   start ] */
-sjoin(v, j) := apply(sconcat, rest(join(makelist(j, length(v)), v))); display_triangle(n) := for i from 0 thru n do disp(sjoin(makelist(1 + mod(2*i*3^j, 12), j, 0, i), " ")); display_triangle(20); /* _Stefano Spezia_, Dec 26 2018 */
+sjoin(v, j) := apply(sconcat, rest(join(makelist(j, length(v)), v))); display_triangle(n) := for i from 0 thru n do disp(sjoin(makelist(1 + mod(2*i*3^j, 12), j, 0, i), " ")); display_triangle(20); /* Stefano Spezia, Dec 26 2018 */
 /* [wxMaxima: input   end   ] */
 
 

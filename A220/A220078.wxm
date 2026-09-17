@@ -6,7 +6,7 @@ https://oeis.org/A220078
 
 
 /* [wxMaxima: input   start ] */
-makelist(5^(n!),n,0,5); /* _Martin Ettl_, Dec 27 2012 */
+makelist(5^(n!),n,0,5); /* Martin Ettl, Dec 27 2012 */
 /* [wxMaxima: input   end   ] */
 
 

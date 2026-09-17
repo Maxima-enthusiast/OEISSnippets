@@ -8,7 +8,7 @@ https://oeis.org/A049425
 /* [wxMaxima: input   start ] */
 /* for b(n) = a(n+1) */
 b(n) := sum((n!/k!)*sum(binomial(k,i)*binomial(k-i+2,n-2*i-k)/3^i,i,0,k),k,0,n);
-makelist(b(n),n,0,24);  /* _Emanuele Munarini_, Oct 20 2014 */
+makelist(b(n),n,0,24);  /* Emanuele Munarini, Oct 20 2014 */
 /* [wxMaxima: input   end   ] */
 
 

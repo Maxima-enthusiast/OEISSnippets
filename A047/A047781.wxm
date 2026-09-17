@@ -6,7 +6,7 @@ https://oeis.org/A047781
 
 
 /* [wxMaxima: input   start ] */
-makelist(if n=0 then 0 else sum(binomial(n-1, k)*binomial(n+k, k), k, 0, n-1), n, 0, 22); /* _Bruno Berselli_, May 19 2011 */
+makelist(if n=0 then 0 else sum(binomial(n-1, k)*binomial(n+k, k), k, 0, n-1), n, 0, 22); /* Bruno Berselli, May 19 2011 */
 /* [wxMaxima: input   end   ] */
 
 

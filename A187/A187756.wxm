@@ -6,7 +6,7 @@ https://oeis.org/A187756
 
 
 /* [wxMaxima: input   start ] */
-A187756(n):=n^2*(4*n^2-1)/3$ makelist(A187756(n),n,0,20); /* _Martin Ettl_, Jan 07 2013 */
+A187756(n):=n^2*(4*n^2-1)/3$ makelist(A187756(n),n,0,20); /* Martin Ettl, Jan 07 2013 */
 /* [wxMaxima: input   end   ] */
 
 

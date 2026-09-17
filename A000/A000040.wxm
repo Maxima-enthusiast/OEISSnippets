@@ -9,7 +9,7 @@ https://oeis.org/A000040
 A000040(n) := block(
 if n = 1 then return(2),
 return( next_prime(A000040(n-1)))
-)$ /* recursive, to be replaced if possible - _R. J. Mathar_, Feb 27 2012 */
+)$ /* recursive, to be replaced if possible - R. J. Mathar, Feb 27 2012 */
 /* [wxMaxima: input   end   ] */
 
 

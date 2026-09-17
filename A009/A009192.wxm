@@ -6,7 +6,7 @@ https://oeis.org/A009192
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum((sum(binomial(n,2*m)*(stirling1(n-2*m,k)*(sum((k-2*i)^(2*m)*binomial(k,i),i,0,(k-1)/2))*(-1)^(m)),m,1,(n-k)/2))/2^(k-1)+(stirling1(n,k)),k,0,n); /* _Vladimir Kruchinin_, Jun 29 2011 */
+a(n):=sum((sum(binomial(n,2*m)*(stirling1(n-2*m,k)*(sum((k-2*i)^(2*m)*binomial(k,i),i,0,(k-1)/2))*(-1)^(m)),m,1,(n-k)/2))/2^(k-1)+(stirling1(n,k)),k,0,n); /* Vladimir Kruchinin, Jun 29 2011 */
 /* [wxMaxima: input   end   ] */
 
 

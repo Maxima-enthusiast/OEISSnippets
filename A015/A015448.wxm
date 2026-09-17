@@ -10,7 +10,7 @@ a[0]:1$
 a[1]:1$
 a[n]:=4*a[n-1]+a[n-2]$
 A015448(n):=a[n]$
-makelist(A015448(n),n,0,30); /* _Martin Ettl_, Nov 03 2012 */
+makelist(A015448(n),n,0,30); /* Martin Ettl, Nov 03 2012 */
 /* [wxMaxima: input   end   ] */
 
 

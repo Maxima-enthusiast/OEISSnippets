@@ -7,7 +7,7 @@ https://oeis.org/A155161
 
 /* [wxMaxima: input   start ] */
 M(n,k):=pochhammer(n,k)/k!;
-create_list(sum(M(k,i)*binomial(i,n-i-k),i,0,n-k),n,0,8,k,0,n); /* _Emanuele Munarini_, Mar 15 2011 */
+create_list(sum(M(k,i)*binomial(i,n-i-k),i,0,n-k),n,0,8,k,0,n); /* Emanuele Munarini, Mar 15 2011 */
 /* [wxMaxima: input   end   ] */
 
 

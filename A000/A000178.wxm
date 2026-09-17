@@ -6,7 +6,7 @@ https://oeis.org/A000178
 
 
 /* [wxMaxima: input   start ] */
-A000178(n):=prod(k!,k,0,n)$ makelist(A000178(n),n,0,30); /* _Martin Ettl_, Oct 23 2012 */
+A000178(n):=prod(k!,k,0,n)$ makelist(A000178(n),n,0,30); /* Martin Ettl, Oct 23 2012 */
 (Ruby)
 def mono_choices(a,b,n)
 n - [a,b].max

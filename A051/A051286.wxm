@@ -6,7 +6,7 @@ https://oeis.org/A051286
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(binomial(n-k,k)^2,k,0,floor(n/2)),n,0,40);  /* _Emanuele Munarini_, Mar 01 2011 */
+makelist(sum(binomial(n-k,k)^2,k,0,floor(n/2)),n,0,40);  /* Emanuele Munarini, Mar 01 2011 */
 /* [wxMaxima: input   end   ] */
 
 

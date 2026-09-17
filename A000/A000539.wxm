@@ -6,7 +6,7 @@ https://oeis.org/A000539
 
 
 /* [wxMaxima: input   start ] */
-A000539(n):=n^2*(n+1)^2*(2*n^2+2*n-1)/12$ makelist(A000539(n),n,0,30); /* _Martin Ettl_, Nov 12 2012 */
+A000539(n):=n^2*(n+1)^2*(2*n^2+2*n-1)/12$ makelist(A000539(n),n,0,30); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

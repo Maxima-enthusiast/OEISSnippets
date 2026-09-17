@@ -7,7 +7,7 @@ https://oeis.org/A009218
 
 /* [wxMaxima: input   start ] */
 a[n]:=if n<3 then mod((n+1)^2,3) else (-2*n+3)*a[n-1]-(n-3)*(n-1)*a[n-2]+(n-1)*(n-2)*a[n-3]/2;
-makelist(a[n],n,0,50); /* _Tani Akinari_, Feb 13 2024 */
+makelist(a[n],n,0,50); /* Tani Akinari, Feb 13 2024 */
 /* [wxMaxima: input   end   ] */
 
 

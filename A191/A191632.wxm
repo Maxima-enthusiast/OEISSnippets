@@ -6,7 +6,7 @@ https://oeis.org/A191632
 
 
 /* [wxMaxima: input   start ] */
-A191632(n):=floor((3^n)/(2*n-1))$ makelist(A191632(n),n,1,30); /* _Martin Ettl_, Oct 25 2012 */
+A191632(n):=floor((3^n)/(2*n-1))$ makelist(A191632(n),n,1,30); /* Martin Ettl, Oct 25 2012 */
 /* [wxMaxima: input   end   ] */
 
 

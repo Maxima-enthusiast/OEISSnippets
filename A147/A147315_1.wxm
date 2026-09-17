@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A147315
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+Co(n,k):=sum(binomial(k,j)*(if oddp(n-k+j) then 0 else if (n-k+j)/2<j then 0 else j*2^(-n+k+1)*binomial(n-k-1,(n-k+j)/2-1)/(n-k+j))*(-1)^j,j,1,k)+kron_delta(n,k);
+A147315(n,m):=1/m!*sum((if oddp(n-k) then 0 else 2^(1-k)*sum((-1)^(floor((n+k)/2)-i)*binomial(k,i)*(2*i-k)^n,i,0,floor(k/2)))*(sum(Co(i,m)*binomial(k-i+m-1,m-1),i,1,k)),k,m,n); /* Vladimir Kruchinin, Feb 17 2011 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

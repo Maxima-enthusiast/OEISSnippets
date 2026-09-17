@@ -6,7 +6,7 @@ https://oeis.org/A025758
 
 
 /* [wxMaxima: input   start ] */
-a(n):=(256/205)*41^(-n)*sum(sum((-4)^(-k)*(-1025)^m*binomial(k/5,m),k,0,4),m,0,n);  /* _Tani Akinari_, Sep 16 2015  */
+a(n):=(256/205)*41^(-n)*sum(sum((-4)^(-k)*(-1025)^m*binomial(k/5,m),k,0,4),m,0,n);  /* Tani Akinari, Sep 16 2015  */
 /* [wxMaxima: input   end   ] */
 
 

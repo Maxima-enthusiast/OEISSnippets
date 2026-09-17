@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A126156
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a[n]:=if n=0 then 1 else sum(a[n-k]*binomial(2*n,2*k)*(k/(2*n)-1)*(-2)^k,k,1,n);
+makelist(a[n],n,0,30); /* Tani Akinari, Sep 11 2023 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

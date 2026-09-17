@@ -6,7 +6,7 @@ https://oeis.org/A186366
 
 
 /* [wxMaxima: input   start ] */
-T(n,m):=2*sum((stirling1(2*j-n,m)*(-1)^(m-n)*sum((2*i-2*j+n)^n*binomial(2*j-n,i)*(-1)^(j-i),i,0,(2*j-n)/2))/(2^(2*j-n)*(2*j-n)!),j,floor((n+m)/2),n); /* _Vladimir Kruchinin_, Mar 26 2013 */
+T(n,m):=2*sum((stirling1(2*j-n,m)*(-1)^(m-n)*sum((2*i-2*j+n)^n*binomial(2*j-n,i)*(-1)^(j-i),i,0,(2*j-n)/2))/(2^(2*j-n)*(2*j-n)!),j,floor((n+m)/2),n); /* Vladimir Kruchinin, Mar 26 2013 */
 /* [wxMaxima: input   end   ] */
 
 

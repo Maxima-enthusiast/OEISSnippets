@@ -6,7 +6,7 @@ https://oeis.org/A053501
 
 
 /* [wxMaxima: input   start ] */
-a(n):=n!*sum(if mod(11*k-n,10)=0 then binomial(k,(11*k-n)/10)*(11)^((k-n)/10)/k! else 0,k,1,n); /* _Vladimir Kruchinin_, Sep 10 2010 */
+a(n):=n!*sum(if mod(11*k-n,10)=0 then binomial(k,(11*k-n)/10)*(11)^((k-n)/10)/k! else 0,k,1,n); /* Vladimir Kruchinin, Sep 10 2010 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A006003
 
 
 /* [wxMaxima: input   start ] */
-a(n):=n*(n^2 + 1)/2$ makelist(a(n), n, 0, nmax); /* _Stefano Spezia_, Aug 12 2018 */
+a(n):=n*(n^2 + 1)/2$ makelist(a(n), n, 0, nmax); /* Stefano Spezia, Aug 12 2018 */
 /* [wxMaxima: input   end   ] */
 
 

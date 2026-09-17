@@ -7,7 +7,7 @@ https://oeis.org/A094028
 
 /* [wxMaxima: input   start ] */
 A094028(n):=1+100*(100^n-1)/99$
-makelist(A094028(n),n,0,30); /* _Martin Ettl_, Nov 06 2012 */
+makelist(A094028(n),n,0,30); /* Martin Ettl, Nov 06 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A059481
 
 
 /* [wxMaxima: input   start ] */
-sjoin(v, j) := apply(sconcat, rest(join(makelist(j, length(v)), v)))$ display_triangle(n) := for i from 0 thru n do disp(sjoin(makelist(binomial(i+j-1, j), j, 0, i), " ")); display_triangle(10); /* triangle output */ /* _Stefano Spezia_, Oct 30 2018 */
+sjoin(v, j) := apply(sconcat, rest(join(makelist(j, length(v)), v)))$ display_triangle(n) := for i from 0 thru n do disp(sjoin(makelist(binomial(i+j-1, j), j, 0, i), " ")); display_triangle(10); /* triangle output */ /* Stefano Spezia, Oct 30 2018 */
 /* [wxMaxima: input   end   ] */
 
 

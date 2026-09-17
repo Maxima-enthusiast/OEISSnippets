@@ -6,7 +6,7 @@ https://oeis.org/A133853
 
 
 /* [wxMaxima: input   start ] */
-makelist((64^n-1)/63, n, 0, 20); /* _Martin Ettl_, Nov 12 2012 */
+makelist((64^n-1)/63, n, 0, 20); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

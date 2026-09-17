@@ -6,7 +6,7 @@ https://oeis.org/A096045
 
 
 /* [wxMaxima: input   start ] */
-A096045(n):=3*4^n-2$ makelist(A096045(n),n,0,30); /* _Martin Ettl_, Nov 13 2012 */
+A096045(n):=3*4^n-2$ makelist(A096045(n),n,0,30); /* Martin Ettl, Nov 13 2012 */
 /* [wxMaxima: input   end   ] */
 
 

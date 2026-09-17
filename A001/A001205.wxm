@@ -7,7 +7,7 @@ https://oeis.org/A001205
 
 /* [wxMaxima: input   start ] */
 a(n):=sum(sum(binomial(k,i)*binomial(i-1/2,n-k)*(3^(k-i)*n!)/(4^k*k!)*(-1)^(n-i),i,0,k),k,0,n);
-makelist(a(n),n,0,12); /* _Emanuele Munarini_, Aug 25 2017 */
+makelist(a(n),n,0,12); /* Emanuele Munarini, Aug 25 2017 */
 /* [wxMaxima: input   end   ] */
 
 

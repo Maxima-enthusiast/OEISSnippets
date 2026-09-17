@@ -6,7 +6,7 @@ https://oeis.org/A052318
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum((if mod(n-m,2)=0 then m^((n+m)/2-2)/((n-m)/2)!*(-1)^((n-m)/2) else 0)/(m-1)!,m,1,n); /* _Vladimir Kruchinin_, Aug 07 2012 */
+a(n):=sum((if mod(n-m,2)=0 then m^((n+m)/2-2)/((n-m)/2)!*(-1)^((n-m)/2) else 0)/(m-1)!,m,1,n); /* Vladimir Kruchinin, Aug 07 2012 */
 /* [wxMaxima: input   end   ] */
 
 

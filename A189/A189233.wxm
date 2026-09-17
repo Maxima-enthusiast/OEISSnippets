@@ -6,7 +6,7 @@ https://oeis.org/A189233
 
 
 /* [wxMaxima: input   start ] */
-A(n,k):=if k=0 and n=0 then 1 else if k=0 then 0 else  sum(stirling2(n,i)*k^i,i,0,n); /* _Vladimir Kruchinin_, Apr 12 2019 */
+A(n,k):=if k=0 and n=0 then 1 else if k=0 then 0 else  sum(stirling2(n,i)*k^i,i,0,n); /* Vladimir Kruchinin, Apr 12 2019 */
 /* [wxMaxima: input   end   ] */
 
 

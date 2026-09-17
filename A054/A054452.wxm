@@ -6,7 +6,7 @@ https://oeis.org/A054452
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(fib(k)*binomial(n+1,k+2),k,0,n),n,0,20); /* _Vladimir Kruchinin_, Oct 21 2016 */
+makelist(sum(fib(k)*binomial(n+1,k+2),k,0,n),n,0,20); /* Vladimir Kruchinin, Oct 21 2016 */
 /* [wxMaxima: input   end   ] */
 
 

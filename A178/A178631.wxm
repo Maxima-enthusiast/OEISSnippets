@@ -6,7 +6,7 @@ https://oeis.org/A178631
 
 
 /* [wxMaxima: input   start ] */
-A178631(n):=27*((10^n-1)/9)^2$ makelist(A178631(n),n,1,10); /* _Martin Ettl_, Nov 12 2012 */
+A178631(n):=27*((10^n-1)/9)^2$ makelist(A178631(n),n,1,10); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

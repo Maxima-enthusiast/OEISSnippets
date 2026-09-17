@@ -7,7 +7,7 @@ https://oeis.org/A112951
 
 /* [wxMaxima: input   start ] */
 a(n):=(sum((m*(sum(((sum(binomial(j+m,j-i)*binomial(j+i+m-1,j+m-1),i,0,j))* sum((k*binomial(m+k,k)*binomial(2*(n-k-j-m),n-j-m))/(n-k-j-m),k,1,(n-j-m)/2))/ (j+m),j,0,n-m-1))+(m*sum(binomial(n,n-m-i)*binomial(n+i-1,n-1),i,0,n-m))/n) ,m,1,n))+(sum((k*binomial(2*(n-k),n))/(n-k),k,1,n/2))+1;
-makelist(a(n),n,0,17); /* _Vladimir Kruchinin_, Mar 14 2016 */
+makelist(a(n),n,0,17); /* Vladimir Kruchinin, Mar 14 2016 */
 /* [wxMaxima: input   end   ] */
 
 

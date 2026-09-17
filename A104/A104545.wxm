@@ -6,7 +6,7 @@ https://oeis.org/A104545
 
 
 /* [wxMaxima: input   start ] */
-b(n):=sum(binomial(2*k,k)/(k+1)*(binomial(2*k,n-2*k+1)+binomial(2*k,n-2*k)),k,ceiling(n/4),(n+1)/2); a(n):=if n=0 then 1 else b(n-1); /* _Vladimir Kruchinin_, Mar 14 2012 */
+b(n):=sum(binomial(2*k,k)/(k+1)*(binomial(2*k,n-2*k+1)+binomial(2*k,n-2*k)),k,ceiling(n/4),(n+1)/2); a(n):=if n=0 then 1 else b(n-1); /* Vladimir Kruchinin, Mar 14 2012 */
 /* [wxMaxima: input   end   ] */
 
 

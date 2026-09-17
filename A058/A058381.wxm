@@ -6,7 +6,7 @@ https://oeis.org/A058381
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum((sum((m+k-1)!*sum(((-1)^j*sum((2^(j-l)*(-1)^l *stirling1(m-l+j-1,j-l))/(l!*(m-l+j-1)!),l,0,j))/(k-j)!,j,0,k),k,0,m-1)) *stirling1(n,m),m,1,n); /* _Vladimir Kruchinin_, Feb 17 2012 */
+a(n):=sum((sum((m+k-1)!*sum(((-1)^j*sum((2^(j-l)*(-1)^l *stirling1(m-l+j-1,j-l))/(l!*(m-l+j-1)!),l,0,j))/(k-j)!,j,0,k),k,0,m-1)) *stirling1(n,m),m,1,n); /* Vladimir Kruchinin, Feb 17 2012 */
 /* [wxMaxima: input   end   ] */
 
 

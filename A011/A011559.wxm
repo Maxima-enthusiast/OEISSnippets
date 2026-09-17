@@ -6,7 +6,7 @@ https://oeis.org/A011559
 
 
 /* [wxMaxima: input   start ] */
-A011559(n):=stirling2(10,n)$ makelist(A011559(n),n,1,10); /* _Martin Ettl_, Nov 05 2012 */
+A011559(n):=stirling2(10,n)$ makelist(A011559(n),n,1,10); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

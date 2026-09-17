@@ -6,7 +6,7 @@ https://oeis.org/A226577
 
 
 /* [wxMaxima: input   start ] */
-makelist(5+(2*n-1-(2+(-1)^n)*(11+2*%i^(n*(n+1))))/8, n, 0, 80); /* _Bruno Berselli_, Jun 12 2013 */
+makelist(5+(2*n-1-(2+(-1)^n)*(11+2*%i^(n*(n+1))))/8, n, 0, 80); /* Bruno Berselli, Jun 12 2013 */
 /* [wxMaxima: input   end   ] */
 
 

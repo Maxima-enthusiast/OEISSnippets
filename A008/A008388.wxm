@@ -7,7 +7,7 @@ https://oeis.org/A008388
 
 /* [wxMaxima: input   start ] */
 A008388[n]:=1+7*n*(n+1)*(n^2+n+3)*(11*n^2+11*n+14)/60$
-makelist(A008388[n],n,0,30); /* _Martin Ettl_, Oct 26 2012 */
+makelist(A008388[n],n,0,30); /* Martin Ettl, Oct 26 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A008458
 
 
 /* [wxMaxima: input   start ] */
-makelist(if n=0 then 1 else 6*n,n,0,65); /* _Martin Ettl_, Nov 12 2012 */
+makelist(if n=0 then 1 else 6*n,n,0,65); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

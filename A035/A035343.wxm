@@ -7,7 +7,7 @@ https://oeis.org/A035343
 
 /* [wxMaxima: input   start ] */
 pentanomial(n,k):=coeff(expand((1+x+x^2+x^3+x^4)^n),x,k);
-create_list(pentanomial(n,k),n,0,6,k,0,4*n); /* _Emanuele Munarini_, Mar 15 2011 */
+create_list(pentanomial(n,k),n,0,6,k,0,4*n); /* Emanuele Munarini, Mar 15 2011 */
 /* [wxMaxima: input   end   ] */
 
 

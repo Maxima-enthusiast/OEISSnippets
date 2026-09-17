@@ -7,7 +7,7 @@ https://oeis.org/A013697
 
 /* [wxMaxima: input   start ] */
 A013697(n):=floor(1/(zeta(n)-1))$
-makelist(A013697(n),n,2,30); /* _Martin Ettl_, Nov 03 2012 */
+makelist(A013697(n),n,2,30); /* Martin Ettl, Nov 03 2012 */
 /* [wxMaxima: input   end   ] */
 
 

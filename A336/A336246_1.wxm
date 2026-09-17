@@ -1,0 +1,23 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A336246
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+block(nr: 0, k: -1,  mmax: 55,
+/*First mmax terms are returned, recurrence used*/
+a: makelist(0, n, 1, mmax),
+while nr<mmax do
+(v1:1, k: k+1, n:0, m: (k+1)*(k+2)/2,
+while m<=mmax do (n:n+1,
+if n=1 then v2: k else (v2: (n+k-1)*v1+(n-1)*v0, m: m+n+k-1),
+if m<=mmax then (a[m]: v2, nr: nr+1, v0: v1, v1: v2))),
+return(a));
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

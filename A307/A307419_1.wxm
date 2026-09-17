@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A307419
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+T(n,k):=n!*sum((binomial(k+i-1,i)*abs(stirling1(n-i,k)))/(n-i)!,i,0,n-k);
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

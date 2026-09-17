@@ -10,7 +10,7 @@ A008292(n, k) := sum((-1)^j*(k - j)^n*binomial(n + 1, j), j, 0, k)$
 A060187(n, k) := sum((-1)^(k - j)*binomial(n, k - j)*(2*j - 1)^(n - 1), j, 1, k)$
 T(n, k) := (binomial(n, k) - 6*A008292(n + 1, k + 1) + 9*A060187(n + 1, k + 1))/4$
 create_list(T(n, k), n, 0, 10, k, 0, n);
-/* _Franck Maminirina Ramaharo_, Oct 20 2018 */
+/* Franck Maminirina Ramaharo, Oct 20 2018 */
 /* [wxMaxima: input   end   ] */
 
 

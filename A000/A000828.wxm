@@ -6,7 +6,7 @@ https://oeis.org/A000828
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum(if evenp(n+k) then (-1)^((n+k)/2)*sum(j!/n!*stirling2(n,j)*2^(n-j)*(-1)^(n+j-k)*binomial(j-1,k-1),j,k,n),k,1,n); /* _Vladimir Kruchinin_, Aug 18 2010 */
+a(n):=sum(if evenp(n+k) then (-1)^((n+k)/2)*sum(j!/n!*stirling2(n,j)*2^(n-j)*(-1)^(n+j-k)*binomial(j-1,k-1),j,k,n),k,1,n); /* Vladimir Kruchinin, Aug 18 2010 */
 /* [wxMaxima: input   end   ] */
 
 

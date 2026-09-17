@@ -6,7 +6,7 @@ https://oeis.org/A047401
 
 
 /* [wxMaxima: input   start ] */
-makelist(2*(n-1)+(%i^(n*(n-1))-1)/2,n,1,55); /* _Bruno Berselli_, Dec 05 2011 */
+makelist(2*(n-1)+(%i^(n*(n-1))-1)/2,n,1,55); /* Bruno Berselli, Dec 05 2011 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A003710
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 1 else 2*sum((sum(binomial(j-1,2*m-1)*j!*2^(2*n-j-1)*(-1)^(n+j)*stirling2(2*n,j),j,2*m,2*n))/(2*m)!,m,0,n); /* _Vladimir Kruchinin_, Jun 28 2011 */
+a(n):=if n=0 then 1 else 2*sum((sum(binomial(j-1,2*m-1)*j!*2^(2*n-j-1)*(-1)^(n+j)*stirling2(2*n,j),j,2*m,2*n))/(2*m)!,m,0,n); /* Vladimir Kruchinin, Jun 28 2011 */
 /* [wxMaxima: input   end   ] */
 
 

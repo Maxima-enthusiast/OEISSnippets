@@ -6,7 +6,7 @@ https://oeis.org/A101214
 
 
 /* [wxMaxima: input   start ] */
-A101214(n):=n*(n+1)^2*(n+2)^3*(n+3)^4$ makelist(A101214(n),n,0,20); /* _Martin Ettl_, Dec 15 2012 */
+A101214(n):=n*(n+1)^2*(n+2)^3*(n+3)^4$ makelist(A101214(n),n,0,20); /* Martin Ettl, Dec 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

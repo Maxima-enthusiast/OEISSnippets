@@ -7,7 +7,7 @@ https://oeis.org/A213422
 
 /* [wxMaxima: input   start ] */
 T(n,m):=if n=m then 1 else 1/2*(4^(n-m)*m/n*binomial(2*n-m-1,n-1) -sum(T(n,i) *T(i,m), i,m+1,n-1));
-makelist(T(n,1),n,1,10); /* _Dmitry Kruchinin_, Dec 02 2012 */
+makelist(T(n,1),n,1,10); /* Dmitry Kruchinin, Dec 02 2012 */
 /* [wxMaxima: input   end   ] */
 
 

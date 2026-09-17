@@ -30,14 +30,22 @@ def normalize_trailing_contributor_comment(code: str) -> tuple[str, str | None]:
         return code, None
 
     comment = match.group("comment")
-    # Remove underscores from the comment for both wxm file and contributor extraction
-    processed_comment = re.sub(r"_", "", comment)
+    processed_comment = normalize_contributor_markers(comment)
     body_without_comment = stripped[: match.start("comment")].rstrip()
     if body_without_comment:
         new_code_for_wxm = body_without_comment + "\n" + processed_comment # Use processed comment
     else:
         new_code_for_wxm = processed_comment
     return new_code_for_wxm, processed_comment # Both are now _-less
+
+
+def normalize_contributor_markers(text: str) -> str:
+    """Remove only the paired underscores marking contributor names."""
+    return re.sub(
+        r"(?<!\w)_+(?P<name>[A-ZÀ-Ý][^_\r\n]*?)_+(?=\s*(?:[,.;:]|\*/|[A-ZÀ-Ý]|\b(?:on|and|by|from)\b|$))",
+        r"\g<name>",
+        text,
+    )
 
 
 def extract_maxima_snippets(text: str) -> list[tuple[str, str]]:
@@ -72,9 +80,7 @@ def collect_contributor_names(comment: str | None) -> list[str]:
     matches = re.findall(r"(?<!\w)(?P<name>[A-Z][A-Za-zÀ-ÿ .'-]+?)(?=,|$)", body)
     cleaned = []
     for name in matches:
-        # The comment itself is already _-less by the time it reaches this function
-        # Explicitly remove any remaining underscores from the extracted name
-        candidate = name.strip().replace('_', '')
+        candidate = name.strip()
         if candidate and (" " in candidate or "." in candidate) and candidate.lower() not in {"by", "after", "from", "for", "with", "the", "and"}:
             cleaned.append(candidate)
 
@@ -84,34 +90,23 @@ def collect_contributor_names(comment: str | None) -> list[str]:
 def correct_underscores_in_wxm_comments(root: Path):
     """
     Scans all .wxm files in the given root and its subdirectories,
-    finds contributor comments, removes underscores from them, and rewrites the files.
+    finds contributor markers, and rewrites only those markers.
     """
     fixed_count = 0
     for wxm_file_path in root.glob('**/*.wxm'):
         original_content = wxm_file_path.read_text(encoding="utf-8")
         new_content = original_content
 
-        # Regex to find the entire comment block that potentially contains contributor names
-        # This regex looks for '/* [wxMaxima: comment start ]' and '/* [wxMaxima: comment end   ] */'
-        # and captures everything in between.
-        comment_block_regex = r"(/{1}\* \[wxMaxima: comment start \]\n)(.*?)(/{1}\* \[wxMaxima: comment end   \] \*/)"
-        match = re.search(comment_block_regex, new_content, re.DOTALL)
+        processed_content = re.sub(
+            r"/\*.*?\*/",
+            lambda match: normalize_contributor_markers(match.group(0)),
+            new_content,
+            flags=re.DOTALL,
+        )
 
-        if match:
-            prefix = match.group(1) # '/* [wxMaxima: comment start ]\n'
-            comment_body = match.group(2) # The content of the comment
-            suffix = match.group(3) # '/* [wxMaxima: comment end   ] */'
-
-            # Remove underscores from the comment body
-            processed_comment_body = re.sub(r"_", "", comment_body)
-
-            if processed_comment_body != comment_body:
-                # Reconstruct the entire comment block with the cleaned body
-                updated_comment_block = prefix + processed_comment_body + suffix
-                # Replace the old comment block in the file content with the updated one
-                new_content = re.sub(comment_block_regex, updated_comment_block, new_content, flags=re.DOTALL, count=1)
-                wxm_file_path.write_text(new_content, encoding="utf-8")
-                fixed_count += 1
+        if processed_content != new_content:
+            wxm_file_path.write_text(processed_content, encoding="utf-8")
+            fixed_count += 1
 
     return fixed_count
 
@@ -119,6 +114,10 @@ def correct_underscores_in_wxm_comments(root: Path):
 def write_output_files(snippets: list[tuple[str, str]], root: Path) -> tuple[int, list[str]]:
     contributor_names: list[str] = []
     written = 0
+    snippet_counts: dict[str, int] = {}
+    snippet_totals: dict[str, int] = {}
+    for oeis_id, _ in snippets:
+        snippet_totals[oeis_id] = snippet_totals.get(oeis_id, 0) + 1
 
     for oeis_id, body_line in snippets:
         normalized_body_for_wxm, comment_for_contributor_extraction = normalize_trailing_contributor_comment(body_line)
@@ -126,7 +125,13 @@ def write_output_files(snippets: list[tuple[str, str]], root: Path) -> tuple[int
 
         folder = root / f"A{oeis_id[1:4]}"
         folder.mkdir(parents=True, exist_ok=True)
-        output_path = folder / f"{oeis_id}.wxm"
+        snippet_counts[oeis_id] = snippet_counts.get(oeis_id, 0) + 1
+        suffix = (
+            f"_{snippet_counts[oeis_id]}"
+            if snippet_totals[oeis_id] > 1
+            else ""
+        )
+        output_path = folder / f"{oeis_id}{suffix}.wxm"
 
         # If file exists, overwrite it with the new snippet. This avoids problematic merging logic.
         final_body_for_wxm_file = normalized_body_for_wxm # Use the cleaned snippet body

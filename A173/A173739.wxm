@@ -9,7 +9,7 @@ https://oeis.org/A173739
 b(n, q) := ((1 + sqrt(q))^n - (1 - sqrt(q))^n)/(2*sqrt(q))$
 T(n, k) := b(n, k) + b(k - 1, n + 1)$
 create_list(fullratsimp(T(k - 1, n - k + 3)), n, 1, 20, k, 2, n + 1);
-/* _Franck Maminirina Ramaharo_, Jan 27 2019 */
+/* Franck Maminirina Ramaharo, Jan 27 2019 */
 /* [wxMaxima: input   end   ] */
 
 

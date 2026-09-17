@@ -6,7 +6,7 @@ https://oeis.org/A215898
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(1+(5-%i^(n*(n+1)))*((2*n+1)*(-1)^n-1)/8), n, 0, 60); /* _Bruno Berselli_, Sep 07 2012 */
+makelist(expand(1+(5-%i^(n*(n+1)))*((2*n+1)*(-1)^n-1)/8), n, 0, 60); /* Bruno Berselli, Sep 07 2012 */
 /* [wxMaxima: input   end   ] */
 
 

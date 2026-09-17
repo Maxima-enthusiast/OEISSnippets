@@ -1,0 +1,21 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A336246
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+block(n: 1, k: 0,  mmax: 55,
+/*First mmax terms are returned, explicit formula used*/
+a: makelist(0, n, 1, mmax),
+for m from 1 thru mmax do (su: 0,
+for r from 0 thru n do su: su+(-1)^r*binomial(n,r)*(n+k-r)!/k!,
+a[m]: su, if n=1 then (n: k+2, k: 0) else (n: n-1, k: k+1)),
+return(a));
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -6,7 +6,7 @@ https://oeis.org/A023000
 
 
 /* [wxMaxima: input   start ] */
-A023000(n):=floor((7^n-1)/6)$  makelist(A023000(n),n,0,30); /* _Martin Ettl_, Nov 05 2012 */
+A023000(n):=floor((7^n-1)/6)$  makelist(A023000(n),n,0,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -8,7 +8,7 @@ https://oeis.org/A134195
 /* [wxMaxima: input   start ] */
 T(n, k) := if k = 1 then 1 else n*T(n, k - 1) + k$ /* A126885 */
 a(n) := sum(T(n - k + 1, k), k, 1, n + 1)$
-makelist(a(n), n, 0, 50); /* _Franck Maminirina Ramaharo_, Jan 26 2019 */
+makelist(a(n), n, 0, 50); /* Franck Maminirina Ramaharo, Jan 26 2019 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A390969
 
 
 /* [wxMaxima: input   start ] */
-a(n):=6*(23*n^2+30*n+10)*(3*n+2)!/((2*n+5)!*n!); /* _Tani Akinari_, Dec 23 2025 */
+a(n):=6*(23*n^2+30*n+10)*(3*n+2)!/((2*n+5)!*n!); /* Tani Akinari, Dec 23 2025 */
 /* [wxMaxima: input   end   ] */
 
 

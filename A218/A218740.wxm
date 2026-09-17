@@ -7,7 +7,7 @@ https://oeis.org/A218740
 
 /* [wxMaxima: input   start ] */
 A218740(n):=(37^n-1)/36$
-makelist(A218740(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
+makelist(A218740(n),n,0,30); /* Martin Ettl, Nov 07 2012 */
 /* [wxMaxima: input   end   ] */
 
 

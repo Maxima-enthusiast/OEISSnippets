@@ -6,7 +6,7 @@ https://oeis.org/A215915
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 1 else (n-1)!*sum(num_partitions(i+1)*a(n-i-1)/(n-i-1)!,i,0,n-1); /* _Vladimir Kruchinin_, Feb 27 2015 */
+a(n):=if n=0 then 1 else (n-1)!*sum(num_partitions(i+1)*a(n-i-1)/(n-i-1)!,i,0,n-1); /* Vladimir Kruchinin, Feb 27 2015 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -17,7 +17,7 @@ npr : (n-1)/2,
 a : npr*(npr+1)*n/6
 ) ,
 return(a)
-)$ /* _R. J. Mathar_, Mar 10 2012 */
+)$ /* R. J. Mathar, Mar 10 2012 */
 /* [wxMaxima: input   end   ] */
 
 

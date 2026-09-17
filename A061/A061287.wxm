@@ -6,7 +6,7 @@ https://oeis.org/A061287
 
 
 /* [wxMaxima: input   start ] */
-makelist(floor(sqrt(fib(n))),n,0,24); /* _Emanuele Munarini_, Jul 07 2011 */
+makelist(floor(sqrt(fib(n))),n,0,24); /* Emanuele Munarini, Jul 07 2011 */
 /* [wxMaxima: input   end   ] */
 
 

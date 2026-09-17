@@ -6,7 +6,7 @@ https://oeis.org/A123202
 
 
 /* [wxMaxima: input   start ] */
-create_list(ratcoef(n!*(1 - x)^n*laguerre(n, x/(1 - x)), x, k), n, 0, 10, k, 0, n); /* _Franck Maminirina Ramaharo_, Oct 13 2018 */
+create_list(ratcoef(n!*(1 - x)^n*laguerre(n, x/(1 - x)), x, k), n, 0, 10, k, 0, n); /* Franck Maminirina Ramaharo, Oct 13 2018 */
 /* [wxMaxima: input   end   ] */
 
 

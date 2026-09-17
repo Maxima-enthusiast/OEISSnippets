@@ -20,7 +20,7 @@ return(v)
 )$
 for n : 1 thru 100 do (
 if equal(isA206476(n), true ) then print(n)
-)$ /* _R. J. Mathar_, Feb 27 2012 */
+)$ /* R. J. Mathar, Feb 27 2012 */
 /* [wxMaxima: input   end   ] */
 
 

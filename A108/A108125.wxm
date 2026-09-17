@@ -6,7 +6,7 @@ https://oeis.org/A108125
 
 
 /* [wxMaxima: input   start ] */
-a[n]:=if n<2 then n else n!*sum(a[n-k]*(-1)^(k+1)/(k*(n-k)!),k,1,n-1); makelist(a[n],n,0,100); /* _Tani Akinari_, Nov 25 2017 */
+a[n]:=if n<2 then n else n!*sum(a[n-k]*(-1)^(k+1)/(k*(n-k)!),k,1,n-1); makelist(a[n],n,0,100); /* Tani Akinari, Nov 25 2017 */
 /* [wxMaxima: input   end   ] */
 
 

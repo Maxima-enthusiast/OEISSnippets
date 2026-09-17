@@ -6,7 +6,7 @@ https://oeis.org/A217459
 
 
 /* [wxMaxima: input   start ] */
-fpprec : 100; ev(bfloat(2^(%pi)));  /* _Martin Ettl_, Oct 04 2012 */
+fpprec : 100; ev(bfloat(2^(%pi)));  /* Martin Ettl, Oct 04 2012 */
 /* [wxMaxima: input   end   ] */
 
 

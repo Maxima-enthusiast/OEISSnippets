@@ -6,7 +6,7 @@ https://oeis.org/A077241
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand((-1)^n*((4-5*sqrt(2))*(1-(-1)^n*sqrt(2))^(2*floor((n+1)/2))+(4+5*sqrt(2))*(1+(-1)^n*sqrt(2))^(2*floor((n+1)/2)))/8), n, 0, 30); /* _Bruno Berselli_, Mar 10 2013 */
+makelist(expand((-1)^n*((4-5*sqrt(2))*(1-(-1)^n*sqrt(2))^(2*floor((n+1)/2))+(4+5*sqrt(2))*(1+(-1)^n*sqrt(2))^(2*floor((n+1)/2)))/8), n, 0, 30); /* Bruno Berselli, Mar 10 2013 */
 /* [wxMaxima: input   end   ] */
 
 

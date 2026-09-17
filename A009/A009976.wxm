@@ -7,7 +7,7 @@ https://oeis.org/A009976
 
 /* [wxMaxima: input   start ] */
 A009976(n):=32^n$
-makelist(A009976(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
+makelist(A009976(n),n,0,30); /* Martin Ettl, Nov 07 2012 */
 /* [wxMaxima: input   end   ] */
 
 

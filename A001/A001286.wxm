@@ -7,7 +7,7 @@ https://oeis.org/A001286
 
 /* [wxMaxima: input   start ] */
 A001286(n):=(n-1)*n!/2$
-makelist(A001286(n),n,1,30); /* _Martin Ettl_, Nov 03 2012 */
+makelist(A001286(n),n,1,30); /* Martin Ettl, Nov 03 2012 */
 /* [wxMaxima: input   end   ] */
 
 

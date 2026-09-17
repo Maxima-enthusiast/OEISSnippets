@@ -6,7 +6,7 @@ https://oeis.org/A052871
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum((n!/k!)*binomial(n-1, k-1)*k^(k-1), k, 1, n), n, 0, 17);  /* _Bruno Berselli_, May 25 2011 */
+makelist(sum((n!/k!)*binomial(n-1, k-1)*k^(k-1), k, 1, n), n, 0, 17);  /* Bruno Berselli, May 25 2011 */
 /* [wxMaxima: input   end   ] */
 
 

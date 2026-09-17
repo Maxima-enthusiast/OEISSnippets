@@ -7,7 +7,7 @@ https://oeis.org/A123162
 
 /* [wxMaxima: input   start ] */
 T(n, k) := if k = 0 then 1 else binomial(2*n - 1, 2*k - 1)$
-tabl(nn) := for n:0 thru nn do print(makelist(T(n, k), k, 0, n))$ /* _Franck Maminirina Ramaharo_, Oct 10 2018 */
+tabl(nn) := for n:0 thru nn do print(makelist(T(n, k), k, 0, n))$ /* Franck Maminirina Ramaharo, Oct 10 2018 */
 /* [wxMaxima: input   end   ] */
 
 

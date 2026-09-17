@@ -6,7 +6,7 @@ https://oeis.org/A073315
 
 
 /* [wxMaxima: input   start ] */
-T(n,m):=m!*((-1)^(n-m)*stirling1(n,m))*binomial(n+1,m)/(n+1); /* _Vladimir Kruchinin_, Sep 21 2018 */
+T(n,m):=m!*((-1)^(n-m)*stirling1(n,m))*binomial(n+1,m)/(n+1); /* Vladimir Kruchinin, Sep 21 2018 */
 /* [wxMaxima: input   end   ] */
 
 

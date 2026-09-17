@@ -10,7 +10,7 @@ a[1]:1$
 a[2]:15$
 a[3]:198$
 a[n]:=15*a[n-1]-27*a[n-2]+13*a[n-3]$
-A014896(n):=a[n]$ makelist(A014896(n),n,1,30); /* _Martin Ettl_, Nov 07 2012 */
+A014896(n):=a[n]$ makelist(A014896(n),n,1,30); /* Martin Ettl, Nov 07 2012 */
 /* [wxMaxima: input   end   ] */
 
 

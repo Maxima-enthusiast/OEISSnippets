@@ -7,7 +7,7 @@ https://oeis.org/A218456
 
 /* [wxMaxima: input   start ] */
 A218456(n):=2*n^3-313*n^2+6823*n-13633$
-makelist(A218456(n),n,0,30); /* _Martin Ettl_, Nov 08 2012 */
+makelist(A218456(n),n,0,30); /* Martin Ettl, Nov 08 2012 */
 /* [wxMaxima: input   end   ] */
 
 

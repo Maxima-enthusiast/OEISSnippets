@@ -7,7 +7,7 @@ https://oeis.org/A058806
 
 /* [wxMaxima: input   start ] */
 a(n):=n!*sum(binomial(2*n-k-1,n-k)/k,k,1,n);
-/* _Vladimir Kruchinin_, Mar 17 2016 */
+/* Vladimir Kruchinin, Mar 17 2016 */
 /* [wxMaxima: input   end   ] */
 
 

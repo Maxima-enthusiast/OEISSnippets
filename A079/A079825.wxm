@@ -6,7 +6,7 @@ https://oeis.org/A079825
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(((2*n+1)*(7*n^2+7*n+12)-3*n*(n-7)*(-1)^n+6*(2*n-3*(-1)^n+1)*%i^(n*(n-1)))/96), n, 1, 35); /* _Bruno Berselli_, Sep 05 2012 */
+makelist(expand(((2*n+1)*(7*n^2+7*n+12)-3*n*(n-7)*(-1)^n+6*(2*n-3*(-1)^n+1)*%i^(n*(n-1)))/96), n, 1, 35); /* Bruno Berselli, Sep 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

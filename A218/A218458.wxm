@@ -7,7 +7,7 @@ https://oeis.org/A218458
 
 /* [wxMaxima: input   start ] */
 A218458(n):=2*n^3-163*n^2+2777*n-11927$
-makelist(A218458(n),n,0,30); /* _Martin Ettl_, Nov 08 2012 */
+makelist(A218458(n),n,0,30); /* Martin Ettl, Nov 08 2012 */
 /* [wxMaxima: input   end   ] */
 
 

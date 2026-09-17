@@ -6,7 +6,7 @@ https://oeis.org/A218089
 
 
 /* [wxMaxima: input   start ] */
-A218089[n]:=n*((n+1)^n-n^(n-1))$ makelist(A218089[n],n,1,30); /* _Martin Ettl_, Oct 29 2012 */
+A218089[n]:=n*((n+1)^n-n^(n-1))$ makelist(A218089[n],n,1,30); /* Martin Ettl, Oct 29 2012 */
 /* [wxMaxima: input   end   ] */
 
 

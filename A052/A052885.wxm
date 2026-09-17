@@ -6,7 +6,7 @@ https://oeis.org/A052885
 
 
 /* [wxMaxima: input   start ] */
-a(n):=((n-1)!*sum((n^(n-i-1)*binomial(n,i))/(n-i-1)!,i,0,n-1)); /* _Vladimir Kruchinin_, Jan 31 2012 */
+a(n):=((n-1)!*sum((n^(n-i-1)*binomial(n,i))/(n-i-1)!,i,0,n-1)); /* Vladimir Kruchinin, Jan 31 2012 */
 /* [wxMaxima: input   end   ] */
 
 

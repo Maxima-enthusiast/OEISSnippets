@@ -9,7 +9,7 @@ https://oeis.org/A152009
 a[1]:1$
 a[n]:=floor((3*a[n-1]+3)/2)$
 A152009(n):=a[n];
-makelist(A152009(n),n,1,30); /* _Martin Ettl_, Oct 31 2012 */
+makelist(A152009(n),n,1,30); /* Martin Ettl, Oct 31 2012 */
 /* [wxMaxima: input   end   ] */
 
 

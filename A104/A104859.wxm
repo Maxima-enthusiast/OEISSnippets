@@ -6,7 +6,7 @@ https://oeis.org/A104859
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(binomial(3*k,k)/(2*k+1),k,0,n),n,0,20); /* _Emanuele Munarini_, Apr 08 2011 */
+makelist(sum(binomial(3*k,k)/(2*k+1),k,0,n),n,0,20); /* Emanuele Munarini, Apr 08 2011 */
 /* [wxMaxima: input   end   ] */
 
 

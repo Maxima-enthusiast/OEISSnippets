@@ -7,7 +7,7 @@ https://oeis.org/A131821
 
 /* [wxMaxima: input   start ] */
 T(n,k) := if k = 1 or k = n then n else 1$
-create_list(T(n, k), n, 1, 12, k, 1, n); /* _Franck Maminirina Ramaharo_, Dec 19 2018 */
+create_list(T(n, k), n, 1, 12, k, 1, n); /* Franck Maminirina Ramaharo, Dec 19 2018 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A002379
 
 
 /* [wxMaxima: input   start ] */
-makelist(floor(3^n/2^n), n, 0, 50); /* _Martin Ettl_, Oct 17 2012 */
+makelist(floor(3^n/2^n), n, 0, 50); /* Martin Ettl, Oct 17 2012 */
 /* [wxMaxima: input   end   ] */
 
 

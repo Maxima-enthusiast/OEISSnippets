@@ -6,7 +6,7 @@ https://oeis.org/A207832
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(((2+sqrt(5))^(2*n)-(2-sqrt(5))^(2*n))/(4*sqrt(5))), n, 0, 15); /* _Bruno Berselli_, Jun 19 2019 */
+makelist(expand(((2+sqrt(5))^(2*n)-(2-sqrt(5))^(2*n))/(4*sqrt(5))), n, 0, 15); /* Bruno Berselli, Jun 19 2019 */
 /* [wxMaxima: input   end   ] */
 
 

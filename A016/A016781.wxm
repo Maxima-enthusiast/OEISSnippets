@@ -7,7 +7,7 @@ https://oeis.org/A016781
 
 /* [wxMaxima: input   start ] */
 A016781(n):=(3*n+1)^5$
-makelist(A016781(n),n,0,20); /* _Martin Ettl_, Nov 12 2012 */
+makelist(A016781(n),n,0,20); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

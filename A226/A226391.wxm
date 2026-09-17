@@ -6,7 +6,7 @@ https://oeis.org/A226391
 
 
 /* [wxMaxima: input   start ] */
-A226391(n):=sum(binomial(k*n,k), k,0,n); makelist(A226391(n),n,0,30); /* _Martin Ettl_, Jun 06 2013 */
+A226391(n):=sum(binomial(k*n,k), k,0,n); makelist(A226391(n),n,0,30); /* Martin Ettl, Jun 06 2013 */
 /* [wxMaxima: input   end   ] */
 
 

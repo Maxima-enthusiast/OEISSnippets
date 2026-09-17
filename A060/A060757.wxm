@@ -7,7 +7,7 @@ https://oeis.org/A060757
 
 /* [wxMaxima: input   start ] */
 A060757(n):=4^(n^2)$
-makelist(A060757(n),n,0,10); /* _Martin Ettl_, Nov 08 2012 */
+makelist(A060757(n),n,0,10); /* Martin Ettl, Nov 08 2012 */
 /* [wxMaxima: input   end   ] */
 
 

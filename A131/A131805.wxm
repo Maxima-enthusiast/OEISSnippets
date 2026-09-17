@@ -6,7 +6,7 @@ https://oeis.org/A131805
 
 
 /* [wxMaxima: input   start ] */
-makelist((2*n*(n-1)+(2*n+3)*(-1)^n-3)/8,n,0,58); /* _Bruno Berselli_, Mar 27 2012 */
+makelist((2*n*(n-1)+(2*n+3)*(-1)^n-3)/8,n,0,58); /* Bruno Berselli, Mar 27 2012 */
 /* [wxMaxima: input   end   ] */
 
 

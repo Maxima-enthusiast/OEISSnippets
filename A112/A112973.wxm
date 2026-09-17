@@ -6,7 +6,7 @@ https://oeis.org/A112973
 
 
 /* [wxMaxima: input   start ] */
-T(n,k):=sum(binomial(m,n-m)*binomial(m+k,2*k),m,floor(n/2),n); /* _Vladimir Kruchinin_, Apr 21 2015 */
+T(n,k):=sum(binomial(m,n-m)*binomial(m+k,2*k),m,floor(n/2),n); /* Vladimir Kruchinin, Apr 21 2015 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A176374
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(((221+27*sqrt(67))^(2*n-2)-(221-27*sqrt(67))^(2*n-2))/(2^n*sqrt(67))),n,1,9); /* _Bruno Berselli_, Dec 14 2011 */
+makelist(expand(((221+27*sqrt(67))^(2*n-2)-(221-27*sqrt(67))^(2*n-2))/(2^n*sqrt(67))),n,1,9); /* Bruno Berselli, Dec 14 2011 */
 /* [wxMaxima: input   end   ] */
 
 

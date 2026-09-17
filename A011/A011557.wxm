@@ -6,7 +6,7 @@ https://oeis.org/A011557
 
 
 /* [wxMaxima: input   start ] */
-A011557(n):=10^n$ makelist(A011557(n),n,0,30); /* _Martin Ettl_, Nov 05 2012 */
+A011557(n):=10^n$ makelist(A011557(n),n,0,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

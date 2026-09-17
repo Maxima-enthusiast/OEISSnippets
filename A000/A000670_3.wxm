@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A000670
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=sum((4*k)!*(stirling2(n+1,4*k+1)+(4*k+1)*(4*k+2)*stirling2(n+1,4*k+3)),k,0,floor(n/4)); /* Tani Akinari, Dec 24 2025 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

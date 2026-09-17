@@ -6,7 +6,7 @@ https://oeis.org/A000008
 
 
 /* [wxMaxima: input   start ] */
-a(n):=floor(((n+17)*(2*n^2+20*n+81)+15*(n+1)*(-1)^n+120*((floor(n/5)+1)*((1+(-1)^mod(n,5))/2-floor(((mod(n,5))^2)/8))))/1200); /* _Tani Akinari_, Jun 21 2013 */
+a(n):=floor(((n+17)*(2*n^2+20*n+81)+15*(n+1)*(-1)^n+120*((floor(n/5)+1)*((1+(-1)^mod(n,5))/2-floor(((mod(n,5))^2)/8))))/1200); /* Tani Akinari, Jun 21 2013 */
 /* [wxMaxima: input   end   ] */
 
 

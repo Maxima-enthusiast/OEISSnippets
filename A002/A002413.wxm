@@ -6,7 +6,7 @@ https://oeis.org/A002413
 
 
 /* [wxMaxima: input   start ] */
-A002413(n):=n*(n+1)*(5*n-2)/6$ makelist(A002413(n),n,0,20); /* _Martin Ettl_, Dec 12 2012 */
+A002413(n):=n*(n+1)*(5*n-2)/6$ makelist(A002413(n),n,0,20); /* Martin Ettl, Dec 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

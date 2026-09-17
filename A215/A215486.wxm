@@ -6,7 +6,7 @@ https://oeis.org/A215486
 
 
 /* [wxMaxima: input   start ] */
-makelist(mod(n-1,totient(n)), n, 2, 90); /* _Bruno Berselli_, Feb 18 2013 */
+makelist(mod(n-1,totient(n)), n, 2, 90); /* Bruno Berselli, Feb 18 2013 */
 /* [wxMaxima: input   end   ] */
 
 

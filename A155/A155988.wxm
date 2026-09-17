@@ -6,7 +6,7 @@ https://oeis.org/A155988
 
 
 /* [wxMaxima: input   start ] */
-makelist((2*n+1)*9^n, n, 0, 20); /* _Martin Ettl_, Nov 11 2012 */
+makelist((2*n+1)*9^n, n, 0, 20); /* Martin Ettl, Nov 11 2012 */
 /* [wxMaxima: input   end   ] */
 
 

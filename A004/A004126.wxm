@@ -6,7 +6,7 @@ https://oeis.org/A004126
 
 
 /* [wxMaxima: input   start ] */
-makelist(n*(7*n^2-1)/6,n,0,30); /* _Martin Ettl_, Jan 08 2013 */
+makelist(n*(7*n^2-1)/6,n,0,30); /* Martin Ettl, Jan 08 2013 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A013662
 
 
 /* [wxMaxima: input   start ] */
-ev(zeta(4),numer) ; /* _R. J. Mathar_, Feb 27 2012 */
+ev(zeta(4),numer) ; /* R. J. Mathar, Feb 27 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A217971
 
 
 /* [wxMaxima: input   start ] */
-A217971(n):=2^(2*n+1)*(2*n+1)*n^(2*n)$ makelist(A217971(n),n,1,10); /* _Martin Ettl_, Nov 15 2012 */
+A217971(n):=2^(2*n+1)*(2*n+1)*n^(2*n)$ makelist(A217971(n),n,1,10); /* Martin Ettl, Nov 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

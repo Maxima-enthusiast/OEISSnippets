@@ -1,0 +1,19 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A042977
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=if n=1 then 1 else (n-1)!*(sum((binomial(n+k-1, n-1)*sum(binomial(k, j)*(x+1)^(n-j-1)*sum(binomial(j, l)*(-1)^(l)*sum((l^(n+j-i-1)*binomial(l, i)*x^(j-i))/(n+j-i-1)!, i, 0, l), l, 1, j), j, 1, k)), k, 1, n-1));
+T(n, k):=coeff(ratsimp(a(n)), x, k);
+for n: 1 thru 12 do print(makelist(T(n, k), k, 0, n-1));
+/* Vladimir Kruchinin, Oct 09 2012 */
+T(n,m):=sum(binomial(2*n+1,m-j)*sum(((n+k+1)^(n+j)*(-1)^(n+k))/((j-k)!*k!),k,0,j),j,0,m); /* Vladimir Kruchinin, Feb 20 2018 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

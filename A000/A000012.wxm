@@ -6,7 +6,7 @@ https://oeis.org/A000012
 
 
 /* [wxMaxima: input   start ] */
-makelist(1, n, 1, 30); /* _Martin Ettl_, Nov 07 2012 */
+makelist(1, n, 1, 30); /* Martin Ettl, Nov 07 2012 */
 /* [wxMaxima: input   end   ] */
 
 

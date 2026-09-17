@@ -7,7 +7,7 @@ https://oeis.org/A177767
 
 /* [wxMaxima: input   start ] */
 T(n, k) := if k = 0 then 2*floor(1/(n + 1)) - 1 else binomial(n - 1, k - 1)$
-create_list(T(n, k), n, 0, 12, k, 0, n); /* _Franck Maminirina Ramaharo_, Oct 23 2018 */
+create_list(T(n, k), n, 0, 12, k, 0, n); /* Franck Maminirina Ramaharo, Oct 23 2018 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A032829
 
 
 /* [wxMaxima: input   start ] */
-a[1]:3$ a[2]:4$ a[n]:= if oddp(n) then 5*a[floor(n/2)]+3 else 5*a[floor((n-1)/2)]+4$ makelist(a[n],n,1,45); /* _Bruno Berselli_, May 30 2012 */
+a[1]:3$ a[2]:4$ a[n]:= if oddp(n) then 5*a[floor(n/2)]+3 else 5*a[floor((n-1)/2)]+4$ makelist(a[n],n,1,45); /* Bruno Berselli, May 30 2012 */
 /* [wxMaxima: input   end   ] */
 
 

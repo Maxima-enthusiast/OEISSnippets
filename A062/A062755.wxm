@@ -6,7 +6,7 @@ https://oeis.org/A062755
 
 
 /* [wxMaxima: input   start ] */
-makelist(divsum(n^2,n),n,1,100); /* _Emanuele Munarini_, Mar 26 2011 */
+makelist(divsum(n^2,n),n,1,100); /* Emanuele Munarini, Mar 26 2011 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,7 @@ https://oeis.org/A258622
 
 /* [wxMaxima: input   start ] */
 a(n) := if n = 1 then 2 else a(n-1)*(n+a(n-1))/(n-1) $
-makelist(a(n),n,1,12); /* _Emanuele Munarini_, Mar 23 2017 */
+makelist(a(n),n,1,12); /* Emanuele Munarini, Mar 23 2017 */
 /* [wxMaxima: input   end   ] */
 
 

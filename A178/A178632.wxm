@@ -6,7 +6,7 @@ https://oeis.org/A178632
 
 
 /* [wxMaxima: input   start ] */
-A178632(n):=45*((10^n-1)/9)^2$ makelist(A178632(n),n,1,12); /* _Martin Ettl_, Nov 08 2012 */
+A178632(n):=45*((10^n-1)/9)^2$ makelist(A178632(n),n,1,12); /* Martin Ettl, Nov 08 2012 */
 /* [wxMaxima: input   end   ] */
 
 

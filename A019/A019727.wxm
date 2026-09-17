@@ -6,7 +6,7 @@ https://oeis.org/A019727
 
 
 /* [wxMaxima: input   start ] */
-fpprec: 100$ ev(bfloat(sqrt(2*%pi))); /* _Martin Ettl_, Oct 11 2012 */
+fpprec: 100$ ev(bfloat(sqrt(2*%pi))); /* Martin Ettl, Oct 11 2012 */
 /* [wxMaxima: input   end   ] */
 
 

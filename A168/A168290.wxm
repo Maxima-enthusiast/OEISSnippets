@@ -9,7 +9,7 @@ https://oeis.org/A168290
 A046802(n, k) := sum(binomial(n - 1, r)*sum(j!*(-1)^(k - j - 1)*stirling2(r, j)*binomial(r - j, k - j - 1), j, 0, k - 1), r, k - 1, n - 1)$
 T(n, k) := 5*A046802(n + 1, k + 1) - 4*binomial(n, k)$
 create_list(T(n, k), n, 0, 10, k, 0, n);
-/* _Franck Maminirina Ramaharo_, Oct 21 2018 */
+/* Franck Maminirina Ramaharo, Oct 21 2018 */
 /* [wxMaxima: input   end   ] */
 
 

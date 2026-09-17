@@ -6,7 +6,7 @@ https://oeis.org/A014899
 
 
 /* [wxMaxima: input   start ] */
-A014899(n):=(16^(n+1)-15*n-16)/225$ makelist(A014899(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
+A014899(n):=(16^(n+1)-15*n-16)/225$ makelist(A014899(n),n,0,30); /* Martin Ettl, Nov 07 2012 */
 /* [wxMaxima: input   end   ] */
 
 

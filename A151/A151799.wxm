@@ -6,7 +6,7 @@ https://oeis.org/A151799
 
 
 /* [wxMaxima: input   start ] */
-makelist(prev_prime(n), n, 3, 79); /* _Bruno Berselli_, May 20 2011 */
+makelist(prev_prime(n), n, 3, 79); /* Bruno Berselli, May 20 2011 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,7 @@ https://oeis.org/A218445
 
 /* [wxMaxima: input   start ] */
 A218445[n]:=sum(floor(n/(5*k+2)),k,0,n)$
-makelist(A218445[n],n,0,80); /* _Martin Ettl_, Oct 29 2012 */
+makelist(A218445[n],n,0,80); /* Martin Ettl, Oct 29 2012 */
 /* [wxMaxima: input   end   ] */
 
 

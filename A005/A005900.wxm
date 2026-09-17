@@ -6,7 +6,7 @@ https://oeis.org/A005900
 
 
 /* [wxMaxima: input   start ] */
-makelist(n*(2*n^2+1)/3, n, 0, 20); /* _Martin Ettl_, Jan 07 2013 */
+makelist(n*(2*n^2+1)/3, n, 0, 20); /* Martin Ettl, Jan 07 2013 */
 /* [wxMaxima: input   end   ] */
 
 

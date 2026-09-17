@@ -6,7 +6,7 @@ https://oeis.org/A006516
 
 
 /* [wxMaxima: input   start ] */
-A006516(n):=2^(n-1)*(2^n - 1)$ makelist(A006516(n),n,0,30); /* _Martin Ettl_, Nov 15 2012 */
+A006516(n):=2^(n-1)*(2^n - 1)$ makelist(A006516(n),n,0,30); /* Martin Ettl, Nov 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

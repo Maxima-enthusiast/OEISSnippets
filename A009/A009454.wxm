@@ -6,7 +6,7 @@ https://oeis.org/A009454
 
 
 /* [wxMaxima: input   start ] */
-sum(stirling1(n,2*k+1)*(-1)^(k),k,0,n/2) /* _Vladimir Kruchinin_, Aug 03 2010 */
+sum(stirling1(n,2*k+1)*(-1)^(k),k,0,n/2) /* Vladimir Kruchinin, Aug 03 2010 */
 /* [wxMaxima: input   end   ] */
 
 

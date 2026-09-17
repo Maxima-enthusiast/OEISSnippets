@@ -6,7 +6,7 @@ https://oeis.org/A005725
 
 
 /* [wxMaxima: input   start ] */
-quadrinomial(n,k):=coeff(expand((1+x+x^2+x^3)^n),x,k); makelist(quadrinomial(n,n),n,0,12); /* _Emanuele Munarini_, Mar 15 2011 */
+quadrinomial(n,k):=coeff(expand((1+x+x^2+x^3)^n),x,k); makelist(quadrinomial(n,n),n,0,12); /* Emanuele Munarini, Mar 15 2011 */
 /* [wxMaxima: input   end   ] */
 
 

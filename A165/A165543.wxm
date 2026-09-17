@@ -6,7 +6,7 @@ https://oeis.org/A165543
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 0 else sum((m*sum((k*binomial(m+2*k-1,m+k-1)*binomial(2*(n-m)-k-1,n-m-1))/(m+k),k,1,n-m))/(n-m),m,1,n-1)+1; /* _Vladimir Kruchinin_, May 12 2011 */
+a(n):=if n=0 then 0 else sum((m*sum((k*binomial(m+2*k-1,m+k-1)*binomial(2*(n-m)-k-1,n-m-1))/(m+k),k,1,n-m))/(n-m),m,1,n-1)+1; /* Vladimir Kruchinin, May 12 2011 */
 /* [wxMaxima: input   end   ] */
 
 

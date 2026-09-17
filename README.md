@@ -15,7 +15,7 @@ Durante esta sesión se procesó el archivo `maxima_snippets.txt` para extraer e
 - Se ignoraron los snippets de otros lenguajes (Python, SageMath, PARI, Magma, GAP, Haskell, Julia, etc.).
 - El código se copió tal cual, sin modificaciones, respetando saltos de línea y sangrías.
 
-Se generaron `2737` archivos `.wxm`, organizados en carpetas según los tres primeros dígitos numéricos del identificador OEIS.
+Se generaron `2818` archivos `.wxm`, organizados en carpetas según los tres primeros dígitos numéricos del identificador OEIS.
 
 ## 📁 Estructura del Repositorio
 

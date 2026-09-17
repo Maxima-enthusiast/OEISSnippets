@@ -6,7 +6,7 @@ https://oeis.org/A188881
 
 
 /* [wxMaxima: input   start ] */
-T(n,k):=(k-1)!*sum(stirling2(i,k)*(-1)^(n-i)*stirling1(n,i),i,0,k); /* _Vladimir Kruchinin_, Apr 17 2015 */
+T(n,k):=(k-1)!*sum(stirling2(i,k)*(-1)^(n-i)*stirling1(n,i),i,0,k); /* Vladimir Kruchinin, Apr 17 2015 */
 /* [wxMaxima: input   end   ] */
 
 

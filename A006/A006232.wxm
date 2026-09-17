@@ -6,7 +6,7 @@ https://oeis.org/A006232
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n<2 then 1 else num(sum((-1)^k*binomial(2*n,n+k)*stirling2(n+k,k)/(2-2*n-2*k),k,0,n)); /* _Tani Akinari_, Jan 06 2026 */
+a(n):=if n<2 then 1 else num(sum((-1)^k*binomial(2*n,n+k)*stirling2(n+k,k)/(2-2*n-2*k),k,0,n)); /* Tani Akinari, Jan 06 2026 */
 /* [wxMaxima: input   end   ] */
 
 

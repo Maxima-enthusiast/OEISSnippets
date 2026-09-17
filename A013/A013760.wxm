@@ -6,7 +6,7 @@ https://oeis.org/A013760
 
 
 /* [wxMaxima: input   start ] */
-makelist(17^(3*n+1),n,0,20); /* _Martin Ettl_, Oct 21 2012 */
+makelist(17^(3*n+1),n,0,20); /* Martin Ettl, Oct 21 2012 */
 /* [wxMaxima: input   end   ] */
 
 

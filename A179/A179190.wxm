@@ -6,7 +6,7 @@ https://oeis.org/A179190
 
 
 /* [wxMaxima: input   start ] */
-makelist(coeff(taylor(2-sqrt(1-4*x-4*x^2), x, 0, n), x, n), n, 0, 24); /* _Bruno Berselli_, Jul 04 2011 */
+makelist(coeff(taylor(2-sqrt(1-4*x-4*x^2), x, 0, n), x, n), n, 0, 24); /* Bruno Berselli, Jul 04 2011 */
 /* [wxMaxima: input   end   ] */
 
 

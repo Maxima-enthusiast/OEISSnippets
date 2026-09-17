@@ -6,7 +6,7 @@ https://oeis.org/A210527
 
 
 /* [wxMaxima: input   start ] */
-makelist(9*n^2 + 39*n + 83,n,0,66); /* _Martin Ettl_, Feb 12 2013 */
+makelist(9*n^2 + 39*n + 83,n,0,66); /* Martin Ettl, Feb 12 2013 */
 /* [wxMaxima: input   end   ] */
 
 

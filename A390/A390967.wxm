@@ -6,7 +6,7 @@ https://oeis.org/A390967
 
 
 /* [wxMaxima: input   start ] */
-a(n):=4*n*(154*n^3+81*n^2-19*n-6)*(2*n+1)!/((n+6)!*n!); /* _Tani Akinari_, Dec 23 2025 */
+a(n):=4*n*(154*n^3+81*n^2-19*n-6)*(2*n+1)!/((n+6)!*n!); /* Tani Akinari, Dec 23 2025 */
 /* [wxMaxima: input   end   ] */
 
 

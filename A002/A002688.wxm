@@ -6,7 +6,7 @@ https://oeis.org/A002688
 
 
 /* [wxMaxima: input   start ] */
-a(n):=denom(1/n!*(sum((stirling1(n,k))/((k+1)*(k+2)),k,1,n))); /* _Vladimir Kruchinin_, Apr 06 2016 */
+a(n):=denom(1/n!*(sum((stirling1(n,k))/((k+1)*(k+2)),k,1,n))); /* Vladimir Kruchinin, Apr 06 2016 */
 /* [wxMaxima: input   end   ] */
 
 

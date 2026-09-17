@@ -6,7 +6,7 @@ https://oeis.org/A175833
 
 
 /* [wxMaxima: input   start ] */
-makelist(concat(4,", ",7,", ",11), n, 0, 28); /* _Bruno Berselli_, Nov 13 2012 */
+makelist(concat(4,", ",7,", ",11), n, 0, 28); /* Bruno Berselli, Nov 13 2012 */
 /* [wxMaxima: input   end   ] */
 
 

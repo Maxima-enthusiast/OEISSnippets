@@ -7,7 +7,7 @@ https://oeis.org/A086943
 
 /* [wxMaxima: input   start ] */
 A086943(n):=3*10^n-7$
-makelist(A086943(n),n,1,17); /* _Martin Ettl_, Nov 08 2012 */
+makelist(A086943(n),n,1,17); /* Martin Ettl, Nov 08 2012 */
 /* [wxMaxima: input   end   ] */
 
 

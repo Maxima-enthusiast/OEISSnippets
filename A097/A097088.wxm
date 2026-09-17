@@ -6,7 +6,7 @@ https://oeis.org/A097088
 
 
 /* [wxMaxima: input   start ] */
-T(n,m):= if n=m then 1 else (binomial(m,n-m) -sum(T(n,i) *T(i,m), i,m+1,n-1))/2; makelist(num(T(n,1)), n,1,7); /* _Vladimir Kruchinin_, Nov 08 2011 */
+T(n,m):= if n=m then 1 else (binomial(m,n-m) -sum(T(n,i) *T(i,m), i,m+1,n-1))/2; makelist(num(T(n,1)), n,1,7); /* Vladimir Kruchinin, Nov 08 2011 */
 /* [wxMaxima: input   end   ] */
 
 

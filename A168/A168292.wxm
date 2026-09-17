@@ -11,7 +11,7 @@ A046802(n, k) := sum(binomial(n - 1, r)*A123125(r, k - 1), r, k - 1, n - 1)$
 A008518(n, k) := A123125(n, k) + A123125(n, k + 1)$
 T(n, k) := 24*A046802(n + 1, k + 1) - 9*A008518(n, k) - 8*binomial(n, k)$
 create_list(T(n, k), n, 0, 10, k, 0, n);
-/* _Franck Maminirina Ramaharo_, Oct 21 2018 */
+/* Franck Maminirina Ramaharo, Oct 21 2018 */
 /* [wxMaxima: input   end   ] */
 
 

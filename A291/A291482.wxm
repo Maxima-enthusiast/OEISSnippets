@@ -6,7 +6,7 @@ https://oeis.org/A291482
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(binomial(n,2*k+1)*binomial(2*k,k)*(2*k)!/4^k,k,0,floor((n-1)/2)),n,0,12); /* _Emanuele Munarini_, Dec 17 2017 */
+makelist(sum(binomial(n,2*k+1)*binomial(2*k,k)*(2*k)!/4^k,k,0,floor((n-1)/2)),n,0,12); /* Emanuele Munarini, Dec 17 2017 */
 /* [wxMaxima: input   end   ] */
 
 

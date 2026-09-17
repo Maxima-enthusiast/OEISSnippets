@@ -7,7 +7,7 @@ https://oeis.org/A221703
 
 /* [wxMaxima: input   start ] */
 A221703(n, s):=(2*s*n-s-3*n+1)*binomial(2*n-2, n-1)-(4/n)*binomial(2*n, n-2)+2^(2*n-1)$
-makelist(A221703(n,3),n,2,40); /* _Martin Ettl_, Jan 24 2013 */
+makelist(A221703(n,3),n,2,40); /* Martin Ettl, Jan 24 2013 */
 /* [wxMaxima: input   end   ] */
 
 

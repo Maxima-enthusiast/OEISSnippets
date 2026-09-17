@@ -8,7 +8,7 @@ https://oeis.org/A133138
 /* [wxMaxima: input   start ] */
 Q(n, x) := (1 + x)*((1 + x)^(n - 1) + x^(n - 1))$
 t(n,k) := ratcoef(expand(Q(n, x)), x, k)$
-for n:0 thru 20 do print(makelist(t(n, k), k, 0, n)); /* _Franck Maminirina Ramaharo_, May 18 2018 */
+for n:0 thru 20 do print(makelist(t(n, k), k, 0, n)); /* Franck Maminirina Ramaharo, May 18 2018 */
 /* [wxMaxima: input   end   ] */
 
 

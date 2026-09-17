@@ -1,0 +1,15 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A000111
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+a(n):=if n<2 then 1 else 2*sum(4^m*(sum((i-(n-1)/2)^(n-1)*binomial(n-2*m-1,i-m)*(-1)^(n-i-1),i,m,(n-1)/2)),m,0,(n-2)/2); /* Vladimir Kruchinin, Aug 09 2011 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

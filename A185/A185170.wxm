@@ -6,7 +6,7 @@ https://oeis.org/A185170
 
 
 /* [wxMaxima: input   start ] */
-A185170(n):=floor((2*n^2-6*n+9)/5)$ makelist(A185170(n),n,0,30); /* _Martin Ettl_, Dec 28 2012 */
+A185170(n):=floor((2*n^2-6*n+9)/5)$ makelist(A185170(n),n,0,30); /* Martin Ettl, Dec 28 2012 */
 /* [wxMaxima: input   end   ] */
 
 

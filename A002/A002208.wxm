@@ -6,8 +6,8 @@ https://oeis.org/A002208
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 1 else  1/(n-1)!*sum(((-1)^(n-k)*binomial(2*n,n-k)*stirling2(n+k,k))/(n+k),k,0,n); /* _Vladimir Kruchinin_, Apr 05 2016 */
-a(n):=num(((-1)^(n)*sum(stirling1(n+1,k+1)/(k+1),k,0,n))/(n)!); /* _Vladimir Kruchinin_, Oct 12 2016 */
+a(n):=if n=0 then 1 else  1/(n-1)!*sum(((-1)^(n-k)*binomial(2*n,n-k)*stirling2(n+k,k))/(n+k),k,0,n); /* Vladimir Kruchinin, Apr 05 2016 */
+a(n):=num(((-1)^(n)*sum(stirling1(n+1,k+1)/(k+1),k,0,n))/(n)!); /* Vladimir Kruchinin, Oct 12 2016 */
 /* [wxMaxima: input   end   ] */
 
 

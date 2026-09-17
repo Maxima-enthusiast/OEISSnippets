@@ -7,7 +7,7 @@ https://oeis.org/A008382
 
 /* [wxMaxima: input   start ] */
 A008382(n):=floor(n/5)*floor((n+1)/5)*floor((n+2)/5)*floor((n+3)/5)*floor((n+4)/5)$
-makelist(A008382(n),n,0,30); /* _Martin Ettl_, Oct 26 2012 */
+makelist(A008382(n),n,0,30); /* Martin Ettl, Oct 26 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,7 @@ https://oeis.org/A001002
 
 /* [wxMaxima: input   start ] */
 T(n,k):=if n<0 or k<0 then 0 else if n<k then 0 else if n=k then 1 else  if k=0 then 0 else  T(n-1,k-1)+T(n,k+1)+T(n,k+2);
-makelist(T(n,1),n,1,10); /* _Vladimir Kruchinin_, Oct 03 2014 */
+makelist(T(n,1),n,1,10); /* Vladimir Kruchinin, Oct 03 2014 */
 /* [wxMaxima: input   end   ] */
 
 

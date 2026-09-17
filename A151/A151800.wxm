@@ -6,7 +6,7 @@ https://oeis.org/A151800
 
 
 /* [wxMaxima: input   start ] */
-makelist(next_prime(n), n, 0, 73); /* _Bruno Berselli_, May 20 2011 */
+makelist(next_prime(n), n, 0, 73); /* Bruno Berselli, May 20 2011 */
 /* [wxMaxima: input   end   ] */
 
 

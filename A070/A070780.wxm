@@ -7,7 +7,7 @@ https://oeis.org/A070780
 
 /* [wxMaxima: input   start ] */
 b(n):=sum((binomial(i*n,i-1)*binomial(n^2-i*n,n-i))/i,i,1,n);
-makelist(b(n),n,1,10); /* _Vladimir Kruchinin_, Nov 01 2013 */
+makelist(b(n),n,1,10); /* Vladimir Kruchinin, Nov 01 2013 */
 /* [wxMaxima: input   end   ] */
 
 

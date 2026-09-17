@@ -6,7 +6,7 @@ https://oeis.org/A216972
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(2+(4-(1+(-1)^n)*(1-%i^n))*(n-2)/4), n, 0, 70); /* _Bruno Berselli_, Sep 26 2012 */
+makelist(expand(2+(4-(1+(-1)^n)*(1-%i^n))*(n-2)/4), n, 0, 70); /* Bruno Berselli, Sep 26 2012 */
 /* [wxMaxima: input   end   ] */
 
 

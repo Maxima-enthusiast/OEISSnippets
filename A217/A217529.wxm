@@ -6,7 +6,7 @@ https://oeis.org/A217529
 
 
 /* [wxMaxima: input   start ] */
-makelist(2^(n-4)*(4*n^2-16*n+23), n, 4, 30); /* _Martin Ettl_, Oct 15 2012 */
+makelist(2^(n-4)*(4*n^2-16*n+23), n, 4, 30); /* Martin Ettl, Oct 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

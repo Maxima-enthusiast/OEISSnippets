@@ -6,7 +6,7 @@ https://oeis.org/A215341
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum(binomial(n+1,i)*binomial(n-3*i-1,n-4*i),i,0,floor(n/4))/(n+1); /* _Vladimir Kruchinin_, Apr 01 2019 */
+a(n):=sum(binomial(n+1,i)*binomial(n-3*i-1,n-4*i),i,0,floor(n/4))/(n+1); /* Vladimir Kruchinin, Apr 01 2019 */
 /* [wxMaxima: input   end   ] */
 
 

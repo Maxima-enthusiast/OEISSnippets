@@ -7,7 +7,7 @@ https://oeis.org/A078678
 
 /* [wxMaxima: input   start ] */
 a(n):=coeff(taylor((1+x+x^2)/sqrt(1-2*x-x^2-2*x^3+x^4),x,0,n),x,n);
-makelist(a(n),n,0,12); /* _Emanuele Munarini_, Jul 07 2011 */
+makelist(a(n),n,0,12); /* Emanuele Munarini, Jul 07 2011 */
 /* [wxMaxima: input   end   ] */
 
 

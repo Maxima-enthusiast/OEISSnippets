@@ -6,7 +6,7 @@ https://oeis.org/A000258
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(stirling2(n,k)*belln(k),k,0,n),n,0,24); /* _Emanuele Munarini_, Jul 04 2011 */
+makelist(sum(stirling2(n,k)*belln(k),k,0,n),n,0,24); /* Emanuele Munarini, Jul 04 2011 */
 /* [wxMaxima: input   end   ] */
 
 

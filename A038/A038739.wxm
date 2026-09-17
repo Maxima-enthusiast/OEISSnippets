@@ -6,7 +6,7 @@ https://oeis.org/A038739
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum(binomial(n+3,k+4)*fib(k),k,0,n); /* _Vladimir Kruchinin_, Oct 24 2016 */
+a(n):=sum(binomial(n+3,k+4)*fib(k),k,0,n); /* Vladimir Kruchinin, Oct 24 2016 */
 /* [wxMaxima: input   end   ] */
 
 

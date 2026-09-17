@@ -7,7 +7,7 @@ https://oeis.org/A066645
 
 /* [wxMaxima: input   start ] */
 A066645(n):=floor((4/3)*%pi*n^3)$
-makelist(A066645(n),n,1,30); /* _Martin Ettl_, Nov 03 2012 */
+makelist(A066645(n),n,1,30); /* Martin Ettl, Nov 03 2012 */
 /* [wxMaxima: input   end   ] */
 
 

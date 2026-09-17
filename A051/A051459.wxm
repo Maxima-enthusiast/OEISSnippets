@@ -6,7 +6,7 @@ https://oeis.org/A051459
 
 
 /* [wxMaxima: input   start ] */
-a(n):= prod(binomial(n,k)!,k,0,n); /* _Valentin Bakoev_, May 17 2019 */
+a(n):= prod(binomial(n,k)!,k,0,n); /* Valentin Bakoev, May 17 2019 */
 /* [wxMaxima: input   end   ] */
 
 

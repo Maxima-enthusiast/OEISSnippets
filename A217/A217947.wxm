@@ -7,7 +7,7 @@ https://oeis.org/A217947
 
 /* [wxMaxima: input   start ] */
 A217947(n):=(n+1)*(n^3+15*n^2+74*n+132)/12$
-makelist(A217947(n),n,0,30); /* _Martin Ettl_, Nov 08 2012 */
+makelist(A217947(n),n,0,30); /* Martin Ettl, Nov 08 2012 */
 /* [wxMaxima: input   end   ] */
 
 

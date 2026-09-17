@@ -6,7 +6,7 @@ https://oeis.org/A057718
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(binomial(2*k,k)^2*binomial(2*(n-k),n-k)^2,k,0,n)/8,n,1,12); /* _Emanuele Munarini_, Mar 12 2011 */
+makelist(sum(binomial(2*k,k)^2*binomial(2*(n-k),n-k)^2,k,0,n)/8,n,1,12); /* Emanuele Munarini, Mar 12 2011 */
 /* [wxMaxima: input   end   ] */
 
 

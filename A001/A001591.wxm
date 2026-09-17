@@ -6,7 +6,7 @@ https://oeis.org/A001591
 
 
 /* [wxMaxima: input   start ] */
-a(n):=mod(floor(10^((n-4)*(n+1))*10^(5*(n+1))*(10^(n+1)-1)/(10^(6*(n+1))-2*10^(5*(n+1))+1)),10^n); /* _Tani Akinari_, Apr 10 2014 */
+a(n):=mod(floor(10^((n-4)*(n+1))*10^(5*(n+1))*(10^(n+1)-1)/(10^(6*(n+1))-2*10^(5*(n+1))+1)),10^n); /* Tani Akinari, Apr 10 2014 */
 /* [wxMaxima: input   end   ] */
 
 

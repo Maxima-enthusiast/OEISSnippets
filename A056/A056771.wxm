@@ -6,7 +6,7 @@ https://oeis.org/A056771
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(((17+sqrt(288))^n+(17-sqrt(288))^n))/2, n, 0, 15); /* _Vincenzo Librandi_, Dec 18 2011 */
+makelist(expand(((17+sqrt(288))^n+(17-sqrt(288))^n))/2, n, 0, 15); /* Vincenzo Librandi, Dec 18 2011 */
 /* [wxMaxima: input   end   ] */
 
 

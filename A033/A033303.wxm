@@ -6,7 +6,7 @@ https://oeis.org/A033303
 
 
 /* [wxMaxima: input   start ] */
-h(n):=sum(sum(binomial(k,j)*binomial(j,n-3*k+2*j)*2^(3*k-n-j)*(-1)^(k-j),j,0,k),k,1,n); a(n):=if n=0 then 1 else if n=2 then h(n) else h(n)+h(n-1); /* _Vladimir Kruchinin_, Sep 09 2010 */
+h(n):=sum(sum(binomial(k,j)*binomial(j,n-3*k+2*j)*2^(3*k-n-j)*(-1)^(k-j),j,0,k),k,1,n); a(n):=if n=0 then 1 else if n=2 then h(n) else h(n)+h(n-1); /* Vladimir Kruchinin, Sep 09 2010 */
 /* [wxMaxima: input   end   ] */
 
 

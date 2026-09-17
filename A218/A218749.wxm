@@ -6,7 +6,7 @@ https://oeis.org/A218749
 
 
 /* [wxMaxima: input   start ] */
-A218749(n):=(46^n-1)/45$ makelist(A218749(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
+A218749(n):=(46^n-1)/45$ makelist(A218749(n),n,0,30); /* Martin Ettl, Nov 07 2012 */
 /* [wxMaxima: input   end   ] */
 
 

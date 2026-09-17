@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A042977
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+B(n):=(if n=1 then 1/(1+x)*exp(-x) else -n!*sum((sum((-1)^(m-j)*binomial(m,j)*sum((j^(n-i)*binomial(j,i)*x^(m-i))/(n-i)!,i,0,n),j,1,m))*B(m)/m!,m,1,n-1)/(1+x)^n);
+a(n):=B(n)*(1+x)^(2*n-1);
+/* Vladimir Kruchinin, Apr 07 2011 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

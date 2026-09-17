@@ -6,7 +6,7 @@ https://oeis.org/A000566
 
 
 /* [wxMaxima: input   start ] */
-makelist(n*(5*n-3)/2, n, 0, 20); /* _Martin Ettl_, Dec 11 2012 */
+makelist(n*(5*n-3)/2, n, 0, 20); /* Martin Ettl, Dec 11 2012 */
 /* [wxMaxima: input   end   ] */
 
 

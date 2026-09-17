@@ -6,7 +6,7 @@ https://oeis.org/A047596
 
 
 /* [wxMaxima: input   start ] */
-makelist(2*n-1-%i^(n*(n+1))-(1+(-1)^n)/2,n,1,60); /* _Bruno Berselli_, Jul 17 2012 */
+makelist(2*n-1-%i^(n*(n+1))-(1+(-1)^n)/2,n,1,60); /* Bruno Berselli, Jul 17 2012 */
 /* [wxMaxima: input   end   ] */
 
 

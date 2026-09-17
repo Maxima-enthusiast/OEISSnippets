@@ -6,7 +6,7 @@ https://oeis.org/A087752
 
 
 /* [wxMaxima: input   start ] */
-makelist(49^n,n,0,20); /* _Martin Ettl_, Nov 12 2012 */
+makelist(49^n,n,0,20); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

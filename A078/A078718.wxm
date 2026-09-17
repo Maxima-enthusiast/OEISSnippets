@@ -8,7 +8,7 @@ https://oeis.org/A078718
 /* [wxMaxima: input   start ] */
 A(x) := x*(1 + sqrt(1+4*x))/2;
 G(x) := (2*cosh(asinh((3^(3/2)*sqrt(x))/2)/3)*sinh(asinh((3^(3/2)*sqrt(x))/2)/3)* sqrt(x))/(sqrt(3)*sqrt((27*x)/4+1))+(4*sinh(asinh((3^(3/2)*sqrt(x))/2)/3)^2)/3  + 1;
-taylor(x^2*diff(A(x),x)*G(A(x))/A(x),x,0,20); /* _Vladimir Kruchinin_, Dec 16 2016 */
+taylor(x^2*diff(A(x),x)*G(A(x))/A(x),x,0,20); /* Vladimir Kruchinin, Dec 16 2016 */
 /* [wxMaxima: input   end   ] */
 
 

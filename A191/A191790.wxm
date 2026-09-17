@@ -6,7 +6,7 @@ https://oeis.org/A191790
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum((sum(((2*j+2*k-n))*binomial(n-2*k-1,n-2*k-j)/j,j,ceiling(n/2)-k+1,2*(n-2*k))),k,0,n/2); /* _Vladimir Kruchinin_, Mar 04 2016 */
+a(n):=sum((sum(((2*j+2*k-n))*binomial(n-2*k-1,n-2*k-j)/j,j,ceiling(n/2)-k+1,2*(n-2*k))),k,0,n/2); /* Vladimir Kruchinin, Mar 04 2016 */
 /* [wxMaxima: input   end   ] */
 
 

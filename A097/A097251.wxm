@@ -6,7 +6,7 @@ https://oeis.org/A097251
 
 
 /* [wxMaxima: input   start ] */
-a[0]:0$ a[n]:=5*a[floor(n/2)]+2*(1-(-1)^n)$ makelist(a[n], n, 0, 42); /* _Bruno Berselli_, May 25 2012 */
+a[0]:0$ a[n]:=5*a[floor(n/2)]+2*(1-(-1)^n)$ makelist(a[n], n, 0, 42); /* Bruno Berselli, May 25 2012 */
 /* [wxMaxima: input   end   ] */
 
 

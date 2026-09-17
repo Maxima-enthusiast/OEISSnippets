@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A179486
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+T(n,m):=if n=m then 1 else kron_delta(n,m)+sum(binomial(m,j)*sum(if 3*k<=n-j then T(n-j,3*k)*T(k,m-j) else 0,k,m-j,n-j),j,0,m-1);
+makelist(T(n,1),n,1,12); /* Vladimir Kruchinin, May 02 2012 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

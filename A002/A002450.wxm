@@ -6,7 +6,7 @@ https://oeis.org/A002450
 
 
 /* [wxMaxima: input   start ] */
-makelist((4^n-1)/3, n, 0, 30); /* _Martin Ettl_, Nov 05 2012 */
+makelist((4^n-1)/3, n, 0, 30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

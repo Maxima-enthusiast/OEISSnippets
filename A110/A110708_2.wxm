@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A110708
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+b[1]:1$ b[n]:=sum((-1)^(k+1)*b[n-1-2*k]/(2*k+1),k,0,floor(n/2)-1)+((%i)^(n-1)+(-%i)^(n-1))/2;
+cons(0,makelist((n-1)!*b[n],n,1,100)); /* Tani Akinari, Oct 30 2017 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

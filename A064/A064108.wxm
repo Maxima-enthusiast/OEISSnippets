@@ -6,7 +6,7 @@ https://oeis.org/A064108
 
 
 /* [wxMaxima: input   start ] */
-A064108(n):=(20^n-1)/19$ makelist(A064108(n),n,1,30); /* _Martin Ettl_, Nov 05 2012 */
+A064108(n):=(20^n-1)/19$ makelist(A064108(n),n,1,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

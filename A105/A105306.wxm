@@ -6,7 +6,7 @@ https://oeis.org/A105306
 
 
 /* [wxMaxima: input   start ] */
-create_list(sum(binomial(k+1,i)*binomial(n-i,k)*(-1)^i*2^(n-k-i),i,0,n-k),n,0,8,k,0,n); /* _Emanuele Munarini_, Mar 22 2011 */
+create_list(sum(binomial(k+1,i)*binomial(n-i,k)*(-1)^i*2^(n-k-i),i,0,n-k),n,0,8,k,0,n); /* Emanuele Munarini, Mar 22 2011 */
 /* [wxMaxima: input   end   ] */
 
 

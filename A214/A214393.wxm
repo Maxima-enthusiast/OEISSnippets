@@ -7,7 +7,7 @@ https://oeis.org/A214393
 
 /* [wxMaxima: input   start ] */
 A214393(n):=4*n*(n+3)+6*(-1)^n+7$
-makelist(A214393(n),n,0,30); /* _Martin Ettl_, Nov 01 2012 */
+makelist(A214393(n),n,0,30); /* Martin Ettl, Nov 01 2012 */
 /* [wxMaxima: input   end   ] */
 
 

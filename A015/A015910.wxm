@@ -6,7 +6,7 @@ https://oeis.org/A015910
 
 
 /* [wxMaxima: input   start ] */
-makelist(power_mod(2, n, n), n, 1, 84); /* _Bruno Berselli_, May 20 2011 */
+makelist(power_mod(2, n, n), n, 1, 84); /* Bruno Berselli, May 20 2011 */
 /* [wxMaxima: input   end   ] */
 
 

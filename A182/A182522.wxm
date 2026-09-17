@@ -6,7 +6,7 @@ https://oeis.org/A182522
 
 
 /* [wxMaxima: input   start ] */
-makelist(if n=0 then 1 else (1+mod(n-1,2))*3^floor((n-1)/2), n, 0, 40); /* _Bruno Berselli_, Mar 19 2013 */
+makelist(if n=0 then 1 else (1+mod(n-1,2))*3^floor((n-1)/2), n, 0, 40); /* Bruno Berselli, Mar 19 2013 */
 /* [wxMaxima: input   end   ] */
 
 

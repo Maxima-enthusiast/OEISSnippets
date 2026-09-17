@@ -6,7 +6,7 @@ https://oeis.org/A009574
 
 
 /* [wxMaxima: input   start ] */
-a(n):=n!/2*sum((k+2)*(-1)^(n-k+1)/k!,k,0,n-1); /* _Vladimir Kruchinin_, Dec 30 2016 */
+a(n):=n!/2*sum((k+2)*(-1)^(n-k+1)/k!,k,0,n-1); /* Vladimir Kruchinin, Dec 30 2016 */
 /* [wxMaxima: input   end   ] */
 
 

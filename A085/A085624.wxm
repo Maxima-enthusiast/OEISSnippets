@@ -6,7 +6,7 @@ https://oeis.org/A085624
 
 
 /* [wxMaxima: input   start ] */
-makelist(1+(6*n+(1+(-1)^n)*%i^n+2*(-1)^n)/4,n,1,66); /* _Bruno Berselli_, Jul 09 2012 */
+makelist(1+(6*n+(1+(-1)^n)*%i^n+2*(-1)^n)/4,n,1,66); /* Bruno Berselli, Jul 09 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A006134
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(binomial(2*k,k),k,0,n),n,0,12); /* _Emanuele Munarini_, Mar 15 2011 */
+makelist(sum(binomial(2*k,k),k,0,n),n,0,12); /* Emanuele Munarini, Mar 15 2011 */
 /* [wxMaxima: input   end   ] */
 
 

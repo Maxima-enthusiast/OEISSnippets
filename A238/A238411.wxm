@@ -6,7 +6,7 @@ https://oeis.org/A238411
 
 
 /* [wxMaxima: input   start ] */
-makelist(2*n*floor(n/2), n, 1, 50); /* _Bruno Berselli_, Feb 25 2016 */
+makelist(2*n*floor(n/2), n, 1, 50); /* Bruno Berselli, Feb 25 2016 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A009022
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 1 else sum((-1)^(m)*sum((stirling1(r,2*m)*sum(binomial(k-1,r-1)*k!*2^(n-k)*stirling2(n,k)*(-1)^(r+k),k,r,n))/r!,r,2*m,n),m,0,n/2); /* _Vladimir Kruchinin_, Jun 21 2011 */
+a(n):=if n=0 then 1 else sum((-1)^(m)*sum((stirling1(r,2*m)*sum(binomial(k-1,r-1)*k!*2^(n-k)*stirling2(n,k)*(-1)^(r+k),k,r,n))/r!,r,2*m,n),m,0,n/2); /* Vladimir Kruchinin, Jun 21 2011 */
 /* [wxMaxima: input   end   ] */
 
 

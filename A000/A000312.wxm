@@ -7,7 +7,7 @@ https://oeis.org/A000312
 
 /* [wxMaxima: input   start ] */
 A000312[n]:=if n=0 then 1 else n^n$
-makelist(A000312[n],n,0,30); /* _Martin Ettl_, Oct 29 2012 */
+makelist(A000312[n],n,0,30); /* Martin Ettl, Oct 29 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,44 @@ https://oeis.org/A351322
 
 
 /* [wxMaxima: input   start ] */
-See Maxima Code link.
+/* See Maxima Code link. */
+block(/* number of m X n tilings with right trominoes
+     Input: (m,n) with m=3k or n=3k*/
+      m: 7, n: 9,
+    /* Output: Last term of a sequence with constant m.
+       For faster execution, set m<=n*/  
+    
+  /*Initial settings:*/  
+if mod(m,3)=0 then fac:1 else fac:3,      
+L:makelist( makelist([],k,1,2^(i-1)) ,i,1,m+1),
+L[1][1]: [0],  pmax: 2^m-1, prot:"",  
+freq1: makelist(0,k,1,2^m), freq1[1]: 1,
+    
+/* auxiliary routine:*/
+    merge(a,b):= if a=""  or a=[] then a: b else a:append(a,b),
+    
+ /*Generating transformation parameters:*/ 
+ rec(s,r,ad) := block(t:2^s,
+  if  nn>= s and mod(p,t)=r then
+   (li:L[nn+1-s][1+(p-r)/t], hi:"",
+    for i from  1 thru length(li) do  (q:t*li[i],
+      for j from 1 thru length(ad) do  hi: merge(hi,[q+ad[j]])),       
+      L[nn+1][p+1]: merge(hi,L[nn+1][p+1]) )),   
+      
+  for nn from 1 thru m do
+   (for p from 0 thru 2^nn-1 do
+    (rec(1, 1, [0]), rec(2, 1, [3]),   rec(2, 2, [3]), 
+    rec(2, 0, [1,2]),  rec(3, 0, [7,7]) )),
+  
+    /* Linear transformations:*/
+   for nr from 2 thru n do
+  (freq2: freq1, freq1: makelist(0,k,1,2^m),
+   for p from 0 thru pmax do
+    ( w: L[m+1][p+1], 
+     for i from 1 thru length(w) do 
+      (q: w[i], freq1[q+1]: freq1[q+1] + freq2[p+1])),
+   x: freq1[pmax+1],  if mod(nr,fac) =0 then prot: merge(prot, [x]) ),  
+  prot );
 /* [wxMaxima: input   end   ] */
 
 

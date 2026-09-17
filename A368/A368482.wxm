@@ -6,7 +6,7 @@ https://oeis.org/A368482
 
 
 /* [wxMaxima: input   start ] */
-(Maxima) N : 6$ Len : 12$     /* Somos-N, N >= 2, Len = length of the calculated lists */
+N : 6$ Len : 12$     /* Somos-N, N >= 2, Len = length of the calculated lists */
 NofRT : floor (N / 2)$  /* number of terms in a Somos-N recurrence */
 S : makelist (0, Len)$
 G : makelist (0, Len)$ DegG : makelist (0, Len)$   /* G, the numerator of s() */

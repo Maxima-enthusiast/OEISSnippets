@@ -6,7 +6,69 @@ https://oeis.org/A354011
 
 
 /* [wxMaxima: input   start ] */
-See A352589.
+/* See A352589. */
+block(/* T(k,n) is the number of k X n tilings with 
+    2 X 2 tiles, right trominoes, dominoes and/or 1X1 tiles.
+typ = 1:  1x1
+typ = 2:  dom
+typ = 3:  dom + 1x1
+typ = 4:  trom
+typ = 5:  trom + 1x1
+typ = 6:  trom + dom
+typ = 7:  trom + dom + 1x1
+typ = 8:  2x2
+typ = 9:  2x2 + 1x1
+typ = 10:  2x2 + dom
+typ = 11:  2x2 + dom + 1x1
+typ = 12:  2x2 + trom
+typ = 13:  2x2 + trom + 1x1
+typ = 14:  2x2 + trom + dom
+typ = 15:  2x2 + trom + dom + 1x1
+ Output: T(k,0), T(k,1) ... T(k,n).
+
+ Select typ, k and n: */
+   typ: 11,  k: 4 , n: 9,
+   
+/* auxiliary routine:*/
+    merge(a,b):= if a=""  or a=[] then a: b else a:append(a,b),
+    
+  /*Transformation parameters:*/ 
+ rec(s,r,ad) := block(t:2^s,
+  if  kk>= s and mod(p,t)=r then
+   (li:L[kk+1-s][1+(p-r)/t], hi:"",
+    for i from  1 thru length(li) do  (q:t*li[i],
+      for j from 1 thru length(ad) do
+          L[kk+1][p+1]: merge(L[kk+1][p+1],[q+ad[j]]))   )),    
+  
+ /* Initial Settings*/
+L:makelist( makelist([],j,1,2^(i-1)) ,i,1,k+1),
+L[1][1]: [0],  pmax: 2^k-1, 
+prot:[], 
+f1: makelist(0,j,1,2^k), f1[pmax+1]: 1,
+h2: mod(typ,2), q2: quotient(typ,2), q4:quotient(typ,4), 
+q1x1: is(h2=1), qdom: is(mod(q2,2)=1), qtrom: is(mod(q4,2)=1), q2x2: is(typ>=8), 
+ 
+  for kk from 1 thru k do
+   for p from 0 thru 2^kk-1 do
+    (rec(1, 1, [0]), 
+     if q1x1 then  rec(1, 0, [0]), 
+     if qdom then  (rec(1, 0, [1]),  rec(2, 0, [0])),
+     if qtrom then  (rec(2, 0, [1,2]),  rec(2, 1, [3]), rec(2,2, [3]),  rec(3, 0, [7,7])),             
+     if q2x2 then  rec(2, 0, [3]),       
+     if qtrom and q1x1 then  rec(2, 0, [3,3]),
+     if qtrom and qdom then  (rec(3, 0, [3,6]),  rec(4, 0, [15]))),          
+  
+    /* Linear transformations*/
+    
+    for column from 1 thru n+1 do
+  (f2: f1, f1: makelist(0,k,1,2^k),  
+   for p from 0 thru pmax do
+    ( w: L[k+1][p+1], 
+     for i from 1 thru length(w) do (q: w[i],  
+                
+   f1[q+1]: f1[q+1] + f2[p+1])),
+   x: f1[1],  prot: merge(prot, [x]) ), 
+prot) ;
 /* [wxMaxima: input   end   ] */
 
 

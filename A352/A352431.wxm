@@ -6,7 +6,51 @@ https://oeis.org/A352431
 
 
 /* [wxMaxima: input   start ] */
-See "Maxima code" link.
+/* See "Maxima code" link. */
+block(/* number of m X n tilings with dominoes and 2X2 tiles
+     Input: (m,n) with m=2k or n=2k*/
+      m: 5, n: 6,
+    /* Output: Last term of a sequence with constant m.
+       For faster execution, set m<=n*/  
+    
+  /*Initial settings:*/  
+L:makelist( makelist([],k,1,2^(i-1)) ,i,1,m+1),
+L[1][1]: [0],  pmax: 2^m-1,  prot:[1], 
+freq1: makelist(0,k,1,2^m), freq1[pmax+1]: 1,
+    
+/* auxiliary routine:*/
+    merge(a,b):= if a=""  or a=[] then a: b else a:append(a,b),
+ 
+/*"True" is returned if the last column can be completed with dominoes*/   
+ff(m,q):= block(za:0, r:q,
+ for k from 1 thru m do
+  (x: mod(r,2), r: (r-x)/2,
+   if x=0 then za: za+1 elseif mod(za,2)=1 then return(false) ) ,
+   return(is(za>0 and mod(za,2)=0)) ) ,       
+    
+ /*Generating transformation parameters:*/ 
+ rec(s,r,ad) := block(t:2^s,
+  if  nn>= s and mod(p,t)=r then
+   (li:L[nn+1-s][1+(p-r)/t], hi:"",
+    for i from  1 thru length(li) do  (q:t*li[i],
+      for j from 1 thru length(ad) do  hi: merge(hi,[q+ad[j]])),       
+      L[nn+1][p+1]: merge(hi,L[nn+1][p+1]) )),   
+      
+  for nn from 1 thru m do
+   (for p from 0 thru 2^nn-1 do
+    (rec(1, 1, [0]), rec(1, 0, [1]), rec(2, 0, [3,0]) )),
+  
+    /* Linear transformations:*/
+   for nr from 2 thru n+1 do
+  (freq2: freq1, freq1: makelist(0,k,1,2^m), frex:0,
+        
+   for p from 0 thru pmax do
+    ( w: L[m+1][p+1], 
+     for i from 1 thru length(w) do 
+      (q: w[i],  if  ff(m,q)  then frex: frex + freq2[p+1], 
+       freq1[q+1]: freq1[q+1] + freq2[p+1])),
+   x: frex + freq1[pmax+1],  if x>0 then  prot: merge(prot, [x])),  
+  prot );
 /* [wxMaxima: input   end   ] */
 
 

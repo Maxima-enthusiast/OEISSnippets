@@ -7,6 +7,59 @@ https://oeis.org/A359885
 
 /* [wxMaxima: input   start ] */
 /* See A359884. */
+/* Number of 3d-tilings of a 2 X 2 X n box with plates, trominos, dominos and/or cubes
+
+Enter one of the following types:
+type  1: Only cubes
+type  2: Only dominos, see A006253
+type  3: Dominos and cubes
+type  4: Only trominos
+type  5: Trominos and cubes
+type  6: Trominos and dominos
+type  7: Trominos, dominos and cubes
+type  8: Only plates, see A001045
+type  9: Plates and cubes, see A335559
+type 10: Plates and dominos
+type 11: Plates, dominos and cubes
+type 12: Plates and trominos
+type 13: Plates, trominos and cubes
+type 14: Plates, trominos and dominos
+type 15: Plates, trominos, dominos and cubes */
+
+
+block(type: 12, nmax: 20, 
+M: matrix([0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]), M6:[0,0,0,0,0],
+base[1] : [[1,1,1],[2,1,1],[3,1,1],[4,1,1],[5,1,1]],
+base[2] : [[1,1,2],[1,3,4],[1,6,1],[2,2,2],[2,5,1],[3,1,1],[3,3,1],[4,4,1],[5,2,1]],
+base[3] : [[1,1,4],[1,2,12],[1,3,4],[1,4,2],[1,5,4],[2,1,2],[2,2,3],[2,3,2],[2,4,1],[3,2,2],[4,2,2]],
+base[4] : [[1,3,12],[1,4,4],[2,1,1],[2,5,4],[3,2,2],[3,6,1],[4,6,2],[5,3,2]],
+base[5] : [[1,1,4],[1,2,8],[1,3,8],[1,5,16],[1,6,8],[2,2,4],[2,3,6],[2,6,4],[3,3,4],[4,3,4]],
+base[6] : [[1,2,12],[1,5,16],[1,6,12],[2,3,6],[2,4,2],[2,6,2],[3,5,2],[4,5,2]],
+base[7] : [[1,3,24],[1,4,8],[1,5,12],[1,6,8],[2,5,6]],
+base[8] : [[1,1,1],[1,6,2],[3,3,1]],
+base[9] : [[1,3,4],[2,3,2]],
+base[10] : [[1,3,4],[1,6,4],[2,5,2]],
+base[11] : [[1,5,8]],
+base[12] : [[1,5,8],[2,6,2]],
+base[13] : [[1,6,8]],
+
+  bitcheck(x,y):= block(bit: true,
+    while bit and x>0 do(rx:mod(x,2), ry:mod(y,2), 
+      if rx=0 and ry=1 then bit:false,
+      x:(x-rx)/2, y:(y-ry)/2), return(bit)),
+  
+   for y from 1 thru min(type,13) do
+    if bitcheck(type,y) then (w: base[y], 
+      for j from 1 thru length(w) do 
+       (k: w[j][1], i: w[j][2], z: w[j][3], 
+        if i=6 then M6[k]:M6[k]+z else M[i][k]: M[i][k] + z)), 
+
+ if type=4 then nmax:3*nmax,
+ v: makelist([0,0,0,0,0],i,1,nmax+2), a: [1], v[2][1]:1,
+ for n from 1 thru nmax do
+  (v[n+2]: M.v[n+1], v[n+2][1]:v[n+2][1] + M6.v[n],
+  if type=4 then ok: is(mod(n,3)=0) else ok:true,      
+  if ok then a: append(a,v[n+2][1]) ), a);
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A025751
 
 
 /* [wxMaxima: input   start ] */
-a[0]:1$ a[1]:1$ a[n]:=(6/n)*(6*n-7)*a[n-1]$ makelist(a[n],n,0,1000); /* _Tani Akinari_, Aug 03 2014 */
+a[0]:1$ a[1]:1$ a[n]:=(6/n)*(6*n-7)*a[n-1]$ makelist(a[n],n,0,1000); /* Tani Akinari, Aug 03 2014 */
 /* [wxMaxima: input   end   ] */
 
 

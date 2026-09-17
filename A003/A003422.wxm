@@ -6,7 +6,7 @@ https://oeis.org/A003422
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(k!,k,0,n-1), n, 0, 20); /* _Stefano Spezia_, Jan 11 2019 */
+makelist(sum(k!,k,0,n-1), n, 0, 20); /* Stefano Spezia, Jan 11 2019 */
 /* [wxMaxima: input   end   ] */
 
 

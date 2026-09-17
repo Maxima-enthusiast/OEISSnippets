@@ -7,7 +7,7 @@ https://oeis.org/A026375
 
 /* [wxMaxima: input   start ] */
 A026375(n):=coeff(expand((1+3*x+x^2)^n),x,n);
-makelist(A026375(n),n,0,12); /* _Emanuele Munarini_, Mar 02 2011 */
+makelist(A026375(n),n,0,12); /* Emanuele Munarini, Mar 02 2011 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A189173
 
 
 /* [wxMaxima: input   start ] */
-makelist(if n=1 then 0 else expand(((90*sqrt(33)-517)*(23+4*sqrt(33))^n-(90*sqrt(33)+517)*(23-4*sqrt(33))^n)/22),n,1,19); /* _Bruno Berselli_, May 31 2011 */
+makelist(if n=1 then 0 else expand(((90*sqrt(33)-517)*(23+4*sqrt(33))^n-(90*sqrt(33)+517)*(23-4*sqrt(33))^n)/22),n,1,19); /* Bruno Berselli, May 31 2011 */
 /* [wxMaxima: input   end   ] */
 
 

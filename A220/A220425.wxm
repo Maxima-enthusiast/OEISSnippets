@@ -6,7 +6,7 @@ https://oeis.org/A220425
 
 
 /* [wxMaxima: input   start ] */
-makelist(n^2+2*n+2^n, n, 0, 20); /* _Martin Ettl_, Dec 15 2012 */
+makelist(n^2+2*n+2^n, n, 0, 20); /* Martin Ettl, Dec 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

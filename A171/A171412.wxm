@@ -9,7 +9,7 @@ https://oeis.org/A171412
 p(x, n) := if mod(n, 2) = 0 then (x + 1)*p(x, n - 1) else (x^3 + x^2 + x + 1)^floor(n/2)$
 T(n, k) := ratcoef(p(x, n), x, k)$
 create_list(T(n, k), n, 1, 12, k, 0, hipow(fullratsimp(p(x, n)), x));
-/* _Franck Maminirina Ramaharo_, Jan 13 2019 */
+/* Franck Maminirina Ramaharo, Jan 13 2019 */
 /* [wxMaxima: input   end   ] */
 
 

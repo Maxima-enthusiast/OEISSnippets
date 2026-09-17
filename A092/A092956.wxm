@@ -6,7 +6,7 @@ https://oeis.org/A092956
 
 
 /* [wxMaxima: input   start ] */
-A092956(n):=(2*n+2)!/((n+2)*n!)$ makelist(A092956(n),n,0,30); /* _Martin Ettl_, Nov 05 2012 */
+A092956(n):=(2*n+2)!/((n+2)*n!)$ makelist(A092956(n),n,0,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

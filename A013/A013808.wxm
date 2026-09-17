@@ -6,7 +6,7 @@ https://oeis.org/A013808
 
 
 /* [wxMaxima: input   start ] */
-makelist(18^(4*n+1),n,0,20); /* _Martin Ettl_, Oct 21 2012 */
+makelist(18^(4*n+1),n,0,20); /* Martin Ettl, Oct 21 2012 */
 /* [wxMaxima: input   end   ] */
 
 

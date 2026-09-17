@@ -6,7 +6,7 @@ https://oeis.org/A103710
 
 
 /* [wxMaxima: input   start ] */
-fpprec: 100$ ev(bfloat(sqrt(2) + log(1 + sqrt(2)))); /* _Martin Ettl_, Oct 17 2012 */
+fpprec: 100$ ev(bfloat(sqrt(2) + log(1 + sqrt(2)))); /* Martin Ettl, Oct 17 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A009585
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum((4*j-2)!/(2*j-1)!*stirling1(n,4*j-2),j,1,(n+1)/2); /* _Vladimir Kruchinin_, Jun 08 2011 */
+a(n):=sum((4*j-2)!/(2*j-1)!*stirling1(n,4*j-2),j,1,(n+1)/2); /* Vladimir Kruchinin, Jun 08 2011 */
 /* [wxMaxima: input   end   ] */
 
 

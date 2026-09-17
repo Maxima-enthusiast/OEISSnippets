@@ -6,7 +6,7 @@ https://oeis.org/A052745
 
 
 /* [wxMaxima: input   start ] */
-makelist((-1)^(n+1)*2*n*stirling1(n-1, 2), n, 0, 20); /* _Bruno Berselli_, May 25 2011 */
+makelist((-1)^(n+1)*2*n*stirling1(n-1, 2), n, 0, 20); /* Bruno Berselli, May 25 2011 */
 /* [wxMaxima: input   end   ] */
 
 

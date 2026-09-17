@@ -6,7 +6,7 @@ https://oeis.org/A001305
 
 
 /* [wxMaxima: input   start ] */
-a(n):=block([f:divide((1-z^20)^5,(1-z)^2*(1-z^2)*(1-z^5)*(1-z^10), z)[1]],return(sum(binomial(k+5,5)*coeff(f, z, n-20*k), k,max(0,ceiling((n-81)/20)),floor(n/20)))); /* _Tani Akinari_, May 12 2014 */
+a(n):=block([f:divide((1-z^20)^5,(1-z)^2*(1-z^2)*(1-z^5)*(1-z^10), z)[1]],return(sum(binomial(k+5,5)*coeff(f, z, n-20*k), k,max(0,ceiling((n-81)/20)),floor(n/20)))); /* Tani Akinari, May 12 2014 */
 /* [wxMaxima: input   end   ] */
 
 

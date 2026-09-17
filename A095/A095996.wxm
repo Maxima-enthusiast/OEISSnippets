@@ -7,7 +7,7 @@ https://oeis.org/A095996
 
 /* [wxMaxima: input   start ] */
 a(n):=sum((-1)^(n-j)*binomial(n,j)*(j/n+1)^n,j,0,n);
-makelist(num(a(n)),n,1,20); /* _Vladimir Kruchinin_, Jun 02 2013 */
+makelist(num(a(n)),n,1,20); /* Vladimir Kruchinin, Jun 02 2013 */
 /* [wxMaxima: input   end   ] */
 
 

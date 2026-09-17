@@ -7,7 +7,7 @@ https://oeis.org/A002276
 
 /* [wxMaxima: input   start ] */
 A002276(n):=2*(10^n - 1)/9$
-makelist(A002276(n),n,0,20); /* _Martin Ettl_, Nov 12 2012 */
+makelist(A002276(n),n,0,20); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

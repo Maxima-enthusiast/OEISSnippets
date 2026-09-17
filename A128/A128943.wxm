@@ -6,7 +6,7 @@ https://oeis.org/A128943
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(abs(stirling1(n+1,k+1))*stirling2(n,k)*k!,k,0,n),n,0,24); /* _Emanuele Munarini_, Jul 04 2011 */
+makelist(sum(abs(stirling1(n+1,k+1))*stirling2(n,k)*k!,k,0,n),n,0,24); /* Emanuele Munarini, Jul 04 2011 */
 /* [wxMaxima: input   end   ] */
 
 

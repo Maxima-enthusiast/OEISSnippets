@@ -8,7 +8,7 @@ https://oeis.org/A207361
 /* [wxMaxima: input   start ] */
 A207361(n) := block(
 n*(1+n)*(2+n)*(1+11*n+8*n^2)/120
-)$ /* _R. J. Mathar_, Mar 08 2012 */
+)$ /* R. J. Mathar, Mar 08 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -10,7 +10,7 @@ A055321(n) := block(
 A055314(n,9)
 )$
 for n : 10 thru 25 do
-print(A055321(n)," ") ; /* _R. J. Mathar_, Mar 06 2012 */
+print(A055321(n)," ") ; /* R. J. Mathar, Mar 06 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -8,7 +8,7 @@ https://oeis.org/A080253
 /* [wxMaxima: input   start ] */
 t(n):=sum(stirling2(n,k)*k!,k,0,n);
 c(n):=sum(binomial(n,k)*2^k*t(k),k,0,n);
-makelist(c(n),n,0,40); /* _Emanuele Munarini_, Oct 04 2012 */
+makelist(c(n),n,0,40); /* Emanuele Munarini, Oct 04 2012 */
 /* [wxMaxima: input   end   ] */
 
 

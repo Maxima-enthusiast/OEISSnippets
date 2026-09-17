@@ -7,7 +7,7 @@ https://oeis.org/A003718
 
 /* [wxMaxima: input   start ] */
 a(n):=b(2*n+1);
-b(n):=sum((((-1)^(k-1)+1)*(sum(j!*2^(k-j-1)*(-1)^((k+1)/2+j)* stirling2(k,j),j,1,k))*((-1)^(n-k)+1)*sum(binomial(j-1,k-1)*j!*2^(n-j-1)*(-1)^((n+k)/2+j)*stirling2(n,j),j,k,n))/k!,k,1,n); /* _Vladimir Kruchinin_, Apr 23 2011 */
+b(n):=sum((((-1)^(k-1)+1)*(sum(j!*2^(k-j-1)*(-1)^((k+1)/2+j)* stirling2(k,j),j,1,k))*((-1)^(n-k)+1)*sum(binomial(j-1,k-1)*j!*2^(n-j-1)*(-1)^((n+k)/2+j)*stirling2(n,j),j,k,n))/k!,k,1,n); /* Vladimir Kruchinin, Apr 23 2011 */
 /* [wxMaxima: input   end   ] */
 
 

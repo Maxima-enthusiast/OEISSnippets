@@ -6,7 +6,7 @@ https://oeis.org/A071720
 
 
 /* [wxMaxima: input   start ] */
-a(n):=2*sum(binomial(n-2,i+1)*((i+1)^(i+1)*(n-i-1)^(n-i-4)),i,0,n-3);  /* _Vladimir Kruchinin_, Apr 20 2016  */
+a(n):=2*sum(binomial(n-2,i+1)*((i+1)^(i+1)*(n-i-1)^(n-i-4)),i,0,n-3);  /* Vladimir Kruchinin, Apr 20 2016  */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A063019
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n<2 then n else (-1)^(n+1)*sum((sum(binomial(j,n-3*k+2*j-1)*(-1)^(2*j-k)*binomial(k,j),j,0,k))*binomial(n+k-1,n-1),k,1,n-1)/n; /* _Vladimir Kruchinin_, May 10 2011 */
+a(n):=if n<2 then n else (-1)^(n+1)*sum((sum(binomial(j,n-3*k+2*j-1)*(-1)^(2*j-k)*binomial(k,j),j,0,k))*binomial(n+k-1,n-1),k,1,n-1)/n; /* Vladimir Kruchinin, May 10 2011 */
 /* [wxMaxima: input   end   ] */
 
 

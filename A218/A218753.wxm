@@ -6,7 +6,7 @@ https://oeis.org/A218753
 
 
 /* [wxMaxima: input   start ] */
-A218753(n):=floor(49^n/48)$ makelist(A218753(n),n,0,30); /* _Martin Ettl_, Nov 05 2012 */
+A218753(n):=floor(49^n/48)$ makelist(A218753(n),n,0,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

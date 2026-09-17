@@ -6,7 +6,7 @@ https://oeis.org/A027620
 
 
 /* [wxMaxima: input   start ] */
-A027620(n):=n + (n+1)^2 + (n+2)^3$ makelist(A027620(n),n,0,15); /* _Martin Ettl_, Dec 13 2012 */
+A027620(n):=n + (n+1)^2 + (n+2)^3$ makelist(A027620(n),n,0,15); /* Martin Ettl, Dec 13 2012 */
 /* [wxMaxima: input   end   ] */
 
 

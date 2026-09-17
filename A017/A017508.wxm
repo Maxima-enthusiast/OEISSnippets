@@ -6,7 +6,7 @@ https://oeis.org/A017508
 
 
 /* [wxMaxima: input   start ] */
-makelist((11*n+9)^12, n,0,30); /* _Martin Ettl_, Oct 21 2012 */
+makelist((11*n+9)^12, n,0,30); /* Martin Ettl, Oct 21 2012 */
 /* [wxMaxima: input   end   ] */
 
 

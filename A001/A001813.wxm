@@ -6,7 +6,7 @@ https://oeis.org/A001813
 
 
 /* [wxMaxima: input   start ] */
-makelist(binomial(n+n, n)*n!,n,0,30); /* _Martin Ettl_, Nov 05 2012 */
+makelist(binomial(n+n, n)*n!,n,0,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,7 @@ https://oeis.org/A100412
 
 /* [wxMaxima: input   start ] */
 A100412(n):=8*10^n-7$
-makelist(A100412(n),n,0,17); /* _Martin Ettl_, Nov 08 2012 */
+makelist(A100412(n),n,0,17); /* Martin Ettl, Nov 08 2012 */
 /* [wxMaxima: input   end   ] */
 
 

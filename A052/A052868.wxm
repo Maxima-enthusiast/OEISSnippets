@@ -6,7 +6,7 @@ https://oeis.org/A052868
 
 
 /* [wxMaxima: input   start ] */
-makelist(if n=0 then 1 else sum(n!/k!*binomial(n-1, k-1)*(k+1)^(k-1),k,0,n),n,0,17);  /* _Bruno Berselli_, May 25 2011 */
+makelist(if n=0 then 1 else sum(n!/k!*binomial(n-1, k-1)*(k+1)^(k-1),k,0,n),n,0,17);  /* Bruno Berselli, May 25 2011 */
 /* [wxMaxima: input   end   ] */
 
 

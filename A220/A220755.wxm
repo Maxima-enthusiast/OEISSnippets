@@ -6,7 +6,7 @@ https://oeis.org/A220755
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(((-(-1)^n+sqrt(6))*(5+2*sqrt(6))^(n-1)-((-1)^n+sqrt(6))*(5-2*sqrt(6))^(n-1)-2)/12), n, 1, 25); /* _Bruno Berselli_, Apr 14 2013 */
+makelist(expand(((-(-1)^n+sqrt(6))*(5+2*sqrt(6))^(n-1)-((-1)^n+sqrt(6))*(5-2*sqrt(6))^(n-1)-2)/12), n, 1, 25); /* Bruno Berselli, Apr 14 2013 */
 /* [wxMaxima: input   end   ] */
 
 

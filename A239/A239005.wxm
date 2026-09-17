@@ -6,7 +6,7 @@ https://oeis.org/A239005
 
 
 /* [wxMaxima: input   start ] */
-T(n,m):=sum(binomial(m,k)*euler(n-m+k),k,0,m); /* _Vladimir Kruchinin_, Apr 06 2015 */
+T(n,m):=sum(binomial(m,k)*euler(n-m+k),k,0,m); /* Vladimir Kruchinin, Apr 06 2015 */
 /* [wxMaxima: input   end   ] */
 
 

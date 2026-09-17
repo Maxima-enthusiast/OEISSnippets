@@ -6,7 +6,7 @@ https://oeis.org/A003699
 
 
 /* [wxMaxima: input   start ] */
-(a[1] : 1, a[2] : 6, a[3] : 22, a[n] := 4*a[n - 1] - a[n - 2], makelist(a[n], n, 1, 50)); /* _Franck Maminirina Ramaharo_, Nov 12 2018 */
+(a[1] : 1, a[2] : 6, a[3] : 22, a[n] := 4*a[n - 1] - a[n - 2], makelist(a[n], n, 1, 50)); /* Franck Maminirina Ramaharo, Nov 12 2018 */
 /* [wxMaxima: input   end   ] */
 
 

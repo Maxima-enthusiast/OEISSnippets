@@ -6,7 +6,7 @@ https://oeis.org/A094984
 
 
 /* [wxMaxima: input   start ] */
-A094984(n):=floor(7^n/5^n)$ makelist(A094984(n),n,0,60); /* _Martin Ettl_, Oct 25 2012 */
+A094984(n):=floor(7^n/5^n)$ makelist(A094984(n),n,0,60); /* Martin Ettl, Oct 25 2012 */
 /* [wxMaxima: input   end   ] */
 
 

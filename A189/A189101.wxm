@@ -6,7 +6,7 @@ https://oeis.org/A189101
 
 
 /* [wxMaxima: input   start ] */
-makelist(coeff(taylor(1/(1-(x+x^2+x^3+x^4+x^6+x^7)), x, 0, n), x, n), n, 0, 34);  /* _Bruno Berselli_, Jun 05 2011 */
+makelist(coeff(taylor(1/(1-(x+x^2+x^3+x^4+x^6+x^7)), x, 0, n), x, n), n, 0, 34);  /* Bruno Berselli, Jun 05 2011 */
 /* [wxMaxima: input   end   ] */
 
 

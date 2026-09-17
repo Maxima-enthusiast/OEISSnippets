@@ -6,7 +6,7 @@ https://oeis.org/A103210
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 1 else (n-1)!*5^(n+1)*sum((6/25)^j/(2*(n+1-2*j)!*(j-1)!*j!),j,1,floor((n+1)/2)); /* _Tani Akinari_, Nov 18 2025 */
+a(n):=if n=0 then 1 else (n-1)!*5^(n+1)*sum((6/25)^j/(2*(n+1-2*j)!*(j-1)!*j!),j,1,floor((n+1)/2)); /* Tani Akinari, Nov 18 2025 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A004525
 
 
 /* [wxMaxima: input   start ] */
-makelist((1/4)*(2*n-(1-(-1)^n)*(-1)^(n*(n+1)/2)), n, 0, 75); /* _Bruno Berselli_, Mar 13 2012 */
+makelist((1/4)*(2*n-(1-(-1)^n)*(-1)^(n*(n+1)/2)), n, 0, 75); /* Bruno Berselli, Mar 13 2012 */
 /* [wxMaxima: input   end   ] */
 
 

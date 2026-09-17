@@ -7,7 +7,7 @@ https://oeis.org/A004355
 
 /* [wxMaxima: input   start ] */
 B(x):=sum(binomial(6*n,n-1)/n*x^n,n,1,30);
-taylor(x*diff(B(x),x)/B(x),x,0,10); /* _Vladimir Kruchinin_, Oct 05 2015 */
+taylor(x*diff(B(x),x)/B(x),x,0,10); /* Vladimir Kruchinin, Oct 05 2015 */
 /* [wxMaxima: input   end   ] */
 
 

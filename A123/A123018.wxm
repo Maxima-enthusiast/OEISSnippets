@@ -7,7 +7,7 @@ https://oeis.org/A123018
 
 /* [wxMaxima: input   start ] */
 P(x, n) := sum(binomial(n - k - 1, k)*x^k*(1 - x)^(n - k), k, 0, n)$
-create_list(ratcoef(expand(P(x, n)), x, k), n, 0, 12, k, 0, n); /* _Franck Maminirina Ramaharo_, Oct 14 2018 */
+create_list(ratcoef(expand(P(x, n)), x, k), n, 0, 12, k, 0, n); /* Franck Maminirina Ramaharo, Oct 14 2018 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -8,7 +8,7 @@ https://oeis.org/A005649
 /* [wxMaxima: input   start ] */
 t(n):=sum(stirling2(n,k)*k!,k,0,n);
 makelist(sum(binomial(n,k)*t(k)*t(n-k),k,0,n),n,0,20);
-/* _Emanuele Munarini_, Oct 02 2012 */
+/* Emanuele Munarini, Oct 02 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,7 @@ https://oeis.org/A159991
 
 /* [wxMaxima: input   start ] */
 A159991(n):=60^n$
-makelist(A159991(n),n,0,30); /* _Martin Ettl_, Nov 05 2012 */
+makelist(A159991(n),n,0,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

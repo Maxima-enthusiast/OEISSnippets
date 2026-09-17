@@ -9,7 +9,7 @@ https://oeis.org/A001566
 a[0]:3$
 a[n]:=a[n-1]^2-2$
 A001566(n):=a[n]$
-makelist(A001566(n),n,0,7); /* _Martin Ettl_, Nov 12 2012 */
+makelist(A001566(n),n,0,7); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

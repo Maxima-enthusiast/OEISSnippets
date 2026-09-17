@@ -6,7 +6,7 @@ https://oeis.org/A052227
 
 
 /* [wxMaxima: input   start ] */
-makelist(binomial(3*n,n)*(4*n+1)/(2*n+1),n,0,100); /* _Emanuele Munarini_, Jun 06 2011 */
+makelist(binomial(3*n,n)*(4*n+1)/(2*n+1),n,0,100); /* Emanuele Munarini, Jun 06 2011 */
 /* [wxMaxima: input   end   ] */
 
 

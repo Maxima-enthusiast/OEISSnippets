@@ -6,7 +6,7 @@ https://oeis.org/A081072
 
 
 /* [wxMaxima: input   start ] */
-makelist(fib(4*n)+3, n, 0, 30); /* _Martin Ettl_, Nov 11 2012 */
+makelist(fib(4*n)+3, n, 0, 30); /* Martin Ettl, Nov 11 2012 */
 /* [wxMaxima: input   end   ] */
 
 

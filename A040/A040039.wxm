@@ -7,7 +7,7 @@ https://oeis.org/A040039
 
 /* [wxMaxima: input   start ] */
 T(n,m):=sum(binomial(n-2*k-1,n-2*k-m)*sum(binomial(m,i)*T(k,i),i,1,k),k,0,(n-m)/2)+binomial(n-1,n-m);
-makelist(T(n+1,1),n,0,40); /* _Vladimir Kruchinin_, Mar 19 2015 */
+makelist(T(n+1,1),n,0,40); /* Vladimir Kruchinin, Mar 19 2015 */
 /* [wxMaxima: input   end   ] */
 
 

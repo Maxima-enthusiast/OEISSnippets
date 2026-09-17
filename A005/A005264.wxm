@@ -6,7 +6,7 @@ https://oeis.org/A005264
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=1 then 1 else sum((n+k-1)!*sum(1/(k-j)!*sum(1/(l!*(j-l)!)*sum(((-1)^(i+l)*l^i*binomial(l,n+j-i-1)*2^(n+j-i-1))/i!,i,0,n+j-1),l,1,j),j,1,k),k,1,n-1); /* _Vladimir Kruchinin_, May 04 2012 */
+a(n):=if n=1 then 1 else sum((n+k-1)!*sum(1/(k-j)!*sum(1/(l!*(j-l)!)*sum(((-1)^(i+l)*l^i*binomial(l,n+j-i-1)*2^(n+j-i-1))/i!,i,0,n+j-1),l,1,j),j,1,k),k,1,n-1); /* Vladimir Kruchinin, May 04 2012 */
 /* [wxMaxima: input   end   ] */
 
 

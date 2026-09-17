@@ -6,7 +6,7 @@ https://oeis.org/A000254
 
 
 /* [wxMaxima: input   start ] */
-a(n):=(-1)^(n+1)/2*(n+1)*sum(k*bern(k-1)*stirling1(n,k),k,1,n); /* _Vladimir Kruchinin_, Nov 20 2016 */
+a(n):=(-1)^(n+1)/2*(n+1)*sum(k*bern(k-1)*stirling1(n,k),k,1,n); /* Vladimir Kruchinin, Nov 20 2016 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A155864
 
 
 /* [wxMaxima: input   start ] */
-T(n, k) := ratcoef(x^n + n*(n-1)*x*(x+1)^(n-2) + (1 + (-1)^(2^n))/2, x, k)$ create_list(T(n, k), n, 0, 12, k, 0, n); /* _Franck Maminirina Ramaharo_, Dec 04 2018 */
+T(n, k) := ratcoef(x^n + n*(n-1)*x*(x+1)^(n-2) + (1 + (-1)^(2^n))/2, x, k)$ create_list(T(n, k), n, 0, 12, k, 0, n); /* Franck Maminirina Ramaharo, Dec 04 2018 */
 /* [wxMaxima: input   end   ] */
 
 

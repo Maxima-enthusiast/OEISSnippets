@@ -7,7 +7,7 @@ https://oeis.org/A010871
 
 /* [wxMaxima: input   start ] */
 A010871:32$
-makelist(A010871,n,0,30); /* _Martin Ettl_, Nov 08 2012 */
+makelist(A010871,n,0,30); /* Martin Ettl, Nov 08 2012 */
 /* [wxMaxima: input   end   ] */
 
 

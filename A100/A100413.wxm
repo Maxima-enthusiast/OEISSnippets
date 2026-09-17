@@ -7,7 +7,7 @@ https://oeis.org/A100413
 
 /* [wxMaxima: input   start ] */
 A100413(n):=6*10^n-8$
-makelist(A100413(n),n,1,17); /* _Martin Ettl_, Nov 08 2012 */
+makelist(A100413(n),n,1,17); /* Martin Ettl, Nov 08 2012 */
 /* [wxMaxima: input   end   ] */
 
 

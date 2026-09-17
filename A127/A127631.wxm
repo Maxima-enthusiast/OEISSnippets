@@ -6,7 +6,7 @@ https://oeis.org/A127631
 
 
 /* [wxMaxima: input   start ] */
-T(n,k):=if k=n then 1 else if n=0 then 0 else (k*sum((binomial(-k+2*i-1,i-k))*(binomial(2*n-i-1,n-i)),i,k,n))/n; /* _Vladimir Kruchinin_, Apr 05 2019 */
+T(n,k):=if k=n then 1 else if n=0 then 0 else (k*sum((binomial(-k+2*i-1,i-k))*(binomial(2*n-i-1,n-i)),i,k,n))/n; /* Vladimir Kruchinin, Apr 05 2019 */
 /* [wxMaxima: input   end   ] */
 
 

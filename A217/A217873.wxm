@@ -6,7 +6,7 @@ https://oeis.org/A217873
 
 
 /* [wxMaxima: input   start ] */
-makelist(4*n*(n^2+2)/3, n, 0, 41); /* _Martin Ettl_, Oct 15 2012 */
+makelist(4*n*(n^2+2)/3, n, 0, 41); /* Martin Ettl, Oct 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

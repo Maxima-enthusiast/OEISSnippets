@@ -7,7 +7,7 @@ https://oeis.org/A143095
 
 /* [wxMaxima: input   start ] */
 A143095(n):=(5-3*(-1)^n)*2^(1/4*(2*n-1+(-1)^n))/2$
-makelist(A143095(n),n,0,30); /* _Martin Ettl_, Nov 03 2012 */
+makelist(A143095(n),n,0,30); /* Martin Ettl, Nov 03 2012 */
 /* [wxMaxima: input   end   ] */
 
 

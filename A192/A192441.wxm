@@ -6,7 +6,7 @@ https://oeis.org/A192441
 
 
 /* [wxMaxima: input   start ] */
-makelist((coeff(expand((1+x^3+x^4)^n), x, 2*n)), n, 0, 30); /* _Bruno Berselli_, Jul 01 2011 */
+makelist((coeff(expand((1+x^3+x^4)^n), x, 2*n)), n, 0, 30); /* Bruno Berselli, Jul 01 2011 */
 /* [wxMaxima: input   end   ] */
 
 

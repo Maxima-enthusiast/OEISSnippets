@@ -6,7 +6,7 @@ https://oeis.org/A001580
 
 
 /* [wxMaxima: input   start ] */
-A001580(n):=2^n+n^2$ makelist(A001580(n),n,0,20); /* _Martin Ettl_, Dec 18 2012 */
+A001580(n):=2^n+n^2$ makelist(A001580(n),n,0,20); /* Martin Ettl, Dec 18 2012 */
 /* [wxMaxima: input   end   ] */
 
 

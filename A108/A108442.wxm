@@ -6,7 +6,7 @@ https://oeis.org/A108442
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 1 else sum((k*sum(binomial(2*n-k,i)*binomial(3*n-2*k-i-1,2*n-k-1),i,0,n-k))/(2*n-k),k,1,n); /* _Vladimir Kruchinin_, Oct 23 2011 */
+a(n):=if n=0 then 1 else sum((k*sum(binomial(2*n-k,i)*binomial(3*n-2*k-i-1,2*n-k-1),i,0,n-k))/(2*n-k),k,1,n); /* Vladimir Kruchinin, Oct 23 2011 */
 /* [wxMaxima: input   end   ] */
 
 

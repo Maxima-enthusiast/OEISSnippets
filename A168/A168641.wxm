@@ -7,7 +7,7 @@ https://oeis.org/A168641
 
 /* [wxMaxima: input   start ] */
 T(n,k) := ratcoef(if n <= 2 then (1 + x)^n else 3*(x + 1)^n - (x^n + 1) - (x^n + n*x^(n - 1) + n*x + 1), x, k);
-create_list(T(n, k), n, 0, 12, k, 0, n); /* _Franck Maminirina Ramaharo_, Jan 02 2019 */
+create_list(T(n, k), n, 0, 12, k, 0, n); /* Franck Maminirina Ramaharo, Jan 02 2019 */
 /* [wxMaxima: input   end   ] */
 
 

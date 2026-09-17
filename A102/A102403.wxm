@@ -6,7 +6,7 @@ https://oeis.org/A102403
 
 
 /* [wxMaxima: input   start ] */
-a102403(n):=1/n*sum(binomial(n,j)*binomial(3*j-n-2,j-1)*(-1)^(n-j),j,ceiling((n+2)/3),n); /* _Vladimir Kruchinin_, Mar 07 2011 */
+a102403(n):=1/n*sum(binomial(n,j)*binomial(3*j-n-2,j-1)*(-1)^(n-j),j,ceiling((n+2)/3),n); /* Vladimir Kruchinin, Mar 07 2011 */
 /* [wxMaxima: input   end   ] */
 
 

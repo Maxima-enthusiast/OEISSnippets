@@ -6,7 +6,7 @@ https://oeis.org/A061356
 
 
 /* [wxMaxima: input   start ] */
-create_list(binomial(n,k)*(n+1)^(n-k),n,0,20,k,0,n); /* _Emanuele Munarini_, Apr 01 2014 */
+create_list(binomial(n,k)*(n+1)^(n-k),n,0,20,k,0,n); /* Emanuele Munarini, Apr 01 2014 */
 /* [wxMaxima: input   end   ] */
 
 

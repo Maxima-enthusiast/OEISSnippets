@@ -7,7 +7,7 @@ https://oeis.org/A013609
 
 /* [wxMaxima: input   start ] */
 a(n,k):=coeff(expand((1+2*x)^n),x^k);
-create_list(a(n,k),n,0,6,k,0,n); /* _Emanuele Munarini_, Nov 21 2012 */
+create_list(a(n,k),n,0,6,k,0,n); /* Emanuele Munarini, Nov 21 2012 */
 /* [wxMaxima: input   end   ] */
 
 

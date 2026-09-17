@@ -6,7 +6,7 @@ https://oeis.org/A218383
 
 
 /* [wxMaxima: input   start ] */
-A218383[n]:=sum(((-1)^(n-i-1))*(2^(2^i)-1)*prod((2^(n-j+1)-1)/(2^j-1),j,1,i)* prod(2^j-1,j,1,n-i),i,0,n-1)$ makelist(A218383[n],n,1,9); /* _Martin Ettl_, Oct 30 2012 */
+A218383[n]:=sum(((-1)^(n-i-1))*(2^(2^i)-1)*prod((2^(n-j+1)-1)/(2^j-1),j,1,i)* prod(2^j-1,j,1,n-i),i,0,n-1)$ makelist(A218383[n],n,1,9); /* Martin Ettl, Oct 30 2012 */
 /* [wxMaxima: input   end   ] */
 
 

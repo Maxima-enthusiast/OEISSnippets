@@ -7,7 +7,7 @@ https://oeis.org/A253387
 
 /* [wxMaxima: input   start ] */
 (a(n):=(s:n, b:0, for m:2 unless s=b*(m+1) do (b:mod(s,m), s:s+b), b),
-makelist(a(n), n, 1,100)); /* _Lechoslaw Ratajczak_, Sep 15 2025 */
+makelist(a(n), n, 1,100)); /* Lechoslaw Ratajczak, Sep 15 2025 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A247584
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(2^k*binomial(n,5*k), k, 0, floor(n/5)), n, 0, 50); /* _Alexander Samokrutov_, Jul 11 2015 */
+makelist(sum(2^k*binomial(n,5*k), k, 0, floor(n/5)), n, 0, 50); /* Alexander Samokrutov, Jul 11 2015 */
 /* [wxMaxima: input   end   ] */
 
 

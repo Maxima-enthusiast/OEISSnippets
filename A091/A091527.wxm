@@ -7,7 +7,7 @@ https://oeis.org/A091527
 
 /* [wxMaxima: input   start ] */
 B(x):=(-1/3+(2/3)*sqrt(1+9*x)*sin((1/3)*asin((2+27*x+54*x^2)/2/(1+9*x)^(3/2))))/x-1;
-taylor(x*diff(B(x),x)/B(x),x,0,10); /* _Vladimir Kruchinin_, Oct 02 2015 */
+taylor(x*diff(B(x),x)/B(x),x,0,10); /* Vladimir Kruchinin, Oct 02 2015 */
 /* [wxMaxima: input   end   ] */
 
 

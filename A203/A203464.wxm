@@ -6,7 +6,7 @@ https://oeis.org/A203464
 
 
 /* [wxMaxima: input   start ] */
-makelist((1/8)*(130*n+78*%i^(n*(n+1))-45*(-1)^n-65),n,1,53); /* _Bruno Berselli_, Jan 12 2012 */
+makelist((1/8)*(130*n+78*%i^(n*(n+1))-45*(-1)^n-65),n,1,53); /* Bruno Berselli, Jan 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

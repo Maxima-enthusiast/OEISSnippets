@@ -6,7 +6,7 @@ https://oeis.org/A217855
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(((2+sqrt(3))^(2*n+1)+(2-sqrt(3))^(2*n+1)-4)/24), n, 0, 19); /* _Bruno Berselli_, Oct 16 2012 */
+makelist(expand(((2+sqrt(3))^(2*n+1)+(2-sqrt(3))^(2*n+1)-4)/24), n, 0, 19); /* Bruno Berselli, Oct 16 2012 */
 /* [wxMaxima: input   end   ] */
 
 

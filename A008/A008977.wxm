@@ -6,7 +6,7 @@ https://oeis.org/A008977
 
 
 /* [wxMaxima: input   start ] */
-A008977(n):=(4*n)!/(n!)^4$ makelist(A008977(n),n,0,20); /* _Martin Ettl_, Nov 15 2012 */
+A008977(n):=(4*n)!/(n!)^4$ makelist(A008977(n),n,0,20); /* Martin Ettl, Nov 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A005581
 
 
 /* [wxMaxima: input   start ] */
-A005581(n):=(n-1)*n*(n+4)/6$ makelist(A005581(n),n,0,50); /* _Martin Ettl_, Dec 18 2012 */
+A005581(n):=(n-1)*n*(n+4)/6$ makelist(A005581(n),n,0,50); /* Martin Ettl, Dec 18 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A060528
 
 
 /* [wxMaxima: input   start ] */
-x:bfloat(log(3)/log(2)),fpprec:100, errold:2,for denominator:1 thru 10000 do (numerator:round(x*denominator), errnew:abs(x-numerator/denominator), if errnew < errold then (errold:errnew, print(denominator))); /* _K. G. Stier_, Jan 29 2015 */
+x:bfloat(log(3)/log(2)),fpprec:100, errold:2,for denominator:1 thru 10000 do (numerator:round(x*denominator), errnew:abs(x-numerator/denominator), if errnew < errold then (errold:errnew, print(denominator))); /* K. G. Stier, Jan 29 2015 */
 /* [wxMaxima: input   end   ] */
 
 

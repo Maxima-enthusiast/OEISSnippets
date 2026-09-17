@@ -6,7 +6,7 @@ https://oeis.org/A100314
 
 
 /* [wxMaxima: input   start ] */
-makelist(2^n + 2*n, n, 0, 50); /* _Franck Maminirina Ramaharo_, Dec 19 2018 */
+makelist(2^n + 2*n, n, 0, 50); /* Franck Maminirina Ramaharo, Dec 19 2018 */
 /* [wxMaxima: input   end   ] */
 
 

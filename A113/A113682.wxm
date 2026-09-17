@@ -6,7 +6,7 @@ https://oeis.org/A113682
 
 
 /* [wxMaxima: input   start ] */
-makelist((ultraspherical(n+1,-n-1,-1/2)+(-1)^n)/2,n,0,12); /* _Emanuele Munarini_, Dec 20 2016 */
+makelist((ultraspherical(n+1,-n-1,-1/2)+(-1)^n)/2,n,0,12); /* Emanuele Munarini, Dec 20 2016 */
 /* [wxMaxima: input   end   ] */
 
 

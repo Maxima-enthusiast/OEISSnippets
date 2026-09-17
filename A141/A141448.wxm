@@ -7,7 +7,7 @@ https://oeis.org/A141448
 
 /* [wxMaxima: input   start ] */
 a(n):=b(n+1);
-b(n):=sum(sum(binomial(k,r)*2^(k-r)*sum((sum(binomial(j,-r+n-m-k-j)*binomial(m,j),j,0,m))*binomial(r,m),m,0,r),r,0,k),k,1,n); /* _Vladimir Kruchinin_, May 05 2011 */
+b(n):=sum(sum(binomial(k,r)*2^(k-r)*sum((sum(binomial(j,-r+n-m-k-j)*binomial(m,j),j,0,m))*binomial(r,m),m,0,r),r,0,k),k,1,n); /* Vladimir Kruchinin, May 05 2011 */
 /* [wxMaxima: input   end   ] */
 
 

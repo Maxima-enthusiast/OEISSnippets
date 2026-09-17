@@ -9,7 +9,7 @@ https://oeis.org/A131865
 a[0]:0$
 a[n]:=16*a[n-1]+1$
 A131865(n):=a[n]$
-makelist(A131865(n),n,1,30); /* _Martin Ettl_, Nov 05 2012 */
+makelist(A131865(n),n,1,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

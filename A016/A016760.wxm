@@ -7,7 +7,7 @@ https://oeis.org/A016760
 
 /* [wxMaxima: input   start ] */
 A016760(n):=(2*n+1)^8$
-makelist(A016760(n),n,0,20); /* _Martin Ettl_, Nov 12 2012 */
+makelist(A016760(n),n,0,20); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

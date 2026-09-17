@@ -6,7 +6,7 @@ https://oeis.org/A001169
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(sum(binomial(k,i)*binomial(n+2*i-1,4*k-i),i,0,k),k,0,n-1),n,0,24); /* _Emanuele Munarini_, May 19 2011 */
+makelist(sum(sum(binomial(k,i)*binomial(n+2*i-1,4*k-i),i,0,k),k,0,n-1),n,0,24); /* Emanuele Munarini, May 19 2011 */
 /* [wxMaxima: input   end   ] */
 
 

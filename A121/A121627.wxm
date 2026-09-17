@@ -6,7 +6,7 @@ https://oeis.org/A121627
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(((1-%i)^n+(1+%i)^n)*n!/2), n,1,22); /* _Bruno Berselli_, Nov 21 2011 */
+makelist(expand(((1-%i)^n+(1+%i)^n)*n!/2), n,1,22); /* Bruno Berselli, Nov 21 2011 */
 /* [wxMaxima: input   end   ] */
 
 

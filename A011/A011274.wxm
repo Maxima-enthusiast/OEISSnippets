@@ -6,7 +6,7 @@ https://oeis.org/A011274
 
 
 /* [wxMaxima: input   start ] */
-A011274(n,k):= k/n*sum(binomial(i+n-1,n-1)*binomial(i+n,n-k-i), i,0,n-k); /* _Vladimir Kruchinin_, Mar 17 2011 */
+A011274(n,k):= k/n*sum(binomial(i+n-1,n-1)*binomial(i+n,n-k-i), i,0,n-k); /* Vladimir Kruchinin, Mar 17 2011 */
 /* [wxMaxima: input   end   ] */
 
 

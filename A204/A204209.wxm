@@ -6,7 +6,7 @@ https://oeis.org/A204209
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 1 else sum((sum(binomial(i,j)*binomial(-9*j+5*i-1,4*i-9*j)*(-1)^j,j,0,(4*i)/9))*a(n-i),i,1,n)/n; /* _Vladimir Kruchinin_, Apr 06 2017 */
+a(n):=if n=0 then 1 else sum((sum(binomial(i,j)*binomial(-9*j+5*i-1,4*i-9*j)*(-1)^j,j,0,(4*i)/9))*a(n-i),i,1,n)/n; /* Vladimir Kruchinin, Apr 06 2017 */
 /* [wxMaxima: input   end   ] */
 
 

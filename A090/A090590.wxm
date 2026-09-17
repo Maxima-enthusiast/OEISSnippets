@@ -6,7 +6,7 @@ https://oeis.org/A090590
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(((1+sqrt(-1)*sqrt(7))^n+(1-sqrt(-1)*sqrt(7))^n)/2),n,1,26); /* _Bruno Berselli_, Jun 24-25 2011 */
+makelist(expand(((1+sqrt(-1)*sqrt(7))^n+(1-sqrt(-1)*sqrt(7))^n)/2),n,1,26); /* Bruno Berselli, Jun 24-25 2011 */
 /* [wxMaxima: input   end   ] */
 
 

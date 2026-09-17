@@ -6,7 +6,7 @@ https://oeis.org/A001705
 
 
 /* [wxMaxima: input   start ] */
-a(n):=n!*sum(((-1)^(k+1)*binomial(n+1,k+1))/k,k,1,n); /* _Vladimir Kruchinin_, Oct 10 2016 */
+a(n):=n!*sum(((-1)^(k+1)*binomial(n+1,k+1))/k,k,1,n); /* Vladimir Kruchinin, Oct 10 2016 */
 /* [wxMaxima: input   end   ] */
 
 

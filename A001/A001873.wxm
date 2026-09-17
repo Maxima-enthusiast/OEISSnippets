@@ -7,7 +7,7 @@ https://oeis.org/A001873
 
 /* [wxMaxima: input   start ] */
 a[n]:=if n<2 then 4*n+1 else (4/n+1)*a[n-1]+(8/n+1)*a[n-2];
-makelist(a[n],n,0,50); /* _Tani Akinari_, Sep 14 2023 */
+makelist(a[n],n,0,50); /* Tani Akinari, Sep 14 2023 */
 /* [wxMaxima: input   end   ] */
 
 

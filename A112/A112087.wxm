@@ -6,7 +6,7 @@ https://oeis.org/A112087
 
 
 /* [wxMaxima: input   start ] */
-makelist(4*n^2 - 4*n + 4,n,1,55); /* _Martin Ettl_, Oct 16 2012 */
+makelist(4*n^2 - 4*n + 4,n,1,55); /* Martin Ettl, Oct 16 2012 */
 /* [wxMaxima: input   end   ] */
 
 

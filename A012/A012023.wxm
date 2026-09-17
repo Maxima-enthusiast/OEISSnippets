@@ -6,7 +6,7 @@ https://oeis.org/A012023
 
 
 /* [wxMaxima: input   start ] */
-a(n):=(2*n)!*(-1)^n*sum(binomial(n-1,n-j)/(2*j)!,j,0,n); /* _Vladimir Kruchinin_, May 19 2011 */
+a(n):=(2*n)!*(-1)^n*sum(binomial(n-1,n-j)/(2*j)!,j,0,n); /* Vladimir Kruchinin, May 19 2011 */
 /* [wxMaxima: input   end   ] */
 
 

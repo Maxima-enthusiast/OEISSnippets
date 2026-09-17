@@ -8,7 +8,7 @@ https://oeis.org/A085697
 /* [wxMaxima: input   start ] */
 t[0]:0$  t[1]:0$  t[2]:1$
 t[n]:=t[n-1]+t[n-2]+t[n-3]$
-makelist(t[n]^2,n,0,40); /* _Emanuele Munarini_, Mar 01 2011 */
+makelist(t[n]^2,n,0,40); /* Emanuele Munarini, Mar 01 2011 */
 /* [wxMaxima: input   end   ] */
 
 

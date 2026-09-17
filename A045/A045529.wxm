@@ -7,7 +7,7 @@ https://oeis.org/A045529
 
 /* [wxMaxima: input   start ] */
 A045529(n):=fib(3^n)$
-makelist(A045529(n),n,0,10); /* _Martin Ettl_, Nov 12 2012 */
+makelist(A045529(n),n,0,10); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

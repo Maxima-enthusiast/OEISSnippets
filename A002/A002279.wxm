@@ -7,7 +7,7 @@ https://oeis.org/A002279
 
 /* [wxMaxima: input   start ] */
 A002279(n):=5*(10^n-1)/9$
-makelist(A002279(n),n,0,30); /* _Martin Ettl_, Nov 08 2012 */
+makelist(A002279(n),n,0,30); /* Martin Ettl, Nov 08 2012 */
 /* [wxMaxima: input   end   ] */
 
 

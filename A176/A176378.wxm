@@ -6,7 +6,7 @@ https://oeis.org/A176378
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(((25+3*sqrt(70))^(2*n-2)-(25-3*sqrt(70))^(2*n-2))/(2*sqrt(70)*5^(n-1))), n, 1, 12); /* _Bruno Berselli_, Dec 14 2011 */
+makelist(expand(((25+3*sqrt(70))^(2*n-2)-(25-3*sqrt(70))^(2*n-2))/(2*sqrt(70)*5^(n-1))), n, 1, 12); /* Bruno Berselli, Dec 14 2011 */
 /* [wxMaxima: input   end   ] */
 
 

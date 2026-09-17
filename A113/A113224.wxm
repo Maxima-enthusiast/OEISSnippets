@@ -6,7 +6,7 @@ https://oeis.org/A113224
 
 
 /* [wxMaxima: input   start ] */
-a(n):=n*sum(sum(binomial(i,n-k-i)*binomial(k+i-1,k-1),i,ceiling((n-k)/2),n-k)*(1-(-1)^k)/(2*k),k,1,n); /* _Vladimir Kruchinin_, Apr 11 2011 */
+a(n):=n*sum(sum(binomial(i,n-k-i)*binomial(k+i-1,k-1),i,ceiling((n-k)/2),n-k)*(1-(-1)^k)/(2*k),k,1,n); /* Vladimir Kruchinin, Apr 11 2011 */
 /* [wxMaxima: input   end   ] */
 
 

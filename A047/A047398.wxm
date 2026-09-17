@@ -6,7 +6,7 @@ https://oeis.org/A047398
 
 
 /* [wxMaxima: input   start ] */
-makelist(4*n + mod(n, 2) - 2, n, 1, 100); /* _Franck Maminirina Ramaharo_, Aug 06 2018 */
+makelist(4*n + mod(n, 2) - 2, n, 1, 100); /* Franck Maminirina Ramaharo, Aug 06 2018 */
 /* [wxMaxima: input   end   ] */
 
 

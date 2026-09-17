@@ -6,7 +6,7 @@ https://oeis.org/A021076
 
 
 /* [wxMaxima: input   start ] */
-a(n):=-(1/15)+2^n-(16/3)*4^n+(27/5)*6^n$ makelist(a(n),n,0,18); /* _Antonio Alberto Olivares_, May 22 2012 */
+a(n):=-(1/15)+2^n-(16/3)*4^n+(27/5)*6^n$ makelist(a(n),n,0,18); /* Antonio Alberto Olivares, May 22 2012 */
 /* [wxMaxima: input   end   ] */
 
 

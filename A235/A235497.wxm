@@ -6,7 +6,7 @@ https://oeis.org/A235497
 
 
 /* [wxMaxima: input   start ] */
-makelist(2*n*10^floor(log(n)/log(10) + 1) + n,n,50); /* _Bruno Berselli_, Feb 06 2014, using the closed form added from _Alois P. Heinz_ on Feb 05 2014 */
+makelist(2*n*10^floor(log(n)/log(10) + 1) + n,n,50); /* Bruno Berselli, Feb 06 2014, using the closed form added from Alois P. Heinz on Feb 05 2014 */
 /* [wxMaxima: input   end   ] */
 
 

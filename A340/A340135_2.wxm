@@ -1,0 +1,21 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A340135
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+/* version 2 */
+a(n) :=
+sum(
+sum(
+(b : n*d / a,
+if integerp(b) and b<n then
+binomial(n,a)*binomial(a,d)*binomial(n-a,b-d) else 0), d,1,a), a,1,n-1) ;
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

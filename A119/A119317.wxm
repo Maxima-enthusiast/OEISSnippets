@@ -16,7 +16,7 @@ if primep(idv[n]) then
 return(idv[n])
 )
 )
-)$ /* _R. J. Mathar_, Mar 13 2012 */
+)$ /* R. J. Mathar, Mar 13 2012 */
 /* [wxMaxima: input   end   ] */
 
 

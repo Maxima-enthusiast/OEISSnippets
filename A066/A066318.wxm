@@ -6,7 +6,7 @@ https://oeis.org/A066318
 
 
 /* [wxMaxima: input   start ] */
-a(n):=(n-1)!*2^n$ makelist(a(n), n, 1, 10);  /* _Stefano Spezia_, Nov 21 2018 */
+a(n):=(n-1)!*2^n$ makelist(a(n), n, 1, 10);  /* Stefano Spezia, Nov 21 2018 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A110313
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(binomial(n,k)*k!*fib(k+1), k,0,n), n,0,30); /* _Emanuele Munarini_, May 27 2011 */
+makelist(sum(binomial(n,k)*k!*fib(k+1), k,0,n), n,0,30); /* Emanuele Munarini, May 27 2011 */
 /* [wxMaxima: input   end   ] */
 
 

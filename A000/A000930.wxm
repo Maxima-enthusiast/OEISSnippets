@@ -6,7 +6,7 @@ https://oeis.org/A000930
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(binomial(n-2*k,k),k,0,n/3),n,0,18); /* _Emanuele Munarini_, May 24 2011 */
+makelist(sum(binomial(n-2*k,k),k,0,n/3),n,0,18); /* Emanuele Munarini, May 24 2011 */
 /* [wxMaxima: input   end   ] */
 
 

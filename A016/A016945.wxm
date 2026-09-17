@@ -6,7 +6,7 @@ https://oeis.org/A016945
 
 
 /* [wxMaxima: input   start ] */
-makelist(6*n+3, n, 0, 60); /* _Wesley Ivan Hurt_, Sep 29 2013 */
+makelist(6*n+3, n, 0, 60); /* Wesley Ivan Hurt, Sep 29 2013 */
 /* [wxMaxima: input   end   ] */
 
 

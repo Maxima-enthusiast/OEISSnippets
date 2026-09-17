@@ -7,7 +7,7 @@ https://oeis.org/A032186
 
 /* [wxMaxima: input   start ] */
 a(n):=if n<3 then 1/n! else (a(n-2)*(n-2)+sum(a(i+3)*(i+1)*(i+2)*(i+3)*a(n-3-i),i,0,n-4))/(n*(n-1)*(n-2));
-makelist(n!*a(n),n,1,17); /* _Vladimir Kruchinin_, Nov 18 2011 */
+makelist(n!*a(n),n,1,17); /* Vladimir Kruchinin, Nov 18 2011 */
 /* [wxMaxima: input   end   ] */
 
 

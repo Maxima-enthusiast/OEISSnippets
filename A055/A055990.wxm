@@ -6,7 +6,7 @@ https://oeis.org/A055990
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum((binomial(n+3*m+1,n-m-1)),m,0,n-1); /* _Vladimir Kruchinin_, Nov 18 2020 */
+a(n):=sum((binomial(n+3*m+1,n-m-1)),m,0,n-1); /* Vladimir Kruchinin, Nov 18 2020 */
 /* [wxMaxima: input   end   ] */
 
 

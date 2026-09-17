@@ -7,7 +7,7 @@ https://oeis.org/A088317
 
 /* [wxMaxima: input   start ] */
 a[0]:1$ a[1]:4$ a[n]:=8*a[n-1]+a[n-2]$ A088317(n):=a[n]$
-makelist(A088317(n),n,0,20); /* _Martin Ettl_, Nov 12 2012 */
+makelist(A088317(n),n,0,20); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

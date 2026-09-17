@@ -6,7 +6,7 @@ https://oeis.org/A034870
 
 
 /* [wxMaxima: input   start ] */
-taylor(1/(1-x*(y+1)^2),x,0,10,y,0,10); /* _Vladimir Kruchinin_, Nov 22 2020 */
+taylor(1/(1-x*(y+1)^2),x,0,10,y,0,10); /* Vladimir Kruchinin, Nov 22 2020 */
 /* [wxMaxima: input   end   ] */
 
 

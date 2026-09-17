@@ -9,7 +9,7 @@ https://oeis.org/A000081
 g(m):= block([si,v],s:0,v:divisors(m), for si in v do (s:s+r(m/si)/si),s);
 r(n):=if n=1 then 1 else sum(Co(n-1,k)/k!,k,1,n-1);
 Co(n,k):=if k=1  then g(n)  else sum(g(i+1)*Co(n-i-1,k-1),i,0,n-k);
-makelist(r(n),n,1,12); /*_Vladimir Kruchinin_, Jun 15 2012 */
+makelist(r(n),n,1,12); /*Vladimir Kruchinin, Jun 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

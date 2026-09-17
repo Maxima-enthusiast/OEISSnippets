@@ -6,7 +6,7 @@ https://oeis.org/A048919
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand((50+(25-3*sqrt(35))*(6+sqrt(35))^(2*n-1)+(25+3*sqrt(35))*(6-sqrt(35))^(2*n-1))/140), n, 1, 12); /* _Bruno Berselli_, Dec 21 2011 */
+makelist(expand((50+(25-3*sqrt(35))*(6+sqrt(35))^(2*n-1)+(25+3*sqrt(35))*(6-sqrt(35))^(2*n-1))/140), n, 1, 12); /* Bruno Berselli, Dec 21 2011 */
 /* [wxMaxima: input   end   ] */
 
 

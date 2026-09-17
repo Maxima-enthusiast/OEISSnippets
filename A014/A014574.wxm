@@ -14,7 +14,7 @@ for k : 2 step 2 do (
 if primep(p+k-1) and primep(p+k+1) then
 return(p+k)
 )
-)$ /* _R. J. Mathar_, Mar 15 2012 */
+)$ /* R. J. Mathar, Mar 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

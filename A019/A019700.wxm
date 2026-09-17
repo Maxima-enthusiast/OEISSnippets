@@ -6,7 +6,7 @@ https://oeis.org/A019700
 
 
 /* [wxMaxima: input   start ] */
-ev(2*%pi/17, numer); /* _Bruno Berselli_, Mar 28 2012 */
+ev(2*%pi/17, numer); /* Bruno Berselli, Mar 28 2012 */
 /* [wxMaxima: input   end   ] */
 
 

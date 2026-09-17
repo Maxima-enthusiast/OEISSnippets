@@ -6,7 +6,7 @@ https://oeis.org/A219751
 
 
 /* [wxMaxima: input   start ] */
-makelist(coeff(taylor(x^4*(2-3*x-x^2)/((1+x)*(1-2*x)^2), x, 0, n), x, n), n, 0, 35); /* _Bruno Berselli_, Nov 29 2012 */
+makelist(coeff(taylor(x^4*(2-3*x-x^2)/((1+x)*(1-2*x)^2), x, 0, n), x, n), n, 0, 35); /* Bruno Berselli, Nov 29 2012 */
 /* [wxMaxima: input   end   ] */
 
 

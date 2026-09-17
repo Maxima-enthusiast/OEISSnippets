@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A008459
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+A(x,y):=1/sqrt(1-2*x-2*x*y+x^2-2*x^2*y+x^2*y^2);
+taylor(x*A(x,y)+x*y*A(x,y)+sqrt(1+4*x^2*y*A(x,y)^2),x,0,7,y,0,7); /* Vladimir Kruchinin, Oct 23 2020 */
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

@@ -6,7 +6,7 @@ https://oeis.org/A192422
 
 
 /* [wxMaxima: input   start ] */
-a(n):=n*sum((binomial(n-i-1,i))/(n-2*i)*fib(n-2*i),i,0,(n-1)/2); /* _Vladimir Kruchinin_, Mar 20 2016 */
+a(n):=n*sum((binomial(n-i-1,i))/(n-2*i)*fib(n-2*i),i,0,(n-1)/2); /* Vladimir Kruchinin, Mar 20 2016 */
 /* [wxMaxima: input   end   ] */
 
 

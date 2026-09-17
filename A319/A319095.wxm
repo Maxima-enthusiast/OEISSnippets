@@ -7,7 +7,7 @@ https://oeis.org/A319095
 
 /* [wxMaxima: input   start ] */
 T(n, k) := ratcoef((1 + x + x^2 + 3*x^3 + x^4 + x^5 + x^6 + x^7)^n, x, k)$
-create_list(T(n,k), n, 0, 10, k, 0, 7*n); /* _Franck Maminirina Ramaharo_, Nov 27 2018 */
+create_list(T(n,k), n, 0, 10, k, 0, 7*n); /* Franck Maminirina Ramaharo, Nov 27 2018 */
 /* [wxMaxima: input   end   ] */
 
 

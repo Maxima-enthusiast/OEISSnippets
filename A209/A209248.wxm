@@ -6,7 +6,7 @@ https://oeis.org/A209248
 
 
 /* [wxMaxima: input   start ] */
-makelist(floor(2^(2^n-2*n-1)),n,3,8); /* _Martin Ettl_, Jan 25 2013 */
+makelist(floor(2^(2^n-2*n-1)),n,3,8); /* Martin Ettl, Jan 25 2013 */
 /* [wxMaxima: input   end   ] */
 
 

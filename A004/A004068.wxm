@@ -6,7 +6,7 @@ https://oeis.org/A004068
 
 
 /* [wxMaxima: input   start ] */
-A004068(n):=5*n^3/6+n/6$ makelist(A004068(n),n,0,20); /* _Martin Ettl_, Jan 07 2013 */
+A004068(n):=5*n^3/6+n/6$ makelist(A004068(n),n,0,20); /* Martin Ettl, Jan 07 2013 */
 /* [wxMaxima: input   end   ] */
 
 

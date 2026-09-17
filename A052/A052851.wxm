@@ -6,7 +6,7 @@ https://oeis.org/A052851
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum(stirling1(n,k)*k!*binomial(2*k-2,k-1)/k*(-1)^(n+k), k,1,n); /* _Vladimir Kruchinin_, May 12 2012 */
+a(n):=sum(stirling1(n,k)*k!*binomial(2*k-2,k-1)/k*(-1)^(n+k), k,1,n); /* Vladimir Kruchinin, May 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

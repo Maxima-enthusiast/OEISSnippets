@@ -6,7 +6,7 @@ https://oeis.org/A189748
 
 
 /* [wxMaxima: input   start ] */
-a[1]:5$ a[2]:4$ a[n]:=5*a[n-1]+4*a[n-2]$ makelist(a[n], n, 1, 23); /* _Bruno Berselli_, May 24 2011 */
+a[1]:5$ a[2]:4$ a[n]:=5*a[n-1]+4*a[n-2]$ makelist(a[n], n, 1, 23); /* Bruno Berselli, May 24 2011 */
 /* [wxMaxima: input   end   ] */
 
 

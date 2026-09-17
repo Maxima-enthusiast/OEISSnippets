@@ -6,7 +6,7 @@ https://oeis.org/A005317
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum((-1)^k*binomial(2*n,n-2*k),k,0,floor(n/2)),n,0,26); /* _Bruno Berselli_, Jun 20 2011 */
+makelist(sum((-1)^k*binomial(2*n,n-2*k),k,0,floor(n/2)),n,0,26); /* Bruno Berselli, Jun 20 2011 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A009444
 
 
 /* [wxMaxima: input   start ] */
-a(n):=(-1)^(n+1)*n!*sum(m^(n-m-1)/(n-m)!,m,1,n); /* _Vladimir Kruchinin_, Oct 08 2011 */
+a(n):=(-1)^(n+1)*n!*sum(m^(n-m-1)/(n-m)!,m,1,n); /* Vladimir Kruchinin, Oct 08 2011 */
 /* [wxMaxima: input   end   ] */
 
 

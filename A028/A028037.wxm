@@ -6,7 +6,7 @@ https://oeis.org/A028037
 
 
 /* [wxMaxima: input   start ] */
-taylor(12*x/binomial(12*x,5)/5,x,0,10); /* _Vladimir Kruchinin_, Apr 17 2016 */
+taylor(12*x/binomial(12*x,5)/5,x,0,10); /* Vladimir Kruchinin, Apr 17 2016 */
 /* [wxMaxima: input   end   ] */
 
 

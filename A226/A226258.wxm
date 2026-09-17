@@ -10,7 +10,7 @@ c_list : [1]$
 V(n) := if n = 0 then 1 else (4*n - 1)!!/(4!^n*n!)$
 c(n) := V(n) - 1/n*sum(j*c_list[j + 1]*V(n - j), j ,0 , n - 1)$
 for i:1 thru 50 do c_list : append(c_list, [c(i)])$
-map(num,c_list); /* _Franck Maminirina Ramaharo_, Feb 04 2019 */
+map(num,c_list); /* Franck Maminirina Ramaharo, Feb 04 2019 */
 /* [wxMaxima: input   end   ] */
 
 

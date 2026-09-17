@@ -7,7 +7,7 @@ https://oeis.org/A205457
 
 /* [wxMaxima: input   start ] */
 S(x,y):=((x^3-3*x^2)*y^3-x^2*y^2)/((x^2-2*x+1)*y^3+(-x^2-3)*y^2+(2*x+3)*y-1);
-taylor((S(x,y)+S(y,x))/(x*y)-x*y/(1-x*y)+1/(1-x)+1/(1-y)-1,x,0,7,y,0,7); /* _Vladimir Kruchinin_, Oct 29 2020 */
+taylor((S(x,y)+S(y,x))/(x*y)-x*y/(1-x*y)+1/(1-x)+1/(1-y)-1,x,0,7,y,0,7); /* Vladimir Kruchinin, Oct 29 2020 */
 /* [wxMaxima: input   end   ] */
 
 

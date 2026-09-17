@@ -19,7 +19,7 @@ if n0=n and n01=n and n1=n-1 then
 (h: concat(n, " ", k), printf(fl, h),  newline(fl)) else n: nmax),
 if m<nmax then print(concat("Precision too low: Stop at n= ",m)),
 close(fl));
-/* _Gerhard Kirchner_, Jul 23 2020 */
+/* Gerhard Kirchner, Jul 23 2020 */
 /* The first nmax terms are saved as a b-file */
 /* [wxMaxima: input   end   ] */
 

@@ -6,7 +6,7 @@ https://oeis.org/A011565
 
 
 /* [wxMaxima: input   start ] */
-A011565(n):=stirling2(16,n)$ makelist(A011565(n),n,1,16); /* _Martin Ettl_, Nov 05 2012 */
+A011565(n):=stirling2(16,n)$ makelist(A011565(n),n,1,16); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

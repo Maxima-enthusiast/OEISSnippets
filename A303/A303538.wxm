@@ -7,7 +7,7 @@ https://oeis.org/A303538
 
 /* [wxMaxima: input   start ] */
 a[n]:=if n<2 then n+1 else (2*a[n-1]+64*(n-2)*a[n-2])/n;
-makelist(a[n],n,0,1000); /* _Tani Akinari_, Apr 29 2018 */
+makelist(a[n],n,0,1000); /* Tani Akinari, Apr 29 2018 */
 /* [wxMaxima: input   end   ] */
 
 

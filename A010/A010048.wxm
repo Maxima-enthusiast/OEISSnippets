@@ -8,7 +8,7 @@ https://oeis.org/A010048
 /* [wxMaxima: input   start ] */
 ffib(n):=prod(fib(k),k,1,n);
 fibonomial(n,k):=ffib(n)/(ffib(k)*ffib(n-k));
-create_list(fibonomial(n,k),n,0,20,k,0,n); /* _Emanuele Munarini_, Apr 02 2012 */
+create_list(fibonomial(n,k),n,0,20,k,0,n); /* Emanuele Munarini, Apr 02 2012 */
 /* [wxMaxima: input   end   ] */
 
 

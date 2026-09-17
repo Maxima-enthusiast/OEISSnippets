@@ -6,7 +6,7 @@ https://oeis.org/A055795
 
 
 /* [wxMaxima: input   start ] */
-A055795(n):=n*(n^3-6*n^2+23*n-18)/24$ makelist(A055795(n), n, 1, 100); /* _Wesley Ivan Hurt_, Sep 29 2013 */
+A055795(n):=n*(n^3-6*n^2+23*n-18)/24$ makelist(A055795(n), n, 1, 100); /* Wesley Ivan Hurt, Sep 29 2013 */
 /* [wxMaxima: input   end   ] */
 
 

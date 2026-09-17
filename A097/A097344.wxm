@@ -7,7 +7,7 @@ https://oeis.org/A097344
 
 /* [wxMaxima: input   start ] */
 a(n):=if n<0 then 1 else 1/((n+1)^2)*((n)*(3*n+1)*a(n-1)-2*(n-1)*(n)*a(n-2)+1);
-makelist(num(a(n),n,0,10); /* _Vladimir Kruchinin_, Jun 01 2016 */
+makelist(num(a(n),n,0,10); /* Vladimir Kruchinin, Jun 01 2016 */
 /* [wxMaxima: input   end   ] */
 
 

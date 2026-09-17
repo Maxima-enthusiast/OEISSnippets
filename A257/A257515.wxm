@@ -6,7 +6,7 @@ https://oeis.org/A257515
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum((binomial(2*m,m)/(m+1)*(if mod(n+m,3)=0 then 2^((n-2*m)/3)* binomial((m+n)/3,m) else 0)),m,0,n); /* _Vladimir Kruchinin_, Mar 07 2016 */
+a(n):=sum((binomial(2*m,m)/(m+1)*(if mod(n+m,3)=0 then 2^((n-2*m)/3)* binomial((m+n)/3,m) else 0)),m,0,n); /* Vladimir Kruchinin, Mar 07 2016 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -11,7 +11,7 @@ a[2]:24$
 a[3]:531$
 a[n]:=24*a[n-1]-45*a[n-2]+22*a[n-3]$
 A014907(n):=a[n]$
-makelist(A014907(n),n,1,30); /* _Martin Ettl_, Nov 06 2012 */
+makelist(A014907(n),n,1,30); /* Martin Ettl, Nov 06 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,7 @@ https://oeis.org/A013881
 
 /* [wxMaxima: input   start ] */
 A013881(n):=16^(5*n+4)$
-makelist(A013881(n),n,0,10); /* _Martin Ettl_, Nov 12 2012 */
+makelist(A013881(n),n,0,10); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

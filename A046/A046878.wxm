@@ -6,7 +6,7 @@ https://oeis.org/A046878
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 0 else num((-1)^(n-1)/(n-1)!*sum(2^k*bern(k)*(stirling1(n-1,k)),k,0,n-1)); /* _Vladimir Kruchinin_, Nov 20 2015 */
+a(n):=if n=0 then 0 else num((-1)^(n-1)/(n-1)!*sum(2^k*bern(k)*(stirling1(n-1,k)),k,0,n-1)); /* Vladimir Kruchinin, Nov 20 2015 */
 /* [wxMaxima: input   end   ] */
 
 

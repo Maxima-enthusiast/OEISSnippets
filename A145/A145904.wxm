@@ -7,7 +7,7 @@ https://oeis.org/A145904
 
 /* [wxMaxima: input   start ] */
 taylor(((y-1)*sqrt(((x^2+2*x+1)*y-x^2+2*x-1)/(y-1))+(-x-1)*y-x+1)/(2*x^2*y),x,0,10,y,0,10);
-T(n,m,k):=1/(n+1)*sum(binomial(n+1,i-1)*binomial(n+1,i)*binomial(n+m-i+1,m+1-i),i,0,m+1); /* _Vladimir Kruchinin_, Jan 15 2018 */
+T(n,m,k):=1/(n+1)*sum(binomial(n+1,i-1)*binomial(n+1,i)*binomial(n+m-i+1,m+1-i),i,0,m+1); /* Vladimir Kruchinin, Jan 15 2018 */
 /* [wxMaxima: input   end   ] */
 
 

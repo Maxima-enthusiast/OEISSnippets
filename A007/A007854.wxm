@@ -6,7 +6,7 @@ https://oeis.org/A007854
 
 
 /* [wxMaxima: input   start ] */
-makelist(kron_delta(n,0)+sum(binomial(2*n-k,n-k)*(k*3^k)/(2*n-k),k,1,n),n,0,12); /* _Emanuele Munarini_, Apr 26 2011 */
+makelist(kron_delta(n,0)+sum(binomial(2*n-k,n-k)*(k*3^k)/(2*n-k),k,1,n),n,0,12); /* Emanuele Munarini, Apr 26 2011 */
 /* [wxMaxima: input   end   ] */
 
 

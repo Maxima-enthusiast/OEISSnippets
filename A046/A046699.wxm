@@ -9,7 +9,7 @@ https://oeis.org/A046699
 a[1]:1$
 a[2]:1$
 a[n]:=a[n-a[n-1]]+a[n-1-a[n-2]]$
-makelist(a[n],n,2,60); /* _Martin Ettl_, Oct 29 2012 */
+makelist(a[n],n,2,60); /* Martin Ettl, Oct 29 2012 */
 /* [wxMaxima: input   end   ] */
 
 

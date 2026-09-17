@@ -6,7 +6,7 @@ https://oeis.org/A101213
 
 
 /* [wxMaxima: input   start ] */
-A101213(n):=n*(n+1)^2*(n+2)^3$ makelist(A101213(n),n,0,20); /* _Martin Ettl_, Dec 15 2012 */
+A101213(n):=n*(n+1)^2*(n+2)^3$ makelist(A101213(n),n,0,20); /* Martin Ettl, Dec 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A003520
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum(binomial(n-1+(-4)*j,j),j,0,(n-1)/4); /* _Vladimir Kruchinin_, May 23 2011 */
+a(n):=sum(binomial(n-1+(-4)*j,j),j,0,(n-1)/4); /* Vladimir Kruchinin, May 23 2011 */
 /* [wxMaxima: input   end   ] */
 
 

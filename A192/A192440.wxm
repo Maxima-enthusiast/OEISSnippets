@@ -6,7 +6,7 @@ https://oeis.org/A192440
 
 
 /* [wxMaxima: input   start ] */
-makelist((coeff(expand((1+x+x^3)^n), x, floor(n/2))), n, 0, 34); /* _Bruno Berselli_, Jul 01 2011 */
+makelist((coeff(expand((1+x+x^3)^n), x, floor(n/2))), n, 0, 34); /* Bruno Berselli, Jul 01 2011 */
 /* [wxMaxima: input   end   ] */
 
 

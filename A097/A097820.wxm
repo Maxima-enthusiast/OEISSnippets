@@ -6,7 +6,7 @@ https://oeis.org/A097820
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(binomial(n,k)*4^k*k!*2^(n-k),k,0,n),n,0,12); /* _Emanuele Munarini_, Dec 18 2017 */
+makelist(sum(binomial(n,k)*4^k*k!*2^(n-k),k,0,n),n,0,12); /* Emanuele Munarini, Dec 18 2017 */
 /* [wxMaxima: input   end   ] */
 
 

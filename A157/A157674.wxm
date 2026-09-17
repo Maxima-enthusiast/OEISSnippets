@@ -6,7 +6,7 @@ https://oeis.org/A157674
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum((k*sum(j*2^j*(-1)^j*binomial(n,j)*binomial(2*(n-k)-j-1,n-k-1),j,0,n))/(n*(n-k)),k,1,n-1)+(-1)^(n-1); /* _Vladimir Kruchinin_, Apr 17 2011 */
+a(n):=sum((k*sum(j*2^j*(-1)^j*binomial(n,j)*binomial(2*(n-k)-j-1,n-k-1),j,0,n))/(n*(n-k)),k,1,n-1)+(-1)^(n-1); /* Vladimir Kruchinin, Apr 17 2011 */
 /* [wxMaxima: input   end   ] */
 
 

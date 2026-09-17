@@ -6,7 +6,7 @@ https://oeis.org/A218722
 
 
 /* [wxMaxima: input   start ] */
-A218722(n):=(19^n-1)/18$ makelist(A218722(n),n,0,30); /* _Martin Ettl_, Nov 05 2012 */
+A218722(n):=(19^n-1)/18$ makelist(A218722(n),n,0,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

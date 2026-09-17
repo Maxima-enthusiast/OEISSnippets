@@ -6,7 +6,7 @@ https://oeis.org/A047452
 
 
 /* [wxMaxima: input   start ] */
-makelist((8*n - 5 + (-1)^n)/2, n, 1, 100); /* _Franck Maminirina Ramaharo_, Jul 23 2018 */
+makelist((8*n - 5 + (-1)^n)/2, n, 1, 100); /* Franck Maminirina Ramaharo, Jul 23 2018 */
 /* [wxMaxima: input   end   ] */
 
 

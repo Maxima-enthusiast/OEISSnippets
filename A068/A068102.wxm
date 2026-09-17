@@ -6,7 +6,7 @@ https://oeis.org/A068102
 
 
 /* [wxMaxima: input   start ] */
-a(b):=n!*sum(binomial(k,n-k)*(-1)^(n-k)*binomial(2*k,k)*(H(2*k)-H(k)),k,floor(n/2),n); /* _Vladimir Kruchinin_, Feb 04 2023 */
+a(b):=n!*sum(binomial(k,n-k)*(-1)^(n-k)*binomial(2*k,k)*(H(2*k)-H(k)),k,floor(n/2),n); /* Vladimir Kruchinin, Feb 04 2023 */
 /* [wxMaxima: input   end   ] */
 
 

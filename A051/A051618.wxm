@@ -7,7 +7,7 @@ https://oeis.org/A051618
 
 /* [wxMaxima: input   start ] */
 A051618(n):=(2*n+4)!/(12*(n+2)!)$
-makelist(A051618(n),n,0,30); /* _Martin Ettl_, Nov 05 2012 */
+makelist(A051618(n),n,0,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -8,7 +8,7 @@ https://oeis.org/A082491
 /* [wxMaxima: input   start ] */
 A000166[0]:1$
 A000166[n]:=n*A000166[n-1]+(-1)^n$
-makelist(n!*A000166[n], n, 0, 12); /* _Emanuele Munarini_, Mar 01 2011 */
+makelist(n!*A000166[n], n, 0, 12); /* Emanuele Munarini, Mar 01 2011 */
 /* [wxMaxima: input   end   ] */
 
 

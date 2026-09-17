@@ -6,7 +6,7 @@ https://oeis.org/A015518
 
 
 /* [wxMaxima: input   start ] */
-a(n):= round(3^n/4)$ /* _Dimitri Papadopoulos_, Nov 28 2023 */
+a(n):= round(3^n/4)$ /* Dimitri Papadopoulos, Nov 28 2023 */
 /* [wxMaxima: input   end   ] */
 
 

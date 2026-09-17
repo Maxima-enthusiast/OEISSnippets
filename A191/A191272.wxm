@@ -6,7 +6,7 @@ https://oeis.org/A191272
 
 
 /* [wxMaxima: input   start ] */
-makelist(coeff(taylor(x*(4+5*x)/((1-4*x)*(1+x+x^2)), x, 0, n), x, n), n, 0, 23);  /* _Bruno Berselli_, Jun 06 2011 */
+makelist(coeff(taylor(x*(4+5*x)/((1-4*x)*(1+x+x^2)), x, 0, n), x, n), n, 0, 23);  /* Bruno Berselli, Jun 06 2011 */
 /* [wxMaxima: input   end   ] */
 
 

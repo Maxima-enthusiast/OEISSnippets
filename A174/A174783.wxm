@@ -6,7 +6,7 @@ https://oeis.org/A174783
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum((binomial(n-2*i+1,floor((n-2*i+1)/2))),i,1,(n+1)/2); /* - _Vladimir Kruchinin_, Mar 15 2016 */
+a(n):=sum((binomial(n-2*i+1,floor((n-2*i+1)/2))),i,1,(n+1)/2); /* - Vladimir Kruchinin, Mar 15 2016 */
 /* [wxMaxima: input   end   ] */
 
 

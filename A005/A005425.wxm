@@ -6,7 +6,7 @@ https://oeis.org/A005425
 
 
 /* [wxMaxima: input   start ] */
-makelist((%i/sqrt(2))^n*hermite(n,-%i*sqrt(2)),n,0,12); /* _Emanuele Munarini_, Mar 02 2016 */
+makelist((%i/sqrt(2))^n*hermite(n,-%i*sqrt(2)),n,0,12); /* Emanuele Munarini, Mar 02 2016 */
 /* [wxMaxima: input   end   ] */
 
 

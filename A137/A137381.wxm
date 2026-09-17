@@ -6,7 +6,7 @@ https://oeis.org/A137381
 
 
 /* [wxMaxima: input   start ] */
-T(n,r):=n!*(n+1)!*sum(((sum((k+1)*sum(((-1)^j*j!*stirling1(j+i,j)* binomial(k,j))/(j+i)!,j,0,k) ,k,1,i))*stirling1(n-i,k))/(n-i)!,i,0,n); /* _Vladimir Kruchinin_, Jan 12 2012 */
+T(n,r):=n!*(n+1)!*sum(((sum((k+1)*sum(((-1)^j*j!*stirling1(j+i,j)* binomial(k,j))/(j+i)!,j,0,k) ,k,1,i))*stirling1(n-i,k))/(n-i)!,i,0,n); /* Vladimir Kruchinin, Jan 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A052887
 
 
 /* [wxMaxima: input   start ] */
-makelist(if n=0 then 1 else sum(n!/k!*binomial(n-1, 2*k-1), k, 0, floor(n/2)), n, 0, 18); /* _Bruno Berselli_, May 25 2011 */
+makelist(if n=0 then 1 else sum(n!/k!*binomial(n-1, 2*k-1), k, 0, floor(n/2)), n, 0, 18); /* Bruno Berselli, May 25 2011 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A190945
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum(p!*coeff(expand(product(sum(binomial(k-1,k-j)*(-1)^(k-j)* (t^j/j!),j,1,k),k,1,n)),t,p),p,n,n*(n+1)/2); /* _Tani Akinari_, Sep 15 2012 */
+a(n):=sum(p!*coeff(expand(product(sum(binomial(k-1,k-j)*(-1)^(k-j)* (t^j/j!),j,1,k),k,1,n)),t,p),p,n,n*(n+1)/2); /* Tani Akinari, Sep 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

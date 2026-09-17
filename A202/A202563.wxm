@@ -6,7 +6,7 @@ https://oeis.org/A202563
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand((25*((sqrt(3)+sqrt(2))^(8*n-6)+(sqrt(3)-sqrt(2))^(8*n-6))-58)/192), n, 1, 11); /* _Bruno Berselli_, Dec 22 2011 */
+makelist(expand((25*((sqrt(3)+sqrt(2))^(8*n-6)+(sqrt(3)-sqrt(2))^(8*n-6))-58)/192), n, 1, 11); /* Bruno Berselli, Dec 22 2011 */
 /* [wxMaxima: input   end   ] */
 
 

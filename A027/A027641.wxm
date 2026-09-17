@@ -7,7 +7,7 @@ https://oeis.org/A027641
 
 /* [wxMaxima: input   start ] */
 B(n):=(-1)^((n))*sum((stirling1(n,k)*stirling2(n+k,n))/binomial(n+k,k),k,0,n);
-makelist(num(B(n)),n,0,20); /* _Vladimir Kruchinin_, Mar 16 2013 */
+makelist(num(B(n)),n,0,20); /* Vladimir Kruchinin, Mar 16 2013 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A215054
 
 
 /* [wxMaxima: input   start ] */
-A215054(n):=1/11*(binomial(n,11) - floor(n/11))$ makelist(A215054(n),n,12,30); /* _Martin Ettl_, Oct 25 2012 */
+A215054(n):=1/11*(binomial(n,11) - floor(n/11))$ makelist(A215054(n),n,12,30); /* Martin Ettl, Oct 25 2012 */
 /* [wxMaxima: input   end   ] */
 
 

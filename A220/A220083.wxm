@@ -6,7 +6,7 @@ https://oeis.org/A220083
 
 
 /* [wxMaxima: input   start ] */
-A220083(n):=(15*n^2 + 9*n + 2)/2$ makelist(A220083(n),n,0,20); /* _Martin Ettl_, Dec 11 2012 */
+A220083(n):=(15*n^2 + 9*n + 2)/2$ makelist(A220083(n),n,0,20); /* Martin Ettl, Dec 11 2012 */
 /* [wxMaxima: input   end   ] */
 
 

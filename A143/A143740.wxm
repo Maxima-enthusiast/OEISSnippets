@@ -7,7 +7,7 @@ https://oeis.org/A143740
 
 /* [wxMaxima: input   start ] */
 a[n]:=(if n<2 then 1 else a[n-1]+sum((n-1)*(n-k)*binomial(n-2,k)*a[k]*a[n-2-k],k,0,n-2)/2);
-makelist(a[n],n,0,100); /* _Tani Akinari_, Nov 01 2017 */
+makelist(a[n],n,0,100); /* Tani Akinari, Nov 01 2017 */
 /* [wxMaxima: input   end   ] */
 
 

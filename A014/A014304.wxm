@@ -6,7 +6,7 @@ https://oeis.org/A014304
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum(((2*k)!/k!)^2*stirling2(n,2*k)/4^k,k,0,n); /* _Vladimir Kruchinin_, Jan 19 2012 */
+a(n):=sum(((2*k)!/k!)^2*stirling2(n,2*k)/4^k,k,0,n); /* Vladimir Kruchinin, Jan 19 2012 */
 /* [wxMaxima: input   end   ] */
 
 

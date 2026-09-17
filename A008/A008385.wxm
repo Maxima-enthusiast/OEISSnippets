@@ -7,7 +7,7 @@ https://oeis.org/A008385
 
 /* [wxMaxima: input   start ] */
 A008385[n]:=21/2*n^4+35/2*n^2+2$
-makelist(A008385[n],n,0,30); /* _Martin Ettl_, Oct 26 2012 */
+makelist(A008385[n],n,0,30); /* Martin Ettl, Oct 26 2012 */
 /* [wxMaxima: input   end   ] */
 
 

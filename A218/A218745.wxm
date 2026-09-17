@@ -7,7 +7,7 @@ https://oeis.org/A218745
 
 /* [wxMaxima: input   start ] */
 A218745(n):=(42^n-1)/41$
-makelist(A218745(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
+makelist(A218745(n),n,0,30); /* Martin Ettl, Nov 07 2012 */
 /* [wxMaxima: input   end   ] */
 
 

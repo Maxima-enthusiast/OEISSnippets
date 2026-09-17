@@ -6,7 +6,7 @@ https://oeis.org/A002002
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(binomial(n,k+1)*binomial(n+k,k), k, 0, n), n, 0, 21); /* _Bruno Berselli_, May 19 2011 */
+makelist(sum(binomial(n,k+1)*binomial(n+k,k), k, 0, n), n, 0, 21); /* Bruno Berselli, May 19 2011 */
 /* [wxMaxima: input   end   ] */
 
 

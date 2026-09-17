@@ -7,7 +7,7 @@ https://oeis.org/A073577
 
 /* [wxMaxima: input   start ] */
 A073577(n):=4*n^2+4*n-1$
-makelist(A073577(n),n,1,30); /* _Martin Ettl_, Nov 01 2012 */
+makelist(A073577(n),n,1,30); /* Martin Ettl, Nov 01 2012 */
 /* [wxMaxima: input   end   ] */
 
 

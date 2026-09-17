@@ -6,7 +6,7 @@ https://oeis.org/A024004
 
 
 /* [wxMaxima: input   start ] */
-A024004(n):=1-n^6 $ makelist(A024004(n),n,0,30); /* _Martin Ettl_, Nov 05 2012 */
+A024004(n):=1-n^6 $ makelist(A024004(n),n,0,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

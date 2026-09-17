@@ -6,7 +6,7 @@ https://oeis.org/A000420
 
 
 /* [wxMaxima: input   start ] */
-makelist(7^n,n,0,20); /* _Martin Ettl_, Dec 27 2012 */
+makelist(7^n,n,0,20); /* Martin Ettl, Dec 27 2012 */
 /* [wxMaxima: input   end   ] */
 
 

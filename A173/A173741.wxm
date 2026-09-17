@@ -7,7 +7,7 @@ https://oeis.org/A173741
 
 /* [wxMaxima: input   start ] */
 T(n,k) := if k = 0 or k = n then 1 else binomial(n, k) + 4$
-create_list(T(n, k), n, 0, 12, k, 0, n); /* _Franck Maminirina Ramaharo_, Dec 09 2018 */
+create_list(T(n, k), n, 0, 12, k, 0, n); /* Franck Maminirina Ramaharo, Dec 09 2018 */
 /* [wxMaxima: input   end   ] */
 
 

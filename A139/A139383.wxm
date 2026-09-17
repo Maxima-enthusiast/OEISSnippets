@@ -7,7 +7,7 @@ https://oeis.org/A139383
 
 /* [wxMaxima: input   start ] */
 T(n,m):=if m=1 then 1 else sum(stirling2(n,i)*T(i,m-1),i,1,n);
-makelist(T(n,n),n,1,7); /* _Vladimir Kruchinin_, May 19 2012 */
+makelist(T(n,n),n,1,7); /* Vladimir Kruchinin, May 19 2012 */
 /* [wxMaxima: input   end   ] */
 
 

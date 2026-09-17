@@ -6,7 +6,7 @@ https://oeis.org/A154244
 
 
 /* [wxMaxima: input   start ] */
-a[1]:1$ a[2]:6$ a[n]:=6*a[n-1]-2*a[n-2]$ makelist(a[n], n, 1, 21); /* _Bruno Berselli_, May 30 2011 */
+a[1]:1$ a[2]:6$ a[n]:=6*a[n-1]-2*a[n-2]$ makelist(a[n], n, 1, 21); /* Bruno Berselli, May 30 2011 */
 /* [wxMaxima: input   end   ] */
 
 

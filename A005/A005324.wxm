@@ -6,7 +6,7 @@ https://oeis.org/A005324
 
 
 /* [wxMaxima: input   start ] */
-a(n) := 5*sum(binomial(j,2*j-n+4)*binomial(n+1,j),j,ceiling((n-4)/2),(n+1))/(n+1); /* _Vladimir Kruchinin_, Mar 18 2014 */
+a(n) := 5*sum(binomial(j,2*j-n+4)*binomial(n+1,j),j,ceiling((n-4)/2),(n+1))/(n+1); /* Vladimir Kruchinin, Mar 18 2014 */
 /* [wxMaxima: input   end   ] */
 
 

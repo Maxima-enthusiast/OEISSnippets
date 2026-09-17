@@ -6,7 +6,7 @@ https://oeis.org/A210440
 
 
 /* [wxMaxima: input   start ] */
-A210440(n):=2*n*(n+1)*(n+2)/3$ makelist(A210440(n),n,0,20); /* _Martin Ettl_, Jan 22 2013 */
+A210440(n):=2*n*(n+1)*(n+2)/3$ makelist(A210440(n),n,0,20); /* Martin Ettl, Jan 22 2013 */
 /* [wxMaxima: input   end   ] */
 
 

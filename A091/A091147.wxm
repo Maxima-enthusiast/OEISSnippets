@@ -7,7 +7,7 @@ https://oeis.org/A091147
 
 /* [wxMaxima: input   start ] */
 a(n):=2^n*coeff(expand((1+x/2+x^2)^(n+1)),x^n)/(n+1);
-makelist(a(n),n,0,30); /* _Emanuele Munarini_, Apr 27 2012 */
+makelist(a(n),n,0,30); /* Emanuele Munarini, Apr 27 2012 */
 /* [wxMaxima: input   end   ] */
 
 

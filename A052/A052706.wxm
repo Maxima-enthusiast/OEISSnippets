@@ -6,7 +6,7 @@ https://oeis.org/A052706
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n<2 then 0 else (2*sum(binomial(k,n-k-2)*binomial(n+k-1,n-1),k,0,n-2))/n; /* _Vladimir Kruchinin_, May 19 2012 */
+a(n):=if n<2 then 0 else (2*sum(binomial(k,n-k-2)*binomial(n+k-1,n-1),k,0,n-2))/n; /* Vladimir Kruchinin, May 19 2012 */
 /* [wxMaxima: input   end   ] */
 
 

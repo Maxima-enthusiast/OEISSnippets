@@ -7,7 +7,7 @@ https://oeis.org/A000621
 
 /* [wxMaxima: input   start ] */
 T(n,m):=if m=n then 1 else sum(binomial(i+m-1,i)*((1+(-1)^(n-m))/2)*T((n-m)/2,i),i,1,n-m);
-makelist(T(2*n-1,1),n,1,30); /* _Vladimir Kruchinin_, Mar 18 2015 */
+makelist(T(2*n-1,1),n,1,30); /* Vladimir Kruchinin, Mar 18 2015 */
 /* [wxMaxima: input   end   ] */
 
 

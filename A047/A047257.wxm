@@ -6,7 +6,7 @@ https://oeis.org/A047257
 
 
 /* [wxMaxima: input   start ] */
-A047257(n):=4 + 6*floor(n/2) + mod(n,2)$ akelist(A047257(n),n,0,40); /* _Martin Ettl_, Oct 24 2012 */
+A047257(n):=4 + 6*floor(n/2) + mod(n,2)$ akelist(A047257(n),n,0,40); /* Martin Ettl, Oct 24 2012 */
 /* [wxMaxima: input   end   ] */
 
 

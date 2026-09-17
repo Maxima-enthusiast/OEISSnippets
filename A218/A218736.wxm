@@ -7,7 +7,7 @@ https://oeis.org/A218736
 
 /* [wxMaxima: input   start ] */
 A218736(n):=(33^n-1)/32$
-makelist(A218736(n),n,0,30); /* _Martin Ettl_, Nov 05 2012 */
+makelist(A218736(n),n,0,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

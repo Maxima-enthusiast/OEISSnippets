@@ -7,7 +7,7 @@ https://oeis.org/A008287
 
 /* [wxMaxima: input   start ] */
 quadrinomial(n,k):=coeff(expand((1+x+x^2+x^3)^n),x,k);
-create_list(quadrinomial(n,k),n,0,8,k,0,3*n); /* _Emanuele Munarini_, Mar 15 2011 */
+create_list(quadrinomial(n,k),n,0,8,k,0,3*n); /* Emanuele Munarini, Mar 15 2011 */
 /* [wxMaxima: input   end   ] */
 
 

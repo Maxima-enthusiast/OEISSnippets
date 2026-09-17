@@ -9,7 +9,7 @@ https://oeis.org/A123021
 t(n, k) := binomial(n + k + 1, n - k)$
 P(x, n) := expand(sum(t(n, j)*x^j*(1 - x)^(n - j), j, 0, n))$
 T(n, k) := ratcoef(P(x, n), x, k)$
-tabf(nn) := for n:0 thru nn do print(makelist(T(n, k), k, 0, hipow(P(x, n), x)))$ /* _Franck Maminirina Ramaharo_, Oct 09 2018 */
+tabf(nn) := for n:0 thru nn do print(makelist(T(n, k), k, 0, hipow(P(x, n), x)))$ /* Franck Maminirina Ramaharo, Oct 09 2018 */
 /* [wxMaxima: input   end   ] */
 
 

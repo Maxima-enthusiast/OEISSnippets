@@ -6,7 +6,7 @@ https://oeis.org/A083479
 
 
 /* [wxMaxima: input   start ] */
-a(n):=((n+2)-ceiling(sqrt(4*n))); /* _Gregory R. Bryant_, Apr 01 2013 */
+a(n):=((n+2)-ceiling(sqrt(4*n))); /* Gregory R. Bryant, Apr 01 2013 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A032349
 
 
 /* [wxMaxima: input   start ] */
-a(n):=2*sum((2*n+i-1)!/(i!*(n-i-1)!*(n+i+1)!),i,0,n-1); /* _Vladimir Kruchinin_, Oct 18 2011 */
+a(n):=2*sum((2*n+i-1)!/(i!*(n-i-1)!*(n+i+1)!),i,0,n-1); /* Vladimir Kruchinin, Oct 18 2011 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A030236
 
 
 /* [wxMaxima: input   start ] */
-makelist(sum(binomial(n+k+1,3*k+1)*2^k, k,0,n) + 2*sum(2^k* binomial(n+k-1,3*k+1), k,0,n-1), n,0,60); /* _Emanuele Munarini_, Dec 03 2012 */
+makelist(sum(binomial(n+k+1,3*k+1)*2^k, k,0,n) + 2*sum(2^k* binomial(n+k-1,3*k+1), k,0,n-1), n,0,60); /* Emanuele Munarini, Dec 03 2012 */
 /* [wxMaxima: input   end   ] */
 
 

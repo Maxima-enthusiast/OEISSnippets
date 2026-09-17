@@ -6,7 +6,7 @@ https://oeis.org/A058265
 
 
 /* [wxMaxima: input   start ] */
-set_display(none)$ fpprec:100$ bfloat(rhs(solve(t^3-t^2-t-1,t)[3])); /* _Dimitri Papadopoulos_, Nov 09 2023 */
+set_display(none)$ fpprec:100$ bfloat(rhs(solve(t^3-t^2-t-1,t)[3])); /* Dimitri Papadopoulos, Nov 09 2023 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A007559
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=1 then 1 else (n)!*(sum(m/n*sum(binomial(k,n-m-k)*(-1/3)^(n-m-k)* binomial (k+n-1,n-1),k,1,n-m),m,1,n)+1); /* _Vladimir Kruchinin_, Aug 09 2010 */
+a(n):=if n=1 then 1 else (n)!*(sum(m/n*sum(binomial(k,n-m-k)*(-1/3)^(n-m-k)* binomial (k+n-1,n-1),k,1,n-m),m,1,n)+1); /* Vladimir Kruchinin, Aug 09 2010 */
 /* [wxMaxima: input   end   ] */
 
 

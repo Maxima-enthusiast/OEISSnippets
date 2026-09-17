@@ -6,7 +6,7 @@ https://oeis.org/A006229
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum(if oddp(n+k) then 0 else (-1)^((n+k)/2)*sum(j!/k!*stirling2(n,j)*2^(n-j)*(-1)^(n+j-k)*binomial(j-1, k-1), j, k, n), k, 1, n); /* _Vladimir Kruchinin_, Aug 05 2010 */
+a(n):=sum(if oddp(n+k) then 0 else (-1)^((n+k)/2)*sum(j!/k!*stirling2(n,j)*2^(n-j)*(-1)^(n+j-k)*binomial(j-1, k-1), j, k, n), k, 1, n); /* Vladimir Kruchinin, Aug 05 2010 */
 /* [wxMaxima: input   end   ] */
 
 

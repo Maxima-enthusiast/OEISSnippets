@@ -6,7 +6,7 @@ https://oeis.org/A202299
 
 
 /* [wxMaxima: input   start ] */
-makelist(expand(((3+2*sqrt(2))^(2*n-2)-(3-2*sqrt(2))^(2*n-2))/(6*sqrt(2))), n, 1, 18); /* _Bruno Berselli_, Dec 19 2011 */
+makelist(expand(((3+2*sqrt(2))^(2*n-2)-(3-2*sqrt(2))^(2*n-2))/(6*sqrt(2))), n, 1, 18); /* Bruno Berselli, Dec 19 2011 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A135518
 
 
 /* [wxMaxima: input   start ] */
-A135518(n):=(15^n-1)/14$ makelist(A135518(n),n,1,30); /* _Martin Ettl_, Nov 05 2012 */
+A135518(n):=(15^n-1)/14$ makelist(A135518(n),n,1,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

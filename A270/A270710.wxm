@@ -6,7 +6,7 @@ https://oeis.org/A270710
 
 
 /* [wxMaxima: input   start ] */
-makelist(3*n^2+2*n-1, n, 0, 50); /* _Bruno Berselli_, Mar 25 2016 */
+makelist(3*n^2+2*n-1, n, 0, 50); /* Bruno Berselli, Mar 25 2016 */
 /* [wxMaxima: input   end   ] */
 
 

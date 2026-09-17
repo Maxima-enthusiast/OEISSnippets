@@ -7,7 +7,7 @@ https://oeis.org/A038041
 
 /* [wxMaxima: input   start ] */
 a(n):= lsum(n!/((n/d)!*(d!)^(n/d)),d,listify(divisors(n)));
-makelist(a(n),n,1,40); /* _Emanuele Munarini_, Feb 03 2014 */
+makelist(a(n),n,1,40); /* Emanuele Munarini, Feb 03 2014 */
 /* [wxMaxima: input   end   ] */
 
 

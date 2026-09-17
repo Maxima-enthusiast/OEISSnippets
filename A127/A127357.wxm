@@ -6,7 +6,7 @@ https://oeis.org/A127357
 
 
 /* [wxMaxima: input   start ] */
-makelist(coeff(taylor(1/(1-2*x+9*x^2), x, 0, n), x, n), n, 0, 22); /* _Bruno Berselli_, Jul 01 2011 */
+makelist(coeff(taylor(1/(1-2*x+9*x^2), x, 0, n), x, n), n, 0, 22); /* Bruno Berselli, Jul 01 2011 */
 /* [wxMaxima: input   end   ] */
 
 

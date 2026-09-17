@@ -6,7 +6,7 @@ https://oeis.org/A217571
 
 
 /* [wxMaxima: input   start ] */
-makelist((2*n*(n+5)+(2*n+1)*(-1)^n-1)/8, n, 1, 56); /* _Martin Ettl_, Oct 15 2012 */
+makelist((2*n*(n+5)+(2*n+1)*(-1)^n-1)/8, n, 1, 56); /* Martin Ettl, Oct 15 2012 */
 /* [wxMaxima: input   end   ] */
 
 

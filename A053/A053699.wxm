@@ -7,7 +7,7 @@ https://oeis.org/A053699
 
 /* [wxMaxima: input   start ] */
 A053699(n):=n^4 + n^3 + n^2 + n + 1$
-makelist(A053699(n),n,0,30); /* _Martin Ettl_, Nov 07 2012 */
+makelist(A053699(n),n,0,30); /* Martin Ettl, Nov 07 2012 */
 /* [wxMaxima: input   end   ] */
 
 

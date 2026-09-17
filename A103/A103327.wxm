@@ -6,7 +6,7 @@ https://oeis.org/A103327
 
 
 /* [wxMaxima: input   start ] */
-create_list(binomial(2*n+1,2*k+1),n,0,12,k,0,n); /* _Emanuele Munarini_, Mar 11 2011 */
+create_list(binomial(2*n+1,2*k+1),n,0,12,k,0,n); /* Emanuele Munarini, Mar 11 2011 */
 /* [wxMaxima: input   end   ] */
 
 

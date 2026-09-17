@@ -7,7 +7,7 @@ https://oeis.org/A003946
 
 /* [wxMaxima: input   start ] */
 A003946[n]:=if n<1 then 1 else 4*3^(n-1)$
-makelist(A003946[n],n,0,30); /* _Martin Ettl_, Oct 29 2012 */
+makelist(A003946[n],n,0,30); /* Martin Ettl, Oct 29 2012 */
 /* [wxMaxima: input   end   ] */
 
 

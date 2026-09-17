@@ -6,7 +6,7 @@ https://oeis.org/A367518
 
 
 /* [wxMaxima: input   start ] */
-b[n]:=if n=0 then 1 else sum(b[n+1-j]*bern(2*j)*((-4)^j-(-16)^j)*((3*j-3)/(2*n)-1)/(2*j)!,j,2,n+1)$ a(n):=num(b[n])$ makelist(a(n),n,0,30); /* _Tani Akinari_, Feb 26 2025 */
+b[n]:=if n=0 then 1 else sum(b[n+1-j]*bern(2*j)*((-4)^j-(-16)^j)*((3*j-3)/(2*n)-1)/(2*j)!,j,2,n+1)$ a(n):=num(b[n])$ makelist(a(n),n,0,30); /* Tani Akinari, Feb 26 2025 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A143955
 
 
 /* [wxMaxima: input   start ] */
-a(n):=5*sum(binomial(2*k,k-2)/(k+3),k,2,n-1); /* _Vladimir Kruchinin_, Mar 15 2016 */
+a(n):=5*sum(binomial(2*k,k-2)/(k+3),k,2,n-1); /* Vladimir Kruchinin, Mar 15 2016 */
 /* [wxMaxima: input   end   ] */
 
 

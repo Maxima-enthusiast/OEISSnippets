@@ -6,7 +6,7 @@ https://oeis.org/A027913
 
 
 /* [wxMaxima: input   start ] */
-makelist(ultraspherical(floor(n/2),-n,-1/2),n,0,12); /* _Emanuele Munarini_, Oct 18 2016 */
+makelist(ultraspherical(floor(n/2),-n,-1/2),n,0,12); /* Emanuele Munarini, Oct 18 2016 */
 /* [wxMaxima: input   end   ] */
 
 

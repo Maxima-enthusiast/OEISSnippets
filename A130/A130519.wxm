@@ -6,7 +6,7 @@ https://oeis.org/A130519
 
 
 /* [wxMaxima: input   start ] */
-makelist(floor((n-1)^2/8), n, 0, 70); /* _Stefano Spezia_, Jan 04 2019 */
+makelist(floor((n-1)^2/8), n, 0, 70); /* Stefano Spezia, Jan 04 2019 */
 /* [wxMaxima: input   end   ] */
 
 

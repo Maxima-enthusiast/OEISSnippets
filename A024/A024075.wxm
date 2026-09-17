@@ -6,7 +6,7 @@ https://oeis.org/A024075
 
 
 /* [wxMaxima: input   start ] */
-makelist(7^n-1, n, 0, 30); /* _Martin Ettl_, Nov 12 2012 */
+makelist(7^n-1, n, 0, 30); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

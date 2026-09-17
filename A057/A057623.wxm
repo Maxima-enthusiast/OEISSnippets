@@ -8,7 +8,7 @@ https://oeis.org/A057623
 /* [wxMaxima: input   start ] */
 S(n,m):=(if n=m then 1 else if n<m then 0 else S(n,m+1)+S(n-m,m));
 P(n,m):=(if n=m then (n-1)! else if n<m then 0 else P(n,m+1)+S(n-m,m)*n!/(m)+(n!)/(n-m)!*P(n-m,m));
-makelist(P(n,1),n,1,18); /* _Vladimir Kruchinin_, Sep 10 2014 */
+makelist(P(n,1),n,1,18); /* Vladimir Kruchinin, Sep 10 2014 */
 /* [wxMaxima: input   end   ] */
 
 

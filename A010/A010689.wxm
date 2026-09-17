@@ -7,7 +7,7 @@ https://oeis.org/A010689
 
 /* [wxMaxima: input   start ] */
 A010689(n):=if evenp(n) then 1 else 8$
-makelist(A010689(n),n,0,30); /* _Martin Ettl_, Nov 09 2012 */
+makelist(A010689(n),n,0,30); /* Martin Ettl, Nov 09 2012 */
 /* [wxMaxima: input   end   ] */
 
 

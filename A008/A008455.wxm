@@ -6,7 +6,7 @@ https://oeis.org/A008455
 
 
 /* [wxMaxima: input   start ] */
-A008455(n):=n^11$ makelist(A008455(n),n,0,20); /* _Martin Ettl_, Dec 17 2012 */
+A008455(n):=n^11$ makelist(A008455(n),n,0,20); /* Martin Ettl, Dec 17 2012 */
 /* [wxMaxima: input   end   ] */
 
 

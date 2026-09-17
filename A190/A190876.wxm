@@ -6,7 +6,7 @@ https://oeis.org/A190876
 
 
 /* [wxMaxima: input   start ] */
-makelist(if n<9 then n else 10*n-81,n,1,70); /* _Bruno Berselli_, May 24 2011 */
+makelist(if n<9 then n else 10*n-81,n,1,70); /* Bruno Berselli, May 24 2011 */
 /* [wxMaxima: input   end   ] */
 
 

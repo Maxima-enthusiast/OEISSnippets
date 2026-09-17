@@ -6,7 +6,7 @@ https://oeis.org/A000203
 
 
 /* [wxMaxima: input   start ] */
-makelist(divsum(n),n,1,1000); /* _Emanuele Munarini_, Mar 26 2011 */
+makelist(divsum(n),n,1,1000); /* Emanuele Munarini, Mar 26 2011 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A055835
 
 
 /* [wxMaxima: input   start ] */
-a(n):=sum((sum(binomial(i,k)*binomial(i+1,n-i),i,k,n))*binomial(n,k), k,0,n); /* _Vladimir Kruchinin_, Mar 01 2014 */
+a(n):=sum((sum(binomial(i,k)*binomial(i+1,n-i),i,k,n))*binomial(n,k), k,0,n); /* Vladimir Kruchinin, Mar 01 2014 */
 /* [wxMaxima: input   end   ] */
 
 

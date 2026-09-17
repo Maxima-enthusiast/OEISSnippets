@@ -6,7 +6,7 @@ https://oeis.org/A032821
 
 
 /* [wxMaxima: input   start ] */
-a[1]:1$ a[2]:4$ a[n]:= if oddp(n) then 9*a[floor(n/2)]+1 else 9*a[floor((n-1)/2)]+4$ makelist(a[n],n,1,42); /* _Bruno Berselli_, May 28 2012 */
+a[1]:1$ a[2]:4$ a[n]:= if oddp(n) then 9*a[floor(n/2)]+1 else 9*a[floor((n-1)/2)]+4$ makelist(a[n],n,1,42); /* Bruno Berselli, May 28 2012 */
 /* [wxMaxima: input   end   ] */
 
 

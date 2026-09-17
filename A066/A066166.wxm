@@ -7,7 +7,7 @@ https://oeis.org/A066166
 
 /* [wxMaxima: input   start ] */
 b(n):=if n=0 then 1 else (n-1)!*sum((1+1/i)*b(n-i-1)/(n-i-1)!,i,1,n-1);
-makelist(a(n),n,2,10); /* _Vladimir Kruchinin_, Feb 25 2015 */
+makelist(a(n),n,2,10); /* Vladimir Kruchinin, Feb 25 2015 */
 /* [wxMaxima: input   end   ] */
 
 

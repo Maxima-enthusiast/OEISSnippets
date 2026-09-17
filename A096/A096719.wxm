@@ -7,7 +7,7 @@ https://oeis.org/A096719
 
 /* [wxMaxima: input   start ] */
 a(n):=b(2*n+1);
-b(n):=num(1/n*sum((1-(-1)^(m))*(-1)^((m-1)/2)*(1+(-1)^(n-m))/4*sum((sum(binomial(k,j)*2^(1-j)*sum((-1)^((n-m)/2-i-j)*binomial(j,i)*(j-2*i)^(n-m+j)/(n-m+j)!,i,0,floor(j/2)),j,1,k))*binomial(k+n-1,n-1),k,1,n-m),m,1,n-1)+(1-(-1)^(n))/(2)*(-1)^((n-1)/2)/n); /* _Vladimir Kruchinin_, May 02 2011 */
+b(n):=num(1/n*sum((1-(-1)^(m))*(-1)^((m-1)/2)*(1+(-1)^(n-m))/4*sum((sum(binomial(k,j)*2^(1-j)*sum((-1)^((n-m)/2-i-j)*binomial(j,i)*(j-2*i)^(n-m+j)/(n-m+j)!,i,0,floor(j/2)),j,1,k))*binomial(k+n-1,n-1),k,1,n-m),m,1,n-1)+(1-(-1)^(n))/(2)*(-1)^((n-1)/2)/n); /* Vladimir Kruchinin, May 02 2011 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A143438
 
 
 /* [wxMaxima: input   start ] */
-makelist(ratcoef(taylor(1/(1 -x^2 -x^3 -x^4 +x^6), x, 0, n), x, n), n, 0, 50); /* _Franck Maminirina Ramaharo_, Oct 31 2018 */
+makelist(ratcoef(taylor(1/(1 -x^2 -x^3 -x^4 +x^6), x, 0, n), x, n), n, 0, 50); /* Franck Maminirina Ramaharo, Oct 31 2018 */
 /* [wxMaxima: input   end   ] */
 
 

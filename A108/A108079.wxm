@@ -8,7 +8,7 @@ https://oeis.org/A108079
 /* [wxMaxima: input   start ] */
 B(x):=(2/sqrt(3*x))*sin((1/3)*asin(sqrt(27*x/4)))-1;
 C(x):=(1-sqrt(1-4*x))/(2*x);
-taylor(x*diff(1/x-1/B(x),x)+x*diff(B(x),x)/B(x)-x*diff(C(x),x),x,0,10); /* _Vladimir Kruchinin_, Oct 01 2015 */
+taylor(x*diff(1/x-1/B(x),x)+x*diff(B(x),x)/B(x)-x*diff(C(x),x),x,0,10); /* Vladimir Kruchinin, Oct 01 2015 */
 /* [wxMaxima: input   end   ] */
 
 

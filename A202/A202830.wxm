@@ -8,7 +8,7 @@ https://oeis.org/A202830
 /* [wxMaxima: input   start ] */
 B(n,x) := sum(stirling2(n,k)*x^k,k,0,n);
 a(n) := sum(stirling1(n,k)*3^n/2^(n-k)*B(k,2/3),k,0,n);
-makelist(a(n),n,0,40); /* _Emanuele Munarini_, May 15 2014 */
+makelist(a(n),n,0,40); /* Emanuele Munarini, May 15 2014 */
 /* [wxMaxima: input   end   ] */
 
 

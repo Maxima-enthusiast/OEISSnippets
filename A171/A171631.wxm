@@ -7,7 +7,7 @@ https://oeis.org/A171631
 
 /* [wxMaxima: input   start ] */
 T(n, k) := n*(binomial(n - 2, k - 1) + n*binomial(n - 2, k))$
-tabl(nn) := for n:1 thru nn do print(makelist(T(n, k), k, 0, n - 1))$ /* _Franck Maminirina Ramaharo_, Oct 02 2018 */
+tabl(nn) := for n:1 thru nn do print(makelist(T(n, k), k, 0, n - 1))$ /* Franck Maminirina Ramaharo, Oct 02 2018 */
 /* [wxMaxima: input   end   ] */
 
 

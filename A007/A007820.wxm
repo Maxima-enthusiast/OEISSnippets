@@ -6,7 +6,7 @@ https://oeis.org/A007820
 
 
 /* [wxMaxima: input   start ] */
-makelist(stirling2(2*n,n),n,0,12); /* _Emanuele Munarini_, Mar 12 2011 */
+makelist(stirling2(2*n,n),n,0,12); /* Emanuele Munarini, Mar 12 2011 */
 /* [wxMaxima: input   end   ] */
 
 

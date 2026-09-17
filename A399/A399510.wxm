@@ -1,0 +1,24 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 22.04.0 ] */
+/* [wxMaxima: comment start ]
+https://oeis.org/A399510
+   [wxMaxima: comment end   ] */
+
+
+/* [wxMaxima: input   start ] */
+block(kmax:10000, sum:[], prim[1]:2, j:1,
+while prim[j]^2<kmax do (prim[j+1]:next_prime(prim[j]), j:j+1),
+j1:1, j2:2, pot1:4, pot2:9, su:13,
+while su <=kmax do (p:prim[j1], q:prim[j2], new:true,
+if mod(su,q-p)=0 and mod(su,q+p)=0 then sum: append(sum,[su]),
+if pot1+q*pot2<=kmax then (pot2:q*pot2, new:false)
+elseif pot1 + prim[j2+1]^2<=kmax then j2:j2+1
+elseif p*pot1 + prim[j1+1]^2<=kmax then (pot1:p*pot1, j2:j1+1)
+else (j1:j1+1, j2:j1+1, pot1: prim[j1]^2),
+if new then pot2: prim[j2]^2, su:pot1+pot2 ), sum:sort(sum));
+/* [wxMaxima: input   end   ] */
+
+
+
+/* Old versions of Maxima abort on loading files that end in a comment. */
+"Created with wxMaxima 22.04.0"$

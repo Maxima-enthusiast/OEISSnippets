@@ -6,7 +6,7 @@ https://oeis.org/A115335
 
 
 /* [wxMaxima: input   start ] */
-append([3, 5, 1], makelist((2^(1 + n) - 11*(-1)^n)/3, n, 3, 40)); /* _Franck Maminirina Ramaharo_, Nov 23 2018 */
+append([3, 5, 1], makelist((2^(1 + n) - 11*(-1)^n)/3, n, 3, 40)); /* Franck Maminirina Ramaharo, Nov 23 2018 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,7 @@ https://oeis.org/A017324
 
 /* [wxMaxima: input   start ] */
 A017324(n):=(10*n+4)^8$
-makelist(A017324(n),n,0,10); /* _Martin Ettl_, Nov 12 2012 */
+makelist(A017324(n),n,0,10); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A279565
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 1 else sum(m*sum(binomial(k,n-m-k)*binomial(n+k-1,k),k,0,n-m),m,1,n)/n; /* _Vladimir Kruchinin_, Mar 26 2019 */
+a(n):=if n=0 then 1 else sum(m*sum(binomial(k,n-m-k)*binomial(n+k-1,k),k,0,n-m),m,1,n)/n; /* Vladimir Kruchinin, Mar 26 2019 */
 /* [wxMaxima: input   end   ] */
 
 

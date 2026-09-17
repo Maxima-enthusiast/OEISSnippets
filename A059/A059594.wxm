@@ -6,7 +6,7 @@ https://oeis.org/A059594
 
 
 /* [wxMaxima: input   start ] */
-T(n,m):=sum((sum(binomial(j,n-m-3*k+2*j)*(-1)^(j-k)*binomial(k,j),j,0,k)) *binomial(m+k,m),k,0,n-m); /* _Vladimir Kruchinin_, Dec 14 2011 */
+T(n,m):=sum((sum(binomial(j,n-m-3*k+2*j)*(-1)^(j-k)*binomial(k,j),j,0,k)) *binomial(m+k,m),k,0,n-m); /* Vladimir Kruchinin, Dec 14 2011 */
 /* [wxMaxima: input   end   ] */
 
 

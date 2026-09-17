@@ -7,7 +7,7 @@ https://oeis.org/A214345
 
 /* [wxMaxima: input   start ] */
 A214345(n):=(2*n*(n+4)+3*(-1)^n+7)/2$
-makelist(A214345(n),n,0,30); /* _Martin Ettl_, Nov 01 2012 */
+makelist(A214345(n),n,0,30); /* Martin Ettl, Nov 01 2012 */
 /* [wxMaxima: input   end   ] */
 
 

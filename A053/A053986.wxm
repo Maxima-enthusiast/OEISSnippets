@@ -6,7 +6,7 @@ https://oeis.org/A053986
 
 
 /* [wxMaxima: input   start ] */
-makelist(n^n!,n,0,6); /* _Martin Ettl_, Jan 13 2013 */
+makelist(n^n!,n,0,6); /* Martin Ettl, Jan 13 2013 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -9,7 +9,7 @@ https://oeis.org/A123027
 A053122(n, k) := if n < k then 0 else ((-1)^(n - k))*binomial(n + k + 1,  2*k + 1)$
 P(x, n) := expand(sum(A053122(n, j)*x^j*(1 - x)^(n - j), j, 0, n))$
 T(n, k) := ratcoef(P(x, n), x, k)$
-tabl(nn) := for n:0 thru nn do print(makelist(T(n, k), k, 0, hipow(P(x, n), x)))$ /* _Franck Maminirina Ramaharo_, Oct 10 2018 */
+tabl(nn) := for n:0 thru nn do print(makelist(T(n, k), k, 0, hipow(P(x, n), x)))$ /* Franck Maminirina Ramaharo, Oct 10 2018 */
 /* [wxMaxima: input   end   ] */
 
 

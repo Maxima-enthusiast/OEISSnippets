@@ -6,7 +6,7 @@ https://oeis.org/A122999
 
 
 /* [wxMaxima: input   start ] */
-makelist(coeff(taylor(1/(1-x-25*x^2), x, 0, n), x, n), n, 0, 20); /* _Bruno Berselli_, Jun 06 2011 */
+makelist(coeff(taylor(1/(1-x-25*x^2), x, 0, n), x, n), n, 0, 20); /* Bruno Berselli, Jun 06 2011 */
 /* [wxMaxima: input   end   ] */
 
 

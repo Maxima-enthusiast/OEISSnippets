@@ -6,7 +6,7 @@ https://oeis.org/A176344
 
 
 /* [wxMaxima: input   start ] */
-(a[0] : 0, a[n] := fib(n)*a[n-1] + 1, T(n, m) := 1 + a[n] - a[m] - a[n-m])$ create_list(T(n, m), n, 0, 10, m, 0, n); /* _Franck Maminirina Ramaharo_, Nov 25 2018 */
+(a[0] : 0, a[n] := fib(n)*a[n-1] + 1, T(n, m) := 1 + a[n] - a[m] - a[n-m])$ create_list(T(n, m), n, 0, 10, m, 0, n); /* Franck Maminirina Ramaharo, Nov 25 2018 */
 /* [wxMaxima: input   end   ] */
 
 

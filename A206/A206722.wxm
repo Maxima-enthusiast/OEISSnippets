@@ -24,7 +24,7 @@ for x : 2 thru 20 do (
 for n : 1 thru 17 do
 sprint(A206722(x,n)),
 newline()
-)$ /* _R. J. Mathar_, Feb 14 2012 */
+)$ /* R. J. Mathar, Feb 14 2012 */
 /* [wxMaxima: input   end   ] */
 
 

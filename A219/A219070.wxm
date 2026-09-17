@@ -7,7 +7,7 @@ https://oeis.org/A219070
 
 /* [wxMaxima: input   start ] */
 A219070(n):=(46*n^5 + 30*n^4 + 15*n^3-n)/30$
-makelist(A219070(n),n,0,30); /* _Martin Ettl_, Nov 12 2012 */
+makelist(A219070(n),n,0,30); /* Martin Ettl, Nov 12 2012 */
 /* [wxMaxima: input   end   ] */
 
 

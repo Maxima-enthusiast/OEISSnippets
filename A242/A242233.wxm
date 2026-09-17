@@ -6,7 +6,7 @@ https://oeis.org/A242233
 
 
 /* [wxMaxima: input   start ] */
-a[n]:=if n=0 then 1 else sum(a[n-k]*binomial(n, k)*(2*k)!*(3*k/(2*n)-1)*2^k/(k!*(k+1)!), k, 1, n); makelist(a[n],n,0,50); /* _Tani Akinari_, Nov 05 2024 */
+a[n]:=if n=0 then 1 else sum(a[n-k]*binomial(n, k)*(2*k)!*(3*k/(2*n)-1)*2^k/(k!*(k+1)!), k, 1, n); makelist(a[n],n,0,50); /* Tani Akinari, Nov 05 2024 */
 /* [wxMaxima: input   end   ] */
 
 

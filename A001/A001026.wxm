@@ -7,7 +7,7 @@ https://oeis.org/A001026
 
 /* [wxMaxima: input   start ] */
 A001026(n):=17^n$
-makelist(A001026(n),n,0,30); /* _Martin Ettl_, Nov 05 2012 */
+makelist(A001026(n),n,0,30); /* Martin Ettl, Nov 05 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A051846
 
 
 /* [wxMaxima: input   start ] */
-makelist(((n+1)^(n+1)*(n-1) + 1)/n^2,n,1,20); /* _Martin Ettl_, Jan 25 2013 */
+makelist(((n+1)^(n+1)*(n-1) + 1)/n^2,n,1,20); /* Martin Ettl, Jan 25 2013 */
 /* [wxMaxima: input   end   ] */
 
 

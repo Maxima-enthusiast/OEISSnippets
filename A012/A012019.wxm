@@ -6,7 +6,7 @@ https://oeis.org/A012019
 
 
 /* [wxMaxima: input   start ] */
-a(n):=(n!*sum((binomial((n-2)/2,(n-k)/2)*(-1)^((n-k)/2)*((-1)^(n-k)+1))/k!,k,1,n))/2; /* _Vladimir Kruchinin_, May 18 2011 */
+a(n):=(n!*sum((binomial((n-2)/2,(n-k)/2)*(-1)^((n-k)/2)*((-1)^(n-k)+1))/k!,k,1,n))/2; /* Vladimir Kruchinin, May 18 2011 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -7,7 +7,7 @@ https://oeis.org/A081671
 
 /* [wxMaxima: input   start ] */
 a(n):=coeff(expand((1+4*x+x^2)^n),x^n);
-makelist(a(n),n,0,30); /* _Emanuele Munarini_, Apr 27 2012 */
+makelist(a(n),n,0,30); /* Emanuele Munarini, Apr 27 2012 */
 /* [wxMaxima: input   end   ] */
 
 

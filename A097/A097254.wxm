@@ -6,7 +6,7 @@ https://oeis.org/A097254
 
 
 /* [wxMaxima: input   start ] */
-a[1]:0$ a[n]:=8*a[floor((n+1)/2)]+7*(1+(-1)^n)/2$ makelist(a[n], n, 1, 37); /* _Bruno Berselli_, May 25 2012 */
+a[1]:0$ a[n]:=8*a[floor((n+1)/2)]+7*(1+(-1)^n)/2$ makelist(a[n], n, 1, 37); /* Bruno Berselli, May 25 2012 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A261893
 
 
 /* [wxMaxima: input   start ] */
-makelist(n^3+2*n^2+3*n+1, n, 0, 50); /* _Bruno Berselli_, Jul 04 2016 */
+makelist(n^3+2*n^2+3*n+1, n, 0, 50); /* Bruno Berselli, Jul 04 2016 */
 /* [wxMaxima: input   end   ] */
 
 

@@ -6,7 +6,7 @@ https://oeis.org/A000041
 
 
 /* [wxMaxima: input   start ] */
-num_partitions(60,list); /* _Emanuele Munarini_, Feb 24 2014 */
+num_partitions(60,list); /* Emanuele Munarini, Feb 24 2014 */
 /* [wxMaxima: input   end   ] */
 
 

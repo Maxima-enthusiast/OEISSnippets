@@ -6,7 +6,7 @@ https://oeis.org/A090317
 
 
 /* [wxMaxima: input   start ] */
-a(n):=if n=0 then 1 else 4*binomial(2*n-1,n)/(n+1)+3*sum(((k+1)*2^(k)*binomial(2*n-1,n-k-1))/(n+k+1),k,1,n-1); /* _Vladimir Kruchinin_, Feb 21 2019 */
+a(n):=if n=0 then 1 else 4*binomial(2*n-1,n)/(n+1)+3*sum(((k+1)*2^(k)*binomial(2*n-1,n-k-1))/(n+k+1),k,1,n-1); /* Vladimir Kruchinin, Feb 21 2019 */
 /* [wxMaxima: input   end   ] */
 
 

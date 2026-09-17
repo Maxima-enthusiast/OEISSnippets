@@ -6,7 +6,7 @@ https://oeis.org/A002620
 
 
 /* [wxMaxima: input   start ] */
-makelist(floor(n^2/4),n,0,50); /* _Martin Ettl_, Oct 17 2012 */
+makelist(floor(n^2/4),n,0,50); /* Martin Ettl, Oct 17 2012 */
 /* [wxMaxima: input   end   ] */
 
 

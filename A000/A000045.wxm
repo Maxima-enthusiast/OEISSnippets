@@ -6,7 +6,7 @@ https://oeis.org/A000045
 
 
 /* [wxMaxima: input   start ] */
-makelist(fib(n),n,0,100); /* _Martin Ettl_, Oct 21 2012 */
+makelist(fib(n),n,0,100); /* Martin Ettl, Oct 21 2012 */
 /* [wxMaxima: input   end   ] */
 
 
